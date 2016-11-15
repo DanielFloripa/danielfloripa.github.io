@@ -1,7 +1,7 @@
 Homepage
 ========
 
-Repositório pessoal de Daniel Camargo.
+Meu repositório pessoal HTML5+CSS+JS.
 
 [danielfloripa](http://danielfloripa.github.io/v2/)
 -----------
