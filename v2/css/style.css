@@ -2,12 +2,6 @@
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 
-/*
-	Prologue by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 /*********************************************************************************/
 /* Basic                                                                         */
 /*********************************************************************************/
@@ -33,6 +27,7 @@
 
 	body,input,textarea,select
 	{
+		font-family: 'Source Sans Pro', sans-serif;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
@@ -753,8 +748,8 @@
 
 			#main > section.dark
 			{
-				color: #ddd;
-				color: rgba(255,255,255,0.75);
+				/*color: #ddd;
+				color: rgba(255,255,255,0.75);*/
 			}
 
 				#main > section.dark h2,
@@ -778,6 +773,46 @@
 						border-bottom-color: rgba(255,255,255,0);
 					}
 
+
+			#main > section.video {
+				height:100%;
+				width:100%;
+				min-height:367px;
+				position:relative;
+				background-color:transparent
+			}
+
+			#main > section.video .anime-bg {
+				position:fixed;
+				left:0;
+				top:0;
+				right:0;
+				bottom:0;
+				z-index:-1;
+				background-repeat:no-repeat;
+				background-position:0 0;
+				background-size:cover;
+				background-color:#030505
+			}
+			#main > section.video #video_background {
+				position:absolute;
+				bottom:0;
+				right:0;
+				left:0;
+				top:0;
+				min-width:100%;
+				min-height:100%;
+				width:auto;
+				height:auto;
+				z-index:-1000;
+				overflow:hidden
+			}
+			@media (min-width:300) {
+				#main > #video_background {
+					display:block!important
+				}
+			}
+
 			#main > section.cover
 			{
 				padding: 6em 0;
@@ -788,8 +823,8 @@
 			#main > section.one
 			{
 
-				background-color: #81918E;
-				background-image: url('../images/banner.jpg');
+				/*background-color: #81918E;
+				/*background-image: url('../images/placeholder.jpg');*/ /*finciona!*/
 			}
 
 			#main > section.two
@@ -960,3 +995,6 @@
     transform: translateY(0);
   }
 }
+
+
+

@@ -40,18 +40,11 @@
 					<!-- Nav -->
 						<nav id="nav">
 							<!--
-						
 								Prologue's nav expects links in one of two formats:
-								
 								1. Hash link (scrolls to a different section within the page)
-								
 								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
-
 								2. Standard link (sends the user to another page/site)
-
-								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
-							
-							-->
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>-->
 							<ul>
 								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
 								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
@@ -87,9 +80,19 @@
 
 		<!-- Main -->
 			<div id="main">
-
 				<!-- Intro -->
-					<section id="top" class="one dark cover">
+					<section id="top" class="video dark cover">
+
+								<video id="video_background" preload="auto" autoplay="autoplay" loop="loop" onended="this.play()">
+									<source src="https://danielfloripa.github.io/v2/images/mboard.mp4" type="video/mp4">
+								</video>
+								<script type="text/javascript">
+								window.onload=function() {
+									var backgroundVideo=document.getElementById("video_background");
+									document.querySelector('video').play();
+								}
+								</script>
+							
 						<div class="container">
 							<section id="page-hero">
 						        <!--div class="brand-logo">
@@ -107,18 +110,10 @@
 									  <path id="icon" d="m688.85,126.01c-8.7811-1.4394-43.4-15.403-52.279-15.72-9.8726-0.26885-19.749-0.26319-29.625-0.26996-10.906-0.16331-21.724,1.7713-32.365,3.9832-14.957,2.7929-29.278,8.198-43.424,13.676-17.272,5.2977-69.718,35.781-2.45-2.2036-8.9456,6.1705-15.964,14.467-22.076,23.351-5.6591,8.5678-10.036,17.82-13.8,27.344-4.7955,11.906-7.6905,24.44-10.461,36.937-3.7403,14.402-5.4162,29.16-6.376,43.97-1.2127,13.808,0.70485,27.504,4.0126,40.889,2.5765,10.426,6.893,20.293,13.131,29.009,6.1773,8.3325,13.327,16.032,21.09,22.912,9.144,8.2843,19.396,15.239,30.425,20.737,11.138,6.3958,23.587,8.7919,36.001,11.258,15.771,2.8666,31.684,4.7556,47.596,6.6448,27.049-1.9125,44.284-29.057,50.846-38.446l51.437,3.413c-4.3794,4.5494-10.981,28.457-15.315,34.543-16.815,19.237-58.366,29.418-81.217,27.538-13.127-0.65499-26.231-1.746-39.285-3.2879-16.083-1.9353-32.194-3.7113-48.133-6.6566-12.727-2.528-25.34-5.672-36.714-12.184-11.164-5.9682-21.674-13.079-31.114-21.546-7.9409-7.1593-15.333-15.047-21.669-23.666-6.4323-9.2157-11.095-19.48-13.643-30.463-3.5574-13.742-5.4752-27.928-4.4296-42.144,0.93134-14.954,2.3217-29.922,6.011-44.491,2.7086-12.585,5.404-25.24,9.8438-37.351,3.6924-9.8033,7.9006-19.346,13.539-28.218,5.876-9.2268,12.62-18.034,21.363-24.741,13.277-7.8783,26.495-15.859,39.832-23.635,10.634-6.2,22.682-9.8627,33.87-14.849,14.433-5.4933,29.068-10.751,44.319-13.474,10.894-2.0609,21.909-3.7817,33.036-3.4545,9.9,0.02171,19.804,0.0324,29.698,0.41088,9.1443,0.38701,18.279,1.0165,27.354,2.2393z" stroke="#F00" fill="url(#linearGradient5219)"/>
 									</svg>
 						        </div-->
-						        <div class="landing-wrapper">
-									<div class="anime-bg">
-										<video id="video_background" preload="auto" autoplay="autoplay" style="display: none;" loop="loop" onended="this.play()">
-											<source src="https://danielfloripa.github.io/v2/images/mboard.mp4" type="video/mp4">
-										</video>
-									</div>
-						        </div>
-						        
-						       
+
+
 								<header>
-									<h2 class="alt">Lets <strong>Go!</strong></h2>
-									<p></p>
+									<h2 class="alt">Lets <strong>Go?</strong></h2>
 								</header>
 								
 								<footer>
