@@ -105,11 +105,11 @@
 		text-decoration: none;
 		color: inherit;
 		border-bottom: dotted 1px rgba(128,128,128,0.5);
-		-moz-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		-webkit-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		-o-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		-ms-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		-moz-transition: color 1.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		-webkit-transition: color 1.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		-o-transition: color 1.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		-ms-transition: color 1.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		transition: color 1.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		outline: 0;
 	}
 
@@ -202,15 +202,31 @@
 			{
 				width: 48px;
 				height: 48px;
-				background: #f00;
+				background: #fff;
+				display: block;
+				margin: 1 1 2em 1;
+  				overflow: hidden;
+  				float: right;
 			}
 			
 				.image.avatar48 img
 				{
-					width: 48px;
-					height: 48px;
+					-webkit-transition: all 1s ease;
+					-moz-transition: all 1s ease;
+					transition: all 1s ease;
+					display: block;
+					height: 100%;
+					width: 100%;
 				}
-
+				
+				.image.avatar48 img:hover
+				{
+					-webkit-transform: scale(1.2) rotate(5deg);
+					-moz-transform: scale(1.2) rotate(5deg);
+					-ms-transform: scale(1.2) rotate(5deg);
+					-o-transform: scale(1.2) rotate(5deg);
+					transform: scale(1.2) rotate(5deg);
+				}
 			.image.fit
 			{
 				display: block;
@@ -221,9 +237,8 @@
 			{
 				display: block;
 				margin: 0 0 2em 0;
-
-				height: 340px;
-  				width: 200px;
+				height: 256px;
+  				width: 256px;
   				overflow: hidden;
   				float: right;
 			}
@@ -239,11 +254,11 @@
 
 				.image.featured img:hover
 				{
-					-webkit-transform: scale(1.2) translateX(5px) rotate(5deg);
-					-moz-transform: scale(1.2) translateX(5px) rotate(5deg);
-					-ms-transform: scale(1.2) translateX(5px) rotate(5deg);
-					-o-transform: scale(1.2) translateX(5px) rotate(5deg);
-					transform: scale(1.2) translateX(5px) rotate(5deg);
+					-webkit-transform: scale(1.2) translateX(5px) rotate(-5deg);
+					-moz-transform: scale(1.2) translateX(5px) rotate(-5deg);
+					-ms-transform: scale(1.2) translateX(5px) rotate(-5deg);
+					-o-transform: scale(1.2) translateX(5px) rotate(-5deg);
+					transform: scale(1.2) translateX(5px) rotate(-5deg);
 				}
 			
 			.image.left
@@ -474,11 +489,11 @@
 			background-image: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url('images/overlay.png');
 			background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url('images/overlay.png');
 			background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url('images/overlay.png');			
-			-moz-transition: background-color 0.35s ease-in-out;
-			-webkit-transition: background-color 0.35s ease-in-out;
-			-o-transition: background-color 0.35s ease-in-out;
-			-ms-transition: background-color 0.35s ease-in-out;
-			transition: background-color 0.35s ease-in-out;
+			-moz-transition: background-color 1.35s ease-in-out;
+			-webkit-transition: background-color 1.35s ease-in-out;
+			-o-transition: background-color 1.35s ease-in-out;
+			-ms-transition: background-color 1.35s ease-in-out;
+			transition: background-color 1.35s ease-in-out;
 		}
 
 			input[type="button"]:hover,
@@ -840,9 +855,11 @@
 				#main > section.three p
 				{
 					border: 0px solid red;
-					text-align: right;
-					margin-right: 240px;
-					font-size: 0.9em;
+					color: #000000;
+					text-align: left;
+					margin-left: 30px;
+					margin-right: 50px;
+					font-size: 1em;
 					line-height: 1.4em;
 				}
 		

@@ -4,12 +4,30 @@
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html  class="loading">
+
+		
 	<head>
 		<title>Daniel Camargo</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
+		<script>
+			// https://github.com/filamentgroup/loadCSS
+			!function(e){"use strict"
+			var n=function(n,t,o){function i(e){return f.body?e():void setTimeout(function(){i(e)})}var d,r,a,l,f=e.document,s=f.createElement("link"),u=o||"all"
+			return t?d=t:(r=(f.body||f.getElementsByTagName("head")[0]).childNodes,d=r[r.length-1]),a=f.styleSheets,s.rel="stylesheet",s.href=n,s.media="only x",i(function(){d.parentNode.insertBefore(s,t?d:d.nextSibling)}),l=function(e){for(var n=s.href,t=a.length;t--;)if(a[t].href===n)return e()
+			setTimeout(function(){l(e)})},s.addEventListener&&s.addEventListener("load",function(){this.media=u}),s.onloadcssdefined=l,l(function(){s.media!==u&&(s.media=u)}),s}
+			"undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this)
+		</script>
+		<style>
+			.main-article,
+			.comments,
+			.about-me,
+			footer {
+				display: none;
+			}
+		</style>
 		<script src="../libs/ga.js"></script>
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 		<script src="../libs/jquery.min.js"></script>
@@ -52,7 +70,7 @@
 								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
 							</ul>
 
-							<audio id="bgAudio" autoplay="autoplay" loop="loop" src='https://danielfloripa.github.io/musics/thunderrain.mp3'></audio>
+							<audio id="bgAudio" autoplay="autoplay" loop="loop" src='https://danielfloripa.github.io/musics/sea.mp3'></audio>
 							<script type="text/javascript">
 							window.onload=function() {
 								var backgroundAudio=document.getElementById("bgAudio");
@@ -71,7 +89,7 @@
 							<li><a href="https://www.facebook.com/danielcamargo13" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 							<li><a href="http://github.com/danielfloripa" class="icon fa-github"><span class="label">Github</span></a></li>
 							<li><a href="https://www.linkedin.com/in/daniel13" class="icon fa-linkedin "><span class="label">Linkedin</span></a></li>
-							<!--li><a href="mailto:asd@gmail.com" class="icon fa-envelope"><span class="label">E-mail</span></a></li-->
+							<li><a href="mailto:asd@gmail.com" class="icon fa-envelope"><span class="label">E-mail</span></a></li>
 						</ul>
 				
 				</div>
@@ -181,7 +199,7 @@
 									<article class="item">
 										<a href="https://github.com/danielfloripa" class="image fit"><img src="images/4.png" alt="" /></a>
 										<header>
-											<h2>Another Projects?</h2>
+											<h2>Other Projects?</h2>
 											<h3>Available on repository	</h3>
 										</header>
 									</article>
@@ -211,17 +229,25 @@
 								<h2>About</h2>
 							</header>
 
-							<a href='#' class='image featured'><img src="../selfie/me.png" alt=""/></a>
+							<a href='#' class='image featured'><img src="../selfie/me2.jpg" alt=""/></a>
 							
 							<p>
 								<strong>
-								<a href="http://www.cct.udesc.br" class="icon fa-university">   UDESC - Joinville/SC</a><br>
-								<a href="http://lattes.cnpq.br/3806326022567893" class="icon fa-pencil">   Lattes Curriculum</a><br>
-								<a href="https://www.linkedin.com/in/daniel13" class="icon fa-linkedin ">   Linkedin</a><br>
-								<a href="callto:+5547999675469" class="icon fa-phone ">   Phone: (+5547) 9 9967 5469</a><br>
-								<a href="mailto:" class="icon fa-envelope">   E-mail: daniel at colmeia udesc br</a><br>
-								</strong>
-							</ul>
+								<a target="_blank" href="http://www.cct.udesc.br" class="icon fa-university">   UDESC - Joinville/SC</a><br>
+								<a target="_blank" href="http://lattes.cnpq.br/3806326022567893" class="icon fa-pencil">   Lattes Curriculum</a><br>
+								<a target="_blank" href="https://www.linkedin.com/in/daniel13" class="icon fa-linkedin ">   Linkedin</a><br>
+								<a target="_blank" href="callto:+5547999675469" class="icon fa-phone ">   Phone: (+5547) 9 9967 5469</a><br>
+								<a target="_blank" href="mailto:" class="icon fa-envelope">   E-mail: daniel at colmeia udesc br</a><br>
+								<!--p> Acadêmico do Mestrado em Computação Aplicada pela Universidade do Estado de Santa Catarina (UDESC) e graduado em Ciência da Computação pela UDESC. 
+								<p> Possui conhecimento em diversas linguagens de programação, destacando-se: C, C++, Java, Python, Shell Script, JavaScript, PHP e programação de microcontroladores (ATMEL em C++ e PIC em C). 
+								<p> Vem atuando principalmente nos temas relacionados à Hardware Livre com Arduino e plataforma ARM, voltados ao monitoramento de eficiência energética em data centers. 
+								<p> Participação ativa através de palestras e cursos em eventos como Latinoware, FISL, FLISOL, Semana da Computação da UDESC, etc.
+								<p> Publicações científicas em eventos como: Escola Regional de Alto Desempenho ERAD (nas edições RS, RJ e SP, desde 2014) IEEE/CLEI, IEEE/SCCC, dentre outros. 
+								<p> Destacam-se entre as áreas de interesse os temas: Internet of Things (IoT), Smart Cities, Cloud Computing, Green IT e Inteligência Artificial.  
+								<p> Atualmente possui dois projetos pesquisa em andamento no Laboratório de Processamento Paralelo e Distribuído (LabP2D) da UDESC-Joinville. 
+								<p> O primeiro da graduação intitulado: "Sensoriamento e automação de Data Centers" e o segundo do mestrado "Orquestração de nuvem IaaS orientado pelo consumo de energia de servidores". 
+								<p> É membro do conselho diretivo do <a target="_blank" href="http://www.fablabjoinville.com.br" > Fab-Lab Joinville-SC</a>, ministra cursos e palestras para a comunidade de Joinville e região, disseminando o acesso à tecnologia e inovação voltados à Cultura Maker.-->
+							</strong>
 						</div>
 					</section>
 			
@@ -256,9 +282,9 @@
 			<div id="footer">
 				
 				<!-- Copyright -->
-					<ul class="copyright">
+					<!--ul class="copyright">
 						<li>All rights reserved.</li><li>Inspirado por: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
+					</ul-->
 				
 			</div>
 
