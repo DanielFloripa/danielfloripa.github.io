@@ -133,3 +133,75 @@ $(document).ready(function() {
 	});
 
 })(jQuery);
+
+var SoundController;
+SoundController = function () {
+    function t() {
+        var e, i, n;
+        try {
+            if (relax.caniuse.localstorage() && "true" === window.localStorage.getItem("disable-sound") && (t.disableSound = !0), relax.browser.isMobile() && (t.disableSound = !0), t.disableSound && $("#footer .mute-btn").remove(), t.disableSound) return;
+            for ($.support.pageVisibility && ($(document).on("show.visibility", relax.dom.bind(this, this.onDocumentShow)), $(document).on("hide.visibility", relax.dom.bind(this, this.onDocumentHide))), this._mainLoop = new buzz.sound("/static/sound/Drone Loop (Main)", {formats: ["ogg", "mp3"]}), this._mainLoop.bind("canplaythrough", function (t) {
+                return function () {
+                    return t._caseLoop = new buzz.sound("../musics/Drone Loop (Case)", {
+                        formats: ["ogg", "mp3"],
+                        autoplay: !1
+                    }), t._textLoop = new buzz.sound("../musics/Drone Loop (About)", {formats: ["ogg", "mp3"], autoplay: !1})
+                }
+            }(this)), this._mainLoop.play().fadeIn(3e3).loop(), window.application.pages.on("updated", this.onPageUpdated, this), this._sounds = [], this._sounds.hover = [], this._sounds.hover_index = -1, e = i = 1; 8 >= i; e = i += 1) this._sounds.hover.push(new buzz.sound("../musics/Bit " + e, {formats: ["ogg", "mp3"]}));
+            for (this._sounds.click = [], this._sounds.click_index = -1, e = n = 1; 6 >= n; e = n += 1) this._sounds.click.push(new buzz.sound("../musics/Click " + e, {formats: ["ogg", "mp3"]}));
+            relax.caniuse.localstorage() && "true" === window.localStorage.getItem("muted") && (this.toggleMute(), $("#footer .mute-btn").addClass("selected"))
+        } catch (r) {
+        }
+    }
+
+    return t.prototype._mainLoop = null, t.prototype._caseLoop = null, t.prototype._textLoop = null, t.prototype._magicCatLoop = null, t.prototype._sounds = null, t.prototype._mute = !1, t.disableSound = !1, t.prototype.toggleMute = function () {
+        this._mute = !this._mute, relax.caniuse.localstorage() && window.localStorage.setItem("muted", this._mute ? "true" : "false");
+        try {
+            this._mute ? "undefined" != typeof buzz && null !== buzz && buzz.all().mute() : "undefined" != typeof buzz && null !== buzz && buzz.all().unmute()
+        } catch (t) {
+        }
+        return {
+            "catch": function (t) {
+            }
+        }
+    }, t.prototype.onPageUpdated = function (e) {
+        var i, n, r, o, a, s;
+        if (!t.disableSound && !this._mute && -1 === e.get("type").toLowerCase().indexOf("filter")) {
+            try {
+                null != (i = this._magicCatLoop) && i.stop(), e.isTextType() ? (null != (n = this._caseLoop) && n.stop(), this._textLoop && (this._textLoop.setPercent(0).play().fadeIn(3e3).loop(), this._mainLoop.fadeOut(3e3, function () {
+                    return this.stop()
+                }))) : "case" === e.get("type") ? (null != (r = this._textLoop) && r.stop(), "work/magic-cat" === e.get("url") ? (this._magicCatLoop || (this._magicCatLoop = new buzz.sound("../musics/magic_cat", {formats: ["ogg", "mp3"]})), this._magicCatLoop.setPercent(0).play().fadeIn(1e3).loop(), this._mainLoop.stop(), null != (o = this._caseLoop) && o.fadeOut(3e3)) : this._caseLoop && (this._caseLoop.setPercent(0).play().fadeIn(3e3).loop(), this._mainLoop.fadeOut(3e3, function () {
+                    return this.stop()
+                }))) : (null != (a = this._caseLoop) && a.fadeOut(3e3, function () {
+                    return this.stop()
+                }), null != (s = this._textLoop) && s.fadeOut(3e3, function () {
+                    return this.stop()
+                }), this._mainLoop.play().fadeIn(3e3))
+            } catch (l) {
+            }
+            return {
+                "catch": function (t) {
+                }
+            }
+        }
+    }, t.prototype.play = function (e, i) {
+        var n;
+        if (null == e && (e = null), null == i && (i = -1), !t.disableSound && !this._mute) {
+            try {
+                if (e && this._sounds[e]) {
+                    if (-1 !== i) n = i; else for (n = this._sounds[e + "_index"]; this._sounds[e + "_index"] === n;) n = Math.floor(Math.random() * this._sounds[e].length);
+                    this._sounds[e + "_index"] = n, this._sounds[e][this._sounds[e + "_index"]].setPercent(0).play()
+                }
+            } catch (r) {
+            }
+            return {
+                "catch": function (t) {
+                }
+            }
+        }
+    }, t.prototype.onDocumentShow = function () {
+        return this._mute ? void 0 : "undefined" != typeof buzz && null !== buzz ? buzz.all().unmute() : void 0
+    }, t.prototype.onDocumentHide = function () {
+        return "undefined" != typeof buzz && null !== buzz ? buzz.all().mute() : void 0
+    }, t
+}();
