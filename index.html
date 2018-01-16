@@ -2,7 +2,6 @@
 
 <html class="loading">
 
-
 <head>
     <title>Daniel Camargo</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
@@ -10,60 +9,11 @@
     <meta name="description" content="Curriculum Daniel Scheidemantel Camargo"/>
     <meta name="keywords" content="Curriculum; Daniel; Scheidemantel; Camargo"/>
     <meta name="referrer" content="origin">
-    <script>
-        // https://github.com/filamentgroup/loadCSS
-        !function (e) {
-            "use strict"
-            var n = function (n, t, o) {
-                function i(e) {
-                    return f.body ? e() : void setTimeout(function () {
-                        i(e)
-                    })
-                }
-
-                var d, r, a, l, f = e.document, s = f.createElement("link"), u = o || "all"
-                return t ? d = t : (r = (f.body || f.getElementsByTagName("head")[0]).childNodes, d = r[r.length - 1]),
-                    a = f.styleSheets,
-                    s.rel = "stylesheet",
-                    s.href = n,
-                    s.media = "only x",
-                    i(function () {
-                        d.parentNode.insertBefore(s, t ? d : d.nextSibling)
-                    }),
-                    l = function (e) {
-                        for (var n = s.href, t = a.length; t--;)
-                            if (a[t].href === n)
-                                return e()
-                        setTimeout(function () {
-                            l(e)
-                        })
-                    },
-                s.addEventListener && s.addEventListener("load", function () {
-                    this.media = u
-                }),
-                    s.onloadcssdefined = l, l(function () {
-                    s.media !== u && (s.media = u)
-                }), s
-            }
-            "undefined" != typeof exports ? exports.loadCSS = n : e.loadCSS = n
-        }("undefined" != typeof global ? global : this)
-    </script>
-    <style>
-        .main-article,
-        .comments,
-        .about-me,
-        footer {
-            display: none;
-        }
-    </style>
-    <script src="../libs/ga.js"></script>
-    <!--[if lte IE 8]>
-    <script src="css/ie/html5shiv.js"></script><![endif]-->
-    <script src="../libs/jquery.min.js"></script>
-    <script src="../libs/jquery.scrolly.min.js"></script>
-    <script src="../libs/jquery.scrollzer.min.js"></script>
-    <script src="../libs/skel.min.js"></script>
-    <script src="../libs/skel-layers.min.js"></script>
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/jquery.scrolly.min.js"></script>
+    <script src="libs/jquery.scrollzer.min.js"></script>
+    <script src="libs/skel.min.js"></script>
+    <script src="libs/skel-layers.min.js"></script>
     <script src="js/init.js"></script>
     <noscript>
         <link rel="stylesheet" href="css/skel.css"/>
@@ -78,7 +28,7 @@
 <body>
 
 <!-- Header -->
-<div id="header" class="skel-layers-fixed">
+<div id="header" class="skel-layers-fixed entry-header">
 
     <div id="loader-wrapper">
         <div id="loader"></div>
@@ -87,24 +37,21 @@
     </div>
 
     <div class="top">
+        <header>
+            <h1 class="entry-title">Daniel S. Camargo</h1>
+        </header>
         <!-- Logo -->
         <div id="logo">
-            <span class="image avatar48"><img src="../selfie/me.jpg" alt="Eu"/></span><br>
+            <a href="#top" class="image avatar48"><img src="selfie/me.jpg"/></a><br>
             <h1 id="title">Daniel Camargo</h1>
             <p>Academy + Research + Dev. </p>
         </div>
         <!-- Nav -->
         <nav id="nav">
-            <!--
-                Prologue's nav expects links in one of two formats:
-                1. Hash link (scrolls to a different section within the page)
-                   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
-                2. Standard link (sends the user to another page/site)
-                   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>-->
             <ul>
                 <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a>
                 </li>
-                <li><a href="/curriculum.html" id="curriculum-link" class="skel-layers-ignoreHref"><span class="icon fa-pencil-alt">Curriculum Vittae</span></a>
+                <li><a href="curriculum.html" id="curriculum-link" class="skel-layers-ignoreHref"><span class="icon fa-comment-alt">Curriculum Vittae</span></a>
                 </li>
                 <li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a>
                 </li>
@@ -114,12 +61,12 @@
                 </li>
             </ul>
 
-            <audio id="bgAudio" autoplay="autoplay" loop="loop" src='https://danielfloripa.github.io/musics/sea.mp3'
-                   controls></audio>
+            <audio id="bgAudio" autoplay="autoplay" loop="loop" src="https://danielfloripa.github.io/musics/Drone Loop (About).mp3"
+                   ></audio>
             <script type="text/javascript">
                 window.onload = function () {
                     var backgroundAudio = document.getElementById("bgAudio");
-                    backgroundAudio.volume = 0.3;
+                    backgroundAudio.volume = 0.5;
                     document.querySelector('audio').play();
                 }
             </script>
