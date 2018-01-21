@@ -27,12 +27,18 @@
   <meta name="msapplication-TileImage" content="ico/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery.scrolly.min.js"></script>
-<script src="js/jquery.scrollzer.min.js"></script>
-<script src="js/skel.min.js"></script>
-<script src="js/skel-layers.min.js"></script>
-<script src="js/init.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.scrolly.min.js"></script>
+  <script src="js/jquery.scrollzer.min.js"></script>
+  <script src="js/skel.min.js"></script>
+  <script src="js/skel-layers.min.js"></script>
+  <script src="js/init.js"></script>
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script>
+      $(function(){
+          $("#footer").load("footer.html");
+      });
+  </script>
   <style type="text/css">
     .entry-header {
       text-align: left;
@@ -172,13 +178,15 @@
             </a> </article>
         </div>
         <div class="4u">
-          <article class="item"> <a href="https://github.com/DanielFloripa/BinPackingMultithread-SDI"  target="_blank" class="image fit"><img src="images/threads.png" alt="Threads" /></a>
+          <article class="item"> <a href="https://github.com/DanielFloripa/BinPackingMultithread-SDI"  target="_blank" class="image fit"><img src="images/threads.png" alt="Threads" />
             <header>
               <h2>Replication + multithreading </h2>
               <h3>Solve BinPacking problem with multithreading to simulate replication. Java</h3>
             </header>
-          </article>
+          </a></article>
         </div>
+      </div>
+      <div class="row">
         <div class="4u">
           <article class="item"> <a href="http://reciclacomigo.com.br" target="_blank" class="image fit"><img src="images/comigo.png" alt="Comigo"/>
             <header>
@@ -288,6 +296,6 @@
 </div>
 
 <!-- Footer -->
-<div id="footer"> </div>
+<div id="footer"> <!--#include file="footer.html" --> </div>
 </body>
 </html>
