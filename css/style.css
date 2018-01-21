@@ -28,7 +28,6 @@
 	body,input,textarea,select
 	{
 		font-family: 'Source Sans Pro', sans-serif;
-		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1em;
@@ -61,7 +60,8 @@
 		
 			h2.alt
 			{
-				color: #888;
+				color:antiquewhite;
+				text-align: center;
 			}
 			
 			h2.alt strong
@@ -237,10 +237,11 @@
 			
 			.image.featured
 			{
+				border-radius: 20%;
 				display: block;
-				/*margin: 0 0 2em 0;
-				height: 256px;
-  				width: 256px;*/
+				margin:2em 2em 2em 2em;
+				height: auto;
+  				width:50%;
   				overflow: hidden;
   				float: right;
 			}
@@ -355,7 +356,6 @@
 				position: relative;
 				-webkit-appearance: none;
 				display: block;
-				border: 0;
 				outline: 0;
 				background: #fff;
 				background: rgba(255,255,255,0.75);
@@ -540,12 +540,12 @@
 /*********************************************************************************/
 
 	.icon {
-		text-decoration: none;
+		text-decoration: inherit;
 	}
 
 		.icon:before {
 			display: inline-block;
-			font-family: FontAwesome;
+			font-family: FontAwesome,"Font Awesome 5 Free";
 			font-size: 1.25em;
 			text-decoration: none;
 			font-style: normal;
@@ -556,7 +556,7 @@
 		}
 		
 		.icon > .label {
-			display: none;
+			display: None;
 		}
 
 /*********************************************************************************/
@@ -573,7 +573,7 @@
 		color: #fff;
 		background: #222629 url('images/overlay.png');
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0,0,0,0.1);
-		text-align: right;
+		text-align: center;
 	}
         #header h1{
          text-align: center;
@@ -855,7 +855,7 @@
             
                 #main > section.two p
                 {
-                    border: 0px solid red;
+                    border: 0 solid red;
                     color: #000000;
                     text-align: left;
                     margin-left: 30px;
@@ -871,7 +871,7 @@
 
 				#main > section.three p
 				{
-					border: 0px solid red;
+					border: 0 solid red;
 					color: #000000;
 					text-align: left;
 					margin-left: 30px;
@@ -1063,7 +1063,7 @@ Enjoy responsibly!
    ========================================================================== */
 p {
     line-height: 1.33em;
-    color: #7E7E7E;
+    color: #DBDBDB;
 }
 h1 {
     color: #EEEEEE;
@@ -1417,3 +1417,42 @@ h1 {
 
 
 
+
+.scrolly {
+	text-align: center;
+	display: block;
+	align-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 8em;
+	margin-left: auto;
+}
+
+#title {
+	left: auto;
+	right: auto;
+	text-align: center;
+	position: absolute;
+	color: white;
+}
+#title .p{
+	background-color: #FFF;
+	
+}
+
+#title .h1{
+	background-color: #FFFFFF;
+
+}
+
+.subtle {
+	text-align: center;
+	padding: 20px;
+	height: auto;
+	width: 300px;
+}
+
+.entry-title {
+	text-align: center;
+	color: white;	
+}
