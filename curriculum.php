@@ -90,7 +90,7 @@
                     <a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a>
                 </li>
                 <li>
-                    <a href="index.html" id="return" class="skel-layers-ignoreHref"><span class="icon fa-home">Back to home</span></a>
+                    <a href="index.php" id="return" class="skel-layers-ignoreHref"><span class="icon fa-home">Back to home</span></a>
                 </li>
             </ul>
         </nav>
@@ -265,7 +265,7 @@
                         <input type="submit" value="Send Message!"/>
                     </div>
                 </div>
-                <input type="hidden" name="_next" value="/thanks.html" />
+                <input type="hidden" name="_next" value="thanks.php" />
             </form>
         </div>
     </section>

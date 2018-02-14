@@ -72,7 +72,7 @@
       <ul>
         <li><a href="#top" id="top-link" class="skel-layers-ignoreHref">
             <span class="icon fa-home">Intro</span></a></li>
-        <li><a href="curriculum.html" id="curriculum-link" class="skel-layers-ignoreHref">
+        <li><a href="curriculum.php" id="curriculum-link" class="skel-layers-ignoreHref">
             <span class="icon fa-comment-alt">Curriculum</span></a></li>
         <li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref">
             <span class="icon fa-th">Portfolio</span></a> </li>
@@ -141,7 +141,7 @@
       <section id="page-hero">
         <header>
           <h2 class="alt">Are you going to hire me? <br>
-            <a href="curriculum.html">Curriculum Vittae</a></h2>
+            <a href="curriculum.php">Curriculum Vittae</a></h2>
         </header>
         <footer> <a href="#portfolio" class="scrolly">
           <div class="subtle">...Or see my portfolio below.</div>
@@ -482,7 +482,7 @@
             <input type="submit" value="Send Message!"/>
           </div>
         </div>
-        <input type="hidden" name="_next" value="thanks.html" />
+        <input type="hidden" name="_next" value="thanks.php" />
       </form>
     </div>
   </section>
