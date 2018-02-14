@@ -1,0 +1,116 @@
+<?php
+
+<!DOCTYPE HTML>
+<html> <!-- class="loading"-->
+<head>
+    <title>Curriculum Vittae :: Daniel Scheidemantel Camargo</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curriculum Daniel Scheidemantel Camargo"/>
+    <meta name="keywords" content="Curriculum; Daniel; Scheidemantel; Camargo"/>
+    <meta name="referrer" content="origin">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-icon-180x180.png">
+    <!--[if IE]><link rel="shortcut icon" href="ico/favicon.ico"><![endif]-->
+    <link rel="icon" type="image/png" sizes="192x192"  href="ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.scrolly.min.js"></script>
+    <script src="js/jquery.scrollzer.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-layers.min.js"></script>
+    <script src="js/init.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function(){
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <style type="text/css">
+        .entry-header {
+            text-align: left;
+            margin: 0 auto 50px auto;
+            width: 80%;
+            max-width: 978px;
+            position: relative;
+            z-index: 10001;
+        }
+        #demo-content {
+            padding-top: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<div id="header" class="skel-layers-fixed entry-header">
+
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+    <div class="top">
+        <header>
+            <h1 class="entry-title">Curriculum Vittae</h1>
+        </header>
+        <!-- Logo -->
+        <div id="logo">
+            <a href="#top" class="image avatar48"><img src="images/me.jpg"/></a><br>
+        </div>
+        <!-- Nav -->
+        <nav id="nav">
+            <ul>
+                <li>
+                    <a href="http://danielfloripa.github.io" id="return" class="skel-layers-ignoreHref"><span class="icon fa-home">Back to home</span></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+</div>
+
+<!-- Main -->
+<div id="main">
+
+
+    <!-- Personal -->
+    <section id="top" class="two cover">
+
+        <div class="container">
+            <header>
+                <h2>Thank you for your message!</h2>
+                <h3>I will contact you soon.</h3>
+
+
+            </header>
+        </div>
+    </section>
+
+
+</div>
+
+<!-- Footer -->
+<div id="footer"> <!--#include file="footer.html" --> </div>
+
+</body>
+</html>
+?>
