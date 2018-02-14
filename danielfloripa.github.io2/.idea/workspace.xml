@@ -1,0 +1,925 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a9394405-e801-4fdc-b665-787a88a34e37" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/fontawesome-all.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/ie/images/grad0-15.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/ie/v8.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/ie/v9.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/images/overlay.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/images/video.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/old.font-awesome.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/skel.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/style-mobile.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/style-narrow.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/style-narrower.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/style-normal.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/style-wide.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/transition.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/curriculum.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/files/html.zip" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/files/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/files/publications/2015_Camargo_COTB.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/files/publications/2015_Camargo_ERAD-RJ.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/files/publications/2015_Camargo_ERAD-RS.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/files/publications/2015_Camargo_Latinoware.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/files/publications/2015_Camargo_SIC.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/files/publications/2016_Camargo_CLEI.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/files/publications/2016_Camargo_CRICTE.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/files/publications/2016_Camargo_ERAD-RS.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/files/publications/2016_Camargo_SCCC.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/files/publications/2016_Camargo_SIC.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/files/publications/2016_TCC_dissertation.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/files/publications/2017_Camargo_ERAD-RS.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/files/publications/2017_Camargo_RITA.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/files/publications/links" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/files/works/2016_GS.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/files/works/2016_OGRC.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/files/works/2016_PAA.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/files/works/2016_SDA.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/files/works/2017-DEP.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/files/works/2017_DEP_Presentation.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/files/works/2017_MEP.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/files/works/2017_REC.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/footer.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ico/android-icon-144x144.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ico/android-icon-192x192.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ico/android-icon-36x36.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ico/android-icon-48x48.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ico/android-icon-72x72.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ico/android-icon-96x96.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ico/apple-icon-114x114.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ico/apple-icon-120x120.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ico/apple-icon-144x144.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ico/apple-icon-152x152.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ico/apple-icon-180x180.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ico/apple-icon-57x57.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ico/apple-icon-60x60.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ico/apple-icon-72x72.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ico/apple-icon-76x76.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ico/apple-icon-precomposed.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ico/apple-icon.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ico/browserconfig.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ico/favicon-16x16.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ico/favicon-32x32.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ico/favicon-96x96.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ico/favicon.ico" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ico/icons.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ico/manifest.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ico/ms-icon-144x144.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ico/ms-icon-150x150.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ico/ms-icon-310x310.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ico/ms-icon-70x70.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/4.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/5.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/arrow-down.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/banner.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/blackCloud.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/brand-logo.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/brand-logo2.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/brand-logo_file.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/comigo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/dsc.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/family.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/greenhop.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/icon.ico" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/master0" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/master3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/mboard.mp4" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/me.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/me2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/openstack.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/pic08.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/placeholder.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/plus.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/threads.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/v2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/js/init.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/js/jquery.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/js/jquery.scrolly.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/js/jquery.scrollzer.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/js/new.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/js/skel-layers.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/js/skel.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/ga.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/jquery.formerize.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/libs/modernizr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/musics/Bit 1.mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/musics/Bit 2.mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/musics/Bit 3.mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/musics/Bit 4.mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/musics/Bit 5.mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/musics/Bit 6.mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/musics/Bit 7.mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/musics/Bit 8.mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/musics/Click 1.mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/musics/Click 2.mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/musics/Click 3.mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/musics/Click 4.mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/musics/Click 5.mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/musics/Click 6.mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/musics/Drone Loop (About).mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/musics/Drone Loop (Case).mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/musics/Drone Loop (Main).mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/musics/sea.mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/musics/thunderrain.mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webfonts/fa-brands-400.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webfonts/fa-brands-400.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webfonts/fa-brands-400.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webfonts/fa-brands-400.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webfonts/fa-brands-400.woff2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webfonts/fa-regular-400.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webfonts/fa-regular-400.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webfonts/fa-regular-400.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webfonts/fa-regular-400.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webfonts/fa-regular-400.woff2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webfonts/fa-solid-900.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webfonts/fa-solid-900.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webfonts/fa-solid-900.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webfonts/fa-solid-900.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/webfonts/fa-solid-900.woff2" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="curriculum.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/curriculum.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="57" lean-forward="false" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/footer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="thanks.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/thanks.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="34" column="18" lean-forward="true" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>fa</find>
+      <find>two</find>
+      <find>margin-</find>
+      <find>audio</find>
+      <find>mp3</find>
+      <find>caniuse</find>
+      <find>.mp</find>
+      <find>ogg</find>
+      <find>mute</find>
+      <find>sound</find>
+      <find>/static/sound</find>
+      <find>static/sound</find>
+      <find>aud</find>
+      <find>rainb</find>
+      <find>self</find>
+      <find>fami</find>
+      <find>ico</find>
+      <find>spam</find>
+      <find>pdf&quot;&gt;&lt;span class=</find>
+      <find>&lt;/spam&gt;</find>
+      <find>th</find>
+      <find>Curriculum</find>
+      <find>index</find>
+      <find>thanks</find>
+      <find>//</find>
+      <find>tha</find>
+      <find>entry</find>
+      <find>php</find>
+      <find>&lt;td r</find>
+      <find>/&gt;</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>../musics</replace>
+      <replace>pdf&quot; class=</replace>
+      <replace />
+      <replace>\/\/</replace>
+      <replace>&lt;td r</replace>
+      <replace>&gt;</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="AUTO_COMMIT_ON_CHERRY_PICK" value="true" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/v2/css/style.css" />
+        <option value="$PROJECT_DIR$/v2/index.html" />
+        <option value="$PROJECT_DIR$/js/new.js" />
+        <option value="$PROJECT_DIR$/js/init.js" />
+        <option value="$PROJECT_DIR$/css/skel.css" />
+        <option value="$PROJECT_DIR$/libs/modernizr.js" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/footer.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/thanks.php" />
+        <option value="$PROJECT_DIR$/curriculum.php" />
+        <option value="$PROJECT_DIR$/head.html" />
+        <option value="$PROJECT_DIR$/ico/icons.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/curriculum.html" />
+        <option value="$PROJECT_DIR$/thanks.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1" />
+    <option name="width" value="1368" />
+    <option name="height" value="372" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Pug/Jade</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="danielfloripa.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="danielfloripa.github.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="SearchEverywhereHistoryKey" value="server&#9;ACTION&#9;RemoteServersViewToolbar&#10;serve&#9;ACTION&#9;tasks.configure.servers" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ico/" />
+      <recent name="$PROJECT_DIR$/images" />
+      <recent name="$PROJECT_DIR$/js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/v2" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.curriculum.html">
+    <configuration name="curriculum.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/danielfloripa.github.io/curriculum.html" />
+    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" nameIsGenerated="true" uri="http://localhost:63343/danielfloripa.github.io/v2/index.html" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.curriculum.html" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.curriculum.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a9394405-e801-4fdc-b665-787a88a34e37" name="Default" comment="" />
+      <created>1511491247890</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1511491247890</updated>
+      <workItem from="1511491252488" duration="3385000" />
+      <workItem from="1512874122046" duration="214000" />
+      <workItem from="1512874417019" duration="295000" />
+      <workItem from="1515615962926" duration="24132000" />
+      <workItem from="1516128811269" duration="12905000" />
+      <workItem from="1516497708866" duration="5610000" />
+      <workItem from="1516510849543" duration="1855000" />
+      <workItem from="1516513140133" duration="1686000" />
+      <workItem from="1516848775442" duration="886000" />
+      <workItem from="1516849745770" duration="3684000" />
+      <workItem from="1516853927684" duration="1093000" />
+      <workItem from="1518587172618" duration="4804000" />
+      <workItem from="1518629024125" duration="7617000" />
+      <workItem from="1518638318074" duration="1732000" />
+      <workItem from="1518640083539" duration="325000" />
+    </task>
+    <task id="LOCAL-00001" summary="audio controls">
+      <created>1511493649334</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1511493649335</updated>
+    </task>
+    <task id="LOCAL-00002" summary="igm new">
+      <created>1511494174185</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1511494174185</updated>
+    </task>
+    <task id="LOCAL-00003" summary="igm new">
+      <created>1511494405565</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1511494405565</updated>
+    </task>
+    <task id="LOCAL-00004" summary="igm new">
+      <created>1511494707402</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1511494707402</updated>
+    </task>
+    <task id="LOCAL-00005" summary="igm new">
+      <created>1511494864381</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1511494864381</updated>
+    </task>
+    <task id="LOCAL-00006" summary="description">
+      <created>1511494999491</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1511494999491</updated>
+    </task>
+    <task id="LOCAL-00007" summary="img style">
+      <created>1511495119147</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1511495119147</updated>
+    </task>
+    <task id="LOCAL-00008" summary="description">
+      <created>1511495650470</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1511495650470</updated>
+    </task>
+    <task id="LOCAL-00009" summary="curriculum">
+      <created>1515616110626</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1515616110626</updated>
+    </task>
+    <task id="LOCAL-00010" summary="curriculum">
+      <created>1516130551500</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1516130551500</updated>
+    </task>
+    <task id="LOCAL-00011" summary="curriculum">
+      <created>1516130884572</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1516130884572</updated>
+    </task>
+    <task id="LOCAL-00012" summary="curriculum">
+      <created>1516131948464</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1516131948464</updated>
+    </task>
+    <task id="LOCAL-00013" summary="curriculum">
+      <created>1516132080365</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1516132080365</updated>
+    </task>
+    <task id="LOCAL-00014" summary="curriculum add">
+      <created>1516140996240</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1516140996240</updated>
+    </task>
+    <task id="LOCAL-00015" summary="curriculum add">
+      <created>1516141410448</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1516141410448</updated>
+    </task>
+    <task id="LOCAL-00016" summary="curriculum add">
+      <created>1516141482332</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1516141482332</updated>
+    </task>
+    <task id="LOCAL-00017" summary="curriculum add">
+      <created>1516141578321</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1516141578321</updated>
+    </task>
+    <task id="LOCAL-00018" summary="curriculum add backlink audio">
+      <created>1516142873744</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1516142873744</updated>
+    </task>
+    <task id="LOCAL-00019" summary="main add features">
+      <created>1516507627944</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1516507627944</updated>
+    </task>
+    <task id="LOCAL-00020" summary="main add features">
+      <created>1516507786894</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1516507786894</updated>
+    </task>
+    <task id="LOCAL-00021" summary="change architecture features">
+      <created>1516508848859</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1516508848859</updated>
+    </task>
+    <task id="LOCAL-00022" summary="print">
+      <created>1516509672854</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1516509672854</updated>
+    </task>
+    <task id="LOCAL-00023" summary="footer">
+      <created>1516513932596</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1516513932596</updated>
+    </task>
+    <task id="LOCAL-00024" summary="footer">
+      <created>1516514362478</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1516514362478</updated>
+    </task>
+    <task id="LOCAL-00025" summary="footer">
+      <created>1516514658633</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1516514658633</updated>
+    </task>
+    <task id="LOCAL-00026" summary="footer">
+      <created>1516849250249</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1516849250249</updated>
+    </task>
+    <task id="LOCAL-00027" summary="top">
+      <created>1516849848557</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1516849848557</updated>
+    </task>
+    <task id="LOCAL-00028" summary="top">
+      <created>1516852730186</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1516852730186</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Add files">
+      <created>1518588246488</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1518588246488</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Add files">
+      <created>1518590775598</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1518590775598</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Add files">
+      <created>1518590980936</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1518590980936</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Add files">
+      <created>1518591003461</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1518591003461</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Add files titles">
+      <created>1518591102049</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1518591102049</updated>
+    </task>
+    <task id="LOCAL-00034" summary="update files titles">
+      <created>1518591206783</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1518591206783</updated>
+    </task>
+    <task id="LOCAL-00035" summary="update php">
+      <created>1518629236254</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1518629236254</updated>
+    </task>
+    <task id="LOCAL-00036" summary="update php">
+      <created>1518631207292</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1518631207292</updated>
+    </task>
+    <task id="LOCAL-00037" summary="update php files">
+      <created>1518632566172</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1518632566172</updated>
+    </task>
+    <task id="LOCAL-00038" summary="renew">
+      <created>1518638906376</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1518638906376</updated>
+    </task>
+    <task id="LOCAL-00039" summary="thanks :)">
+      <created>1518640334808</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1518640334808</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="70223000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1" y="0" width="1368" height="743" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1398243" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287879" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19242902" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="CSS Styles" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54974705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287879" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287879" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="audio controls" />
+    <MESSAGE value="igm new" />
+    <MESSAGE value="img style" />
+    <MESSAGE value="description" />
+    <MESSAGE value="curriculum" />
+    <MESSAGE value="curriculum add" />
+    <MESSAGE value="curriculum add backlink audio" />
+    <MESSAGE value="main add features" />
+    <MESSAGE value="change architecture features" />
+    <MESSAGE value="print" />
+    <MESSAGE value="footer" />
+    <MESSAGE value="top" />
+    <MESSAGE value="Add files" />
+    <MESSAGE value="Add files titles" />
+    <MESSAGE value="update files titles" />
+    <MESSAGE value="update php" />
+    <MESSAGE value="update php files" />
+    <MESSAGE value="renew" />
+    <MESSAGE value="thanks :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="thanks :)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/thanks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/curriculum.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/curriculum.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="52" column="66" lean-forward="true" selection-start-line="52" selection-start-column="66" selection-end-line="53" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/new.js" />
+    <entry file="file://$PROJECT_DIR$/thanks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="68" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css" />
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="74" lean-forward="false" selection-start-line="8" selection-start-column="74" selection-end-line="8" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/init.js" />
+    <entry file="file://$PROJECT_DIR$/css/style.css" />
+    <entry file="file://$PROJECT_DIR$/curriculum.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2220">
+          <caret line="148" column="104" lean-forward="true" selection-start-line="148" selection-start-column="104" selection-end-line="148" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/index.html" />
+    <entry file="file://$PROJECT_DIR$/v2/css/style.css" />
+    <entry file="file://$PROJECT_DIR$/v2/index.html" />
+    <entry file="file://$PROJECT_DIR$/v2/css/style.css" />
+    <entry file="file://$PROJECT_DIR$/selfie/me2.jpeg" />
+    <entry file="file://$PROJECT_DIR$/libs/rainbow/rainbow.js" />
+    <entry file="file://$PROJECT_DIR$/v2/index.html" />
+    <entry file="file://$PROJECT_DIR$/v2/css/style.css" />
+    <entry file="file://$PROJECT_DIR$/v2/curriculum.html" />
+    <entry file="file://$PROJECT_DIR$/css/font-awesome.min.css" />
+    <entry file="file://$PROJECT_DIR$/js/skel-layers.min.js" />
+    <entry file="file://$PROJECT_DIR$/css/style-narrower.css" />
+    <entry file="file://$PROJECT_DIR$/css/skel.css" />
+    <entry file="file://$PROJECT_DIR$/libs/rainbow/themes/obsidian.css" />
+    <entry file="file://$PROJECT_DIR$/libs/modernizr.js" />
+    <entry file="file://$PROJECT_DIR$/js/jquery.min.js" />
+    <entry file="file://$PROJECT_DIR$/libs/jquery.formerize.js" />
+    <entry file="file://$PROJECT_DIR$/libs/ga.js" />
+    <entry file="file://$PROJECT_DIR$/js/init.js" />
+    <entry file="file://$PROJECT_DIR$/js/new.js" />
+    <entry file="file://$PROJECT_DIR$/css/ie/html5shiv.js" />
+    <entry file="file://$PROJECT_DIR$/css/images/video.png" />
+    <entry file="file://$PROJECT_DIR$/css/images/overlay.png" />
+    <entry file="file://$PROJECT_DIR$/css/ie/PIE.htc" />
+    <entry file="file://$PROJECT_DIR$/css/ie/v9.css" />
+    <entry file="file://$PROJECT_DIR$/css/ie/images/grad0-15.svg" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../css3-preloader-transition-finish/404.html" />
+    <entry file="file://$PROJECT_DIR$/../css3-preloader-transition-finish/index.html" />
+    <entry file="file://$USER_HOME$/Insync/sites/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-410">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thanks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="43" column="13" lean-forward="false" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Dropbox/Docs/Curriculo/cv_en_Daniel-SCamargo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="344" column="9102" lean-forward="false" selection-start-line="344" selection-start-column="9102" selection-end-line="344" selection-end-column="9102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css" />
+    <entry file="file://$PROJECT_DIR$/index.php" />
+    <entry file="file://$PROJECT_DIR$/curriculum.php" />
+    <entry file="file://$PROJECT_DIR$/ico/icons.html" />
+    <entry file="file://$PROJECT_DIR$/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/curriculum.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="57" lean-forward="false" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thanks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="34" column="18" lean-forward="true" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
