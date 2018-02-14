@@ -9,7 +9,6 @@ echo "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.
 echo "    <meta name=\"description\" content=\"Curriculum Daniel Scheidemantel Camargo\"/>\n";
 echo "    <meta name=\"keywords\" content=\"Curriculum; Daniel; Scheidemantel; Camargo\"/>\n";
 echo "    <meta name=\"referrer\" content=\"origin\">\n";
-echo "\n";
 echo "    <link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"ico/apple-icon-57x57.png\">\n";
 echo "    <link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"ico/apple-icon-60x60.png\">\n";
 echo "    <link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"ico/apple-icon-72x72.png\">\n";
@@ -100,5 +99,4 @@ echo "<div id=\"footer\"> <!--#include file=\"footer.html\" --> </div>\n";
 echo "\n";
 echo "</body>\n";
 echo "</html>";
-
 ?>
