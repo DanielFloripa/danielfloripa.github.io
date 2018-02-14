@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9394405-e801-4fdc-b665-787a88a34e37" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,8 +20,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="93" column="86" lean-forward="true" selection-start-line="93" selection-start-column="86" selection-end-line="93" selection-end-column="86" />
+            <state relative-caret-position="300">
+              <caret line="83" column="60" lean-forward="true" selection-start-line="83" selection-start-column="60" selection-end-line="83" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="458" column="35" lean-forward="true" selection-start-line="458" selection-start-column="35" selection-end-line="458" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -31,7 +40,7 @@
       <file leaf-file-name="thanks.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/thanks.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
+            <state relative-caret-position="15">
               <caret line="43" column="13" lean-forward="false" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
               <folding />
             </state>
@@ -53,14 +62,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="600">
               <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="57" />
-              <folding>
-                <element signature="n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#section#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#section#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#section#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#section#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#9014#10816#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -96,9 +98,15 @@
       <find>self</find>
       <find>fami</find>
       <find>ico</find>
+      <find>spam</find>
+      <find>pdf&quot;&gt;&lt;span class=</find>
+      <find>&lt;/spam&gt;</find>
+      <find>th</find>
     </findStrings>
     <replaceStrings>
       <replace>../musics</replace>
+      <replace>pdf&quot; class=</replace>
+      <replace />
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -119,8 +127,8 @@
         <option value="$PROJECT_DIR$/footer.html" />
         <option value="$PROJECT_DIR$/thanks.html" />
         <option value="$PROJECT_DIR$/curriculum.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -187,6 +195,17 @@
               <item name="danielfloripa.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="danielfloripa.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="danielfloripa.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="danielfloripa.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="danielfloripa.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+              <item name="publications" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -197,9 +216,9 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="settings.editor.selected.configurable" value="http.certificates" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="SearchEverywhereHistoryKey" value="server&#9;ACTION&#9;tasks.configure.servers&#10;serve&#9;ACTION&#9;tasks.configure.servers" />
+    <property name="SearchEverywhereHistoryKey" value="server&#9;ACTION&#9;RemoteServersViewToolbar&#10;serve&#9;ACTION&#9;tasks.configure.servers" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -258,7 +277,9 @@
       <workItem from="1516510849543" duration="1855000" />
       <workItem from="1516513140133" duration="1686000" />
       <workItem from="1516848775442" duration="886000" />
-      <workItem from="1516849745770" duration="2653000" />
+      <workItem from="1516849745770" duration="3684000" />
+      <workItem from="1516853927684" duration="1093000" />
+      <workItem from="1518587172618" duration="3993000" />
     </task>
     <task id="LOCAL-00001" summary="audio controls">
       <created>1511493649334</created>
@@ -449,94 +470,63 @@
       <option name="project" value="LOCAL" />
       <updated>1516849848557</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
-    <servers>
-      <Generic shared="false" url="http://ftp.dscar.ga">
-        <commitMessageFormat>{id} {summary}</commitMessageFormat>
-        <option name="downloadTasksInSeparateRequests" value="false" />
-        <password>dffcdfcfdfc4dfcedfcfdfd8df9bdf99df81df81</password>
-        <option name="loginAnonymously" value="false" />
-        <option name="loginMethodType" value="GET" />
-        <option name="loginUrl" value="{serverUrl}" />
-        <option name="preferredCloseTaskState" />
-        <option name="preferredOpenTaskState" />
-        <option name="responseHandlers">
-          <XPathResponseHandler>
-            <selectors>
-              <selector name="tasks" path="" />
-              <selector name="id" path="" />
-              <selector name="summary" path="" />
-              <selector name="description" path="" />
-              <selector name="updated" path="" />
-              <selector name="created" path="" />
-              <selector name="closed" path="" />
-              <selector name="issueUrl" path="" />
-              <selector name="singleTask-id" path="" />
-              <selector name="singleTask-summary" path="" />
-              <selector name="singleTask-description" path="" />
-              <selector name="singleTask-updated" path="" />
-              <selector name="singleTask-created" path="" />
-              <selector name="singleTask-closed" path="" />
-              <selector name="singleTask-issueUrl" path="" />
-            </selectors>
-          </XPathResponseHandler>
-          <JsonResponseHandler>
-            <selectors>
-              <selector name="tasks" path="" />
-              <selector name="id" path="" />
-              <selector name="summary" path="" />
-              <selector name="description" path="" />
-              <selector name="updated" path="" />
-              <selector name="created" path="" />
-              <selector name="closed" path="" />
-              <selector name="issueUrl" path="" />
-              <selector name="singleTask-id" path="" />
-              <selector name="singleTask-summary" path="" />
-              <selector name="singleTask-description" path="" />
-              <selector name="singleTask-updated" path="" />
-              <selector name="singleTask-created" path="" />
-              <selector name="singleTask-closed" path="" />
-              <selector name="singleTask-issueUrl" path="" />
-            </selectors>
-          </JsonResponseHandler>
-          <RegExResponseHandler>
-            <option name="taskRegex" value="" />
-          </RegExResponseHandler>
-        </option>
-        <option name="responseType" value="XML" />
-        <option name="shouldFormatCommitMessage" value="false" />
-        <option name="singleTaskMethodType" value="GET" />
-        <option name="singleTaskUrl" value="{serverUrl}" />
-        <option name="subtypeName" />
-        <option name="tasksListMethodType" value="GET" />
-        <option name="tasksListUrl" value="{serverUrl}" />
-        <option name="templateVariables">
-          <list>
-            <TemplateVariable hidden="false" readOnly="false" shownOnFirstTab="false">
-              <option name="description" value="" />
-              <option name="name" value="" />
-              <option name="value" value="" />
-            </TemplateVariable>
-          </list>
-        </option>
-        <option name="useHttpAuthentication" value="false" />
-        <option name="useProxy" value="false" />
-        <username>u644448031</username>
-      </Generic>
-    </servers>
+    <task id="LOCAL-00028" summary="top">
+      <created>1516852730186</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1516852730186</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Add files">
+      <created>1518588246488</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1518588246488</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Add files">
+      <created>1518590775598</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1518590775598</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Add files">
+      <created>1518590980936</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1518590980936</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Add files">
+      <created>1518591003461</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1518591003461</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Add files titles">
+      <created>1518591102049</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1518591102049</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
+    <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53621000" />
+    <option name="totallyTimeSpent" value="59738000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1398243" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1398243" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0977918" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -561,6 +551,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="audio controls" />
     <MESSAGE value="igm new" />
     <MESSAGE value="img style" />
@@ -573,7 +564,9 @@
     <MESSAGE value="print" />
     <MESSAGE value="footer" />
     <MESSAGE value="top" />
-    <option name="LAST_COMMIT_MESSAGE" value="top" />
+    <MESSAGE value="Add files" />
+    <MESSAGE value="Add files titles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add files titles" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -608,14 +601,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
           <caret line="43" column="13" lean-forward="false" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-          <folding>
-            <element signature="n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#9014#10816#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -639,14 +625,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#9014#10816#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -662,14 +641,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
           <caret line="52" column="66" lean-forward="true" selection-start-line="52" selection-start-column="66" selection-end-line="53" selection-end-column="21" />
-          <folding>
-            <element signature="n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#9014#10816#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -724,14 +696,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2220">
           <caret line="148" column="104" lean-forward="true" selection-start-line="148" selection-start-column="104" selection-end-line="148" selection-end-column="104" />
-          <folding>
-            <element signature="n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#9014#10816#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -862,41 +827,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/curriculum.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/thanks.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
+        <state relative-caret-position="15">
           <caret line="43" column="13" lean-forward="false" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/curriculum.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="57" />
-          <folding>
-            <element signature="n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#9014#10816#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="658" column="4" lean-forward="true" selection-start-line="658" selection-start-column="4" selection-end-line="658" selection-end-column="4" />
+        <state relative-caret-position="209">
+          <caret line="458" column="35" lean-forward="true" selection-start-line="458" selection-start-column="35" selection-end-line="458" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="93" column="86" lean-forward="true" selection-start-line="93" selection-start-column="86" selection-end-line="93" selection-end-column="86" />
+        <state relative-caret-position="300">
+          <caret line="83" column="60" lean-forward="true" selection-start-line="83" selection-start-column="60" selection-end-line="83" selection-end-column="60" />
           <folding />
         </state>
       </provider>
