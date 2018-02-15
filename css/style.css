@@ -148,7 +148,7 @@
 	
 	p, ul, ol, dl, table
 	{
-		margin-bottom: 2em;
+		margin-bottom: 0.5em;
 	}
 
 	br.clear
@@ -283,21 +283,17 @@
 				}
 
 	/* List */
-
-		ul
-		{
-		}
-
 			ul.default
 			{
-				list-style: disc;
-				padding-left: 1em;
+				padding-left: 4em;
+				list-style-type: square;
+
 			}
 			
 				ul.default li
 				{
-					padding-left: 0.5em;
-				}		
+					padding-left: 1em;
+				}
 
 			ul.icons
 			{
@@ -312,9 +308,6 @@
 					ul.icons a
 					{
 						display: inline-block;
-						width: 2em;
-						height: 2em;
-						line-height: 2em;
 						text-align: center;
 						border: 0;
 					}
