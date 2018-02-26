@@ -708,6 +708,44 @@
 								color: #e27689;
 							}
 
+
+
+
+.site-content{
+    text-align: center;
+    float: right;
+}
+.boxed-group {
+    width: 90%;
+    max-width: 360px;
+    margin-top: 30px;
+}
+.boxed-group h4 {
+    font-weight: 400;
+    margin: 0;
+    padding: 5px 5px;
+    color: #fff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #41484c;
+}
+.boxed-group .boxed-group-inner{
+    font-size: 14px;
+    align-content: center;
+    color: #aaa;
+    border-width: 0 1px 1px;
+    border-style: solid;
+    border-color: #e6e9ed;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: #fff;
+}
+.boxed-group-inner p{
+    text-align: center;
+}
+
+
+
 /*********************************************************************************/
 /* Footer                                                                        */
 /*********************************************************************************/
