@@ -1,22 +1,21 @@
 <html>
  <head>
-  <title>PHP Test</title>
+  <title>Curso de Nuvem OpenStack LabP2D</title>
  </head>
- <body>
-	<a id="test" href="#"> CLick </a>
-	<script type="text/javascript">
-		document.getElementById("test").onclick = function(){
-			window.open("http://www.google.com",'_blank');
-			window.open("http://www.p3php.in",'_blank');
-		}
-</script>
+ <body onload="cloud()">
+ 	<script type="text/javascript">
+ 	    function cloud() {
+     		window.open("https://www.dropbox.com/s/pehc0iyuxivxc7a/SDI_ComputacaoNuvem_Pratico_v2.pdf",'_blank');
+     		window.open("https://www.dropbox.com/s/w2rl9tmcx56qwyj/SDI_ComputacaoNuvem_v2.pdf",'_blank');
+         }
+    </script>
 
- <?php
-/* Redirect browser */
-header("Location: http://theos.in/");
- 
-/* Make sure that code below does not get executed when we redirect. */
-exit;
-?>
+	<input id="url" value="Clique aqui para acessar os slides do Curso de Nuvem OpenStack" type="button">
+	<script type="text/javascript">
+		document.getElementById("url").onclick = function() {
+	        window.open("https://www.dropbox.com/s/pehc0iyuxivxc7a/SDI_ComputacaoNuvem_Pratico_v2.pdf",'_blank');
+    		window.open("https://www.dropbox.com/s/w2rl9tmcx56qwyj/SDI_ComputacaoNuvem_v2.pdf",'_blank');
+		}
+    </script>
  </body>
 </html>
