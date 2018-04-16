@@ -167,7 +167,7 @@ u {
 }
 
 .\-4u {
-    margin-left: 33.3333333333%
+    margin-left: 33.0%
 }
 
 .\-3u {
@@ -211,7 +211,7 @@ u {
 
 .row > * {
     /* padding-left: (gutters) */
-    padding-left: 40px;
+    padding-left: 20px;
 }
 
 .row + .row > * {
