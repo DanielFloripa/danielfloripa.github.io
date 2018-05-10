@@ -18,14 +18,12 @@
     <script src="/js/skel-layers.min.js"></script>
     <script src="/js/init.js"></script>
     <script src="code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="/css/skel.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/style-wide.css"/>
     <script>
         $(function(){$("#footer").load("/footer.html");});
     </script>
-    <noscript>
-        <link rel="stylesheet" href="/css/skel.css"/>
-        <link rel="stylesheet" href="/css/style.css"/>
-        <link rel="stylesheet" href="/css/style-wide.css"/>
-    </noscript>
     <!--[if lte IE 9]>
     <link rel="stylesheet" href="/css/ie/v9.css"/><![endif]-->
     <!--[if lte IE 8]>
@@ -54,7 +52,7 @@
         <nav id="nav">
             <ul>
                 <li>
-                    <a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-description-bottle">Description</span></a>
+                    <a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-pencil-alt">Description</span></a>
                 </li>
                 <li>
                     <a href="#install" id="install-link" class="skel-layers-ignoreHref"><span class="icon fa-check-circle">Install</span></a>
@@ -79,9 +77,9 @@
 
         <div class="site-content">
             <div class="boxed-group">
-                <h4>Be Welcome!</h4>
+                <h4>Latest version 2.1</h4>
                 <div class="boxed-group-inner">
-                    <p style="text-align: center;"> Download latest version <a href="https://github.com/DanielFloripa/CHAVE-Sim/archive/master.zip"> from GitHub <i class="icon fa-github"></i>.</a>
+                    <p style="text-align: center;"> <a href="https://github.com/DanielFloripa/CHAVE-Sim/archive/master.zip"> available in GitHub <i class="icon fa-github"></i>.</a>
                     </p>
                 </div>
             </div>
@@ -91,10 +89,19 @@
         <div class="container">
             <header>
                 <h3>CHAVE</h3>
-                <p class="icon fa-envelope"> Consolidation with High Availability in Virtualized Environments</p>
-                <p class="icon fa-university"> <a href="http://www.udesc.br/cct/ppgca"> PPGCA/UDESC </a></p>
-                <p class="icon fa-university"> <a href="http://labp2d.joinville.udesc.br/index.php/en/index.php"> LabP2D </a></p>
-                <p class="icon fa-github-alt"> <a href="https://github.com/DanielFloripa/CHAVE-Sim/"> GitHub Repository </a></p>
+                <p class="icon fa-key"> Consolidation with High Availability in Virtualized Environments</p>
+                <p> The CHAVE-Sim enables to simulate distributed cloud architectures, given focus for your scheduling algorithm.
+                <p> To provide Agnostics characteristics, your algorithm will do only calls to the main API provided by the Global Controller.
+                <p> You can create multiples regions, each with several availability-zones and hosts.
+                <p> Into this regions you can create Local Controllers with specifics characteristics, like LoadBalancers (LB) and High Availability (HA) purposes.
+                <p> Feel free to contact us to help in this project.
+                <p class="icon fa-envelope"> daniel.supervisao <strong class="icon fa-at" style="font-size:14px"></strong> gmail.com</p>
+
+                <p> The CHAVE project is part of Master Degree Thesis from Daniel Camargo (the owner of this website).
+                <p> Is available under <a href="https://www.apache.org/licenses/LICENSE-2.0"> Apache 2.0 </a> license.
+                <p> The master degree was given in <a class="icon fa-university" href="http://www.udesc.br/cct/ppgca"> PPGCA/UDESC </a> and
+                <a class="icon fa-flask" href="http://labp2d.joinville.udesc.br/index.php/en/index.php"> LabP2D </a>
+                <p> The source code is available in <a class="icon fa-github-alt" href="https://github.com/DanielFloripa/CHAVE-Sim/"> GitHub Repository </a></p>
             </header>
         </div>
     </section>
