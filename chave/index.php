@@ -9,27 +9,27 @@
     <meta name="referrer" content="origin"/>
     <link rel="import" href="../ico/icons.html">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="../ico/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="/ico/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/jquery.scrolly.min.js"></script>
-    <script src="../js/jquery.scrollzer.min.js"></script>
-    <script src="../js/skel.min.js"></script>
-    <script src="../js/skel-layers.min.js"></script>
-    <script src="../js/init.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/jquery.scrollzer.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/skel-layers.min.js"></script>
+    <script src="/js/init.js"></script>
     <script src="code.jquery.com/jquery-1.10.2.js"></script>
     <script>
-        $(function(){$("#footer").load("../footer.html");});
+        $(function(){$("#footer").load("/footer.html");});
     </script>
     <noscript>
-        <link rel="stylesheet" href="../css/skel.css"/>
-        <link rel="stylesheet" href="../css/style.css"/>
-        <link rel="stylesheet" href="../css/style-wide.css"/>
+        <link rel="stylesheet" href="/css/skel.css"/>
+        <link rel="stylesheet" href="/css/style.css"/>
+        <link rel="stylesheet" href="/css/style-wide.css"/>
     </noscript>
     <!--[if lte IE 9]>
-    <link rel="stylesheet" href="../css/ie/v9.css"/><![endif]-->
+    <link rel="stylesheet" href="/css/ie/v9.css"/><![endif]-->
     <!--[if lte IE 8]>
-    <link rel="stylesheet" href="../css/ie/v8.css"/><![endif]-->
+    <link rel="stylesheet" href="/css/ie/v8.css"/><![endif]-->
 </head>
 <body>
 
