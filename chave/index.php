@@ -4,8 +4,8 @@
     <title>CHAVE Project</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Curriculum Daniel Scheidemantel Camargo"/>
-    <meta name="keywords" content="Curriculum; Daniel; Scheidemantel; Camargo"/>
+    <meta name="description" content="CHAVE Project"/>
+    <meta name="keywords" content="CHAVE; simulator; cloud computing; high availability; energy efficiency; consolidation"/>
     <meta name="referrer" content="origin"/>
     <link rel="import" href="../ico/icons.html">
     <meta name="msapplication-TileColor" content="#ffffff">
@@ -93,7 +93,7 @@
                 <h3>CHAVE</h3>
                 <p class="icon fa-envelope"> Consolidation with High Availability in Virtualized Environments</p>
                 <p class="icon fa-university"> <a href="http://www.udesc.br/cct/ppgca"> PPGCA/UDESC </a></p>
-                <p class="icon fa-university"> <a href="http://labp2d.joinville.udesc.br/index.php/en/"> LabP2D </a></p>
+                <p class="icon fa-university"> <a href="http://labp2d.joinville.udesc.br/index.php/en/index.php"> LabP2D </a></p>
                 <p class="icon fa-github-alt"> <a href="https://github.com/DanielFloripa/CHAVE-Sim/"> GitHub Repository </a></p>
             </header>
         </div>
