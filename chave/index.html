@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html> <!-- class="loading"-->
+<html class="loading">
 <head>
     <title>CHAVE Project</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
@@ -7,7 +7,7 @@
     <meta name="description" content="CHAVE Project"/>
     <meta name="keywords" content="CHAVE; simulator; cloud computing; high availability; energy efficiency; consolidation"/>
     <meta name="referrer" content="origin"/>
-    <link rel="import" href="../ico/icons.html">
+    <link rel="import" href="/ico/icons.html">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ico/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -17,18 +17,25 @@
     <script src="/js/skel.min.js"></script>
     <script src="/js/skel-layers.min.js"></script>
     <script src="/js/init.js"></script>
-    <script src="code.jquery.com/jquery-1.10.2.js"></script>
-    <link rel="stylesheet" href="/css/skel.css"/>
-    <link rel="stylesheet" href="/css/style.css"/>
-    <link rel="stylesheet" href="/css/style-wide.css"/>
-    <script>
-        $(function(){$("#footer").load("/footer.html");});
+    <script
+            src="http://code.jquery.com/jquery-migrate-3.0.1.min.js"
+            integrity="sha256-F0O1TmEa4I8N24nY0bya59eP6svWcshqX1uzwaWC4F4="
+            crossorigin="anonymous">
     </script>
+    <script>
+        $(function(){$("#footer").load("../footer.html");});
+    </script>
+    <noscript>
+        <link rel="stylesheet" href="/css/skel.css"/>
+        <link rel="stylesheet" href="/css/style.css"/>
+        <link rel="stylesheet" href="/css/style-wide.css"/>
+    </noscript>
     <!--[if lte IE 9]>
     <link rel="stylesheet" href="/css/ie/v9.css"/><![endif]-->
     <!--[if lte IE 8]>
     <link rel="stylesheet" href="/css/ie/v8.css"/><![endif]-->
 </head>
+
 <body>
 
 <!-- Header -->
@@ -176,7 +183,7 @@
 </div>
 
 <!-- Footer -->
-<div id="footer"> <!--#include file="footer.html" -->
+<div id="footer"> <!--#include file="../footer.html" -->
 </div>
 
 </body>
