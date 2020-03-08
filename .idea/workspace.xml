@@ -1,68 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9394405-e801-4fdc-b665-787a88a34e37" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    <list default="true" id="a9394405-e801-4fdc-b665-787a88a34e37" name="Default" comment="update all">
+      <change beforePath="$PROJECT_DIR$/.idea/danielfloripa.github.io.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/danielfloripa.github.io.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curriculum.html" beforeDir="false" afterPath="$PROJECT_DIR$/curriculum.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-263194667">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.25" value="2" />
+          <entry key="project.open.time.28" value="1" />
+          <entry key="project.opened" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="gitignore" value="1" />
+          <entry key="html" value="4" />
+          <entry key="iml" value="1" />
+          <entry key="php" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="4" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="gitignore" value="1" />
+          <entry key="html" value="300" />
+          <entry key="txt" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="300" />
+          <entry key="PLAIN_TEXT" value="7" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="83" column="60" lean-forward="true" selection-start-line="83" selection-start-column="60" selection-end-line="83" selection-end-column="60" />
-              <folding />
+            <state relative-caret-position="105">
+              <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#svg#0;n#a#0;n#footer#0;n#section#0;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#section#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="458" column="35" lean-forward="true" selection-start-line="458" selection-start-column="35" selection-end-line="458" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="thanks.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thanks.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="43" column="13" lean-forward="false" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/footer.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="curriculum.html" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/curriculum.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="57" />
-              <folding />
+            <state relative-caret-position="465">
+              <caret line="274" column="43" selection-start-line="274" selection-start-column="43" selection-end-line="274" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/thanks.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/footer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -78,20 +121,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ude</find>
-      <find>../</find>
-      <find>fa</find>
-      <find>two</find>
-      <find>entry</find>
-      <find>margin-</find>
-      <find>audio</find>
-      <find>mp3</find>
-      <find>caniuse</find>
-      <find>.mp</find>
-      <find>ogg</find>
-      <find>mute</find>
-      <find>sound</find>
-      <find>/static/sound</find>
       <find>static/sound</find>
       <find>aud</find>
       <find>rainb</find>
@@ -102,11 +131,32 @@
       <find>pdf&quot;&gt;&lt;span class=</find>
       <find>&lt;/spam&gt;</find>
       <find>th</find>
+      <find>migr</find>
+      <find>ul.</find>
+      <find>box</find>
+      <find>div</find>
+      <find>containe</find>
+      <find>ul</find>
+      <find>&lt;p</find>
+      <find>27689</find>
+      <find>.top</find>
+      <find>cover</find>
+      <find>site-</find>
+      <find>color</find>
+      <find>vitt</find>
+      <find>dott</find>
+      <find>taget</find>
+      <find>40px</find>
+      <find>4u</find>
+      <find>about Me</find>
+      <find>chave</find>
+      <find>font</find>
     </findStrings>
     <replaceStrings>
       <replace>../musics</replace>
       <replace>pdf&quot; class=</replace>
       <replace />
+      <replace>target</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -121,14 +171,24 @@
         <option value="$PROJECT_DIR$/v2/index.html" />
         <option value="$PROJECT_DIR$/js/new.js" />
         <option value="$PROJECT_DIR$/js/init.js" />
-        <option value="$PROJECT_DIR$/css/skel.css" />
         <option value="$PROJECT_DIR$/libs/modernizr.js" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/footer.html" />
         <option value="$PROJECT_DIR$/thanks.html" />
-        <option value="$PROJECT_DIR$/curriculum.html" />
+        <option value="$PROJECT_DIR$/css/style-narrower.css" />
+        <option value="$PROJECT_DIR$/css/style-normal.css" />
+        <option value="$PROJECT_DIR$/cloud/index.php" />
+        <option value="$PROJECT_DIR$/js/skel.min.js" />
+        <option value="$PROJECT_DIR$/css/skel.css" />
+        <option value="$PROJECT_DIR$/chave/index.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/greenhop/index.php" />
+        <option value="$PROJECT_DIR$/greenhop/index.html" />
+        <option value="$PROJECT_DIR$/footer2.html" />
+        <option value="$PROJECT_DIR$/chave/index.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/footer.html" />
+        <option value="$PROJECT_DIR$/curriculum.html" />
       </list>
     </option>
   </component>
@@ -139,9 +199,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1" />
-    <option name="width" value="1368" />
-    <option name="height" value="372" />
+    <option name="x" value="1919" />
+    <option name="width" value="1922" />
+    <option name="height" value="1041" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -168,21 +228,11 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -193,35 +243,33 @@
             <path>
               <item name="danielfloripa.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="danielfloripa.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="chave" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="danielfloripa.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="danielfloripa.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="danielfloripa.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="danielfloripa.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
-              <item name="publications" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="settings.editor.selected.configurable" value="web.server" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="SearchEverywhereHistoryKey" value="server&#9;ACTION&#9;RemoteServersViewToolbar&#10;serve&#9;ACTION&#9;tasks.configure.servers" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.prettier" value="true" />
+    <property name="node.js.path.for.package.prettier" value="project" />
+    <property name="node.js.selected.package.prettier" value="" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/chave" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/v2" />
     </key>
@@ -243,20 +291,21 @@
     </option>
   </component>
   <component name="RunManager" selected="JavaScript Debug.curriculum.html">
-    <configuration name="curriculum.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/danielfloripa.github.io/curriculum.html" />
-    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" nameIsGenerated="true" uri="http://localhost:63343/danielfloripa.github.io/v2/index.html" />
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.curriculum.html" />
+    <configuration name="curriculum.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/danielfloripa.github.io/curriculum.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" nameIsGenerated="true" uri="http://localhost:63343/danielfloripa.github.io/v2/index.html">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="JavaScript Debug.curriculum.html" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.curriculum.html" />
+      <list>
+        <item itemvalue="JavaScript Debug.curriculum.html" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -280,90 +329,25 @@
       <workItem from="1516849745770" duration="3684000" />
       <workItem from="1516853927684" duration="1093000" />
       <workItem from="1518587172618" duration="3993000" />
-    </task>
-    <task id="LOCAL-00001" summary="audio controls">
-      <created>1511493649334</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1511493649335</updated>
-    </task>
-    <task id="LOCAL-00002" summary="igm new">
-      <created>1511494174185</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1511494174185</updated>
-    </task>
-    <task id="LOCAL-00003" summary="igm new">
-      <created>1511494405565</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1511494405565</updated>
-    </task>
-    <task id="LOCAL-00004" summary="igm new">
-      <created>1511494707402</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1511494707402</updated>
-    </task>
-    <task id="LOCAL-00005" summary="igm new">
-      <created>1511494864381</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1511494864381</updated>
-    </task>
-    <task id="LOCAL-00006" summary="description">
-      <created>1511494999491</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1511494999491</updated>
-    </task>
-    <task id="LOCAL-00007" summary="img style">
-      <created>1511495119147</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1511495119147</updated>
-    </task>
-    <task id="LOCAL-00008" summary="description">
-      <created>1511495650470</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1511495650470</updated>
-    </task>
-    <task id="LOCAL-00009" summary="curriculum">
-      <created>1515616110626</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1515616110626</updated>
-    </task>
-    <task id="LOCAL-00010" summary="curriculum">
-      <created>1516130551500</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1516130551500</updated>
-    </task>
-    <task id="LOCAL-00011" summary="curriculum">
-      <created>1516130884572</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1516130884572</updated>
-    </task>
-    <task id="LOCAL-00012" summary="curriculum">
-      <created>1516131948464</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1516131948464</updated>
+      <workItem from="1518727845003" duration="528000" />
+      <workItem from="1518731817625" duration="4928000" />
+      <workItem from="1518736809968" duration="550000" />
+      <workItem from="1518812225584" duration="828000" />
+      <workItem from="1519613059318" duration="56000" />
+      <workItem from="1519613563381" duration="6351000" />
+      <workItem from="1520021059406" duration="1064000" />
+      <workItem from="1520024703682" duration="1019000" />
+      <workItem from="1523239495725" duration="6360000" />
+      <workItem from="1523843251915" duration="7637000" />
+      <workItem from="1523851185516" duration="130000" />
+      <workItem from="1523851560253" duration="48000" />
+      <workItem from="1525976613963" duration="7847000" />
+      <workItem from="1527048427796" duration="9463000" />
+      <workItem from="1564410238463" duration="2194000" />
+      <workItem from="1564664627160" duration="2835000" />
+      <workItem from="1564668250951" duration="141000" />
+      <workItem from="1567089386236" duration="599000" />
+      <workItem from="1569268575795" duration="318000" />
     </task>
     <task id="LOCAL-00013" summary="curriculum">
       <created>1516132080365</created>
@@ -512,40 +496,248 @@
       <option name="project" value="LOCAL" />
       <updated>1518591102049</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="complete the cv content">
+      <created>1518737245601</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1518737245601</updated>
+    </task>
+    <task id="LOCAL-00035" summary="cv content in pdf">
+      <created>1519613920910</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1519613920910</updated>
+    </task>
+    <task id="LOCAL-00036" summary="cv content in pdf">
+      <created>1519619876087</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1519619876087</updated>
+    </task>
+    <task id="LOCAL-00037" summary="update all">
+      <created>1523239902617</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1523239902617</updated>
+    </task>
+    <task id="LOCAL-00038" summary="update cloud">
+      <created>1523245387899</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1523245387899</updated>
+    </task>
+    <task id="LOCAL-00039" summary="new call">
+      <created>1523843674486</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1523843674486</updated>
+    </task>
+    <task id="LOCAL-00040" summary="update all">
+      <created>1523845428467</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1523845428467</updated>
+    </task>
+    <task id="LOCAL-00041" summary="update all">
+      <created>1523846035905</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1523846035905</updated>
+    </task>
+    <task id="LOCAL-00042" summary="update all">
+      <created>1523846247466</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1523846247466</updated>
+    </task>
+    <task id="LOCAL-00043" summary="update all">
+      <created>1523847014089</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1523847014089</updated>
+    </task>
+    <task id="LOCAL-00044" summary="update all">
+      <created>1523847196230</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1523847196230</updated>
+    </task>
+    <task id="LOCAL-00045" summary="update courses">
+      <created>1523849621216</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1523849621216</updated>
+    </task>
+    <task id="LOCAL-00046" summary="update courses">
+      <created>1523850650876</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1523850650876</updated>
+    </task>
+    <task id="LOCAL-00047" summary="update all">
+      <created>1523850903798</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1523850903798</updated>
+    </task>
+    <task id="LOCAL-00048" summary="update all">
+      <created>1523851031654</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1523851031654</updated>
+    </task>
+    <task id="LOCAL-00049" summary="update all">
+      <created>1523851277908</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1523851277908</updated>
+    </task>
+    <task id="LOCAL-00050" summary="update all">
+      <created>1525982655299</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1525982655300</updated>
+    </task>
+    <task id="LOCAL-00051" summary="update all">
+      <created>1525983285963</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1525983285963</updated>
+    </task>
+    <task id="LOCAL-00052" summary="update all">
+      <created>1525983878505</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1525983878505</updated>
+    </task>
+    <task id="LOCAL-00053" summary="update all">
+      <created>1525984132301</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1525984132301</updated>
+    </task>
+    <task id="LOCAL-00054" summary="update all">
+      <created>1525995472867</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1525995472867</updated>
+    </task>
+    <task id="LOCAL-00055" summary="update all">
+      <created>1527052045813</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1527052045814</updated>
+    </task>
+    <task id="LOCAL-00056" summary="update all">
+      <created>1527054281133</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1527054281133</updated>
+    </task>
+    <task id="LOCAL-00057" summary="update all">
+      <created>1527058961242</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1527058961243</updated>
+    </task>
+    <task id="LOCAL-00058" summary="update all">
+      <created>1564410417734</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1564410417734</updated>
+    </task>
+    <task id="LOCAL-00059" summary="update all">
+      <created>1564410490678</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1564410490678</updated>
+    </task>
+    <task id="LOCAL-00060" summary="ignore">
+      <created>1564410533109</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1564410533109</updated>
+    </task>
+    <task id="LOCAL-00061" summary="update all">
+      <created>1564411002853</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1564411002853</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59738000" />
+    <option name="totallyTimeSpent" value="113254000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1368" height="743" extended-state="6" />
+    <frame x="1919" y="0" width="1922" height="1041" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1398243" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0977918" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287879" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="CSS Styles" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54974705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287879" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287879" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4987775" visible="true" weight="0.14060031" />
+      <window_info id="Structure" order="1" sideWeight="0.5012225" side_tool="true" weight="0.14072971" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32755905" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32840723" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32858709" />
+      <window_info anchor="bottom" id="CSS Styles" order="9" weight="0.54974705" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.07559055" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50073206" side_tool="true" weight="0.32753164" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3287879" />
+      <window_info anchor="bottom" id="Inspection Results" order="13" sideWeight="0.49926794" weight="0.32753164" />
+      <window_info anchor="bottom" id="File Transfer" order="14" sideWeight="0.49926794" weight="0.40787402" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.php" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -566,144 +758,17 @@
     <MESSAGE value="top" />
     <MESSAGE value="Add files" />
     <MESSAGE value="Add files titles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add files titles" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
+    <MESSAGE value="complete the cv content" />
+    <MESSAGE value="cv content in pdf" />
+    <MESSAGE value="update cloud" />
+    <MESSAGE value="update cl" />
+    <MESSAGE value="new call" />
+    <MESSAGE value="update courses" />
+    <MESSAGE value="ignore" />
+    <MESSAGE value="update all" />
+    <option name="LAST_COMMIT_MESSAGE" value="update all" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="40" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thanks.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="13" lean-forward="false" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/curriculum.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="13" lean-forward="false" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thanks.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/curriculum.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/curriculum.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="52" column="66" lean-forward="true" selection-start-line="52" selection-start-column="66" selection-end-line="53" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/new.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265320">
-          <caret line="17576" column="8" lean-forward="true" selection-start-line="17576" selection-start-column="8" selection-end-line="17576" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thanks.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="68" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13155">
-          <caret line="877" column="23" lean-forward="false" selection-start-line="877" selection-start-column="23" selection-end-line="877" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="74" lean-forward="false" selection-start-line="8" selection-start-column="74" selection-end-line="8" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/init.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13155">
-          <caret line="877" column="23" lean-forward="false" selection-start-line="877" selection-start-column="23" selection-end-line="877" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/curriculum.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2220">
-          <caret line="148" column="104" lean-forward="true" selection-start-line="148" selection-start-column="104" selection-end-line="148" selection-end-column="104" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/v2/index.html" />
-    <entry file="file://$PROJECT_DIR$/v2/css/style.css" />
-    <entry file="file://$PROJECT_DIR$/v2/index.html" />
-    <entry file="file://$PROJECT_DIR$/v2/css/style.css" />
     <entry file="file://$PROJECT_DIR$/selfie/me2.jpeg" />
     <entry file="file://$PROJECT_DIR$/libs/rainbow/rainbow.js" />
     <entry file="file://$PROJECT_DIR$/v2/index.html" />
@@ -713,24 +778,7 @@
     <entry file="file://$PROJECT_DIR$/js/skel-layers.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="1" column="151" lean-forward="false" selection-start-line="1" selection-start-column="151" selection-end-line="1" selection-end-column="151" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style-narrower.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="172" column="35" lean-forward="true" selection-start-line="172" selection-start-column="35" selection-end-line="172" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/skel.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="127" column="24" lean-forward="true" selection-start-line="127" selection-start-column="24" selection-end-line="127" selection-end-column="24" />
+          <caret line="1" column="151" selection-start-line="1" selection-start-column="151" selection-end-line="1" selection-end-column="151" />
         </state>
       </provider>
     </entry>
@@ -742,33 +790,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libs/jquery.formerize.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-630">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
+        <state relative-caret-position="-630" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/libs/ga.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="30" lean-forward="true" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
+        <state>
+          <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/init.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="203" column="45" lean-forward="false" selection-start-line="203" selection-start-column="45" selection-end-line="203" selection-end-column="45" />
-          <folding />
+          <caret line="203" column="45" selection-start-line="203" selection-start-column="45" selection-end-line="203" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -780,16 +817,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/ie/html5shiv.js" />
-    <entry file="file://$PROJECT_DIR$/css/images/video.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/images/overlay.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/ie/PIE.htc" />
     <entry file="file://$PROJECT_DIR$/css/ie/v9.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -798,64 +825,134 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/ie/images/grad0-15.svg">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/../css3-preloader-transition-finish/404.html" />
+    <entry file="file://$PROJECT_DIR$/../css3-preloader-transition-finish/index.html" />
+    <entry file="file://$PROJECT_DIR$/../index.html" />
+    <entry file="file://$PROJECT_DIR$/css/fontawesome-all.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/skel.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="1" column="17908" lean-forward="true" selection-start-line="1" selection-start-column="17908" selection-end-line="1" selection-end-column="17908" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style-narrower.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="124" column="9" lean-forward="true" selection-start-line="124" selection-start-column="9" selection-end-line="124" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style-normal.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../css3-preloader-transition-finish/404.html" />
-    <entry file="file://$PROJECT_DIR$/../css3-preloader-transition-finish/index.html" />
-    <entry file="file://$USER_HOME$/Insync/sites/index.html">
+    <entry file="file://$PROJECT_DIR$/css/skel.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-410">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="225">
+          <caret line="91" column="8" lean-forward="true" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/footer.html">
+    <entry file="file://$PROJECT_DIR$/greenhop/index.php" />
+    <entry file="file://$PROJECT_DIR$/chave/index.php" />
+    <entry file="file://$PROJECT_DIR$/ico/icons.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chave/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="30">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/curriculum.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thanks.html">
+    <entry file="file://$PROJECT_DIR$/js/jquery.scrollzer.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="43" column="13" lean-forward="false" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-          <folding />
+          <caret line="1" column="251" selection-start-line="1" selection-start-column="251" selection-end-line="1" selection-end-column="251" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/greenhop/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="458" column="35" lean-forward="true" selection-start-line="458" selection-start-column="35" selection-end-line="458" selection-end-column="35" />
-          <folding />
+        <state relative-caret-position="92">
+          <caret line="198" column="13" selection-start-line="198" selection-start-column="13" selection-end-line="198" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/danielfloripa.github.io.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="83" column="60" lean-forward="true" selection-start-line="83" selection-start-column="60" selection-end-line="83" selection-end-column="60" />
-          <folding />
+        <state relative-caret-position="105">
+          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#svg#0;n#a#0;n#footer#0;n#section#0;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#section#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thanks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/curriculum.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="274" column="43" selection-start-line="274" selection-start-column="43" selection-end-line="274" selection-end-column="43" />
         </state>
       </provider>
     </entry>
