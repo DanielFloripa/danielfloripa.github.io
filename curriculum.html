@@ -11,25 +11,22 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="ico/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/skel.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style-wide.css"/>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.scrolly.min.js"></script>
     <script src="js/jquery.scrollzer.min.js"></script>
     <script src="js/skel.min.js"></script>
     <script src="js/skel-layers.min.js"></script>
     <script src="js/init.js"></script>
-    <script src="code.jquery.com/jquery-1.10.2.js"></script>
-    <script>
-        $(function(){$("#footer").load("footer.html");});
-    </script>
-    <noscript>
-        <link rel="stylesheet" href="css/skel.css"/>
-        <link rel="stylesheet" href="css/style.css"/>
-        <link rel="stylesheet" href="css/style-wide.css"/>
-    </noscript>
     <!--[if lte IE 9]>
     <link rel="stylesheet" href="css/ie/v9.css"/><![endif]-->
     <!--[if lte IE 8]>
     <link rel="stylesheet" href="css/ie/v8.css"/><![endif]-->
+    <script>
+        $(function(){$("#footer").load("footer.html");});
+    </script>
 </head>
 <body>
 
@@ -54,31 +51,31 @@
         <nav id="nav">
             <ul>
                 <li>
-                    <a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-address-card">Personal info</span></a>
+                    <a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="fal fa-address-card">Personal info</span></a>
                 </li>
                 <li>
-                    <a href="#summary" id="summary-link" class="skel-layers-ignoreHref"><span class="icon fa-list-alt">Summary</span></a>
+                    <a href="#summary" id="summary-link" class="skel-layers-ignoreHref"><span class="fal fa-list-alt">Summary</span></a>
                 </li>
                 <li>
-                    <a href="#experience" id="experience-link" class="skel-layers-ignoreHref"><span class="icon fa-briefcase">Experience</span></a>
+                    <a href="#experience" id="experience-link" class="skel-layers-ignoreHref"><span class="fal fa-star">Experience</span></a>
                 </li>
                 <li>
-                    <a href="#education" id="education-link" class="skel-layers-ignoreHref"><span class="icon fa-graduation-cap">Education</span></a>
+                    <a href="#education" id="education-link" class="skel-layers-ignoreHref"><span class="fal fa-flask">Education</span></a>
                 </li>
                 <li>
-                    <a href="#papers" id="papers-link" class="skel-layers-ignoreHref"><span class="icon fa-newspaper">Papers</span></a>
+                    <a href="#papers" id="papers-link" class="skel-layers-ignoreHref"><span class="fal fa-newspaper">Papers</span></a>
                 </li>
                 <li>
-                    <a href="#courses" id="courses-link" class="skel-layers-ignoreHref"><span class="icon fa-flask">Lectures</span></a>
+                    <a href="#courses" id="courses-link" class="skel-layers-ignoreHref"><span class="fal fa-flask">Lectures</span></a>
                 </li>
                 <li>
-                    <a href="#skills" id="skills-link" class="skel-layers-ignoreHref"><span class="icon fa-puzzle-piece">Skills</span></a>
+                    <a href="#skills" id="skills-link" class="skel-layers-ignoreHref"><span class="fal fa-puzzle-piece">Skills</span></a>
                 </li>
                 <li>
-                    <a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a>
+                    <a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="fal fa-envelope">Contact</span></a>
                 </li>
                 <li>
-                    <a href="index.html" id="return" class="skel-layers-ignoreHref"><span class="icon fa-home">Back to home</span></a>
+                    <a href="index.html" id="return" class="skel-layers-ignoreHref"><span class="fal fa-home">Back</span></a>
                 </li>
             </ul>
         </nav>
@@ -91,34 +88,32 @@
 
     <!-- Personal -->
     <section id="top" class="two cover">
-
+        <a href="files/cv_daniel_camargo.pdf">
         <div class="site-content">
-            <div class="boxed-group">
-                <h4>Be Welcome!</h4>
+            <div class="boxed-group" style="display: Revert;">
+                <h4>Download</h4>
                 <div class="boxed-group-inner">
-                    <p style="text-align: center;"> You can download a version <a href="files/cv_daniel_camargo.pdf"> in PDF <i class="icon fa-download"></i>.</a>
+                    <p style="text-align: center;">PDF <i class="fal fa-download"></i>
                     </p>
                 </div>
             </div>
         </div>
+        </a>
 
 
         <div class="container">
-            <header>
-                <h3>Personal info</h3>
 
-                <p class="icon fa-user"> Daniel Scheidemantel Camargo</p>
-                <p class="icon fa-map-marker"> Estreito, Florianópolis/SC – Brazil</p>
-                <p class="icon fa-phone" > +55 (47) 99967-5469</p>
-                <p class="icon fa-envelope"> daniel.supervisao <strong class="icon fa-at" style="font-size:14px"></strong> gmail.com</p>
-                <p class="icon fa-male"> Sex: Male,
-                    <i class="icon fa-birthday-cake"></i> Birth: 1986-Jan,
-                    <i class="icon fa-venus-mars"></i> Married </p>
-                <br>
-                External info:
-                <p class="icon fa-university"> <a href="http://lattes.cnpq.br/3806326022567893"> Lattes Curriculum</a></p>
-                <p class="icon fa-linkedin"> <a href="https://www.linkedin.com/in/daniel13"> Linkedin </a></p>
-            </header>
+                <h3>Personal info</h3>
+                <div>
+                    <p style="display: Revert;" class="fal fa-user"> Daniel Scheidemantel Camargo</p>
+                    <p style="display: Revert;" class="fal fa-map-marker"> Estreito, Florianópolis/SC – Brazil</p>
+                    <p style="display: Revert;" class="fal fa-phone" > +55 (47) 99967-5469</p>
+                    <p style="display: Revert;" class="fal fa-envelope"> daniel.supervisao <strong class="fal fa-at" style="font-size:14px"></strong> gmail.com</p>
+                    <p style="display: Revert;" class="fal fa-male"> Male, <i class="fal fa-birthday-cake"></i> 1986-Jan, <i class="fal fa-venus-mars"></i> Married </p>
+                    <br>External info:
+                    <p style="display: Revert;" class="fal fa-university"> <a href="http://lattes.cnpq.br/3806326022567893"> Lattes Curriculum</a></p>
+                    <p style="display: Revert;" class="fab fa-linkedin"> <a href="https://www.linkedin.com/in/daniel13"> Linkedin </a></p>
+                </div>
         </div>
     </section>
 
@@ -129,7 +124,6 @@
             <header>
                 <h2>Summary</h2>
             </header>
-
 
             <p> Master Degree (stricto sensu) in Applied Computing in Santa Catarina State University (UDESC), 2018, and
                 Graduated in Computer Science Bachelor also in UDESC (2016).</p>
@@ -157,7 +151,7 @@
             </header>
 
             <div>
-                <p> (2016/sep, until now) <a href="http://www.reciclacomigo.com.br" target="_blank">
+                <p> (09/2016, 02/2018) <a href="http://www.reciclacomigo.com.br" target="_blank">
                     Comigo Web Services and Projects Development Ltd.</a> - Joinville/SC.
                     <br>Cloud architect and embedded systems developer<br></p>
                 <ul class="default">
@@ -166,13 +160,13 @@
                         <li>Load balancing;</li>
                         <li>Multi-AZ architecture;</li>
                         <li>Security layers;</li>
-                        <li>Databases.</li>
+                        <li>Postgres database management.</li>
                     </ul></li>
                     <li class="default">Embedded system from a reverse vending machine (RVM):
                         <ul>
                         <li>Vision system to identity objects;</li>
-                        <li>Mechanical/Control system with actuators and sensors;</li>
-                        <li>Based on IoT architecture.</li>
+                        <li>Mechanical control system with actuators and sensors;</li>
+                        <li>System based on IoT architecture.</li>
                     </ul></li>
                     <li class="default">Cloud communication API between RVM and AWS;</li>
                     <li class="default">Website development (front-end and back-end);</li>
@@ -181,7 +175,7 @@
             </div>
 
             <div>
-                <p> (03/2017 – until now) <a href="http://www.cct.udesc.br" target="_blank"> State University of Santa Catarina</a> (UDESC) – Joinville/SC.
+                <p> (03/2017 – 03/2018) <a href="http://www.cct.udesc.br" target="_blank"> State University of Santa Catarina</a> (UDESC) – Joinville/SC.
                     <br>Research and teacher assistant scholarship (Master degree).</p>
                 <ul class="default">
                     <li class="default"> Perform research on specific topics of the ‘Distributed Systems’ discipline;</li>
@@ -189,7 +183,6 @@
                     <li class="default">Member of Distributed Parallel Processing Laboratory (LabP2D/UDESC);</li>
                     <li class="default">Deploy and management an Openstack Cloud based infrastructure for LabP2D.</li>
                 </ul>
-
             </div>
 
             <div>
@@ -221,7 +214,7 @@
             </header>
 
             <div>
-                <p> (08/2016 – ending 06/2018) Master of Science in Applied Computing
+                <p> (08/2016 – 09/2018) Master of Science in Applied Computing
                     <br><a href="http://www.cct.udesc.br" target="_blank"> State University of Santa Catarina</a> (UDESC) – Joinville/SC.</p>
                 <ul class="default">
                     <li class="default"> Educational base in correlated disciplines from master degree;</li>
@@ -254,75 +247,72 @@
             <table class="default">
             <thead>
                 <tr>
-                    <th>Title</th>
-                    <th><i class="icon fa-file-pdf"  data-toggle="tooltip" title="Article file"> </i></th>
-                    <th><i class="icon fa-file-powerpoint"  data-toggle="tooltip" title="Presentation File"> </i></th>
-                    <th><i class="icon fa-quote-left" data-toggle="tooltip" title="Citations"></i></th>
-                    <th><i class="icon fa-calendar-alt" data-toggle="tooltip" title="Year"></i></th>
-                    <th><i class="icon fa-lock-open" data-toggle="tooltip" title="Publisher"></i></th>
+                    <th>Paper Title</th>
+                    <th><i class="fal fa-file-pdf"  data-toggle="tooltip" title="Article file"> </i></th>
+                    <th><i class="fal fa-calendar-alt" data-toggle="tooltip" title="Year"></i></th>
+                    <th><i class="fal fa-lock-open" data-toggle="tooltip" title="Publisher"></i></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>Sensoriamento climático em sala de servidores utilizando soluções de software e hardware livre</td>
-                    <td><a href="files/publications/2015_Camargo_COTB.pdf" class="icon fa-download"> </a></td>
-                    <td><a href="http://www.inf.ufrgs.br/erad2015/downloads/p/ic/s3-1.pdf" class="icon fa-download"> </a></td>
-                    <td><a href="https://www.google.com.br/search?q=Camargo+%22Sensoriamento+clim%C3%A1tico+em+sala+de+servidores+utilizando+solu%C3%A7%C3%B5es+de+software+e+hardware+livre%22" class="icon fa-question-circle"></a></td>
+                    <td><a href="files/publications/2015_Camargo_COTB.pdf" class="fal fa-download"> </a>
+                    <a href="http://www.inf.ufrgs.br/erad2015/downloads/p/ic/s3-1.pdf" class="fal fa-download"> </a></td>
                     <td rowspan="5"> 2015</td>
                     <td><a href="https://siaiap32.univali.br/seer/index.php/acotb/article/view/7055/3982" target="_blank"> COTB </a></td>
                 </tr>
                 <tr>
                     <td>Automação climática em sala de servidores utilizando hardware livre</td>
-                    <td><a href="files/publications/2015_Camargo_ERAD-RS.pdf" class="icon fa-download"> </a></td>
+                    <td><a href="files/publications/2015_Camargo_ERAD-RS.pdf" class="fal fa-download"> </a></td>
                     <td><a href="http://www.lbd.dcc.ufmg.br/bdbcomp/servlet/Trabalho?id=22831" target="_blank"> ERAD-RS </a></td>
                 </tr>
                 <tr>
                     <td>Monitoramento Ambiental Open Source para Data Center</td>
-                    <td><a href="files/publications/2015_Camargo_ERAD-RJ.pdf" class="icon fa-download"> </a></td>
+                    <td><a href="files/publications/2015_Camargo_ERAD-RJ.pdf" class="fal fa-download"> </a></td>
                     <td><a href="http://eradrj2015.lncc.br/forumic/145961.pdf" target="_blank"> ERAD-RJ </a></td>
                 </tr>
                 <tr>
                     <td>Sensoriamento em sala de servidores baseado em software e hardware livres</td>
-                    <td><a href="files/publications/2015_Camargo_SIC.pdf" class="icon fa-download"> </a></td>
+                    <td><a href="files/publications/2015_Camargo_SIC.pdf" class="fal fa-download"> </a></td>
                     <td><a href="http://www1.udesc.br/arquivos/id_submenu/2551/99.pdf" target="_blank"> SIC UDESC </a></td>
                 </tr>
                 <tr>
                     <td>Automação climática em sala de servidores utilizando hardware livre</td>
-                    <td><a href="files/publications/2015_Camargo_Latinoware.pdf" class="icon fa-download"> </a></td>
+                    <td><a href="files/publications/2015_Camargo_Latinoware.pdf" class="fal fa-download"> </a></td>
                     <td><a href="http://latinoware.org/" target="_blank"> Latinoware </a></td>
                 </tr>
             </tbody>
             <tbody>
                 <tr>
                     <td>GreenHop: Open source PUE continuous monitoring for small and medium data centers</td>
-                    <td><a href="files/publications/2016_Camargo_CLEI.pdf" class="icon fa-download"> </a></td>
+                    <td><a href="files/publications/2016_Camargo_CLEI.pdf" class="fal fa-download"> </a></td>
                     <td rowspan="6"> 2016</td>
                     <td><a href="http://ieeexplore.ieee.org/document/7833381/" target="_blank"> IEEE-CLEI </a></td>
                 </tr>
                 <tr>
                     <td>Automação climática em sala de servidores utilizando hardware livre</td>
-                    <td><a href="files/publications/2016_Camargo_ERAD-RS.pdf" class="icon fa-download"> </a></td>
+                    <td><a href="files/publications/2016_Camargo_ERAD-RS.pdf" class="fal fa-download"> </a></td>
                     <td><a href="http://www.lbd.dcc.ufmg.br/bdbcomp/servlet/Trabalho?id=25002" target="_blank"> ERAD-RS </a></td>
                 </tr>
                 <tr>
                     <td>GreenHop: Environmental and power monitoring small size data centers</td>
-                    <td><a href="files/publications/2016_Camargo_CRICTE.pdf" class="icon fa-download"> </a></td>
+                    <td><a href="files/publications/2016_Camargo_CRICTE.pdf" class="fal fa-download"> </a></td>
                     <td><a href="http://cricte.com.br/2016/artigos/CRICTE_2016_paper_94.pdf" target="_blank"> CRICTE </a></td>
                 </tr>
                 <tr>
                     <td>GreenHop: Open source environmental monitoring for small and medium data centers</td>
-                    <td><a href="files/publications/2016_Camargo_SCCC.pdf" class="icon fa-download"> </a></td>
+                    <td><a href="files/publications/2016_Camargo_SCCC.pdf" class="fal fa-download"> </a></td>
                     <td><a href="http://ieeexplore.ieee.org/document/7836064/" target="_blank"> IEEE-SCCC </a></td>
                 </tr>
                 <tr>
                     <td>Sensoriamento em sala de servidores baseado em software e hardware livres</td>
-                    <td><a href="files/publications/2016_Camargo_SIC.pdf" class="icon fa-download"> </a></td>
+                    <td><a href="files/publications/2016_Camargo_SIC.pdf" class="fal fa-download"> </a></td>
 
                     <td><a href="http://www1.udesc.br/arquivos/id_submenu/2252/102.pdf" target="_blank"> SIC UDESC </a></td>
                 </tr>
                 <tr>
                     <td>Sensoriamento e automação climática em sala de servidores utilizando software e hardware livre</td>
-                    <td><a href="files/publications/2016_TCC_dissertation.pdf" class="icon fa-download"> </a></td>
+                    <td><a href="files/publications/2016_TCC_dissertation.pdf" class="fal fa-download"> </a></td>
                     <td><a href="http://pergamumweb.udesc.br/biblioteca/index.php?codAcervo=127333" target="_blank"> UDESC dissertation </a>
                     </td>
                 </tr>
@@ -330,13 +320,13 @@
             <tbody>
                 <tr>
                     <td>Uma Proposta de Orquestração de Nuvem Computacional Baseada em Consolidação, Elasticidade e Disponibilidade</td>
-                    <td><a href="files/publications/2017_Camargo_ERAD-RS.pdf" class="icon fa-download"> </a></td>
+                    <td><a href="files/publications/2017_Camargo_ERAD-RS.pdf" class="fal fa-download"> </a></td>
                     <td rowspan="2"> 2017</td>
                     <td><a href="http://www.lbd.dcc.ufmg.br/bdbcomp/servlet/Trabalho?id=25354" target="_blank"> ERAD-RS </a></td>
                 </tr>
                 <tr>
                     <td>MeHarCEn: A Method of Harmonizing Energy Consumption in Data Centers</td>
-                    <td><a href="files/publications/2017_Camargo_RITA.pdf" class="icon fa-download"> </a></td>
+                    <td><a href="files/publications/2017_Camargo_RITA.pdf" class="fal fa-download"> </a></td>
 
                     <td><a href="http://seer.ufrgs.br/index.php/rita/article/view/VOL24-NR2-47" target="_blank"> RITA </a></td>
                 </tr>
@@ -344,15 +334,7 @@
             <tbody>
                 <tr>
                     <td>Add</td>
-                    <td><a href="" class="icon fa-download"> </a></td>
-                    <td rowspan="1"> 2018</td>
-                    <td><a href="#" target="_blank"> ADD </a></td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <td>Add</td>
-                    <td><a href="" class="icon fa-download"> </a></td>
+                    <td><a href="" class="fal fa-download"> </a></td>
                     <td rowspan="1"> 2019</td>
                     <td><a href="#" target="_blank"> ADD </a></td>
                 </tr>
@@ -375,61 +357,53 @@
             <tbody>
                 <tr>
                     <td>Análise envoltória de dados para eficiência energética e termal em processadores de alto desempenho</td>
-                    <td><a href="files/works/2016_GS.pdf" class="icon fa-download"> </a></td>
+                    <td><a href="files/works/2016_GS.pdf" class="fal fa-download"> </a></td>
                     <td rowspan="4"> 2016</td>
                     <td> GS</td>
                 </tr>
                 <tr>
                     <td>Internet of Things: Survey About Management Solutions</td>
-                    <td><a href="files/works/2016_OGRC.pdf" class="icon fa-download"> </a></td>
+                    <td><a href="files/works/2016_OGRC.pdf" class="fal fa-download"> </a></td>
                     <td> OGRC</td>
                 </tr>
                 <tr>
                     <td>Problema Bin Packing com Abordagem Heurística First Fit Decreasing</td>
-                    <td><a href="files/works/2016_PAA.pdf" class="icon fa-download"> </a></td>
+                    <td><a href="files/works/2016_PAA.pdf" class="fal fa-download"> </a></td>
                     <td> PAA</td>
                 </tr>
                 <tr>
                     <td>Análise da consolidação de máquinas virtuais nos equipamentos de rede</td>
-                    <td><a href="files/works/2016_SDA.pdf" class="icon fa-download"> </a></td>
+                    <td><a href="files/works/2016_SDA.pdf" class="fal fa-download"> </a></td>
                     <td> SDA</td>
                 </tr>
             </tbody>
             <tbody>
                 <tr>
                     <td>Consolidação de máquinas virtuais com alta disponibilidade: uma revisão bibliográfica sistemática</td>
-                    <td><a href="files/works/2017_MEP.pdf" class="icon fa-download"> </a></td>
+                    <td><a href="files/works/2017_MEP.pdf" class="fal fa-download"> </a></td>
                     <td rowspan="4"> 2017</td>
                     <td> MEP</td>
                 </tr>
                 <tr>
                     <td>Uma ferramenta para análise do impacto da migração de máquinas virtuais</td>
-                    <td><a href="files/works/2017_REC.pdf" class="icon fa-download"> </a></td>
+                    <td><a href="files/works/2017_REC.pdf" class="fal fa-download"> </a></td>
                     <td> REC</td>
                 </tr>
                 <tr>
                     <td>CHAVE: Consolidation with High Availability on Virtualized Environments</td>
-                    <td><a href="files/works/2017-DEP.pdf" class="icon fa-download"> </a></td>
+                    <td><a href="files/works/2017-DEP.pdf" class="fal fa-download"> </a></td>
                     <td> DEP</td>
                 </tr>
                 <tr>
                     <td>Presentation "CHAVE: Consolidation with High Availability on Virtualized Environments"</td>
-                    <td><a href="files/works/2017_DEP_Presentation.pdf" class="icon fa-download"> </a></td>
+                    <td><a href="files/works/2017_DEP_Presentation.pdf" class="fal fa-download"> </a></td>
                     <td> DEP Presentation</td>
                 </tr>
             </tbody>
             <tbody>
                 <tr>
                     <td>Add</td>
-                    <td><a href="" class="icon fa-download"> </a></td>
-                    <td rowspan="1"> 2018</td>
-                    <td><a href="#" target="_blank"> ADD </a></td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <td>Add</td>
-                    <td><a href="" class="icon fa-download"> </a></td>
+                    <td><a href="" class="fal fa-download"> </a></td>
                     <td rowspan="1"> 2019</td>
                     <td><a href="#" target="_blank"> ADD </a></td>
                 </tr>
@@ -465,14 +439,14 @@
             <ul class="default">
                 <li><a href="https://www.dropbox.com/s/w2rl9tmcx56qwyj/SDI_ComputacaoNuvem_v2.pdf">Cloud slides (theoretical part)</a></li>
                 <li><a href="https://www.dropbox.com/s/pehc0iyuxivxc7a/SDI_ComputacaoNuvem_Pratico_v2.pdf">OpenStack slides (practical part)</a></li>
-                <li><a href="http://dscar.ga/cloud/"  target="_blank">Open both files here</a></li>
+                <li><a href="cloud/index.html" target="_blank">Open both files here</a></li>
                 <!--li><a href="files/courses/slides_cloud_teorico.pdf">Slides teórico de Computação em nuvem</a></li-->
                 <!--li><a href="files/courses/slides_cloud_pratico.pdf">Slides prático de Computação em nuvem</a></li-->
             </ul>
 
             <p> Lecture in Distributed Systems </p>
             <ul class="default">
-                <li><a href="https://www.dropbox.com/s/9yshovlhr57hs00/14_Replicacao_v2.pdf">Lecture for Replication in DS</a></li>
+                <li><a href="https://www.dropbox.com/s/9yshovlhr57hs00/14_Replicacao_v2.pdf">Lecture for replication in distributed Systems</a></li>
                 <li><a href="https://github.com/DanielFloripa/BinPackingMultithread-SDI">Homework description with subject: <i>Thead Replication in Java</i></a></li>
             </ul>
         </div>
@@ -486,11 +460,13 @@
                 <h2>Skills</h2>
             </header>
 
-            <p> Mother tongue: Brazilian portuguese</p>
+            <p> Native language: Brazilian portuguese</p>
 
-            <p> Other language: English B2 (Intermediary to fluent):</p>
-            <ul class="default"><li>Certificate: TOEFL ITP Exam (applied in 2014)</li></ul>
-
+            <p> Other languages:</p>
+            <ul class="default">
+                <li> English Level B2 (Upper Intermediate). Certificate TOEFL ITP Exam (applied in 2014)</li>
+                <li> Spanish Level A1 (Beginner) self-evaluation</li>
+            </ul>
 
             <p>Communication skills: Good communication skills gained through experiences with lectures at scientific events
             and also argumentative experiences due to sales.</p>
@@ -500,11 +476,11 @@
             <p>Other skills:</p>
             <ul class="default">
                 <li> Electrical and electronic engineering: basic knowledge;</li>
-                <li> Cloud deployment and facility management (acquired in LabP2D – UDESC);</li>
+                <li> On-Premise cloud system deployment and facility management;</li>
                 <li> Driving license: AB category.</li>
             </ul>
         </div>
-        <p>Last updated march/2018.</p>
+        <p>Last updated march/2021.</p>
     </section>
 
     <!-- Contact -->
