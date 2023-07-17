@@ -11,7 +11,7 @@
         "type": "image/png"
       }
     ],
-    "background_color": "#ffffff",
+    "background_color": "#c03216",
     "start_url": "www.dscamargo.com.br",
     "display": "fullscreen",
     "description": "Personal Website Daniel Scheidemantel Camargo",
@@ -20,7 +20,7 @@
     "orientation": "any",
     "scope": "/",
     "short_name": "DSCamargo",
-    "theme_color": "#640000",
+    "theme_color": "#222629",
     "categories": [
       "business",
       "education",
