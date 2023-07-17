@@ -48,6 +48,11 @@
 </head>
 
 <body>
+    <script>
+        if (typeof navigator.serviceWorker !== 'undefined') {
+          navigator.serviceWorker.register('assets/js/sw.js')
+        }
+    </script>
     <!-- Header -->
     <div id="header" class="skel-layers-fixed entry-header">
 
