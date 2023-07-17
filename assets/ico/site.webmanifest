@@ -13,7 +13,7 @@
     ],
     "background_color": "#ffffff",
     "start_url": "www.dscamargo.com.br",
-    "display": "standalone",
+    "display": "fullscreen",
     "description": "Personal Website Daniel Scheidemantel Camargo",
     "dir": "ltr",
     "name": "www.dscamargo.com.br",
@@ -69,6 +69,6 @@
     ],
     "lang": "pt",
     "display_override": [
-      "fullscreen"
+      "window-controls-overlay"
     ]
   }
