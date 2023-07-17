@@ -64,15 +64,11 @@
       {
         "name": "DSCamargo",
         "url": "www.dscamargo.com.br",
-        "description": ""
+        "description": "Personal Website"
       }
     ],
     "lang": "pt",
     "display_override": [
-      "fullscreen",
-      "minimal-ui",
-      "standalone",
-      "window-controls-overlay",
-      "browser"
+      "fullscreen"
     ]
   }
