@@ -1,9 +1,9 @@
 {
     "icons": [
       {
-        "src": "/assets/ico/android-chrome-192x192.png",
+        "src": "/assets/ico/D1.ico",
         "sizes": "192x192",
-        "type": "image/png"
+        "type": "image/gif"
       },
       {
         "src": "/assets/ico/D1.ico",
@@ -12,7 +12,7 @@
       }
     ],
     "background_color": "#c03216",
-    "start_url": "www.dscamargo.com.br/index.html",
+    "start_url": "/index.html",
     "display": "fullscreen",
     "description": "Personal Website Daniel Scheidemantel Camargo",
     "dir": "ltr",
@@ -63,7 +63,7 @@
     "shortcuts": [
       {
         "name": "DSCamargo",
-        "url": "www.dscamargo.com.br/index.html",
+        "url": "/index.html",
         "description": "Personal Website"
       }
     ],
