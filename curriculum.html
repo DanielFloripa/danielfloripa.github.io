@@ -28,6 +28,23 @@
     <link rel="stylesheet" href="assets/css/skel.css"/>
     <link rel="stylesheet" href="assets/css/style.css"/>
     <link rel="stylesheet" href="assets/css/style-wide.css"/>
+    <script>
+        async function getUserIP() {
+            try {
+              const response = await fetch('https://api.ipify.org?format=json');
+              const data = await response.json();
+              return data.ip;
+            } catch (error) {
+              return undefined;
+            }
+          }
+        var dataLayer = [{
+            'language': 'pt',
+            'section': 'home',
+            'date': new Date(),
+            'address': await getUserIP().then(function (a) {return a}),
+        }];
+    </script>
     <script src="assets/js/libs/jquery.min.js"></script>
     <script src="assets/js/libs/jquery.scrolly.min.js"></script>
     <script src="assets/js/libs/jquery.scrollzer.min.js"></script>
@@ -40,6 +57,14 @@
     <link rel="stylesheet" href="assets/css/ie/v8.css"/><![endif]-->
     <script>
         $(function(){$("#footer").load("footer.html");});
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BT8SS9D027"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-BT8SS9D027');
     </script>
 </head>
 <body>
