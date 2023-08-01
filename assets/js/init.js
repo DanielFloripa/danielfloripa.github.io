@@ -92,7 +92,6 @@ $(document).ready(function () {
 	}
 
 	window.onload = function () {
-		document.querySelector('#top').style.height = window.innerHeight + 'px';
 		
 		var elements = document.getElementsByClassName('typewrite');
 		for (var i = 0; i < elements.length; i++) {
