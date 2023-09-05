@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,10 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9394405-e801-4fdc-b665-787a88a34e37" name="Default" comment="Resolve bugs antigos">
+    <list default="true" id="a9394405-e801-4fdc-b665-787a88a34e37" name="Default" comment="Add gtag">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/new.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/new.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thanks.html" beforeDir="false" afterPath="$PROJECT_DIR$/thanks.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,13 +75,18 @@
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SearchEverywhereHistoryKey" value="server&#9;ACTION&#9;RemoteServersViewToolbar&#10;serve&#9;ACTION&#9;tasks.configure.servers" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.prettier" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.prettier" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="web.server" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -158,13 +164,7 @@
       <workItem from="1617910243111" duration="5595000" />
       <workItem from="1617973711480" duration="12000" />
       <workItem from="1617974469839" duration="16852000" />
-    </task>
-    <task id="LOCAL-00016" summary="curriculum add">
-      <created>1516141482332</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1516141482332</updated>
+      <workItem from="1650460342464" duration="1572000" />
     </task>
     <task id="LOCAL-00017" summary="curriculum add">
       <created>1516141578321</created>
@@ -502,7 +502,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617998606474</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Add gtag">
+      <created>1650477058942</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1650477058942</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TodoView">
@@ -530,12 +537,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="audio controls" />
     <MESSAGE value="igm new" />
     <MESSAGE value="img style" />
     <MESSAGE value="description" />
@@ -560,30 +567,8 @@
     <MESSAGE value="Update jquery" />
     <MESSAGE value="change icon" />
     <MESSAGE value="Resolve bugs antigos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Resolve bugs antigos" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="418" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1617974770895">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="418" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1617974770895" />
-    <state x="672" y="324" width="565" height="383" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617916728720">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="672" y="324" width="565" height="383" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1617916728720" />
-    <state x="592" y="109" width="1328" height="813" key="CommitChangelistDialog2" timestamp="1617911722251">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="592" y="109" width="1328" height="813" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1617911722251" />
-    <state x="2475" y="265" width="800" height="521" key="Vcs.Push.Dialog.v2" timestamp="1617998610110">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="555" y="255" width="800" height="521" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1617911724865" />
-    <state x="2475" y="265" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617998610110" />
-    <state x="922" y="240" width="924" height="600" key="find.popup" timestamp="1617997468634">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="922" y="240" width="924" height="600" key="find.popup/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1617997468634" />
+    <MESSAGE value="Add gtag" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add gtag" />
   </component>
   <component name="masterDetails">
     <states>
