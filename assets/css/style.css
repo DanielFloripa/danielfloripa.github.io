@@ -579,7 +579,7 @@ input[type="reset"]:active,
 #logo {
 	position: initial;
 	margin: 1em 1em 1em 1em;
-	min-height: 64px;
+	height: 128px;
 	cursor: default;
 }
 
@@ -1492,5 +1492,5 @@ h1 {
 
 .entry-title {
 	text-align: center;
-	color: white;
+	color: white !important;
 }
