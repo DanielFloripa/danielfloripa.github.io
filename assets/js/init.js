@@ -236,6 +236,7 @@ $(document).ready(function () {
 		$body.addClass('is-loading');
 
 		$window.on('load', function () {
+			$('img').show();
 			$body.removeClass('is-loading');
 		});
 

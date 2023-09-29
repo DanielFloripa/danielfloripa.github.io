@@ -12,7 +12,7 @@
     <meta property="og:url" content="index.html"/>
     <meta property="og:site_name" content="Daniel Scheidemantel Camargo"/>
     <meta property="og:locale" content="pt_BR"/>
-    <link rel="canonical" href="https://www.dscamargo.com.br/index.html" />
+    <link rel="canonical" href="https://www.dscamargo.com.br" />
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/ico/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/ico/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/ico/favicon-16x16.png">
@@ -33,20 +33,10 @@
         })(window, document, 'script', 'dataLayer', 'GTM-WXLHS7J8');</script>
     <!-- End Google Tag Manager -->
     <script>
-        async function getUserIP() {
-            try {
-                const response = await fetch('https://api.ipify.org?format=json');
-                const data = await response.json();
-                return data.ip;
-            } catch (error) {
-                return undefined;
-            }
-        }
         var dataLayer = [{
             'language': 'pt',
             'section': 'home',
             'date': new Date(),
-            'address': await getUserIP().then(function (a) { return a }),
         }];
     </script>
     <script src="assets/js/libs/jquery.min.js"></script>
@@ -72,8 +62,7 @@
         gtag('js', new Date());
         gtag('config', 'G-BT8SS9D027');
     </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8596248108356514"
-        crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8596248108356514" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -98,9 +87,7 @@
         </div>
 
         <div class="top">
-            <header>
-                <h1 class="entry-title">Daniel S. Camargo</h1>
-            </header>
+            <header></header>
             <!-- Logo -->
             <div id="logo"><a href="#top" class="image avatar48"><img src="assets/images/me.jpg" /></a></div>
 
@@ -221,7 +208,7 @@
                 <div class="row">
                     <div class="3u">
                         <article class="item">
-                            <a href="https://www.dscamargo.com.br/greenhop" target="_blank" class="image fit">
+                            <a href="greenhop.html" class="image fit">
                                 <img class="image-portfolio" src="assets/images/greenhop.png" alt="GreenHop" />
                                 <header>
                                     <h2>GreenHop</h2>
@@ -233,7 +220,7 @@
                     </div>
                     <div class="3u">
                         <article class="item">
-                            <a href="https://www.dscamargo.com.br/chave" target="_blank" class="image fit">
+                            <a href="chave.html" class="image fit">
                                 <img class="image-portfolio" src="assets/images/chave.png" alt="Master" />
                                 <header>
                                     <h2>CHAVE Project</h2>
@@ -249,8 +236,7 @@
                                 <header>
                                     <h2>LabP2D Openstack</h2>
                                     <h3>Auto-deploy, measure hosts resources from OpenStack Cloud in LabP2D. </h3>
-                                    <a href="https://www.dscamargo.com.br/cloud/" target="_blank">The course slides are available
-                                        here</a>
+                                    <a href="cloud/index.html">Course slides</a>
                                 </header>
                             </a>
                         </article>

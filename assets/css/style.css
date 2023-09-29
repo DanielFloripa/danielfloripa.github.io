@@ -1494,3 +1494,7 @@ h1 {
 	text-align: center;
 	color: white !important;
 }
+
+img {
+	display: none;
+}

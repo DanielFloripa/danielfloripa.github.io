@@ -6,33 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content="GreenHop Project"/>
     <meta name="keywords" content="GreenHop; monitoring, data center; energy efficiency; power usage effectiveness"/>
-    <meta name="referrer" content="origin"/>
-    <link rel="import" href="../assets/ico/icons.html">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="../assets/ico/ms-icon-144x144.png">
+    <meta name="author" content="Daniel Scheidemantel Camargo" />
+    <meta name="referrer" content="origin">
+    <meta property="og:url" content="index.html"/>
+    <meta property="og:site_name" content="Daniel Scheidemantel Camargo"/>
+    <meta property="og:locale" content="pt_BR"/>
+    <link rel="canonical" href="https://www.dscamargo.com.br/greenhop.html" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/ico/favicon-16x16.png">
+    <link rel="manifest" href="/assets/ico/site.webmanifest">
+    <link rel="mask-icon" href="/assets/ico/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00a300">
     <meta name="theme-color" content="#ffffff">
-    <script src="../assets/js/libs/jquery-migrate-3.0.1.min.js"></script>
-    <script src="../assets/js/libs/jquery.min.js"></script>
-    <script src="../assets/js/libs/jquery.scrolly.min.js"></script>
-    <script src="../assets/js/libs/jquery.scrollzer.min.js"></script>
-    <script src="../assets/js/libs/skel.min.js"></script>
-    <script src="../assets/js/libs/skel-layers.min.js"></script>
-    <script src="../assets/js/init.js"></script>
-    <link rel="stylesheet" type="text/css" href="../assets/css/skel.css" >
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css" >
-    <link rel="stylesheet" type="text/css" href="../assets/css/style-wide.css" >
-    <!--[if lte IE 9]>
-    <link rel="stylesheet" type="text/css" href="../assets/css/ie/v9.css" ><![endif]-->
-    <!--[if lte IE 8]>
-    <link rel="stylesheet" type="text/css" href="../assets/css/ie/v8.css" ><![endif]-->
-    <!--script
-            src="http://code.jquery.com/jquery-migrate-3.0.1.min.js"
-            integrity="sha256-F0O1TmEa4I8N24nY0bya59eP6svWcshqX1uzwaWC4F4="
-            crossorigin="anonymous">
-    </script-->
+    <meta name="msapplication-TileImage" content="/assets/ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WXLHS7J8');</script>
+    <!-- End Google Tag Manager -->
     <script>
-        $(function(){$("#footer").load("../footer.html");});
+        var dataLayer = [{
+            'language': 'pt',
+            'section': 'home',
+            'date': new Date(),
+        }];
     </script>
+    <script src="assets/js/libs/jquery.min.js"></script>
+    <script src="assets/js/libs/jquery.scrolly.min.js"></script>
+    <script src="assets/js/libs/jquery.scrollzer.min.js"></script>
+    <script src="assets/js/libs/skel.min.js"></script>
+    <script src="assets/js/libs/skel-layers.min.js"></script>
+    <script src="assets/js/libs/particles.min.js"></script>
+    <script src="assets/js/init.js"></script>
+    <script>
+        $(function () { $("#footer").load("footer.html"); });
+    </script>
+
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="assets/css/ie/v9.css"><![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="assets/css/ie/v8.css"><![endif]-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BT8SS9D027"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-BT8SS9D027');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8596248108356514" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -51,7 +80,7 @@
             </header>
             <!-- Logo -->
             <div id="logo">
-                <a href="#top" class="image avatar48"><img src="/assets/images/greenhop.png"/></a><br>
+                <a href="#top" class="image avatar48"><img src="assets/images/greenhop.png"/></a><br>
             </div>
             <!-- Nav -->
             <nav id="nav" class="nav-internal">
@@ -66,7 +95,7 @@
                         <a href="#sources" id="sources-link" class="skel-layers-ignoreHref"><span class="icon fa-sort-alpha-down">Sources</span></a>
                     </li>
                     <li>
-                        <a href="../index.html" id="return" class="skel-layers-ignoreHref"><span class="icon fa-home">Back to home</span></a>
+                        <a href="index.html" id="return" class="skel-layers-ignoreHref"><span class="icon fa-home">Back to home</span></a>
                     </li>
                 </ul>
             </nav>
@@ -94,7 +123,9 @@
                      OpenSource hardware and software for energy efficiency and environmental monitoring in realtime based on Arduino and ZigBee protocol.
                 </header>
 
-                <a href="#top" class="image featured"><img src="../assets/images/greenhop3.jpg" alt="greenhop"/></a>
+                <a href="#top" class="image" style="float: right;">
+                    <img src="assets/images/greenhop3.jpg" alt="greenhop" style="width: unset"/>
+                </a>
                 <div style="text-align:center;">
                     <p style="text-align: justify">
                     <p>GreenHop aims to perform energy and environmental (temperature, umidity, dew point and atmospheric pressure)
@@ -173,15 +204,15 @@
                     <h2>Exemplos de uso</h2>
                 </header>
 
-                <p><a href="#sources" class="image avatar256"><img src="../assets/images/greenhop1.png" alt="greenhop1"/></a>
+                <p><a href="#sources" class="image avatar256"><img src="assets/images/greenhop1.png" alt="greenhop1"/></a>
 
-                <p><a href="#sources" class="image avatar256"><img src="../assets/images/greenhop2.png" alt="greenhop2"/></a>
+                <p><a href="#sources" class="image avatar256"><img src="assets/images/greenhop2.png" alt="greenhop2"/></a>
             </div>
         </section>
     </div>
 
     <!-- Footer -->
-    <div id="footer"> <!--#include file="../footer.html" -->
+    <div id="footer"> <!--#include file="footer.html" -->
     </div>
 
 </body>
