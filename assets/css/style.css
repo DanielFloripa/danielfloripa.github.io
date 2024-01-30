@@ -109,11 +109,8 @@ a:hover {
 
 .intro {
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(100%, 50%);
 	max-width: 450px !important;
-	margin: 0;
 }
 
 .signature {
@@ -181,9 +178,6 @@ br.clear {
 
 /* Sections/Article */
 
-section, article {
-	margin-bottom: 3em;
-}
 
 section> :last-child, article> :last-child, section>.container> :last-child, article>.container> :last-child {
 	margin-bottom: 0;
@@ -218,7 +212,7 @@ section:last-child, article:last-child {
 	height: auto;
 	background: #fff;
 	display: block;
-	margin: 2em 1em 1em 3em;
+	margin: 2em;
 	overflow: hidden;
 	/*float: start;*/
 }
@@ -226,12 +220,8 @@ section:last-child, article:last-child {
 .image.avatar48 {
 	border-radius: 50%;
 	width: 128px;
-	height: auto;
 	background: #fff;
-	display: block;
-	margin: 2em 1em 1em 3em;
 	overflow: hidden;
-	float: right;
 }
 
 .image.avatar48 img {
@@ -244,11 +234,11 @@ section:last-child, article:last-child {
 }
 
 .image.avatar48 img:hover {
-	-webkit-transform: scale(1.1) rotate(2deg);
-	-moz-transform: scale(1.1) rotate(2deg);
-	-ms-transform: scale(1.1) rotate(2deg);
-	-o-transform: scale(1.1) rotate(2deg);
-	transform: scale(1.1) rotate(2deg);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .image.fit {
@@ -259,7 +249,7 @@ section:last-child, article:last-child {
 .image.featured {
 	border-radius: 20%;
 	display: block;
-	margin: 2em 2em 2em 2em;
+	margin: 2em;
 	height: auto;
 	width: 50%;
 	overflow: hidden;
@@ -323,8 +313,6 @@ ul.icons a {
 	border: 0;
 }
 
-ol {}
-
 ol.default {
 	list-style: decimal;
 	padding-left: 1.25em;
@@ -335,9 +323,6 @@ ol.default li {
 }
 
 /* Form */
-
-form {}
-
 form label {
 	display: block;
 	text-align: left;
@@ -594,9 +579,7 @@ input[type="button"]:active, input[type="submit"]:active, input[type="reset"]:ac
 }
 
 #logo .image {
-	position: absolute;
 	align-items: center;
-	top: 0;
 }
 
 #nav {
@@ -723,36 +706,36 @@ input[type="button"]:active, input[type="submit"]:active, input[type="reset"]:ac
 }
 
 /*********************************************************************************/
-/* Main                                                                          */
+/* Sections                                                                          */
 /*********************************************************************************/
 
 section {
 	margin-left: 375px;
 }
 
-#main>section {
-	margin: 0;
+section {
 	overflow: hidden;
 	padding: 4em 0;
 	box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 	text-align: left;
+	background-color: #ecf1f1;
 }
 
-#main>section.dark h2, #main>section.dark h3, #main>section.dark h4, #main>section.dark h5, #main>section.dark h6 {
+section.dark h2, section.dark h3, section.dark h4, section.dark h5, section.dark h6 {
 	color: inherit;
 }
 
-#main>section.dark strong, #main>section.dark a {
+section.dark strong, section.dark a {
 	color: #fff;
 	border-color: inherit;
 }
 
-#main>section.dark a:hover {
+section.dark a:hover {
 	border-bottom-color: rgba(255, 255, 255, 0);
 }
 
 
-#main>section.video {
+section.video {
 	height: 100%;
 	width: 100%;
 	min-height: 367px;
@@ -760,7 +743,7 @@ section {
 	background-color: transparent
 }
 
-#main>section.video .anime-bg {
+section.video .anime-bg {
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -773,7 +756,7 @@ section {
 	background-color: #030505
 }
 
-#main>section.video #video_background {
+section.video #video_background {
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -788,56 +771,19 @@ section {
 }
 
 @media (min-width:300px) {
-	#main>#video_background {
+	#video_background {
 		display: block !important
 	}
 }
 
-#main>section.cover {
+section.cover {
 	padding: 1em 0;
 	background-size: cover;
 	background-position: left center;
 }
 
-#main>section.one {
-
-	/*background-color: #81918E;
-				/*background-image: url('../assets/images/placeholder.jpg');*/
-	/*finciona!*/
-}
-
-#main>section.two {
-	background-color: #f5fafa;
-}
-
-#main>section.two p {
-	border: 0 solid red;
-	color: #000000;
-	text-align: left;
-	margin-left: 30px;
-	margin-right: 50px;
-	font-size: 1em;
-	line-height: 1.4em;
-	padding-left: 10px;
-}
-
-#main>section.three {
-	background-color: #ecf1f1;
-}
-
-#main>section.three p {
-	border: 0 solid red;
-	color: #000000;
-	text-align: left;
-	margin-left: 30px;
-	margin-right: 50px;
-	font-size: 1em;
-	line-height: 1.4em;
-	margin-bottom: 1em;
-}
-
-#main>section.four {
-	background-color: #e8edec;
+section:nth-child(2n+2) {
+	background-color: #f5fafa !important;
 }
 
 /*********************************************************************************/
@@ -1433,7 +1379,6 @@ h1 {
 	margin-left: auto;
 	margin-right: auto;
 	width: 8em;
-	margin-left: auto;
 }
 
 #title {
