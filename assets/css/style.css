@@ -187,7 +187,7 @@ section:last-child, article:last-child {
 	margin-bottom: 0;
 }
 
-.row>section, .row>article {
+.row > section, .row>article {
 	margin-bottom: 0;
 }
 
@@ -199,7 +199,7 @@ section:last-child, article:last-child {
 
 .image {
 	display: inline-block;
-	border: 0;
+	border: 10px white solid;
 }
 
 .image img {
@@ -524,7 +524,7 @@ input[type="button"]:active, input[type="submit"]:active, input[type="reset"]:ac
 #header .top {
 	position: absolute;
 	left: 0;
-	top: 0;
+	top: 20px;
 	width: 100%;
 }
 
@@ -977,6 +977,16 @@ Enjoy responsibly!
 p {
 	line-height: 1.33em;
 	color: #222629;
+}
+
+.p-center {
+	padding: 30px;
+	text-align: center;
+}
+
+.list-vertical-items {
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
