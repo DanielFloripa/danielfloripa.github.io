@@ -169,7 +169,32 @@
         </div>
     </div>
 
-    <section id="top" class="video dark cover" style="position: relative; height: 100%; min-height: 100vh;">
+    <section id="top-mobile" class="mobile-show" style="background-color: black !important;position: relative; height: 100%; min-height: 100vh;">
+        <div class="container intro" id="page-hero" style="text-align: center; transform: translate(0%, 0%);">
+            <h1 class="nav-internal m-4 typewrite" data-period="1000"
+                data-type='[ "Hello, there!", "I will help you on:", "- Software Development", "- Cloud issues", "- Automations", "- DevSecOps", "- Integrations", "- And more!", "&#x2665; &#x2665; &#x2665;" ]'>
+                <span class="wrap"></span>
+            </h1>
+            <div class="nav-internal" style="font-size: small">
+                <a href="#portfolio" style="z-index: 9999">
+                    <h3 class="m-3">Start your jouney here</h3>
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                        version="1.1" id="arrow-down" x="0px" y="0px" viewBox="0 0 50 50"
+                        style="enable-background:new 0 0 50 50;" xml:space="preserve"
+                        class=" iconic-injected-svg inject-me">
+                        <path id="circle"
+                            d="M0.2,27.4c-0.2-1.9-0.3-3.4,0-5.3c0.1-0.4,0.2-0.8,0.2-1.1C2.2,9.1,12.3,0.2,24.3,0c8.2-0.1,14.9,3,20.1,9.4  c3,3.8,4.6,8.2,5.3,12.9c0.1,2.5,0.1,2.5,0,4.7c-0.1,0.5-0.2,0.8-0.2,1.3C47.7,40.2,37.9,49.1,26,49.5c-10,0.3-17.5-4-22.7-12.6  C1.5,34,0.7,30.7,0.2,27.4z M2.3,24.7c-0.2,11.6,9.2,22.7,22.6,22.7c13.2,0,22.6-10.7,22.6-22.6c0-12-9.4-22.7-22.6-22.7  C11.4,2.1,2.2,13.3,2.3,24.7z">
+                        </path>
+                        <path id="arrow" class="st0"
+                            d="M31.8,23.4c-0.2-0.3-0.6-0.3-0.9-0.1l-6,5l-6-5c-0.3-0.2-0.7-0.2-0.9,0.1c-0.2,0.3-0.2,0.7,0.1,0.9l6.5,5.4   c0.1,0.1,0.3,0.1,0.4,0.1c0.1,0,0.3,0,0.4-0.1l6.5-5.4C31.9,24,32,23.6,31.8,23.4z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="top" class="video dark cover mobile-hide" style="position: relative; height: 100%; min-height: 100vh;">
         <video id="video_background" autoplay muted loop onended="this.play()">
             <source src="assets/images/mboard.mp4" type="video/mp4">
         </video>
@@ -533,21 +558,21 @@
             <form method="POST" action="https://formspree.io/daniel.camargo@hotmail.com">
                 <div class="row half">
                     <div class="6u">
-                        <input type="text" name="name" placeholder="Your name" />
+                        <input type="text" name="name" placeholder="Name" />
                     </div>
                     <div class="6u">
-                        <input type="email" name="email" placeholder="Your e-mail" />
+                        <input type="email" name="email" placeholder="E-mail" />
                     </div>
                     <input type="hidden" name="_subject" value="From site: danielfloripa.io index" />
                 </div>
                 <div class="row half">
                     <div class="12u">
-                        <textarea name="message" placeholder="Your message"></textarea>
+                        <textarea name="message" placeholder="Message"></textarea>
                     </div>
                 </div>
                 <div class="row">
                     <div class="12u">
-                        <input type="submit" value="Send Message!" />
+                        <input type="submit" value="Send" />
                     </div>
                 </div>
                 <input type="hidden" name="_next" value="thanks.html" />

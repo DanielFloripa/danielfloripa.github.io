@@ -734,6 +734,24 @@ section.dark a:hover {
 	border-bottom-color: rgba(255, 255, 255, 0);
 }
 
+@media screen and (max-width: 659.98px) {
+    .mobile-hide {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 659.98px) {
+    .mobile-show {
+        display: none;
+    }
+}
+
+.mobile-show {
+	background-color: black;
+	color: white;
+	transform: translate(0%, 0%) !important;
+}
+
 
 section.video {
 	height: 100%;
