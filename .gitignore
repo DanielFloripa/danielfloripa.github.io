@@ -1,4 +1,6 @@
 .idea/
 musics/
 ignored/
-.idea
+.next/
+node_modules/
+package-lock.json

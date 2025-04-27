@@ -799,7 +799,7 @@ section.cover {
 	background-position: left center;
 }
 
-section:nth-child(2n+2) {
+section:nth-child(2n+1) {
 	background-color: #f5fafa !important;
 }
 
@@ -1437,3 +1437,8 @@ h1 {
 	text-align: center;
 	color: white !important;
 }
+
+.carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        filter: invert(1);
+    }
