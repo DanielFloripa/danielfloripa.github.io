@@ -195,6 +195,7 @@ section:last-child, article:last-child {
 .image-portfolio {
 	max-height: 248px;
 	max-width: 248px;
+	height: 33.333%;
 }
 
 .image {
@@ -1442,3 +1443,10 @@ h1 {
     .carousel-control-next-icon {
         filter: invert(1);
     }
+
+.float-center {
+	width: 40%;
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top: 2rem;
+}
