@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendizado - Capellaris</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .section-title {
+            font-size: 1.875rem;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #4299e1;
+        }
+        .subsection-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 1rem;
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+        }
+        .code-block {
+            background-color: #f7fafc;
+            border-radius: 0.375rem;
+            padding: 1rem;
+            overflow-x: auto;
+            font-family: monospace;
+            font-size: 0.875rem;
+            color: #1a202c;
+        }
+        .btn-primary {
+            background-color: #4299e1;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+        .btn-primary:hover {
+            background-color: #3182ce;
+        }
+        .dark-mode {
+            background-color: #1a202c;
+            color: #e2e8f0;
+        }
+        .dark-mode .section-title {
+            color: #f7fafc;
+            border-bottom-color: #4299e1;
+        }
+        .dark-mode .subsection-title {
+            color: #e2e8f0;
+        }
+        .dark-mode .card {
+            background-color: #2d3748;
+            color: #e2e8f0;
+        }
+        .dark-mode .code-block {
+            background-color: #1a202c;
+            color: #e2e8f0;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-gray-900">Capellaris</h1>
+                </div>
+                <nav class="flex space-x-4">
+                    <a href="index.html" class="text-gray-600 hover:text-gray-900">Início</a>
+                    <a href="arquitetura.html" class="text-gray-600 hover:text-gray-900">Arquitetura</a>
+                    <a href="agentes.html" class="text-gray-600 hover:text-gray-900">Agentes</a>
+                    <a href="aprendizado.html" class="text-blue-600 font-medium">Aprendizado</a>
+                    <a href="integracao.html" class="text-gray-600 hover:text-gray-900">Integração</a>
+                    <a href="documentacao.html" class="text-gray-600 hover:text-gray-900">Documentação</a>
+                    <a href="demo.html" class="text-gray-600 hover:text-gray-900">Demo</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Breadcrumb -->
+            <div class="mb-8">
+                <a href="index.html" class="text-blue-600 hover:text-blue-800 flex items-center">
+                    <svg class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                    Voltar para a página inicial
+                </a>
+            </div>
+
+            <!-- Header -->
+            <div class="text-center mb-12">
+                <h1 class="text-4xl font-bold text-gray-900 mb-4">
+                    Sistema de Aprendizado
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Conheça como o Capellaris aprende e melhora continuamente
+                    com base no histórico de interações e feedback recebido.
+                </p>
+            </div>
+
+            <!-- Learning System Overview -->
+            <div class="mb-16">
+                <h2 class="section-title">Visão Geral do Sistema de Aprendizado</h2>
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                    <p class="text-gray-600 mb-6">
+                        O Sistema de Aprendizado é um componente fundamental do Capellaris,
+                        permitindo que os agentes melhorem continuamente com base em suas interações anteriores. Este sistema
+                        armazena, analisa e utiliza o histórico de prompts e respostas para otimizar o desempenho dos agentes
+                        ao longo do tempo.
+                    </p>
+                    
+                    <div class="bg-blue-50 p-6 rounded-lg mb-8">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-4">Principais Objetivos</h3>
+                        <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                            <li><span class="font-medium">Melhoria Contínua:</span> Permitir que os agentes melhorem suas respostas com base em experiências anteriores.</li>
+                            <li><span class="font-medium">Personalização:</span> Adaptar o comportamento dos agentes às necessidades específicas de cada organização.</li>
+                            <li><span class="font-medium">Otimização de Prompts:</span> Refinar automaticamente os prompts para obter melhores resultados dos modelos de linguagem.</li>
+                            <li><span class="font-medium">Identificação de Padrões:</span> Descobrir padrões e tendências nas interações para melhorar o desempenho geral.</li>
+                            <li><span class="font-medium">Retenção de Conhecimento:</span> Armazenar e reutilizar conhecimento adquirido em interações anteriores.</li>
+                        </ul>
+                    </div>
+                    
+                    <p class="text-gray-600 mb-6">
+                        O Sistema de Aprendizado implementa um ciclo de feedback contínuo que permite que os agentes
+                        se adaptem e evoluam ao longo do tempo, tornando-se cada vez mais eficientes e precisos em
+                        suas respostas e recomendações.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h3 class="font-semibold text-blue-800 mb-2">Armazenamento</h3>
+                            <p class="text-gray-600">
+                                Registro estruturado de todas as interações, incluindo prompts, respostas e feedback.
+                            </p>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <h3 class="font-semibold text-green-800 mb-2">Análise</h3>
+                            <p class="text-gray-600">
+                                Processamento e análise do histórico para identificar padrões e oportunidades de melhoria.
+                            </p>
+                        </div>
+                        
+                        <div class="bg-purple-50 p-4 rounded-lg">
+                            <h3 class="font-semibold text-purple-800 mb-2">Aplicação</h3>
+                            <p class="text-gray-600">
+                                Utilização do conhecimento adquirido para otimizar prompts e melhorar respostas futuras.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Components -->
+            <div class="mb-16">
+                <h2 class="section-title">Componentes do Sistema de Aprendizado</h2>
+                
+                <div class="space-y-8">
+                    <!-- Knowledge Base -->
+                    <div class="card">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold">Base de Conhecimento</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            A Base de Conhecimento é responsável por armazenar todas as interações entre os agentes e os usuários,
+                            incluindo prompts, respostas, feedback e metadados associados. Ela serve como a memória do sistema,
+                            permitindo que os agentes aprendam com experiências passadas.
+                        </p>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-medium text-gray-800 mb-2">Principais Características:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                <li><span class="font-medium">Armazenamento Estruturado:</span> Dados organizados por agente, domínio, tipo de tarefa, etc.</li>
+                                <li><span class="font-medium">Indexação Eficiente:</span> Busca rápida por interações relevantes</li>
+                                <li><span class="font-medium">Versionamento:</span> Rastreamento de mudanças e evolução de prompts</li>
+                                <li><span class="font-medium">Metadados Ricos:</span> Contexto, tags, classificações e outros dados auxiliares</li>
+                                <li><span class="font-medium">Privacidade e Segurança:</span> Proteção de dados sensíveis e conformidade com regulamentações</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Pattern Analyzer -->
+                    <div class="card">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <svg class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold">Analisador de Padrões</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            O Analisador de Padrões examina o histórico de interações para identificar padrões, tendências
+                            e correlações que podem ser utilizados para melhorar o desempenho dos agentes. Ele utiliza técnicas
+                            de processamento de linguagem natural e aprendizado de máquina para extrair insights valiosos.
+                        </p>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-medium text-gray-800 mb-2">Principais Funcionalidades:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                <li><span class="font-medium">Identificação de Padrões:</span> Descoberta de padrões recorrentes em prompts e respostas</li>
+                                <li><span class="font-medium">Análise de Eficácia:</span> Avaliação da eficácia de diferentes abordagens e formulações</li>
+                                <li><span class="font-medium">Extração de Tópicos:</span> Identificação de temas e tópicos comuns nas interações</li>
+                                <li><span class="font-medium">Análise de Sentimento:</span> Avaliação da satisfação do usuário com as respostas</li>
+                                <li><span class="font-medium">Detecção de Anomalias:</span> Identificação de casos atípicos que podem requerer atenção especial</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Prompt Optimizer -->
+                    <div class="card">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                <svg class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold">Otimizador de Prompts</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            O Otimizador de Prompts utiliza os insights gerados pelo Analisador de Padrões para melhorar
+                            a qualidade dos prompts enviados aos modelos de linguagem. Ele refina automaticamente os prompts
+                            para obter respostas mais precisas, relevantes e úteis.
+                        </p>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-medium text-gray-800 mb-2">Principais Técnicas:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                <li><span class="font-medium">Reformulação de Prompts:</span> Ajuste da estrutura e linguagem dos prompts</li>
+                                <li><span class="font-medium">Adição de Contexto:</span> Inclusão de informações relevantes para melhorar a compreensão</li>
+                                <li><span class="font-medium">Especificação de Formato:</span> Definição clara do formato de resposta desejado</li>
+                                <li><span class="font-medium">Ajuste de Parâmetros:</span> Otimização de parâmetros como temperatura e max_tokens</li>
+                                <li><span class="font-medium">Testes A/B:</span> Comparação sistemática de diferentes formulações de prompts</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Learning System -->
+                    <div class="card">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-red-100 p-3 rounded-full mr-4">
+                                <svg class="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold">Sistema
+(Content truncated due to size limit. Use line ranges to read in chunks)

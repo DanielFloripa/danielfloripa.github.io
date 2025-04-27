@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação - Capellaris</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .section-title {
+            font-size: 1.875rem;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #4299e1;
+        }
+        .subsection-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 1rem;
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+        }
+        .code-block {
+            background-color: #f7fafc;
+            border-radius: 0.375rem;
+            padding: 1rem;
+            overflow-x: auto;
+            font-family: monospace;
+            font-size: 0.875rem;
+            color: #1a202c;
+        }
+        .btn-primary {
+            background-color: #4299e1;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+        .btn-primary:hover {
+            background-color: #3182ce;
+        }
+        .dark-mode {
+            background-color: #1a202c;
+            color: #e2e8f0;
+        }
+        .dark-mode .section-title {
+            color: #f7fafc;
+            border-bottom-color: #4299e1;
+        }
+        .dark-mode .subsection-title {
+            color: #e2e8f0;
+        }
+        .dark-mode .card {
+            background-color: #2d3748;
+            color: #e2e8f0;
+        }
+        .dark-mode .code-block {
+            background-color: #1a202c;
+            color: #e2e8f0;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-gray-900">Capellaris</h1>
+                </div>
+                <nav class="flex space-x-4">
+                    <a href="index.html" class="text-gray-600 hover:text-gray-900">Início</a>
+                    <a href="arquitetura.html" class="text-gray-600 hover:text-gray-900">Arquitetura</a>
+                    <a href="agentes.html" class="text-gray-600 hover:text-gray-900">Agentes</a>
+                    <a href="aprendizado.html" class="text-gray-600 hover:text-gray-900">Aprendizado</a>
+                    <a href="integracao.html" class="text-gray-600 hover:text-gray-900">Integração</a>
+                    <a href="documentacao.html" class="text-blue-600 font-medium">Documentação</a>
+                    <a href="demo.html" class="text-gray-600 hover:text-gray-900">Demo</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Breadcrumb -->
+            <div class="mb-8">
+                <a href="index.html" class="text-blue-600 hover:text-blue-800 flex items-center">
+                    <svg class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                    Voltar para a página inicial
+                </a>
+            </div>
+
+            <!-- Header -->
+            <div class="text-center mb-12">
+                <h1 class="text-4xl font-bold text-gray-900 mb-4">
+                    Documentação Técnica
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Guia completo para instalação, configuração e uso do Capellaris,
+                    incluindo exemplos de código e referências de API.
+                </p>
+            </div>
+
+            <!-- Documentation Navigation -->
+            <div class="mb-12">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-4">Navegação Rápida</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <a href="#instalacao" class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+                            <h3 class="font-medium text-blue-800 mb-1">Instalação</h3>
+                            <p class="text-gray-600 text-sm">Requisitos e passos para instalação</p>
+                        </a>
+                        <a href="#configuracao" class="bg-green-50 hover:bg-green-100 p-4 rounded-lg transition-colors">
+                            <h3 class="font-medium text-green-800 mb-1">Configuração</h3>
+                            <p class="text-gray-600 text-sm">Opções e parâmetros de configuração</p>
+                        </a>
+                        <a href="#api" class="bg-purple-50 hover:bg-purple-100 p-4 rounded-lg transition-colors">
+                            <h3 class="font-medium text-purple-800 mb-1">Referência de API</h3>
+                            <p class="text-gray-600 text-sm">Documentação completa da API</p>
+                        </a>
+                        <a href="#agentes" class="bg-yellow-50 hover:bg-yellow-100 p-4 rounded-lg transition-colors">
+                            <h3 class="font-medium text-yellow-800 mb-1">Criação de Agentes</h3>
+                            <p class="text-gray-600 text-sm">Como criar e personalizar agentes</p>
+                        </a>
+                        <a href="#squads" class="bg-red-50 hover:bg-red-100 p-4 rounded-lg transition-colors">
+                            <h3 class="font-medium text-red-800 mb-1">Gerenciamento de Squads</h3>
+                            <p class="text-gray-600 text-sm">Formação e coordenação de equipes</p>
+                        </a>
+                        <a href="#integracao" class="bg-indigo-50 hover:bg-indigo-100 p-4 rounded-lg transition-colors">
+                            <h3 class="font-medium text-indigo-800 mb-1">Integração com Chat</h3>
+                            <p class="text-gray-600 text-sm">Configuração de Slack e Teams</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Installation Section -->
+            <div id="instalacao" class="mb-16">
+                <h2 class="section-title">Instalação</h2>
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                    <h3 class="subsection-title">Requisitos do Sistema</h3>
+                    
+                    <div class="bg-gray-50 p-4 rounded-lg mb-8">
+                        <h4 class="font-medium text-gray-800 mb-2">Requisitos Mínimos:</h4>
+                        <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                            <li>Python 3.10 ou superior</li>
+                            <li>PostgreSQL 13 ou superior</li>
+                            <li>MongoDB 5.0 ou superior</li>
+                            <li>Redis 6.0 ou superior</li>
+                            <li>8GB de RAM</li>
+                            <li>50GB de espaço em disco</li>
+                            <li>Conexão com internet</li>
+                        </ul>
+                    </div>
+                    
+                    <h3 class="subsection-title">Instalação via pip</h3>
+                    
+                    <div class="code-block mb-8">
+                        <pre>
+# Criar ambiente virtual
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+# ou
+venv\Scripts\activate  # Windows
+
+# Instalar o pacote
+pip install gerenciador-agentes-ia
+
+# Verificar instalação
+gerenciador-agentes-ia --version
+                        </pre>
+                    </div>
+                    
+                    <h3 class="subsection-title">Instalação a partir do código-fonte</h3>
+                    
+                    <div class="code-block mb-8">
+                        <pre>
+# Clonar o repositório
+git clone https://github.com/empresa/gerenciador-agentes-ia.git
+cd gerenciador-agentes-ia
+
+# Criar ambiente virtual
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+# ou
+venv\Scripts\activate  # Windows
+
+# Instalar dependências
+pip install -e .
+
+# Verificar instalação
+gerenciador-agentes-ia --version
+                        </pre>
+                    </div>
+                    
+                    <h3 class="subsection-title">Instalação com Docker</h3>
+                    
+                    <div class="code-block">
+                        <pre>
+# Baixar a imagem
+docker pull empresa/gerenciador-agentes-ia:latest
+
+# Executar o contêiner
+docker run -d \
+  --name gerenciador-agentes \
+  -p 8000:8000 \
+  -v /caminho/para/config:/app/config \
+  -v /caminho/para/data:/app/data \
+  empresa/gerenciador-agentes-ia:latest
+
+# Verificar logs
+docker logs gerenciador-agentes
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Configuration Section -->
+            <div id="configuracao" class="mb-16">
+                <h2 class="section-title">Configuração</h2>
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                    <p class="text-gray-600 mb-6">
+                        O Capellaris pode ser configurado através de um arquivo de configuração
+                        em formato YAML ou através de variáveis de ambiente. Abaixo estão as principais opções de configuração
+                        disponíveis.
+                    </p>
+                    
+                    <h3 class="subsection-title">Arquivo de Configuração</h3>
+                    
+                    <div class="code-block mb-8">
+                        <pre>
+# config.yaml
+sistema:
+  nome: "Capellaris"
+  versao: "1.0.0"
+  modo_debug: false
+  log_level: "info"
+  
+banco_dados:
+  postgres:
+    host: "localhost"
+    porta: 5432
+    usuario: "postgres"
+    senha: "senha_segura"
+    banco: "gerenciador_agentes"
+  
+  mongodb:
+    uri: "mongodb://localhost:27017"
+    banco: "gerenciador_agentes"
+  
+  redis:
+    host: "localhost"
+    porta: 6379
+    senha: null
+    db: 0
+  
+api:
+  host: "0.0.0.0"
+  porta: 8000
+  workers: 4
+  timeout: 60
+  cors_origins: ["*"]
+  
+seguranca:
+  chave_secreta: "sua_chave_secreta_aqui"
+  algoritmo_jwt: "HS256"
+  expiracao_token: 86400  # 24 horas
+  
+integracao:
+  slack:
+    token: "xoxb-seu-token-aqui"
+    signing_secret: "seu-signing-secret-aqui"
+    canais_permitidos: ["general", "marketing", "desenvolvimento"]
+  
+  teams:
+    app_id: "seu-app-id-aqui"
+    app_password: "seu-app-password-aqui"
+    tenant_id: "seu-tenant-id-aqui"
+  
+agentes:
+  modelos:
+    default: "gpt-4"
+    fallback: "gpt-3.5-turbo"
+  
+  timeout_resposta: 30
+  max_tokens: 2000
+  temperatura: 0.7
+  
+aprendizado:
+  armazenar_interacoes: true
+  analisar_padroes: true
+  otimizar_prompts: true
+  intervalo_analise: 3600  # 1 hora
+                        </pre>
+                    </div>
+                    
+                    <h3 class="subsection-title">Variáveis de Ambiente</h3>
+                    
+                    <div class="bg-gray-50 p-4 rounded-lg mb-8">
+                        <p class="text-gray-600 mb-2">
+                            Todas as configurações também podem ser definidas através de variáveis de ambiente,
+                            seguindo o padrão <code>GERENCIADOR_SECAO_CHAVE</code>.
+                        </p>
+                        <h4 class="font-medium text-gray-800 mb-2">Exemplos:</h4>
+                        <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                            <li><code>GERENCIADOR_SISTEMA_NOME</code> - Nome do sistema</li>
+                            <li><code>GERENCIADOR_BANCO_DADOS_POSTGRES_HOST</code> - Host do PostgreSQL</li>
+                            <li><code>GERENCIADOR_API_PORTA</code> - Porta da API</li>
+                            <li><code>GERENCIADOR_INTEGRACAO_SLACK_TOKEN</code> - Token do Slack</li>
+                        </ul>
+                    </div>
+                    
+                    <h3 class="subsection-title">Inicialização do Sistema</h3>
+                    
+                    <div class="code-block">
+                        <pre>
+# Iniciar com arquivo de configuração
+gerenciador-agentes-ia start --config /caminho/para/config.yaml
+
+# Iniciar com variáveis de ambiente
+export GERENCIADOR_SISTEMA_NOME="Meu Sistema de Agentes"
+export GERENCIADOR_API_PORTA=9000
+gerenciador-agentes-ia start
+
+# Iniciar em modo de desenvolvimento
+gerenciador-agentes-ia start --dev
+
+# Iniciar com configurações específicas
+gerenciador-agentes-ia start --host 0.0.0.0 --porta 8080 --workers 8
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- API Reference Section -->
+            <div id="api" class="mb-16">
+                <h2 class="section-title">Referência de API</h2>
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                    <p class="text-gray-600 mb-6">
+                        O Capellaris expõe uma API RESTful completa para interação
+                        programática com o sistema. Abaixo estão os principais endpoints disponíveis.
+                    </p>
+                    
+                    <h3 class="subsection-title">Autenticação</h3>
+                    
+                    <div class="bg-gray-50 p-4 rounded-lg mb-8">
+                        <p class="text-gray-600 mb-2">
+                            A API utiliza autenticação JWT (JSON Web Token). Para obter um token, faça uma requisição POST
+                            para o endpoint <code>/api/auth/token</code> com as credenciais de usuário.
+                        </p>
+                        <p class="text-gray-600">
+                            Todas as requisições subsequentes devem incluir o token no cabeçalho <code>Authorization</code>
+                            no formato <code>Bearer {token}</code>.
+                        </p>
+                    </div>
+                    
+                    <div class="code-block mb-8">
+                        <pre>
+# Obter token de autenticação
+POST /api/auth/token
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "senha_segura"
+}
+
+# Resposta
+{
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+  "token_type": "bearer",
+  "expires_in": 86400
+}
+                        </pre>
+                    </div>
+                    
+                    <h3 class="subsection-title">Endpoints de Agentes</h3>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-medium text-blue-800 mb-2">Listar Agentes</h4>
+                            <p class="text-gray-600 mb-2"><code>GET /api/agents</code></p>
+                            <p class="text-gray-600">Retorna a lista de todos os agentes disponíveis no sistema.</p>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-medium text-blue-800 mb-2">Obter Agente</h4>
+                            <p class="text-gray-600 mb-2"><code>GET /api/agents/{agent_id}</code></p>
+                            <p class="text-gray-600">Retorna os detalhes de um a
+(Content truncated due to size limit. Use line ranges to read in chunks)

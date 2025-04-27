@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitetura - Capellaris</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .section-title {
+            font-size: 1.875rem;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #4299e1;
+        }
+        .subsection-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 1rem;
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+        }
+        .code-block {
+            background-color: #f7fafc;
+            border-radius: 0.375rem;
+            padding: 1rem;
+            overflow-x: auto;
+            font-family: monospace;
+            font-size: 0.875rem;
+            color: #1a202c;
+        }
+        .btn-primary {
+            background-color: #4299e1;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+        .btn-primary:hover {
+            background-color: #3182ce;
+        }
+        .dark-mode {
+            background-color: #1a202c;
+            color: #e2e8f0;
+        }
+        .dark-mode .section-title {
+            color: #f7fafc;
+            border-bottom-color: #4299e1;
+        }
+        .dark-mode .subsection-title {
+            color: #e2e8f0;
+        }
+        .dark-mode .card {
+            background-color: #2d3748;
+            color: #e2e8f0;
+        }
+        .dark-mode .code-block {
+            background-color: #1a202c;
+            color: #e2e8f0;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-gray-900">Capellaris</h1>
+                </div>
+                <nav class="flex space-x-4">
+                    <a href="index.html" class="text-gray-600 hover:text-gray-900">Início</a>
+                    <a href="arquitetura.html" class="text-blue-600 font-medium">Arquitetura</a>
+                    <a href="agentes.html" class="text-gray-600 hover:text-gray-900">Agentes</a>
+                    <a href="aprendizado.html" class="text-gray-600 hover:text-gray-900">Aprendizado</a>
+                    <a href="integracao.html" class="text-gray-600 hover:text-gray-900">Integração</a>
+                    <a href="documentacao.html" class="text-gray-600 hover:text-gray-900">Documentação</a>
+                    <a href="demo.html" class="text-gray-600 hover:text-gray-900">Demo</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Breadcrumb -->
+            <div class="mb-8">
+                <a href="index.html" class="text-blue-600 hover:text-blue-800 flex items-center">
+                    <svg class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                    Voltar para a página inicial
+                </a>
+            </div>
+
+            <!-- Header -->
+            <div class="text-center mb-12">
+                <h1 class="text-4xl font-bold text-gray-900 mb-4">
+                    Arquitetura do Sistema
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Conheça a arquitetura modular e extensível do Capellaris,
+                    projetada para permitir comunicação eficiente entre agentes e aprendizado contínuo.
+                </p>
+            </div>
+
+            <!-- Architecture Overview -->
+            <div class="mb-16">
+                <h2 class="section-title">Visão Geral da Arquitetura</h2>
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                    <p class="text-gray-600 mb-6">
+                        O Capellaris foi projetado com uma arquitetura modular e extensível,
+                        permitindo fácil adição de novos tipos de agentes e integração com diferentes sistemas externos.
+                        A arquitetura é composta por vários componentes principais que trabalham juntos para fornecer
+                        uma solução completa para gerenciamento de agentes de IA.
+                    </p>
+                    
+                    <div class="bg-blue-50 p-6 rounded-lg mb-8">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-4">Diagrama de Arquitetura</h3>
+                        <div class="bg-white p-4 rounded-lg border border-blue-200">
+                            <pre class="text-sm text-gray-800">
++---------------------+     +---------------------+     +---------------------+
+|                     |     |                     |     |                     |
+|  Agentes            |     |  Sistema de         |     |  Integração com     |
+|  Especializados     |<--->|  Comunicação       |<--->|  Chat               |
+|                     |     |                     |     |                     |
++---------------------+     +---------------------+     +---------------------+
+          ^                           ^                           ^
+          |                           |                           |
+          v                           v                           v
++---------------------+     +---------------------+     +---------------------+
+|                     |     |                     |     |                     |
+|  Gerenciador de     |<--->|  Núcleo do         |<--->|  Confirmação        |
+|  Squads             |     |  Sistema           |     |  Humana             |
+|                     |     |                     |     |                     |
++---------------------+     +---------------------+     +---------------------+
+                                      ^
+                                      |
+                                      v
+                            +---------------------+
+                            |                     |
+                            |  Sistema de         |
+                            |  Aprendizado        |
+                            |                     |
+                            +---------------------+
+                            </pre>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-600 mb-6">
+                        A arquitetura do sistema é baseada em um design modular, onde cada componente tem uma responsabilidade
+                        bem definida e se comunica com outros componentes através de interfaces padronizadas. Isso permite
+                        que o sistema seja facilmente estendido e adaptado para diferentes necessidades e casos de uso.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h3 class="font-semibold text-blue-800 mb-2">Modularidade</h3>
+                            <p class="text-gray-600">
+                                Componentes independentes com interfaces bem definidas,
+                                facilitando manutenção e extensão.
+                            </p>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <h3 class="font-semibold text-green-800 mb-2">Escalabilidade</h3>
+                            <p class="text-gray-600">
+                                Arquitetura projetada para escalar horizontalmente,
+                                suportando múltiplos agentes e tarefas simultâneas.
+                            </p>
+                        </div>
+                        
+                        <div class="bg-purple-50 p-4 rounded-lg">
+                            <h3 class="font-semibold text-purple-800 mb-2">Extensibilidade</h3>
+                            <p class="text-gray-600">
+                                Fácil adição de novos tipos de agentes, integrações
+                                e funcionalidades sem modificar o núcleo do sistema.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core Components -->
+            <div class="mb-16">
+                <h2 class="section-title">Componentes Principais</h2>
+                
+                <div class="space-y-8">
+                    <!-- Core System -->
+                    <div class="card">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold">Núcleo do Sistema (Core)</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            O núcleo do sistema é responsável por gerenciar o registro de agentes, orquestração de tarefas
+                            e manutenção do estado do sistema. Ele atua como o ponto central de coordenação entre todos
+                            os outros componentes.
+                        </p>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-medium text-gray-800 mb-2">Principais Classes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                <li><span class="font-medium">AgentManager:</span> Gerencia o registro e acesso aos agentes</li>
+                                <li><span class="font-medium">TaskOrchestrator:</span> Coordena a execução de tarefas</li>
+                                <li><span class="font-medium">SystemState:</span> Mantém o estado global do sistema</li>
+                                <li><span class="font-medium">ConfigManager:</span> Gerencia configurações do sistema</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Specialized Agents -->
+                    <div class="card">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <svg class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold">Agentes Especializados</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Os agentes especializados são os componentes que realizam tarefas específicas em diferentes
+                            domínios. Cada tipo de agente é otimizado para sua área de especialidade e implementa
+                            a interface comum de agente.
+                        </p>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-medium text-gray-800 mb-2">Tipos de Agentes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                <li><span class="font-medium">MarketingAgent:</span> Especializado em análise e criação de conteúdo de marketing</li>
+                                <li><span class="font-medium">FinancialAgent:</span> Especializado em análise financeira e relatórios</li>
+                                <li><span class="font-medium">DevelopmentAgent:</span> Especializado em assistência de código e debugging</li>
+                                <li><span class="font-medium">HRAgent:</span> Especializado em processos de recursos humanos</li>
+                                <li><span class="font-medium">SalesAgent:</span> Especializado em análise de vendas e estratégias comerciais</li>
+                                <li><span class="font-medium">OperationsAgent:</span> Especializado em otimização de processos operacionais</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Communication System -->
+                    <div class="card">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                <svg class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold">Sistema de Comunicação</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            O sistema de comunicação gerencia a troca de mensagens entre agentes, permitindo que eles
+                            colaborem em tarefas complexas. Ele implementa um protocolo de comunicação padronizado
+                            baseado no protocolo A2A (Agent-to-Agent) do Google.
+                        </p>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-medium text-gray-800 mb-2">Principais Classes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                <li><span class="font-medium">Message:</span> Representa uma mensagem entre agentes</li>
+                                <li><span class="font-medium">MessageQueue:</span> Gerencia filas de mensagens para cada agente</li>
+                                <li><span class="font-medium">CommunicationSystem:</span> Coordena o roteamento de mensagens</li>
+                                <li><span class="font-medium">ChatAdapter:</span> Adapta mensagens para diferentes formatos</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Squad Manager -->
+                    <div class="card">
+                        <div class="flex items-center mb-4">
+                            <d
+(Content truncated due to size limit. Use line ranges to read in chunks)

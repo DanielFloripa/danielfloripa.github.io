@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integração - Capellaris</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .section-title {
+            font-size: 1.875rem;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #4299e1;
+        }
+        .subsection-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 1rem;
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+        }
+        .code-block {
+            background-color: #f7fafc;
+            border-radius: 0.375rem;
+            padding: 1rem;
+            overflow-x: auto;
+            font-family: monospace;
+            font-size: 0.875rem;
+            color: #1a202c;
+        }
+        .btn-primary {
+            background-color: #4299e1;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+        .btn-primary:hover {
+            background-color: #3182ce;
+        }
+        .dark-mode {
+            background-color: #1a202c;
+            color: #e2e8f0;
+        }
+        .dark-mode .section-title {
+            color: #f7fafc;
+            border-bottom-color: #4299e1;
+        }
+        .dark-mode .subsection-title {
+            color: #e2e8f0;
+        }
+        .dark-mode .card {
+            background-color: #2d3748;
+            color: #e2e8f0;
+        }
+        .dark-mode .code-block {
+            background-color: #1a202c;
+            color: #e2e8f0;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-gray-900">Capellaris</h1>
+                </div>
+                <nav class="flex space-x-4">
+                    <a href="index.html" class="text-gray-600 hover:text-gray-900">Início</a>
+                    <a href="arquitetura.html" class="text-gray-600 hover:text-gray-900">Arquitetura</a>
+                    <a href="agentes.html" class="text-gray-600 hover:text-gray-900">Agentes</a>
+                    <a href="aprendizado.html" class="text-gray-600 hover:text-gray-900">Aprendizado</a>
+                    <a href="integracao.html" class="text-blue-600 font-medium">Integração</a>
+                    <a href="documentacao.html" class="text-gray-600 hover:text-gray-900">Documentação</a>
+                    <a href="demo.html" class="text-gray-600 hover:text-gray-900">Demo</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Breadcrumb -->
+            <div class="mb-8">
+                <a href="index.html" class="text-blue-600 hover:text-blue-800 flex items-center">
+                    <svg class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                    Voltar para a página inicial
+                </a>
+            </div>
+
+            <!-- Header -->
+            <div class="text-center mb-12">
+                <h1 class="text-4xl font-bold text-gray-900 mb-4">
+                    Integração com Chat
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Conheça como o Capellaris se integra com plataformas de chat
+                    como Slack e Microsoft Teams, permitindo interações naturais com os agentes.
+                </p>
+            </div>
+
+            <!-- Integration Overview -->
+            <div class="mb-16">
+                <h2 class="section-title">Visão Geral da Integração</h2>
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                    <p class="text-gray-600 mb-6">
+                        A integração com plataformas de chat é um componente essencial do Capellaris,
+                        permitindo que os usuários interajam com os agentes através de interfaces familiares e já utilizadas no dia a dia
+                        da empresa. Esta abordagem elimina a necessidade de aprender novas interfaces e facilita a adoção do sistema.
+                    </p>
+                    
+                    <div class="bg-blue-50 p-6 rounded-lg mb-8">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-4">Principais Benefícios</h3>
+                        <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                            <li><span class="font-medium">Facilidade de Uso:</span> Interação com os agentes através de plataformas já utilizadas pelos usuários.</li>
+                            <li><span class="font-medium">Colaboração:</span> Possibilidade de incluir os agentes em conversas e canais existentes.</li>
+                            <li><span class="font-medium">Contextualização:</span> Os agentes têm acesso ao contexto das conversas para fornecer respostas mais relevantes.</li>
+                            <li><span class="font-medium">Notificações:</span> Utilização dos sistemas de notificação das plataformas para alertar sobre tarefas e atualizações.</li>
+                            <li><span class="font-medium">Histórico:</span> Aproveitamento do histórico de conversas para referência futura e aprendizado.</li>
+                        </ul>
+                    </div>
+                    
+                    <p class="text-gray-600 mb-6">
+                        O sistema atualmente suporta integração com Slack e Microsoft Teams, com planos para expandir
+                        para outras plataformas como Discord, Telegram e WhatsApp Business no futuro. A arquitetura
+                        modular permite adicionar novas integrações de forma simples e consistente.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h3 class="font-semibold text-blue-800 mb-2">Slack</h3>
+                            <p class="text-gray-600">
+                                Integração completa com o Slack, permitindo interações em canais públicos,
+                                privados e mensagens diretas, com suporte a rich messages e blocos interativos.
+                            </p>
+                        </div>
+                        
+                        <div class="bg-purple-50 p-4 rounded-lg">
+                            <h3 class="font-semibold text-purple-800 mb-2">Microsoft Teams</h3>
+                            <p class="text-gray-600">
+                                Integração com o Microsoft Teams, permitindo interações em canais e chats,
+                                com suporte a cards adaptativos e botões de ação.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Integration Architecture -->
+            <div class="mb-16">
+                <h2 class="section-title">Arquitetura de Integração</h2>
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                    <p class="text-gray-600 mb-6">
+                        A arquitetura de integração com chat foi projetada para ser modular, extensível e robusta,
+                        permitindo adicionar novas plataformas de chat com facilidade e garantindo uma experiência
+                        consistente independentemente da plataforma utilizada.
+                    </p>
+                    
+                    <div class="bg-blue-50 p-6 rounded-lg mb-8">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-4">Diagrama de Arquitetura</h3>
+                        <div class="bg-white p-4 rounded-lg border border-blue-200">
+                            <pre class="text-sm text-gray-800">
++---------------------+     +---------------------+     +---------------------+
+|                     |     |                     |     |                     |
+|  Plataformas        |     |  Conectores         |     |  Sistema de         |
+|  de Chat            |<--->|  de Chat            |<--->|  Gerenciamento      |
+|  (Slack, Teams)     |     |  (Adaptadores)      |     |  de Agentes         |
+|                     |     |                     |     |                     |
++---------------------+     +---------------------+     +---------------------+
+                                      ^                           ^
+                                      |                           |
+                                      v                           v
+                            +---------------------+     +---------------------+
+                            |                     |     |                     |
+                            |  Formatadores       |     |  Interface de       |
+                            |  de Mensagem        |     |  Confirmação Humana |
+                            |                     |     |                     |
+                            +---------------------+     +---------------------+
+                            </pre>
+                        </div>
+                    </div>
+                    
+                    <h3 class="subsection-title">Componentes Principais</h3>
+                    
+                    <div class="space-y-6">
+                        <!-- Chat Integration -->
+                        <div class="card">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-semibold">ChatIntegration</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                O componente central que gerencia a integração com diferentes plataformas de chat.
+                                Ele coordena a comunicação entre os conectores específicos de cada plataforma e o
+                                sistema de gerenciamento de agentes.
+                            </p>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-gray-800 mb-2">Responsabilidades:</h4>
+                                <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                    <li>Gerenciar os conectores para diferentes plataformas de chat</li>
+                                    <li>Rotear mensagens entre os usuários e os agentes apropriados</li>
+                                    <li>Coordenar o processo de confirmação humana</li>
+                                    <li>Gerenciar o contexto das conversas</li>
+                                    <li>Monitorar o status das integrações</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Chat Connectors -->
+                        <div class="card">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-green-100 p-3 rounded-full mr-4">
+                                    <svg class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-semibold">Conectores de Chat</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Os conectores são adaptadores específicos para cada plataforma de chat, responsáveis
+                                por traduzir as mensagens entre o formato interno do sistema e o formato específico
+                                de cada plataforma.
+                            </p>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-gray-800 mb-2">Conectores Implementados:</h4>
+                                <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                    <li><span class="font-medium">SlackConnector:</span> Integração com o Slack</li>
+                                    <li><span class="font-medium">TeamsConnector:</span> Integração com o Microsoft Teams</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Message Formatters -->
+                        <div class="card">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                    <svg class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-semibold">Formatadores de Mensagem</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Os formatadores de mensagem são responsáveis por converter as respostas dos agentes
+                                em formatos ricos e interativos específicos de cada plataforma, como blocos interativos
+                                no Slack ou cards adaptativos no Teams.
+                            </p>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-gray-800 mb-2">Tipos de Formatação:</h4>
+                                <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                    <li>Formatação de texto (negrito, itálico, listas, etc.)</li>
+                                    <li>Blocos interativos (botões, menus, etc.)</li>
+                                    <li>Cards e attachments</li>
+                                    <li>Gráficos e visualizações</li>
+                                    <li>Links e referências</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Human Confirmation Interface -->
+                        <div class="card">
+                            <div c
+(Content truncated due to size limit. Use line ranges to read in chunks)
