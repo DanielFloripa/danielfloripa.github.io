@@ -1,8 +1,8 @@
-# Atualizações do Sistema de Gerenciamento de Agentes de IA
+# Atualizações do Capellaris
 
 ## Visão Geral das Atualizações
 
-Este documento descreve as atualizações e melhorias realizadas no Sistema de Gerenciamento de Agentes de IA, com foco especial nas correções e aprimoramentos do sistema de aprendizado.
+Este documento descreve as atualizações e melhorias realizadas no Capellaris, com foco especial nas correções e aprimoramentos do sistema de aprendizado.
 
 ## Correções no Sistema de Aprendizado
 
@@ -80,4 +80,4 @@ Para aproveitar ao máximo as novas funcionalidades, recomendamos:
 
 ## Conclusão
 
-As atualizações realizadas no sistema de aprendizado, especialmente no método `store_interaction()`, representam uma melhoria significativa na qualidade, robustez e capacidades do Sistema de Gerenciamento de Agentes de IA. Estas mudanças permitem que o sistema aprenda de forma mais eficiente com base no histórico de interações, resultando em agentes mais inteligentes e adaptáveis às necessidades da empresa.
+As atualizações realizadas no sistema de aprendizado, especialmente no método `store_interaction()`, representam uma melhoria significativa na qualidade, robustez e capacidades do Capellaris. Estas mudanças permitem que o sistema aprenda de forma mais eficiente com base no histórico de interações, resultando em agentes mais inteligentes e adaptáveis às necessidades da empresa.

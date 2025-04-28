@@ -275,5 +275,460 @@
                         
                         <!-- Human Confirmation Interface -->
                         <div class="card">
-                            <div c
-(Content truncated due to size limit. Use line ranges to read in chunks)
+                            <div class="flex items-center mb-4">
+                                <div class="bg-red-100 p-3 rounded-full mr-4">
+                                    <svg class="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-semibold">Interface de Confirmação Humana</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                A Interface de Confirmação Humana gerencia o processo de aprovação para execução de tarefas,
+                                garantindo que os agentes não realizem ações não autorizadas. Ela utiliza as plataformas de
+                                chat para enviar solicitações de aprovação e processar as respostas.
+                            </p>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-gray-800 mb-2">Funcionalidades:</h4>
+                                <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                    <li>Envio de solicitações de aprovação</li>
+                                    <li>Processamento de respostas (aprovar, rejeitar, solicitar mais informações)</li>
+                                    <li>Timeout e escalação de solicitações não respondidas</li>
+                                    <li>Registro de aprovações e rejeições</li>
+                                    <li>Níveis de aprovação baseados em complexidade e impacto da tarefa</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slack Integration -->
+            <div class="mb-16">
+                <h2 class="section-title">Integração com Slack</h2>
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                    <p class="text-gray-600 mb-6">
+                        A integração com o Slack permite que os usuários interajam com os agentes de IA diretamente
+                        nos canais e mensagens diretas do Slack, aproveitando todos os recursos da plataforma como
+                        threads, reações, blocos interativos e notificações.
+                    </p>
+                    
+                    <div class="bg-blue-50 p-6 rounded-lg mb-8">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-4">Funcionalidades</h3>
+                        <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                            <li><span class="font-medium">Menções:</span> Os agentes podem ser mencionados em canais usando @agente_nome</li>
+                            <li><span class="font-medium">Mensagens Diretas:</span> Os usuários podem enviar mensagens diretas para os agentes</li>
+                            <li><span class="font-medium">Threads:</span> As conversas são organizadas em threads para manter o contexto</li>
+                            <li><span class="font-medium">Blocos Interativos:</span> Botões, menus e outros elementos interativos para facilitar a interação</li>
+                            <li><span class="font-medium">Reações:</span> Os usuários podem reagir às mensagens dos agentes para fornecer feedback rápido</li>
+                            <li><span class="font-medium">Notificações:</span> Os agentes podem enviar notificações para alertar sobre tarefas e atualizações</li>
+                        </ul>
+                    </div>
+                    
+                    <h3 class="subsection-title">Configuração</h3>
+                    
+                    <div class="bg-gray-50 p-4 rounded-lg mb-8">
+                        <h4 class="font-medium text-gray-800 mb-2">Requisitos:</h4>
+                        <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                            <li>Workspace do Slack</li>
+                            <li>Permissões de administrador para instalar aplicativos</li>
+                            <li>Criação de um aplicativo Slack na plataforma de desenvolvedores do Slack</li>
+                            <li>Configuração de webhooks e permissões apropriadas</li>
+                        </ul>
+                    </div>
+                    
+                    <h3 class="subsection-title">Exemplo de Código: Configuração do Slack</h3>
+                    
+                    <div class="code-block mb-8">
+                        <pre>
+# Configuração do conector Slack
+slack_config = {
+    "token": "xoxb-your-token",
+    "signing_secret": "your-signing-secret",
+    "allowed_channels": ["general", "marketing", "development", "finance"],
+    "default_response_timeout": 300,  # 5 minutos
+    "notification_preferences": {
+        "task_completion": True,
+        "approval_requests": True,
+        "error_notifications": True
+    },
+    "formatting": {
+        "use_blocks": True,
+        "use_attachments": True,
+        "max_text_length": 3000
+    }
+}
+
+# Inicializar o conector
+slack_connector = SlackConnector(slack_config)
+
+# Registrar o conector no sistema de integração
+chat_integration = ChatIntegration()
+chat_integration.add_connector("slack", slack_connector)
+
+# Configurar a interface de confirmação humana
+confirmation_interface = HumanConfirmationInterface()
+confirmation_interface.register_platform("slack", slack_connector)
+                        </pre>
+                    </div>
+                    
+                    <h3 class="subsection-title">Exemplo de Interação</h3>
+                    
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h4 class="font-medium text-gray-800 mb-2">Solicitação de Tarefa:</h4>
+                        <div class="bg-white p-3 rounded border border-gray-200 mb-4">
+                            <p class="text-gray-800 font-medium">Usuário (em #marketing):</p>
+                            <p class="text-gray-600">@agente_marketing analise os resultados da nossa campanha de email marketing do último trimestre e sugira melhorias para aumentar a taxa de conversão.</p>
+                        </div>
+                        
+                        <h4 class="font-medium text-gray-800 mb-2">Solicitação de Aprovação:</h4>
+                        <div class="bg-white p-3 rounded border border-gray-200 mb-4">
+                            <p class="text-gray-800 font-medium">Agente de IA (em thread):</p>
+                            <div class="bg-blue-50 p-3 rounded border border-blue-200">
+                                <p class="text-gray-800 font-medium">Solicitação de Aprovação</p>
+                                <p class="text-gray-600 mb-2">O agente de marketing gostaria de executar a seguinte tarefa:</p>
+                                <p class="text-gray-600 italic mb-2">"Analisar os resultados da campanha de email marketing do último trimestre e sugerir melhorias para aumentar a taxa de conversão."</p>
+                                <p class="text-gray-600 mb-3">Esta tarefa envolverá acesso aos dados de marketing e análise de métricas de campanha.</p>
+                                <div class="flex space-x-2">
+                                    <button class="bg-green-500 text-white px-3 py-1 rounded text-sm">Aprovar</button>
+                                    <button class="bg-red-500 text-white px-3 py-1 rounded text-sm">Rejeitar</button>
+                                    <button class="bg-gray-500 text-white px-3 py-1 rounded text-sm">Solicitar mais informações</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h4 class="font-medium text-gray-800 mb-2">Resposta do Agente:</h4>
+                        <div class="bg-white p-3 rounded border border-gray-200">
+                            <p class="text-gray-800 font-medium">Agente de Marketing (em thread):</p>
+                            <p class="text-gray-600 mb-2">Aqui está a análise dos resultados da campanha de email marketing do último trimestre:</p>
+                            <div class="bg-gray-100 p-2 rounded mb-2">
+                                <p class="text-gray-800 font-medium">Métricas Principais:</p>
+                                <ul class="list-disc pl-5 text-gray-600">
+                                    <li>Taxa de abertura: 24.3% (↓ 2.1% em relação ao trimestre anterior)</li>
+                                    <li>Taxa de clique: 3.7% (↓ 0.5% em relação ao trimestre anterior)</li>
+                                    <li>Taxa de conversão: 1.2% (↓ 0.3% em relação ao trimestre anterior)</li>
+                                    <li>Taxa de descadastramento: 0.8% (↑ 0.2% em relação ao trimestre anterior)</li>
+                                </ul>
+                            </div>
+                            <p class="text-gray-600 mb-2">Recomendações para melhorar a taxa de conversão:</p>
+                            <ol class="list-decimal pl-5 text-gray-600 mb-2">
+                                <li>Melhorar a segmentação de público com base no comportamento de compra</li>
+                                <li>Otimizar os assuntos dos emails para aumentar a taxa de abertura</li>
+                                <li>Redesenhar as CTAs para torná-las mais claras e atrativas</li>
+                                <li>Implementar testes A/B para diferentes layouts e conteúdos</li>
+                                <li>Ajustar o timing dos envios com base na análise de horários de maior engajamento</li>
+                            </ol>
+                            <p class="text-gray-600">Gostaria de elaborar alguma dessas recomendações em mais detalhes?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Microsoft Teams Integration -->
+            <div class="mb-16">
+                <h2 class="section-title">Integração com Microsoft Teams</h2>
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                    <p class="text-gray-600 mb-6">
+                        A integração com o Microsoft Teams permite que os usuários interajam com os agentes de IA
+                        diretamente nos canais e chats do Teams, aproveitando recursos como cards adaptativos,
+                        botões de ação e notificações.
+                    </p>
+                    
+                    <div class="bg-purple-50 p-6 rounded-lg mb-8">
+                        <h3 class="text-xl font-semibold text-purple-800 mb-4">Funcionalidades</h3>
+                        <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                            <li><span class="font-medium">Menções:</span> Os agentes podem ser mencionados em canais usando @agente_nome</li>
+                            <li><span class="font-medium">Chats Privados:</span> Os usuários podem iniciar chats privados com os agentes</li>
+                            <li><span class="font-medium">Cards Adaptativos:</span> Interfaces ricas e interativas para apresentação de informações</li>
+                            <li><span class="font-medium">Botões de Ação:</span> Elementos interativos para facilitar a interação</li>
+                            <li><span class="font-medium">Abas Personalizadas:</span> Interfaces dedicadas dentro do Teams para interações mais complexas</li>
+                            <li><span class="font-medium">Notificações:</span> Os agentes podem enviar notificações para alertar sobre tarefas e atualizações</li>
+                        </ul>
+                    </div>
+                    
+                    <h3 class="subsection-title">Configuração</h3>
+                    
+                    <div class="bg-gray-50 p-4 rounded-lg mb-8">
+                        <h4 class="font-medium text-gray-800 mb-2">Requisitos:</h4>
+                        <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                            <li>Tenant do Microsoft 365</li>
+                            <li>Permissões de administrador para registrar aplicativos</li>
+                            <li>Registro de um aplicativo no Azure Active Directory</li>
+                            <li>Configuração de bot no Bot Framework</li>
+                            <li>Configuração de permissões e escopos apropriados</li>
+                        </ul>
+                    </div>
+                    
+                    <h3 class="subsection-title">Exemplo de Código: Configuração do Teams</h3>
+                    
+                    <div class="code-block mb-8">
+                        <pre>
+# Configuração do conector Teams
+teams_config = {
+    "app_id": "your-app-id",
+    "app_password": "your-app-password",
+    "tenant_id": "your-tenant-id",
+    "allowed_teams": ["Marketing", "Development", "Finance"],
+    "default_response_timeout": 300,  # 5 minutos
+    "notification_preferences": {
+        "task_completion": True,
+        "approval_requests": True,
+        "error_notifications": True
+    },
+    "formatting": {
+        "use_adaptive_cards": True,
+        "use_hero_cards": True,
+        "max_text_length": 2000
+    }
+}
+
+# Inicializar o conector
+teams_connector = TeamsConnector(teams_config)
+
+# Registrar o conector no sistema de integração
+chat_integration = ChatIntegration()
+chat_integration.add_connector("teams", teams_connector)
+
+# Configurar a interface de confirmação humana
+confirmation_interface = HumanConfirmationInterface()
+confirmation_interface.register_platform("teams", teams_connector)
+                        </pre>
+                    </div>
+                    
+                    <h3 class="subsection-title">Exemplo de Card Adaptativo</h3>
+                    
+                    <div class="code-block">
+                        <pre>
+# Exemplo de card adaptativo para solicitação de aprovação
+approval_card = {
+    "type": "AdaptiveCard",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "medium",
+            "weight": "bolder",
+            "text": "Solicitação de Aprovação"
+        },
+        {
+            "type": "TextBlock",
+            "text": "O agente de marketing gostaria de executar a seguinte tarefa:",
+            "wrap": True
+        },
+        {
+            "type": "TextBlock",
+            "text": "Analisar os resultados da campanha de email marketing do último trimestre e sugerir melhorias para aumentar a taxa de conversão.",
+            "wrap": True,
+            "isSubtle": True,
+            "italic": True
+        },
+        {
+            "type": "TextBlock",
+            "text": "Esta tarefa envolverá acesso aos dados de marketing e análise de métricas de campanha.",
+            "wrap": True
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.Submit",
+            "title": "Aprovar",
+            "data": {
+                "action": "approve",
+                "task_id": "task_123456"
+            },
+            "style": "positive"
+        },
+        {
+            "type": "Action.Submit",
+            "title": "Rejeitar",
+            "data": {
+                "action": "reject",
+                "task_id": "task_123456"
+            },
+            "style": "destructive"
+        },
+        {
+            "type": "Action.Submit",
+            "title": "Solicitar mais informações",
+            "data": {
+                "action": "more_info",
+                "task_id": "task_123456"
+            }
+        }
+    ]
+}
+
+# Enviar o card para o Teams
+teams_connector.send_adaptive_card(
+    recipient="user@company.com",
+    card=approval_card,
+    conversation_id="conversation_123456"
+)
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Human Confirmation Process -->
+            <div>
+                <h2 class="section-title">Processo de Confirmação Humana</h2>
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                    <p class="text-gray-600 mb-6">
+                        O processo de confirmação humana é um componente essencial do Capellaris,
+                        garantindo que os agentes não realizem ações não autorizadas. Este processo utiliza as plataformas de
+                        chat para enviar solicitações de aprovação e processar as respostas dos operadores humanos.
+                    </p>
+                    
+                    <div class="bg-blue-50 p-6 rounded-lg mb-8">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-4">Fluxo de Confirmação</h3>
+                        <ol class="list-decimal pl-5 text-gray-600 space-y-3">
+                            <li>
+                                <span class="font-medium">Solicitação de Tarefa:</span> Um usuário solicita que um agente execute uma tarefa através da plataforma de chat.
+                            </li>
+                            <li>
+                                <span class="font-medium">Análise da Tarefa:</span> O sistema analisa a tarefa para determinar seu nível de complexidade e impacto.
+                            </li>
+                            <li>
+                                <span class="font-medium">Identificação de Aprovadores:</span> Com base na análise, o sistema identifica os operadores humanos que podem aprovar a tarefa.
+                            </li>
+                            <li>
+                                <span class="font-medium">Envio de Solicitação:</span> Uma solicitação de aprovação é enviada para os aprovadores através da plataforma de chat.
+                            </li>
+                            <li>
+                                <span class="font-medium">Resposta do Aprovador:</span> O aprovador responde à solicitação, aprovando, rejeitando ou solicitando mais informações.
+                            </li>
+                            <li>
+                                <span class="font-medium">Processamento da Resposta:</span> O sistema processa a resposta e, se aprovada, permite que o agente execute a tarefa.
+                            </li>
+                            <li>
+                                <span class="font-medium">Notificação ao Usuário:</span> O usuário é notificado sobre a decisão e, se aprovada, sobre o progresso e conclusão da tarefa.
+                            </li>
+                        </ol>
+                    </div>
+                    
+                    <h3 class="subsection-title">Níveis de Aprovação</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <h4 class="font-medium text-green-800 mb-2">Nível Baixo</h4>
+                            <p class="text-gray-600 mb-2">
+                                Tarefas simples com baixo impacto e sem acesso a dados sensíveis.
+                            </p>
+                            <p class="text-gray-600">
+                                <span class="font-medium">Exemplos:</span> Análises básicas, resumos de informações públicas, recomendações gerais.
+                            </p>
+                        </div>
+                        
+                        <div class="bg-yellow-50 p-4 rounded-lg">
+                            <h4 class="font-medium text-yellow-800 mb-2">Nível Médio</h4>
+                            <p class="text-gray-600 mb-2">
+                                Tarefas com impacto moderado ou acesso a dados internos não sensíveis.
+                            </p>
+                            <p class="text-gray-600">
+                                <span class="font-medium">Exemplos:</span> Análises detalhadas, criação de relatórios, recomendações específicas.
+                            </p>
+                        </div>
+                        
+                        <div class="bg-red-50 p-4 rounded-lg">
+                            <h4 class="font-medium text-red-800 mb-2">Nível Alto</h4>
+                            <p class="text-gray-600 mb-2">
+                                Tarefas com alto impacto ou acesso a dados sensíveis ou confidenciais.
+                            </p>
+                            <p class="text-gray-600">
+                                <span class="font-medium">Exemplos:</span> Análises financeiras, acesso a dados de clientes, decisões estratégicas.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <h3 class="subsection-title">Exemplo de Código: Solicitação de Aprovação</h3>
+                    
+                    <div class="code-block">
+                        <pre>
+def request_approval(self, task_id, task_description, agent_id, platform, channel, requester):
+    """
+    Solicita aprovação para execução de uma tarefa.
+    
+    Args:
+        task_id (str): Identificador único da tarefa
+        task_description (str): Descrição da tarefa a ser executada
+        agent_id (str): Identificador do agente que executará a tarefa
+        platform (str): Plataforma de chat (slack, teams)
+        channel (str): Canal ou conversa onde a solicitação foi feita
+        requester (str): Identificador do usuário que solicitou a tarefa
+        
+    Returns:
+        str: ID da solicitação de aprovação
+    """
+    # Determinar o nível de aprovação necessário
+    approval_level = self._determine_approval_level(task_description, agent_id)
+    
+    # Identificar aprovadores com base no nível
+    approvers = self._identify_approvers(approval_level, platform, channel)
+    
+    if not approvers:
+        # Se não houver aprovadores disponíveis, notificar o solicitante
+        self._notify_no_approvers(platform, channel, requester, task_id)
+        return None
+    
+    # Criar solicitação de aprovação
+    approval_request = {
+        "id": f"approval_{uuid.uuid4().hex}",
+        "task_id": task_id,
+        "task_description": task_description,
+        "agent_id": agent_id,
+        "requester": requester,
+        "approval_level": approval_level,
+        "approvers": approvers,
+        "platform": platform,
+        "channel": channel,
+        "status": "pending",
+        "created_at": datetime.now().isoformat(),
+        "expires_at": (datetime.now() + timedelta(minutes=30)).isoformat()
+    }
+    
+    # Armazenar a solicitação
+    self.approval_store.store_request(approval_request)
+    
+    # Enviar solicitação para os aprovadores
+    for approver in approvers:
+        self._send_approval_request(
+            platform=platform,
+            recipient=approver,
+            approval_request=approval_request
+        )
+    
+    # Configurar timeout para a solicitação
+    self._schedule_approval_timeout(approval_request["id"], 30 * 60)  # 30 minutos
+    
+    return approval_request["id"]
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold">Capellaris</h3>
+                    <p class="text-gray-400">O cérebro distribuído da sua organização.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="index.html" class="text-gray-300 hover:text-white">Início</a>
+                    <a href="arquitetura.html" class="text-gray-300 hover:text-white">Arquitetura</a>
+                    <a href="documentacao.html" class="text-gray-300 hover:text-white">Documentação</a>
+                    <a href="demo.html" class="text-gray-300 hover:text-white">Demo</a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+                <p>&copy; 2025 Capellaris. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

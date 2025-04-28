@@ -128,7 +128,7 @@
 +---------------------+     +---------------------+     +---------------------+
 |                     |     |                     |     |                     |
 |  Agentes            |     |  Sistema de         |     |  Integração com     |
-|  Especializados     |<--->|  Comunicação       |<--->|  Chat               |
+|  Especializados     |<--->|   Comunicação       |<--->|  Chat               |
 |                     |     |                     |     |                     |
 +---------------------+     +---------------------+     +---------------------+
           ^                           ^                           ^
@@ -136,8 +136,8 @@
           v                           v                           v
 +---------------------+     +---------------------+     +---------------------+
 |                     |     |                     |     |                     |
-|  Gerenciador de     |<--->|  Núcleo do         |<--->|  Confirmação        |
-|  Squads             |     |  Sistema           |     |  Humana             |
+|  Gerenciador de     |<--->|   Núcleo do         |<--->|  Confirmação        |
+|  Squads             |     |   Sistema           |     |  Humana             |
 |                     |     |                     |     |                     |
 +---------------------+     +---------------------+     +---------------------+
                                       ^
@@ -275,5 +275,276 @@
                     <!-- Squad Manager -->
                     <div class="card">
                         <div class="flex items-center mb-4">
-                            <d
-(Content truncated due to size limit. Use line ranges to read in chunks)
+                            <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                                <svg class="h-6 w-6 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold">Gerenciador de Squads</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            O gerenciador de squads é responsável por formar e coordenar equipes temporárias de agentes
+                            para tarefas complexas que exigem múltiplas especialidades. Ele define papéis, fluxos de trabalho
+                            e gerencia a comunicação entre os membros do squad.
+                        </p>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-medium text-gray-800 mb-2">Principais Classes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                <li><span class="font-medium">Squad:</span> Representa uma equipe de agentes</li>
+                                <li><span class="font-medium">SquadManager:</span> Gerencia a criação e dissolução de squads</li>
+                                <li><span class="font-medium">WorkflowDefinition:</span> Define o fluxo de trabalho do squad</li>
+                                <li><span class="font-medium">TaskDependency:</span> Gerencia dependências entre tarefas</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Learning System -->
+                    <div class="card">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-red-100 p-3 rounded-full mr-4">
+                                <svg class="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold">Sistema de Aprendizado</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            O sistema de aprendizado armazena e analisa o histórico de interações para melhorar o desempenho
+                            dos agentes ao longo do tempo. Ele identifica padrões, otimiza prompts e adapta o comportamento
+                            dos agentes com base em feedback e resultados anteriores.
+                        </p>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-medium text-gray-800 mb-2">Principais Classes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                <li><span class="font-medium">LearningSystem:</span> Coordena o processo de aprendizado</li>
+                                <li><span class="font-medium">KnowledgeBase:</span> Armazena o histórico de interações</li>
+                                <li><span class="font-medium">PatternAnalyzer:</span> Identifica padrões em interações</li>
+                                <li><span class="font-medium">PromptOptimizer:</span> Otimiza prompts com base em histórico</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Chat Integration -->
+                    <div class="card">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                <svg class="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold">Integração com Chat</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            O módulo de integração com chat conecta o sistema a plataformas de chat como Slack e Microsoft Teams,
+                            permitindo que os usuários interajam com os agentes através de interfaces familiares. Ele gerencia
+                            a conversão de mensagens entre o formato interno e os formatos específicos de cada plataforma.
+                        </p>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-medium text-gray-800 mb-2">Principais Classes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                <li><span class="font-medium">ChatIntegration:</span> Gerencia a integração com plataformas de chat</li>
+                                <li><span class="font-medium">SlackConnector:</span> Conecta o sistema ao Slack</li>
+                                <li><span class="font-medium">TeamsConnector:</span> Conecta o sistema ao Microsoft Teams</li>
+                                <li><span class="font-medium">MessageFormatter:</span> Formata mensagens para diferentes plataformas</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Human Confirmation -->
+                    <div class="card">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-pink-100 p-3 rounded-full mr-4">
+                                <svg class="h-6 w-6 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold">Interface de Confirmação Humana</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            A interface de confirmação humana gerencia o processo de aprovação para execução de tarefas,
+                            garantindo que os agentes não realizem ações não autorizadas. Ela envia solicitações de aprovação
+                            para os operadores humanos e processa suas respostas.
+                        </p>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-medium text-gray-800 mb-2">Principais Classes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                <li><span class="font-medium">HumanConfirmationInterface:</span> Gerencia o processo de aprovação</li>
+                                <li><span class="font-medium">ApprovalRequest:</span> Representa uma solicitação de aprovação</li>
+                                <li><span class="font-medium">ApprovalResponse:</span> Representa a resposta do operador</li>
+                                <li><span class="font-medium">ApprovalManager:</span> Coordena o fluxo de aprovações</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Flow -->
+            <div class="mb-16">
+                <h2 class="section-title">Fluxo de Dados</h2>
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                    <p class="text-gray-600 mb-6">
+                        O fluxo de dados no Capellaris segue um padrão bem definido,
+                        desde a solicitação inicial do usuário até a entrega dos resultados. Abaixo está uma descrição
+                        detalhada de como os dados fluem através dos diferentes componentes do sistema.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex flex-col md:flex-row items-start">
+                            <div class="flex-shrink-0 bg-blue-100 rounded-full p-3 mr-6 mb-4 md:mb-0">
+                                <span class="text-blue-800 font-bold">1</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-3">Entrada do Usuário</h3>
+                                <p class="text-gray-600">
+                                    O usuário envia uma solicitação através de uma plataforma de chat (Slack, Teams).
+                                    A mensagem é recebida pelo módulo de integração com chat, que a converte para o
+                                    formato interno do sistema.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex flex-col md:flex-row items-start">
+                            <div class="flex-shrink-0 bg-blue-100 rounded-full p-3 mr-6 mb-4 md:mb-0">
+                                <span class="text-blue-800 font-bold">2</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-3">Análise e Planejamento</h3>
+                                <p class="text-gray-600">
+                                    O núcleo do sistema analisa a solicitação e determina quais agentes são necessários
+                                    para executá-la. Se a tarefa for complexa, o gerenciador de squads é acionado para
+                                    formar uma equipe de agentes.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex flex-col md:flex-row items-start">
+                            <div class="flex-shrink-0 bg-blue-100 rounded-full p-3 mr-6 mb-4 md:mb-0">
+                                <span class="text-blue-800 font-bold">3</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-3">Solicitação de Aprovação</h3>
+                                <p class="text-gray-600">
+                                    A interface de confirmação humana envia uma solicitação de aprovação para o operador,
+                                    detalhando a tarefa e os agentes envolvidos. O operador responde aprovando, rejeitando
+                                    ou solicitando mais informações.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex flex-col md:flex-row items-start">
+                            <div class="flex-shrink-0 bg-blue-100 rounded-full p-3 mr-6 mb-4 md:mb-0">
+                                <span class="text-blue-800 font-bold">4</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-3">Otimização de Prompts</h3>
+                                <p class="text-gray-600">
+                                    O sistema de aprendizado otimiza os prompts com base no histórico de interações
+                                    semelhantes, melhorando a qualidade das respostas dos agentes.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex flex-col md:flex-row items-start">
+                            <div class="flex-shrink-0 bg-blue-100 rounded-full p-3 mr-6 mb-4 md:mb-0">
+                                <span class="text-blue-800 font-bold">5</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-3">Execução da Tarefa</h3>
+                                <p class="text-gray-600">
+                                    Os agentes executam a tarefa, comunicando-se entre si através do sistema de comunicação
+                                    quando necessário. Se um squad foi formado, o fluxo de trabalho definido é seguido,
+                                    com cada agente executando sua parte da tarefa.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex flex-col md:flex-row items-start">
+                            <div class="flex-shrink-0 bg-blue-100 rounded-full p-3 mr-6 mb-4 md:mb-0">
+                                <span class="text-blue-800 font-bold">6</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-3">Entrega de Resultados</h3>
+                                <p class="text-gray-600">
+                                    Os resultados da tarefa são formatados e enviados de volta ao usuário através da
+                                    plataforma de chat original. O sistema de aprendizado armazena a interação completa
+                                    para análise e melhoria futura.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Stack -->
+            <div>
+                <h2 class="section-title">Stack Tecnológica</h2>
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                    <p class="text-gray-600 mb-6">
+                        O Capellaris é implementado utilizando uma stack tecnológica
+                        moderna e robusta, com foco em desempenho, escalabilidade e manutenibilidade.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="card">
+                            <h3 class="text-xl font-semibold mb-4">Backend</h3>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                                <li><span class="font-medium">Linguagem:</span> Python 3.10+</li>
+                                <li><span class="font-medium">Framework:</span> FastAPI para APIs RESTful</li>
+                                <li><span class="font-medium">Banco de Dados:</span> PostgreSQL para armazenamento persistente</li>
+                                <li><span class="font-medium">Cache:</span> Redis para armazenamento em memória</li>
+                                <li><span class="font-medium">Mensageria:</span> RabbitMQ para comunicação assíncrona</li>
+                                <li><span class="font-medium">Modelos de IA:</span> Integração com OpenAI GPT-4 e outros LLMs</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="card">
+                            <h3 class="text-xl font-semibold mb-4">Integração</h3>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                                <li><span class="font-medium">APIs:</span> RESTful e GraphQL para integração com sistemas externos</li>
+                                <li><span class="font-medium">Webhooks:</span> Para integração com plataformas de chat</li>
+                                <li><span class="font-medium">Autenticação:</span> OAuth 2.0 e JWT para segurança</li>
+                                <li><span class="font-medium">Documentação:</span> Swagger/OpenAPI para documentação de API</li>
+                                <li><span class="font-medium">Monitoramento:</span> Prometheus e Grafana para métricas</li>
+                                <li><span class="font-medium">Logging:</span> ELK Stack (Elasticsearch, Logstash, Kibana)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 p-4 bg-blue-50 rounded-lg">
+                        <h3 class="font-semibold text-blue-800 mb-2">Requisitos de Infraestrutura</h3>
+                        <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                            <li>Servidor com mínimo de 4 vCPUs e 8GB de RAM para ambiente de produção</li>
+                            <li>Armazenamento SSD para banco de dados e cache</li>
+                            <li>Conexão de internet estável e rápida para comunicação com APIs externas</li>
+                            <li>Ambiente containerizado (Docker) para facilitar implantação e escalabilidade</li>
+                            <li>Orquestração de containers (Kubernetes) para ambientes de produção de grande escala</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold">Capellaris</h3>
+                    <p class="text-gray-400">O cérebro distribuído da sua organização.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="index.html" class="text-gray-300 hover:text-white">Início</a>
+                    <a href="arquitetura.html" class="text-gray-300 hover:text-white">Arquitetura</a>
+                    <a href="documentacao.html" class="text-gray-300 hover:text-white">Documentação</a>
+                    <a href="demo.html" class="text-gray-300 hover:text-white">Demo</a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+                <p>&copy; 2025 Capellaris. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
