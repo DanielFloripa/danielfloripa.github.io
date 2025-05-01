@@ -107,10 +107,19 @@ a:hover {
 	border-bottom-color: rgba(255, 255, 255, 0);
 }
 
-.intro {
+.intro-mobile {
 	position: absolute;
 	transform: translate(100%, 50%);
 	max-width: 450px !important;
+}
+
+.intro {
+	position: absolute;
+	transform: translate(100%, 50%);
+}
+
+.carrousel-inner {
+	height: 250px !important;
 }
 
 .signature {
@@ -735,13 +744,13 @@ section.dark a:hover {
 	border-bottom-color: rgba(255, 255, 255, 0);
 }
 
-@media screen and (max-width: 659.98px) {
+@media screen and (max-width: 799.98px) {
     .mobile-hide {
         display: none;
     }
 }
 
-@media screen and (min-width: 659.98px) {
+@media screen and (min-width: 799.98px) {
     .mobile-show {
         display: none;
     }
