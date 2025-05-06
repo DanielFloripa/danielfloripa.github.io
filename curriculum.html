@@ -32,20 +32,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRs+IipeNBmm3/dR2vwDWe1FR3D6uz2QCaUSoPkN5" crossorigin="anonymous">
     
     <script>
-        async function getUserIP() {
-            try {
-              const response = await fetch('https://api.ipify.org?format=json');
-              const data = await response.json();
-              return data.ip;
-            } catch (error) {
-              return undefined;
-            }
-          }
         var dataLayer = [{
             'language': 'pt',
             'section': 'home',
-            'date': new Date(),
-            'address': await getUserIP().then(function (a) {return a}),
+            'date': new Date()
         }];
     </script>
     <!-- Google Tag Manager -->
@@ -61,6 +51,7 @@
     <script src="assets/js/libs/skel.min.js"></script>
     <script src="assets/js/libs/skel-layers.min.js"></script>
     <script src="assets/js/init.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+7mg3Vddi0hG7f56Zr3YzVY7dG3cF" crossorigin="anonymous"></script>
     <!--[if lte IE 9]>
     <link rel="stylesheet" href="assets/css/ie/v9.css"/><![endif]-->
     <!--[if lte IE 8]>
@@ -155,7 +146,7 @@
             <h2>Personal info</h2>
             <div class="list-vertical-items">
                 <p class="fal fa-user"> Daniel Scheidemantel Camargo</p>
-                <p class="fal fa-map-marker"> Estreito, Florianópolis/SC – Brazil</p>
+                <p class="fal fa-map-marker"> Estreito, Florianópolis/SC - Brazil</p>
                 <p class="fal fa-phone" > +55 (47) 99967-5469</p>
                 <p class="fal fa-envelope"> daniel.supervisao <strong class="fal fa-at" style="font-size:14px"></strong> gmail.com</p>
                 <p class="fal fa-male"> Male, <i class="fal fa-birthday-cake"></i> 1986-Jan, <i class="fal fa-venus-mars"></i> Married </p>
@@ -203,8 +194,8 @@
     </header>
 
     <div>
-      <p> (04/2021 – Present) <a href="https://www.buscaonibus.com.br" target="_blank">
-          BuscaÔnibus</a> – Florianópolis/SC<br>Senior Full Stack Developer</p>
+      <p> (04/2021 ~ Present) <a href="https://www.buscaonibus.com.br" target="_blank">
+          BuscaÔnibus</a> - Florianópolis/SC<br>Senior Full Stack Developer</p>
       <ul class="default">
         <li> Full stack development using Python (Django), React Native (mobile), and CMS on GCP.</li>
         <li> Backend services and APIs in Flask (GCP Cloud Functions / Cloud Run).</li>
@@ -216,8 +207,8 @@
     </div>
 
     <div>
-      <p> (12/2019 – 04/2021) <a href="https://www.portobelloshop.com.br" target="_blank">
-          Portobello Shop</a> – Florianópolis/SC<br>Mid-level Developer (Integrations and Automation)</p>
+      <p> (12/2019 ~ 04/2021) <a href="https://www.portobelloshop.com.br" target="_blank">
+          Portobello Shop</a> - Florianópolis/SC<br>Mid-level Developer (Integrations and Automation)</p>
       <ul class="default">
         <li> Development of simulators (Django, Postgres on Heroku).</li>
         <li> Python-based microservices (AWS, Azure, Kubernetes).</li>
@@ -228,8 +219,8 @@
     </div>
 
     <div>
-      <p> (08/2018 – 11/2019) <a href="https://stormtecnologia.com.br" target="_blank">
-          Stormtech</a> – Florianópolis/SC<br>Full Stack Developer</p>
+      <p> (08/2018 ~ 11/2019) <a href="https://stormtecnologia.com.br" target="_blank">
+          Stormtech</a> - Florianópolis/SC<br>Full Stack Developer</p>
       <ul class="default">
         <li> Development of banking RPA bots and web scrapers (Selenium, Scrapy).</li>
         <li> API development (Flask), AWS serverless architecture, cost optimization.</li>
@@ -263,7 +254,7 @@
         </div>
 
         <div>
-            <p> (03/2017 – 03/2018) <a href="http://www.cct.udesc.br" target="_blank"> State University of Santa Catarina</a> (UDESC) – Joinville/SC.
+            <p> (03/2017 ~ 03/2018) <a href="http://www.cct.udesc.br" target="_blank"> State University of Santa Catarina</a> (UDESC) - Joinville/SC.
                 <br>Research and teacher assistant scholarship (Master degree).</p>
             <ul class="default">
                 <li class="default"> Perform research on specific topics of the ‘Distributed Systems’ discipline;</li>
@@ -274,7 +265,7 @@
         </div>
 
         <div>
-            <p> (10/2011 – 07/2016) <a href="http://www.cct.udesc.br" target="_blank"> State University of Santa Catarina</a> (UDESC) – Joinville/SC.
+            <p> (10/2011 ~ 07/2016) <a href="http://www.cct.udesc.br" target="_blank"> State University of Santa Catarina</a> (UDESC) - Joinville/SC.
                 <br>Extension and Research scholarship (Bachelor degree).</p>
             <ul class="default">
                 <li class="default">Perform research on specific topics correlated with Colmeia Research Group at UDESC;</li>
@@ -284,7 +275,7 @@
         </div>
 
         <div>
-            <p> (Earlier – 2011) Summary on previous experiences.</p>
+            <p> (Earlier ~ 2011) Summary on previous experiences.</p>
             <ul class="default">
                 <li class="default">Real estate broker at Lopes (lopes.com.br) and Brasil Brokers (brasilbrokers.com.br);</li>
                 <li>Sales in retail and trade sectors.</li>
@@ -302,8 +293,8 @@
         </header>
 
         <div>
-            <p> (08/2016 – 09/2018) Master of Science in Applied Computing
-                <br><a href="http://www.cct.udesc.br" target="_blank"> State University of Santa Catarina</a> (UDESC) – Joinville/SC.</p>
+            <p> (08/2016 ~ 09/2018) Master of Science in Applied Computing
+                <br><a href="http://www.cct.udesc.br" target="_blank"> State University of Santa Catarina</a> (UDESC) - Joinville/SC.</p>
             <ul class="default">
                 <li class="default"> Educational base in correlated disciplines from master degree;</li>
             <li>Research topics include (but no limited to):</li>
@@ -314,8 +305,8 @@
         </div>
 
         <div>
-            <p>(02/2011 – 07/2016) Bachelor of Computer Science
-                <br><a href="http://www.cct.udesc.br" target="_blank"> State University of Santa Catarina</a> (UDESC) – Joinville/SC.</p>
+            <p>(02/2011 ~ 07/2016) Bachelor of Computer Science
+                <br><a href="http://www.cct.udesc.br" target="_blank"> State University of Santa Catarina</a> (UDESC) - Joinville/SC.</p>
             <ul class="default">
                 <li class="default"> Educational base in correlated disciplines from bachelor degree;</li>
             <li> Undergraduate dissertation in distributed and embedded systems area.</li>
@@ -328,9 +319,12 @@
 <section id="papers">
     <div class="container">
         <header>
-            <h2>Conference papers</h2>
-            <h4>View more in <a href="https://scholar.google.com.br/citations?hl=pt-BR&authuser=1&user=mwcTdEEAAAAJ" target="_blank">Google
-                Scholar</a> and <a href="bibtex-references/index.html">bibTex references.</a><br></h4>
+            <h2>Conference Papers</h2>
+            <p>
+                For more details, visit 
+                <a href="https://scholar.google.com.br/citations?hl=pt-BR&authuser=1&user=mwcTdEEAAAAJ" target="_blank">Google Scholar</a> 
+                or check the <a href="bibtex-references/index.html">bibTeX references</a>.
+            </p>
         </header>
         <table class="default">
         <thead>
@@ -565,8 +559,8 @@
     <p><strong>Languages:</strong></p>
     <ul class="default">
       <li>Portuguese (Native)</li>
-      <li>English (TOEFL ITP 2014) – Upper Intermediate</li>
-      <li>Spanish – Basic (self-assessed)</li>
+      <li>English (TOEFL ITP 2014) - Upper Intermediate</li>
+      <li>Spanish - Basic (self-assessed)</li>
     </ul>
   </div>
 </section>
@@ -578,10 +572,10 @@
       <h2>Certifications & Volunteering</h2>
     </header>
     <ul class="default">
-      <li>AWS Technical Essentials – São Paulo, July 2017</li>
-      <li>Salesforce Developer Trail & Administrator Trail – February 2020</li>
-      <li>Founder member of FabLab Joinville (2016–2017)</li>
-      <li>Member of Software Livre Group 'Colméia' (2011–2014)</li>
+      <li>AWS Technical Essentials - São Paulo, July 2017</li>
+      <li>Salesforce Developer Trail & Administrator Trail - February 2020</li>
+      <li>Founder member of FabLab Joinville (2016~2017)</li>
+      <li>Member of Software Livre Group 'Colméia' (2011~2014)</li>
     </ul>
   </div>
   <p class="m-5 p-center">Last updated: May 2025.</p>
