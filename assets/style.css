@@ -1,4 +1,76 @@
 /* Global Styles */
+.text-primary {
+    color: #4B79A1 !important;
+}
+
+.bg-primary {
+    background-color: #4B79A1 !important;
+}
+.btn-primary {
+    background-color: #4B79A1;
+    border-color: #4B79A1;
+}
+.btn-primary:hover {
+    background-color: #283E51;
+    border-color: #283E51;
+}
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(75, 121, 161, 0.25);
+}
+.btn-primary:active {
+    background-color: #283E51;
+    border-color: #283E51;
+}
+.btn-primary:disabled {
+    background-color: #4B79A1;
+    border-color: #4B79A1;
+    opacity: 0.65;
+}
+.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: #283E51;
+    border-color: #283E51;
+}
+.btn-primary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(75, 121, 161, 0.25);
+}
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: #283E51;
+    border-color: #283E51;
+}
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(75, 121, 161, 0.25);
+}
+
+a {
+    color: #4B79A1;
+    text-decoration: none;
+}
+a:hover {
+    color: #283E51;
+    text-decoration: none;
+}
+a:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(75, 121, 161, 0.25);
+}
+a:active {
+    color: #283E51;
+    text-decoration: none;
+}
+a:visited {
+    color: #4B79A1;
+}
+
+.form-floating label {
+    top: -7px;
+    &::after {
+        background-color: transparent !important;
+    }
+}
+/* Reset and Base Styles */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
