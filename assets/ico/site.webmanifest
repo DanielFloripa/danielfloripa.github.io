@@ -19,7 +19,7 @@
     "orientation": "any",
     "scope": "/",
     "short_name": "DSCamargo",
-    "theme_color": "#222629",
+    "theme_color": "#4B79A1",
     "categories": [
       "business",
       "education",
@@ -63,7 +63,7 @@
       {
         "name": "DSCamargo",
         "url": "/index.html",
-        "description": "Personal Website"
+        "description": "DSCamargo"
       }
     ],
     "lang": "pt",
