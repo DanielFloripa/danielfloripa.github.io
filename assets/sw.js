@@ -8,7 +8,6 @@ const urlsToCache = [
   '/chave.html',
   '/thanks.html',
   '/capellaris/*',
-  '/assets/images/*',
   '/assets/style.css',
   '/assets/script.js',
   '/assets/particles.json'

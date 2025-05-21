@@ -1,5 +1,15 @@
 // Wait for document to be ready
 document.addEventListener('DOMContentLoaded', function() {
+    if (location.protocol == 'https:' && typeof navigator.serviceWorker !== 'undefined') {
+        navigator.serviceWorker.register('/sw.js').then(
+            (registration) => {
+                console.log("Service worker registration succeeded:", registration);
+            },
+            (error) => {
+                console.error(`Service worker registration failed: ${error}`);
+            },
+        );
+    }
     console.log('Document ready!');
     
     // Initialize particles.js
@@ -129,15 +139,33 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             if (isValid) {
-                // Simulate form submission
-                const submitBtn = contactForm.querySelector('button[type="submit"]');
-                const originalText = submitBtn.innerHTML;
-                submitBtn.disabled = true;
-                submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...';
-                
-                setTimeout(() => {
-                    window.location.href = 'thanks.html';
-                }, 1500);
+                var status = document.getElementById("my-form-status");
+                var data = new FormData(e.target);
+                fetch(e.target.action, {
+                    method: e.target.method,
+                    body: data,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                }).then(response => {
+                    if (response.ok) {
+                        status.innerHTML = "Thanks for your submission!";
+                        e.target.reset();
+                        setTimeout(() => {
+                            window.location.href = 'thanks.html';
+                        }, 1500);
+                    } else {
+                        response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                        } else {
+                            status.innerHTML = "Oops! There was a problem submitting your form"
+                        }
+                        })
+                    }
+                }).catch(error => {
+                    status.innerHTML = "Oops! There was a problem submitting your form"
+                });
             }
         });
     }

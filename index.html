@@ -20,7 +20,6 @@
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.dscamargo.com.br" />
-    
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/ico/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/ico/favicon-32x32.png">
@@ -30,7 +29,9 @@
     <meta name="msapplication-TileColor" content="#00a300">
     <meta name="theme-color" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/ico/ms-icon-144x144.png">
-    
+        <!-- External Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
@@ -58,10 +59,6 @@
             'date': new Date(),
         }];
     </script>
-    
-    <!-- External Libraries -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 
 <body>
@@ -72,7 +69,7 @@
     </noscript>
     
     <!-- Service Worker Registration -->
-    <script>
+    <!--script>
         if (typeof navigator.serviceWorker !== 'undefined') {
             navigator.serviceWorker.register('sw.js')
         }
@@ -408,32 +405,25 @@
             
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <form id="contactForm" class="needs-validation">
+                    <form id="contactForm" class="needs-validation" action="https://formspree.io/f/manozyow" method="POST">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                    <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
                                     <label for="name">Your Name</label>
                                     <div class="invalid-feedback">Please provide your name.</div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" required>
                                     <label for="email">Email Address</label>
                                     <div class="invalid-feedback">Please provide a valid email.</div>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject" required>
-                                    <label for="subject">Subject</label>
-                                    <div class="invalid-feedback">Please provide a subject.</div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating mb-3">
-                                    <textarea class="form-control" id="message" placeholder="Your Message" style="height: 150px" required></textarea>
+                                    <textarea class="form-control" name="message" id="message" placeholder="Your Message" style="height: 150px" required></textarea>
                                     <label for="message">Your Message</label>
                                     <div class="invalid-feedback">Please provide a message.</div>
                                 </div>
@@ -444,6 +434,7 @@
                                 </button>
                             </div>
                         </div>
+                        <p id="my-form-status"></p>
                     </form>
                 </div>
             </div>
