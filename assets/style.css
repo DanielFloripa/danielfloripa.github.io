@@ -59,9 +59,6 @@ a:active {
     color: #283E51;
     text-decoration: none;
 }
-a:visited {
-    color: #dadada;
-}
 
 .form-floating label {
     top: -7px;
