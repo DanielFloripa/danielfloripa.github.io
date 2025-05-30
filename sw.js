@@ -1,5 +1,5 @@
 // Service worker for Daniel Camargo's website
-const CACHE_NAME = 'daniel-camargo-site-v1';
+const CACHE_NAME = 'daniel-camargo-site-v2';
 const urlsToCache = [
   '/',
   '/index.html',

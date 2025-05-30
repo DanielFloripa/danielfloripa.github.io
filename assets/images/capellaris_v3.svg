@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="957.49921mm"
+   height="1060.4347mm"
+   viewBox="512 512 957.4991 1060.4347"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   sodipodi:docname="capellaris_v3.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:showpageshadow="true"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="false"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="0.13102506"
+     inkscape:cx="2014.8817"
+     inkscape:cy="1747.7573"
+     inkscape:window-width="1496"
+     inkscape:window-height="1013"
+     inkscape:window-x="215"
+     inkscape:window-y="43"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1"
+     showborder="true"
+     showguides="false"
+     inkscape:antialias-rendering="true"
+     borderlayer="true">
+    <inkscape:grid
+       type="modular"
+       id="grid3"
+       units="mm"
+       originx="529.04614"
+       originy="521.62236"
+       spacingx="39.999999"
+       spacingy="39.999999"
+       empcolor="#0047cb"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="0"
+       marginx="0"
+       marginy="0"
+       gapx="9.9999997"
+       gapy="9.9999997"
+       enabled="false"
+       visible="false" />
+    <inkscape:grid
+       id="grid1"
+       units="mm"
+       originx="13.758361"
+       originy="11.641672"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="false"
+       visible="true" />
+    <inkscape:grid
+       type="axonomgrid"
+       id="grid2"
+       units="mm"
+       originx="13.758361"
+       originy="11.641672"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       enabled="false"
+       visible="true" />
+    <inkscape:grid
+       type="modular"
+       id="grid4"
+       units="mm"
+       originx="13.758361"
+       originy="11.641672"
+       spacingx="40"
+       spacingy="40.000001"
+       empcolor="#0047cb"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="0"
+       marginx="0"
+       marginy="0"
+       gapx="10"
+       gapy="10"
+       enabled="false"
+       visible="true" />
+    <inkscape:grid
+       id="grid5"
+       units="mm"
+       originx="13.758361"
+       originy="11.641672"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="false"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath33">
+      <rect
+         style="fill:#000000;stroke:none;stroke-width:0.999995;stroke-linecap:butt;stroke-linejoin:bevel;paint-order:stroke markers fill;stop-color:#000000"
+         id="rect33"
+         width="46.19186"
+         height="80.006783"
+         x="74.999985"
+         y="399.99661" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(529.04611,521.62234)">
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke-width:0.962181;stroke-linecap:round;stroke-linejoin:round"
+       id="path1-17"
+       cx="46.953892"
+       cy="514.60675"
+       r="64" />
+    <path
+       id="path3-2"
+       style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:1;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:transform-center-x="-2.3527449"
+       inkscape:transform-center-y="-0.79282835"
+       d="m 497.98541,166.62608 -44.17373,282.53847 -78.14187,-53.40167 52.87151,73.83233 -273.61056,53.97557 279.77054,43.74109 -57.55991,82.38122 80.77671,-56.58976 53.95801,273.52275 42.63048,-272.67093 79.37821,54.24628 -59.55556,-83.16575 280.60152,-55.35504 -273.29931,-42.72857 50.78175,-72.68083 -78.65001,55.09958 z" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke-width:0.962181;stroke-linecap:round;stroke-linejoin:round"
+       id="path1"
+       cx="507.5766"
+       cy="54.377655"
+       r="64" />
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke-width:0.68132;stroke-linecap:round;stroke-linejoin:round"
+       id="path1-1"
+       cx="811.55005"
+       cy="324.86285"
+       rx="44.81633"
+       ry="45.825996" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke-width:0.962181;stroke-linecap:round;stroke-linejoin:round"
+       id="path1-5"
+       cx="876.45312"
+       cy="645.86346"
+       r="64" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke-width:0.962181;stroke-linecap:round;stroke-linejoin:round"
+       id="path1-8"
+       cx="507.5766"
+       cy="986.81232"
+       r="64" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:48.4944;stroke-linecap:square;stroke-miterlimit:1"
+       d="m 342.2484,-793.45766 1.29371,416.45986 h -699.5863 v -699.6138 l 517.37448,0.019"
+       transform="matrix(0.70618031,-0.70803204,-0.70840835,-0.70580281,0,0)"
+       id="rect1"
+       sodipodi:nodetypes="ccccc" />
+  </g>
+</svg>
