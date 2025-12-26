@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,18 +22,21 @@
             padding-bottom: 0.5rem;
             border-bottom: 2px solid #4299e1;
         }
+
         .subsection-title {
             font-size: 1.5rem;
             font-weight: 600;
             color: #2d3748;
             margin-bottom: 1rem;
         }
+
         .card {
             background-color: white;
             border-radius: 0.5rem;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             padding: 1.5rem;
         }
+
         .code-block {
             background-color: #f7fafc;
             border-radius: 0.375rem;
@@ -42,6 +46,7 @@
             font-size: 0.875rem;
             color: #1a202c;
         }
+
         .btn-primary {
             background-color: #4299e1;
             color: white;
@@ -50,478 +55,510 @@
             font-weight: 500;
             transition: background-color 0.2s;
         }
+
         .btn-primary:hover {
             background-color: #3182ce;
         }
+
         .dark-mode {
             background-color: #1a202c;
             color: #e2e8f0;
         }
+
         .dark-mode .section-title {
             color: #f7fafc;
             border-bottom-color: #4299e1;
         }
+
         .dark-mode .subsection-title {
             color: #e2e8f0;
         }
+
         .dark-mode .card {
             background-color: #2d3748;
             color: #e2e8f0;
         }
+
         .dark-mode .code-block {
             background-color: #1a202c;
             color: #e2e8f0;
         }
     </style>
 </head>
+
 <body class="bg-gray-100">
-<body class="bg-gray-100">
-    <header class="bg-white shadow-md">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-            <nav class="flex items-center justify-between flex-wrap">
-                <div class="flex items-center pr-6">
-                    <a class="flex justify-center pr-3" href="../index.html">
-                        <img src="../assets/images/dsc_white.svg" alt="Daniel Camargo" class="rounded-circle me-2" width="40" height="40">
-                    </a>
-                    <a class="flex justify-center" href="index.html">
-                        <img src="../assets/images/capellaris_v3.svg" alt="Capellaris Logo" class="h-8 w-8 mr-2">
-                        <h1 class="text-2xl font-bold text-gray-900">Capellaris</h1>
-                    </a>
-                </div>
-                <div class="block lg:hidden ml-auto">
-                    <button id="menu-toggle" class="flex items-center px-3 py-2 border rounded">
-                        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <title>Menu</title>
-                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+
+    <body class="bg-gray-100">
+        <header class="bg-white shadow-md">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+                <nav class="flex items-center justify-between flex-wrap">
+                    <div class="flex items-center pr-6">
+                        <a class="flex justify-center pr-3" href="../index.html">
+                            <img src="../assets/images/dsc_white.svg" alt="Daniel Camargo" class="rounded-circle me-2" width="40" height="40">
+                        </a>
+                        <a class="flex justify-center" href="index.html">
+                            <img src="../assets/images/capellaris_v3.svg" alt="Capellaris Logo" class="h-8 w-8 mr-2">
+                            <h1 class="text-2xl font-bold text-gray-900">Capellaris</h1>
+                        </a>
+                    </div>
+                    <div class="block lg:hidden ml-auto">
+                        <button id="menu-toggle" class="flex items-center px-3 py-2 border rounded">
+                            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>Menu</title>
+                                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="mobile-menu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden">
+                        <div class="text-sm lg:flex lg:flex-grow justify-end">
+                            <a href="index.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Início</a>
+                            <a href="arquitetura.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Arquitetura</a>
+                            <a href="agentes.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Agentes</a>
+                            <a href="aprendizado.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Aprendizado</a>
+                            <a href="integracao.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Integração</a>
+                            <a href="documentacao.html"
+                                class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Documentação</a>
+                            <a href="https://capellaris.dscamargo.com.br"
+                                class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Demo</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+
+        <main class="py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Breadcrumb -->
+                <div class="mb-8">
+                    <a href="index.html" class="text-blue-600 hover:text-blue-800 flex items-center">
+                        <svg class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                         </svg>
-                    </button>
+                        Voltar para a página inicial
+                    </a>
                 </div>
-                <div id="mobile-menu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden">
-                    <div class="text-sm lg:flex lg:flex-grow justify-end">
-                        <a href="index.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Início</a>
-                        <a href="arquitetura.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Arquitetura</a>
-                        <a href="agentes.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Agentes</a>
-                        <a href="aprendizado.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Aprendizado</a>
-                        <a href="integracao.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Integração</a>
-                        <a href="documentacao.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Documentação</a>
-                        <a href="demo.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Demo</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
 
-
-    <main class="py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Breadcrumb -->
-            <div class="mb-8">
-                <a href="index.html" class="text-blue-600 hover:text-blue-800 flex items-center">
-                    <svg class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-                    </svg>
-                    Voltar para a página inicial
-                </a>
-            </div>
-
-            <!-- Header -->
-            <div class="text-center mb-12">
-                <h1 class="text-4xl font-bold text-gray-900 mb-4">
-                    Agentes Especializados
-                </h1>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Conheça os diferentes tipos de agentes de IA disponíveis no sistema, suas especialidades
-                    e como eles colaboram para resolver tarefas complexas.
-                </p>
-            </div>
-
-            <!-- Agents Overview -->
-            <div class="mb-16">
-                <h2 class="section-title">Visão Geral dos Agentes</h2>
-                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
-                    <p class="text-gray-600 mb-6">
-                        Os agentes de IA são o coração do sistema, cada um especializado em uma área específica
-                        de conhecimento e habilidades. Eles são projetados para trabalhar tanto individualmente
-                        quanto em colaboração, formando squads para tarefas complexas que exigem múltiplas especialidades.
-                    </p>
-                    
-                    <div class="bg-blue-50 p-6 rounded-lg mb-8">
-                        <h3 class="text-xl font-semibold text-blue-800 mb-4">Características Comuns</h3>
-                        <ul class="list-disc pl-5 text-gray-600 space-y-2">
-                            <li><span class="font-medium">Processamento de Linguagem Natural:</span> Todos os agentes possuem capacidade avançada de compreensão e geração de texto em linguagem natural.</li>
-                            <li><span class="font-medium">Aprendizado Contínuo:</span> Os agentes melhoram continuamente com base no histórico de interações e feedback recebido.</li>
-                            <li><span class="font-medium">Comunicação Padronizada:</span> Todos os agentes utilizam o mesmo protocolo de comunicação, permitindo interações fluidas entre eles.</li>
-                            <li><span class="font-medium">Especialização:</span> Cada agente é otimizado para sua área de especialidade, com conhecimento específico e habilidades relevantes.</li>
-                            <li><span class="font-medium">Confirmação Humana:</span> Todos os agentes requerem aprovação do operador humano antes de executar tarefas.</li>
-                        </ul>
-                    </div>
-                    
-                    <p class="text-gray-600 mb-6">
-                        O sistema atualmente inclui seis tipos principais de agentes especializados, cada um projetado
-                        para atender a necessidades específicas em diferentes áreas empresariais. Estes agentes podem
-                        ser personalizados e estendidos para atender a requisitos específicos de cada organização.
+                <!-- Header -->
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl font-bold text-gray-900 mb-4">
+                        Agentes Especializados
+                    </h1>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Conheça os diferentes tipos de agentes de IA disponíveis no sistema, suas especialidades
+                        e como eles colaboram para resolver tarefas complexas.
                     </p>
                 </div>
-            </div>
 
-            <!-- Agent Types -->
-            <div class="mb-16">
-                <h2 class="section-title">Tipos de Agentes</h2>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <!-- Marketing Agent -->
-                    <div class="card">
-                        <div class="flex items-center mb-4">
-                            <div class="bg-blue-100 p-3 rounded-full mr-4">
-                                <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
-                                </svg>
-                            </div>
-                            <h3 class="text-xl font-semibold">Agente de Marketing</h3>
-                        </div>
-                        <p class="text-gray-600 mb-4">
-                            Especializado em análise e criação de conteúdo de marketing, estratégias de campanha,
-                            análise de métricas e tendências de mercado.
+                <!-- Agents Overview -->
+                <div class="mb-16">
+                    <h2 class="section-title">Visão Geral dos Agentes</h2>
+                    <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                        <p class="text-gray-600 mb-6">
+                            Os agentes de IA são o coração do sistema, cada um especializado em uma área específica
+                            de conhecimento e habilidades. Eles são projetados para trabalhar tanto individualmente
+                            quanto em colaboração, formando squads para tarefas complexas que exigem múltiplas especialidades.
                         </p>
-                        <div class="bg-gray-50 p-4 rounded-lg mb-4">
-                            <h4 class="font-medium text-gray-800 mb-2">Capacidades:</h4>
-                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                                <li>Análise de campanhas de marketing e métricas de desempenho</li>
-                                <li>Criação de conteúdo para diferentes canais (blog, redes sociais, email)</li>
-                                <li>Pesquisa de mercado e análise de concorrência</li>
-                                <li>Otimização de SEO e estratégias de palavras-chave</li>
-                                <li>Segmentação de público e personalização de mensagens</li>
+
+                        <div class="bg-blue-50 p-6 rounded-lg mb-8">
+                            <h3 class="text-xl font-semibold text-blue-800 mb-4">Características Comuns</h3>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                                <li><span class="font-medium">Processamento de Linguagem Natural:</span> Todos os agentes possuem capacidade avançada de compreensão e
+                                    geração de texto em linguagem natural.</li>
+                                <li><span class="font-medium">Aprendizado Contínuo:</span> Os agentes melhoram continuamente com base no histórico de interações e
+                                    feedback recebido.</li>
+                                <li><span class="font-medium">Comunicação Padronizada:</span> Todos os agentes utilizam o mesmo protocolo de comunicação, permitindo
+                                    interações fluidas entre eles.</li>
+                                <li><span class="font-medium">Especialização:</span> Cada agente é otimizado para sua área de especialidade, com conhecimento específico e
+                                    habilidades relevantes.</li>
+                                <li><span class="font-medium">Confirmação Humana:</span> Todos os agentes requerem aprovação do operador humano antes de executar tarefas.
+                                </li>
                             </ul>
                         </div>
-                        <div class="bg-blue-50 p-4 rounded-lg">
-                            <h4 class="font-medium text-blue-800 mb-2">Exemplo de Uso:</h4>
-                            <p class="text-gray-600">
-                                "@agente_marketing analise os resultados da nossa campanha de email marketing do último trimestre e sugira melhorias para aumentar a taxa de conversão."
+
+                        <p class="text-gray-600 mb-6">
+                            O sistema atualmente inclui seis tipos principais de agentes especializados, cada um projetado
+                            para atender a necessidades específicas em diferentes áreas empresariais. Estes agentes podem
+                            ser personalizados e estendidos para atender a requisitos específicos de cada organização.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Agent Types -->
+                <div class="mb-16">
+                    <h2 class="section-title">Tipos de Agentes</h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- Marketing Agent -->
+                        <div class="card">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-semibold">Agente de Marketing</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Especializado em análise e criação de conteúdo de marketing, estratégias de campanha,
+                                análise de métricas e tendências de mercado.
                             </p>
+                            <div class="bg-gray-50 p-4 rounded-lg mb-4">
+                                <h4 class="font-medium text-gray-800 mb-2">Capacidades:</h4>
+                                <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                    <li>Análise de campanhas de marketing e métricas de desempenho</li>
+                                    <li>Criação de conteúdo para diferentes canais (blog, redes sociais, email)</li>
+                                    <li>Pesquisa de mercado e análise de concorrência</li>
+                                    <li>Otimização de SEO e estratégias de palavras-chave</li>
+                                    <li>Segmentação de público e personalização de mensagens</li>
+                                </ul>
+                            </div>
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-blue-800 mb-2">Exemplo de Uso:</h4>
+                                <p class="text-gray-600">
+                                    "@agente_marketing analise os resultados da nossa campanha de email marketing do último trimestre e sugira melhorias para aumentar a
+                                    taxa de conversão."
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Financial Agent -->
+                        <div class="card">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-green-100 p-3 rounded-full mr-4">
+                                    <svg class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-semibold">Agente Financeiro</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Especializado em análise financeira, planejamento orçamentário, previsões financeiras,
+                                análise de investimentos e relatórios financeiros.
+                            </p>
+                            <div class="bg-gray-50 p-4 rounded-lg mb-4">
+                                <h4 class="font-medium text-gray-800 mb-2">Capacidades:</h4>
+                                <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                    <li>Análise de demonstrações financeiras e indicadores de desempenho</li>
+                                    <li>Criação de orçamentos e previsões financeiras</li>
+                                    <li>Análise de viabilidade de projetos e ROI</li>
+                                    <li>Gestão de fluxo de caixa e planejamento financeiro</li>
+                                    <li>Preparação de relatórios financeiros e apresentações</li>
+                                </ul>
+                            </div>
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-green-800 mb-2">Exemplo de Uso:</h4>
+                                <p class="text-gray-600">
+                                    "@agente_financeiro crie um plano financeiro para o lançamento do nosso novo produto, considerando um orçamento inicial de R$ 500.000
+                                    e um período de 12 meses."
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Development Agent -->
+                        <div class="card">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                    <svg class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-semibold">Agente de Desenvolvimento</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Especializado em assistência de código, debugging, revisão de código, documentação
+                                técnica e recomendações de arquitetura de software.
+                            </p>
+                            <div class="bg-gray-50 p-4 rounded-lg mb-4">
+                                <h4 class="font-medium text-gray-800 mb-2">Capacidades:</h4>
+                                <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                    <li>Revisão e otimização de código em múltiplas linguagens de programação</li>
+                                    <li>Debugging e identificação de problemas em código existente</li>
+                                    <li>Recomendações de arquitetura e padrões de design</li>
+                                    <li>Criação de documentação técnica e comentários de código</li>
+                                    <li>Sugestões de testes e práticas de qualidade de código</li>
+                                </ul>
+                            </div>
+                            <div class="bg-purple-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-purple-800 mb-2">Exemplo de Uso:</h4>
+                                <p class="text-gray-600">
+                                    "@agente_desenvolvimento revise este código Python e sugira melhorias de desempenho, legibilidade e segurança."
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- HR Agent -->
+                        <div class="card">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-red-100 p-3 rounded-full mr-4">
+                                    <svg class="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-semibold">Agente de RH</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Especializado em processos de recursos humanos, recrutamento e seleção, treinamento
+                                e desenvolvimento, políticas de RH e análise de desempenho.
+                            </p>
+                            <div class="bg-gray-50 p-4 rounded-lg mb-4">
+                                <h4 class="font-medium text-gray-800 mb-2">Capacidades:</h4>
+                                <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                    <li>Criação e revisão de descrições de cargo e anúncios de vagas</li>
+                                    <li>Triagem inicial de currículos e candidatos</li>
+                                    <li>Desenvolvimento de planos de treinamento e capacitação</li>
+                                    <li>Análise de clima organizacional e engajamento</li>
+                                    <li>Elaboração de políticas e procedimentos de RH</li>
+                                </ul>
+                            </div>
+                            <div class="bg-red-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-red-800 mb-2">Exemplo de Uso:</h4>
+                                <p class="text-gray-600">
+                                    "@agente_rh crie um plano de treinamento para nossa equipe de atendimento ao cliente, focando em habilidades de comunicação e
+                                    resolução de conflitos."
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Sales Agent -->
+                        <div class="card">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                                    <svg class="h-6 w-6 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-semibold">Agente de Vendas</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Especializado em análise de vendas, estratégias comerciais, gestão de pipeline,
+                                previsão de vendas e desenvolvimento de propostas comerciais.
+                            </p>
+                            <div class="bg-gray-50 p-4 rounded-lg mb-4">
+                                <h4 class="font-medium text-gray-800 mb-2">Capacidades:</h4>
+                                <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                    <li>Análise de desempenho de vendas e identificação de tendências</li>
+                                    <li>Desenvolvimento de estratégias de vendas e abordagens comerciais</li>
+                                    <li>Criação de propostas comerciais e apresentações de vendas</li>
+                                    <li>Segmentação de clientes e análise de oportunidades</li>
+                                    <li>Previsão de vendas e planejamento de metas</li>
+                                </ul>
+                            </div>
+                            <div class="bg-yellow-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-yellow-800 mb-2">Exemplo de Uso:</h4>
+                                <p class="text-gray-600">
+                                    "@agente_vendas analise nosso desempenho de vendas do último trimestre, identifique os principais fatores que afetaram os resultados e
+                                    sugira estratégias para o próximo trimestre."
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Operations Agent -->
+                        <div class="card">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                    <svg class="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-semibold">Agente de Operações</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Especializado em otimização de processos, gestão de projetos, análise de eficiência
+                                operacional, gestão de cadeia de suprimentos e controle de qualidade.
+                            </p>
+                            <div class="bg-gray-50 p-4 rounded-lg mb-4">
+                                <h4 class="font-medium text-gray-800 mb-2">Capacidades:</h4>
+                                <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                    <li>Mapeamento e otimização de processos operacionais</li>
+                                    <li>Planejamento e acompanhamento de projetos</li>
+                                    <li>Análise de eficiência e identificação de gargalos</li>
+                                    <li>Gestão de cadeia de suprimentos e logística</li>
+                                    <li>Implementação de metodologias de melhoria contínua</li>
+                                </ul>
+                            </div>
+                            <div class="bg-indigo-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-indigo-800 mb-2">Exemplo de Uso:</h4>
+                                <p class="text-gray-600">
+                                    "@agente_operacoes analise nosso processo de atendimento ao cliente e identifique oportunidades de otimização para reduzir o tempo de
+                                    resposta e aumentar a satisfação do cliente."
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    
-                    <!-- Financial Agent -->
-                    <div class="card">
-                        <div class="flex items-center mb-4">
-                            <div class="bg-green-100 p-3 rounded-full mr-4">
-                                <svg class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                            </div>
-                            <h3 class="text-xl font-semibold">Agente Financeiro</h3>
-                        </div>
-                        <p class="text-gray-600 mb-4">
-                            Especializado em análise financeira, planejamento orçamentário, previsões financeiras,
-                            análise de investimentos e relatórios financeiros.
+                </div>
+
+                <!-- Squad Formation -->
+                <div class="mb-16">
+                    <h2 class="section-title">Formação de Squads</h2>
+
+                    <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                        <p class="text-gray-600 mb-6">
+                            Uma das principais características do Capellaris é a capacidade
+                            de formar squads - equipes temporárias de agentes que colaboram para resolver tarefas complexas
+                            que exigem múltiplas especialidades.
                         </p>
-                        <div class="bg-gray-50 p-4 rounded-lg mb-4">
-                            <h4 class="font-medium text-gray-800 mb-2">Capacidades:</h4>
-                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                                <li>Análise de demonstrações financeiras e indicadores de desempenho</li>
-                                <li>Criação de orçamentos e previsões financeiras</li>
-                                <li>Análise de viabilidade de projetos e ROI</li>
-                                <li>Gestão de fluxo de caixa e planejamento financeiro</li>
-                                <li>Preparação de relatórios financeiros e apresentações</li>
-                            </ul>
+
+                        <div class="bg-blue-50 p-6 rounded-lg mb-8">
+                            <h3 class="text-xl font-semibold text-blue-800 mb-4">Como Funciona a Formação de Squads</h3>
+                            <ol class="list-decimal pl-5 text-gray-600 space-y-3">
+                                <li>
+                                    <span class="font-medium">Análise da Tarefa:</span> O sistema analisa a complexidade e requisitos da tarefa solicitada.
+                                </li>
+                                <li>
+                                    <span class="font-medium">Identificação de Especialidades:</span> Com base na análise, o sistema identifica quais especialidades são
+                                    necessárias para completar a tarefa.
+                                </li>
+                                <li>
+                                    <span class="font-medium">Seleção de Agentes:</span> O sistema seleciona os agentes mais adequados para cada especialidade necessária,
+                                    considerando disponibilidade e desempenho histórico.
+                                </li>
+                                <li>
+                                    <span class="font-medium">Definição de Papéis:</span> Cada agente recebe um papel específico no squad, incluindo a designação de um
+                                    agente líder que coordenará o trabalho.
+                                </li>
+                                <li>
+                                    <span class="font-medium">Criação de Fluxo de Trabalho:</span> O sistema define um fluxo de trabalho para a execução da tarefa,
+                                    estabelecendo a sequência de atividades e dependências.
+                                </li>
+                                <li>
+                                    <span class="font-medium">Execução Colaborativa:</span> Os agentes trabalham juntos, comunicando-se através do sistema de comunicação
+                                    para compartilhar informações e resultados intermediários.
+                                </li>
+                                <li>
+                                    <span class="font-medium">Consolidação de Resultados:</span> O agente líder consolida os resultados individuais em uma resposta
+                                    coerente e completa.
+                                </li>
+                            </ol>
                         </div>
-                        <div class="bg-green-50 p-4 rounded-lg">
-                            <h4 class="font-medium text-green-800 mb-2">Exemplo de Uso:</h4>
-                            <p class="text-gray-600">
-                                "@agente_financeiro crie um plano financeiro para o lançamento do nosso novo produto, considerando um orçamento inicial de R$ 500.000 e um período de 12 meses."
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <!-- Development Agent -->
-                    <div class="card">
-                        <div class="flex items-center mb-4">
-                            <div class="bg-purple-100 p-3 rounded-full mr-4">
-                                <svg class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                                </svg>
+
+                        <h3 class="subsection-title">Exemplos de Squads</h3>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-gray-800 mb-2">Squad de Lançamento de Produto</h4>
+                                <p class="text-gray-600 mb-3">
+                                    Formado para planejar e executar o lançamento de um novo produto ou serviço.
+                                </p>
+                                <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                    <li><span class="font-medium">Agente de Marketing:</span> Estratégia de marketing e comunicação</li>
+                                    <li><span class="font-medium">Agente Financeiro:</span> Orçamento e previsões financeiras</li>
+                                    <li><span class="font-medium">Agente de Vendas:</span> Estratégia comercial e previsão de vendas</li>
+                                    <li><span class="font-medium">Agente de Operações:</span> Planejamento logístico e operacional</li>
+                                </ul>
                             </div>
-                            <h3 class="text-xl font-semibold">Agente de Desenvolvimento</h3>
-                        </div>
-                        <p class="text-gray-600 mb-4">
-                            Especializado em assistência de código, debugging, revisão de código, documentação
-                            técnica e recomendações de arquitetura de software.
-                        </p>
-                        <div class="bg-gray-50 p-4 rounded-lg mb-4">
-                            <h4 class="font-medium text-gray-800 mb-2">Capacidades:</h4>
-                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                                <li>Revisão e otimização de código em múltiplas linguagens de programação</li>
-                                <li>Debugging e identificação de problemas em código existente</li>
-                                <li>Recomendações de arquitetura e padrões de design</li>
-                                <li>Criação de documentação técnica e comentários de código</li>
-                                <li>Sugestões de testes e práticas de qualidade de código</li>
-                            </ul>
-                        </div>
-                        <div class="bg-purple-50 p-4 rounded-lg">
-                            <h4 class="font-medium text-purple-800 mb-2">Exemplo de Uso:</h4>
-                            <p class="text-gray-600">
-                                "@agente_desenvolvimento revise este código Python e sugira melhorias de desempenho, legibilidade e segurança."
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <!-- HR Agent -->
-                    <div class="card">
-                        <div class="flex items-center mb-4">
-                            <div class="bg-red-100 p-3 rounded-full mr-4">
-                                <svg class="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                                </svg>
+
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-gray-800 mb-2">Squad de Análise de Mercado</h4>
+                                <p class="text-gray-600 mb-3">
+                                    Formado para realizar uma análise completa de um mercado ou segmento específico.
+                                </p>
+                                <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                    <li><span class="font-medium">Agente de Marketing:</span> Análise de tendências e comportamento do consumidor</li>
+                                    <li><span class="font-medium">Agente Financeiro:</span> Análise financeira do mercado</li>
+                                    <li><span class="font-medium">Agente de Vendas:</span> Análise de concorrência e oportunidades</li>
+                                </ul>
                             </div>
-                            <h3 class="text-xl font-semibold">Agente de RH</h3>
-                        </div>
-                        <p class="text-gray-600 mb-4">
-                            Especializado em processos de recursos humanos, recrutamento e seleção, treinamento
-                            e desenvolvimento, políticas de RH e análise de desempenho.
-                        </p>
-                        <div class="bg-gray-50 p-4 rounded-lg mb-4">
-                            <h4 class="font-medium text-gray-800 mb-2">Capacidades:</h4>
-                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                                <li>Criação e revisão de descrições de cargo e anúncios de vagas</li>
-                                <li>Triagem inicial de currículos e candidatos</li>
-                                <li>Desenvolvimento de planos de treinamento e capacitação</li>
-                                <li>Análise de clima organizacional e engajamento</li>
-                                <li>Elaboração de políticas e procedimentos de RH</li>
-                            </ul>
-                        </div>
-                        <div class="bg-red-50 p-4 rounded-lg">
-                            <h4 class="font-medium text-red-800 mb-2">Exemplo de Uso:</h4>
-                            <p class="text-gray-600">
-                                "@agente_rh crie um plano de treinamento para nossa equipe de atendimento ao cliente, focando em habilidades de comunicação e resolução de conflitos."
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <!-- Sales Agent -->
-                    <div class="card">
-                        <div class="flex items-center mb-4">
-                            <div class="bg-yellow-100 p-3 rounded-full mr-4">
-                                <svg class="h-6 w-6 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                                </svg>
+
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-gray-800 mb-2">Squad de Desenvolvimento de Projeto</h4>
+                                <p class="text-gray-600 mb-3">
+                                    Formado para planejar e acompanhar o desenvolvimento de um projeto de software.
+                                </p>
+                                <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                    <li><span class="font-medium">Agente de Desenvolvimento:</span> Arquitetura e especificações técnicas</li>
+                                    <li><span class="font-medium">Agente Financeiro:</span> Orçamento e controle de custos</li>
+                                    <li><span class="font-medium">Agente de Operações:</span> Planejamento de projeto e cronograma</li>
+                                </ul>
                             </div>
-                            <h3 class="text-xl font-semibold">Agente de Vendas</h3>
+
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-gray-800 mb-2">Squad de Otimização de Processos</h4>
+                                <p class="text-gray-600 mb-3">
+                                    Formado para analisar e otimizar processos internos da empresa.
+                                </p>
+                                <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                    <li><span class="font-medium">Agente de Operações:</span> Mapeamento e análise de processos</li>
+                                    <li><span class="font-medium">Agente Financeiro:</span> Análise de custos e eficiência</li>
+                                    <li><span class="font-medium">Agente de RH:</span> Impacto em pessoas e cultura</li>
+                                    <li><span class="font-medium">Agente de Desenvolvimento:</span> Automação e soluções tecnológicas</li>
+                                </ul>
+                            </div>
                         </div>
-                        <p class="text-gray-600 mb-4">
-                            Especializado em análise de vendas, estratégias comerciais, gestão de pipeline,
-                            previsão de vendas e desenvolvimento de propostas comerciais.
-                        </p>
-                        <div class="bg-gray-50 p-4 rounded-lg mb-4">
-                            <h4 class="font-medium text-gray-800 mb-2">Capacidades:</h4>
-                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                                <li>Análise de desempenho de vendas e identificação de tendências</li>
-                                <li>Desenvolvimento de estratégias de vendas e abordagens comerciais</li>
-                                <li>Criação de propostas comerciais e apresentações de vendas</li>
-                                <li>Segmentação de clientes e análise de oportunidades</li>
-                                <li>Previsão de vendas e planejamento de metas</li>
-                            </ul>
-                        </div>
+
                         <div class="bg-yellow-50 p-4 rounded-lg">
-                            <h4 class="font-medium text-yellow-800 mb-2">Exemplo de Uso:</h4>
+                            <h4 class="font-medium text-yellow-800 mb-2">Exemplo de Uso de Squad:</h4>
                             <p class="text-gray-600">
-                                "@agente_vendas analise nosso desempenho de vendas do último trimestre, identifique os principais fatores que afetaram os resultados e sugira estratégias para o próximo trimestre."
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <!-- Operations Agent -->
-                    <div class="card">
-                        <div class="flex items-center mb-4">
-                            <div class="bg-indigo-100 p-3 rounded-full mr-4">
-                                <svg class="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
-                                </svg>
-                            </div>
-                            <h3 class="text-xl font-semibold">Agente de Operações</h3>
-                        </div>
-                        <p class="text-gray-600 mb-4">
-                            Especializado em otimização de processos, gestão de projetos, análise de eficiência
-                            operacional, gestão de cadeia de suprimentos e controle de qualidade.
-                        </p>
-                        <div class="bg-gray-50 p-4 rounded-lg mb-4">
-                            <h4 class="font-medium text-gray-800 mb-2">Capacidades:</h4>
-                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                                <li>Mapeamento e otimização de processos operacionais</li>
-                                <li>Planejamento e acompanhamento de projetos</li>
-                                <li>Análise de eficiência e identificação de gargalos</li>
-                                <li>Gestão de cadeia de suprimentos e logística</li>
-                                <li>Implementação de metodologias de melhoria contínua</li>
-                            </ul>
-                        </div>
-                        <div class="bg-indigo-50 p-4 rounded-lg">
-                            <h4 class="font-medium text-indigo-800 mb-2">Exemplo de Uso:</h4>
-                            <p class="text-gray-600">
-                                "@agente_operacoes analise nosso processo de atendimento ao cliente e identifique oportunidades de otimização para reduzir o tempo de resposta e aumentar a satisfação do cliente."
+                                "@squad_lancamento crie um plano completo para o lançamento do nosso novo software de gestão empresarial, incluindo estratégia de
+                                marketing, previsão financeira e plano de vendas."
                             </p>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Squad Formation -->
-            <div class="mb-16">
-                <h2 class="section-title">Formação de Squads</h2>
-                
-                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
-                    <p class="text-gray-600 mb-6">
-                        Uma das principais características do Capellaris é a capacidade
-                        de formar squads - equipes temporárias de agentes que colaboram para resolver tarefas complexas
-                        que exigem múltiplas especialidades.
-                    </p>
-                    
-                    <div class="bg-blue-50 p-6 rounded-lg mb-8">
-                        <h3 class="text-xl font-semibold text-blue-800 mb-4">Como Funciona a Formação de Squads</h3>
-                        <ol class="list-decimal pl-5 text-gray-600 space-y-3">
-                            <li>
-                                <span class="font-medium">Análise da Tarefa:</span> O sistema analisa a complexidade e requisitos da tarefa solicitada.
-                            </li>
-                            <li>
-                                <span class="font-medium">Identificação de Especialidades:</span> Com base na análise, o sistema identifica quais especialidades são necessárias para completar a tarefa.
-                            </li>
-                            <li>
-                                <span class="font-medium">Seleção de Agentes:</span> O sistema seleciona os agentes mais adequados para cada especialidade necessária, considerando disponibilidade e desempenho histórico.
-                            </li>
-                            <li>
-                                <span class="font-medium">Definição de Papéis:</span> Cada agente recebe um papel específico no squad, incluindo a designação de um agente líder que coordenará o trabalho.
-                            </li>
-                            <li>
-                                <span class="font-medium">Criação de Fluxo de Trabalho:</span> O sistema define um fluxo de trabalho para a execução da tarefa, estabelecendo a sequência de atividades e dependências.
-                            </li>
-                            <li>
-                                <span class="font-medium">Execução Colaborativa:</span> Os agentes trabalham juntos, comunicando-se através do sistema de comunicação para compartilhar informações e resultados intermediários.
-                            </li>
-                            <li>
-                                <span class="font-medium">Consolidação de Resultados:</span> O agente líder consolida os resultados individuais em uma resposta coerente e completa.
-                            </li>
-                        </ol>
-                    </div>
-                    
-                    <h3 class="subsection-title">Exemplos de Squads</h3>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                        <div class="bg-gray-50 p-4 rounded-lg">
-                            <h4 class="font-medium text-gray-800 mb-2">Squad de Lançamento de Produto</h4>
-                            <p class="text-gray-600 mb-3">
-                                Formado para planejar e executar o lançamento de um novo produto ou serviço.
-                            </p>
-                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                                <li><span class="font-medium">Agente de Marketing:</span> Estratégia de marketing e comunicação</li>
-                                <li><span class="font-medium">Agente Financeiro:</span> Orçamento e previsões financeiras</li>
-                                <li><span class="font-medium">Agente de Vendas:</span> Estratégia comercial e previsão de vendas</li>
-                                <li><span class="font-medium">Agente de Operações:</span> Planejamento logístico e operacional</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="bg-gray-50 p-4 rounded-lg">
-                            <h4 class="font-medium text-gray-800 mb-2">Squad de Análise de Mercado</h4>
-                            <p class="text-gray-600 mb-3">
-                                Formado para realizar uma análise completa de um mercado ou segmento específico.
-                            </p>
-                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                                <li><span class="font-medium">Agente de Marketing:</span> Análise de tendências e comportamento do consumidor</li>
-                                <li><span class="font-medium">Agente Financeiro:</span> Análise financeira do mercado</li>
-                                <li><span class="font-medium">Agente de Vendas:</span> Análise de concorrência e oportunidades</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="bg-gray-50 p-4 rounded-lg">
-                            <h4 class="font-medium text-gray-800 mb-2">Squad de Desenvolvimento de Projeto</h4>
-                            <p class="text-gray-600 mb-3">
-                                Formado para planejar e acompanhar o desenvolvimento de um projeto de software.
-                            </p>
-                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                                <li><span class="font-medium">Agente de Desenvolvimento:</span> Arquitetura e especificações técnicas</li>
-                                <li><span class="font-medium">Agente Financeiro:</span> Orçamento e controle de custos</li>
-                                <li><span class="font-medium">Agente de Operações:</span> Planejamento de projeto e cronograma</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="bg-gray-50 p-4 rounded-lg">
-                            <h4 class="font-medium text-gray-800 mb-2">Squad de Otimização de Processos</h4>
-                            <p class="text-gray-600 mb-3">
-                                Formado para analisar e otimizar processos internos da empresa.
-                            </p>
-                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                                <li><span class="font-medium">Agente de Operações:</span> Mapeamento e análise de processos</li>
-                                <li><span class="font-medium">Agente Financeiro:</span> Análise de custos e eficiência</li>
-                                <li><span class="font-medium">Agente de RH:</span> Impacto em pessoas e cultura</li>
-                                <li><span class="font-medium">Agente de Desenvolvimento:</span> Automação e soluções tecnológicas</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-yellow-50 p-4 rounded-lg">
-                        <h4 class="font-medium text-yellow-800 mb-2">Exemplo de Uso de Squad:</h4>
-                        <p class="text-gray-600">
-                            "@squad_lancamento crie um plano completo para o lançamento do nosso novo software de gestão empresarial, incluindo estratégia de marketing, previsão financeira e plano de vendas."
-                        </p>
-                    </div>
-                </div>
-            </div>
+                <!-- Agent Communication -->
+                <div>
+                    <h2 class="section-title">Comunicação Entre Agentes</h2>
 
-            <!-- Agent Communication -->
-            <div>
-                <h2 class="section-title">Comunicação Entre Agentes</h2>
-                
-                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
-                    <p class="text-gray-600 mb-6">
-                        A comunicação entre agentes é um aspecto fundamental do sistema, permitindo que eles colaborem
-                        de forma eficiente e coordenada. O sistema implementa um protocolo de comunicação padronizado
-                        baseado no protocolo A2A (Agent-to-Agent) do Google.
-                    </p>
-                    
-                    <div class="bg-blue-50 p-6 rounded-lg mb-8">
-                        <h3 class="text-xl font-semibold text-blue-800 mb-4">Protocolo de Comunicação</h3>
-                        <p class="text-gray-600 mb-4">
-                            O protocolo de comunicação define como as mensagens são estruturadas, roteadas e processadas
-                            no sistema. Cada mensagem contém os seguintes elementos:
+                    <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                        <p class="text-gray-600 mb-6">
+                            A comunicação entre agentes é um aspecto fundamental do sistema, permitindo que eles colaborem
+                            de forma eficiente e coordenada. O sistema implementa um protocolo de comunicação padronizado
+                            baseado no protocolo A2A (Agent-to-Agent) do Google.
                         </p>
-                        <ul class="list-disc pl-5 text-gray-600 space-y-2">
-                            <li><span class="font-medium">Remetente:</span> Identificação do agente que está enviando a mensagem</li>
-                            <li><span class="font-medium">Destinatário:</span> Identificação do agente ou squad que deve receber a mensagem</li>
-                            <li><span class="font-medium">Conteúdo:</span> O corpo da mensagem, que pode incluir texto, dados estruturados ou referências a recursos</li>
-                            <li><span class="font-medium">Tipo:</span> Classificação da mensagem (solicitação, resposta, notificação, etc.)</li>
-                            <li><span class="font-medium">Metadados:</span> Informações adicionais como prioridade, prazo, contexto, etc.</li>
-                            <li><span class="font-medium">ID da Tarefa:</span> Identificação da tarefa à qual a mensagem está relacionada</li>
-                            <li><span class="font-medium">Timestamp:</span> Data e hora de criação da mensagem</li>
-                        </ul>
-                    </div>
-                    
-                    <h3 class="subsection-title">Fluxo de Comunicação</h3>
-                    
-                    <div class="bg-gray-50 p-4 rounded-lg mb-8">
-                        <ol class="list-decimal pl-5 text-gray-600 space-y-3">
-                            <li>
-                                <span class="font-medium">Criação da Mensagem:</span> Um agente cria uma mensagem para outro agente ou squad.
-                            </li>
-                            <li>
-                                <span class="font-medium">Envio:</span> A mensagem é enviada para o sistema de comunicação.
-                            </li>
-                            <li>
-                                <span class="font-medium">Roteamento:</span> O sistema de comunicação identifica o destinatário e roteia a mensagem.
-                            </li>
-                            <li>
-                                <span class="font-medium">Entrega:</span> A mensagem é entregue à fila de mensagens do destinatário.
-                            </li>
-                            <li>
-                                <span class="font-medium">Processamento:</span> O agente destinatário processa a mensagem e, se necessário, envia uma resposta.
-                            </li>
-                            <li>
-                                <span class="font-medium">Registro:</span> Todas as mensagens são registradas para análise e aprendizado futuro.
-                            </li>
-                        </ol>
-                    </div>
-                    
-                    <h3 class="subsection-title">Exemplo de Comunicação</h3>
-                    
-                    <div class="code-block mb-6">
-                        <pre>
+
+                        <div class="bg-blue-50 p-6 rounded-lg mb-8">
+                            <h3 class="text-xl font-semibold text-blue-800 mb-4">Protocolo de Comunicação</h3>
+                            <p class="text-gray-600 mb-4">
+                                O protocolo de comunicação define como as mensagens são estruturadas, roteadas e processadas
+                                no sistema. Cada mensagem contém os seguintes elementos:
+                            </p>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                                <li><span class="font-medium">Remetente:</span> Identificação do agente que está enviando a mensagem</li>
+                                <li><span class="font-medium">Destinatário:</span> Identificação do agente ou squad que deve receber a mensagem</li>
+                                <li><span class="font-medium">Conteúdo:</span> O corpo da mensagem, que pode incluir texto, dados estruturados ou referências a recursos
+                                </li>
+                                <li><span class="font-medium">Tipo:</span> Classificação da mensagem (solicitação, resposta, notificação, etc.)</li>
+                                <li><span class="font-medium">Metadados:</span> Informações adicionais como prioridade, prazo, contexto, etc.</li>
+                                <li><span class="font-medium">ID da Tarefa:</span> Identificação da tarefa à qual a mensagem está relacionada</li>
+                                <li><span class="font-medium">Timestamp:</span> Data e hora de criação da mensagem</li>
+                            </ul>
+                        </div>
+
+                        <h3 class="subsection-title">Fluxo de Comunicação</h3>
+
+                        <div class="bg-gray-50 p-4 rounded-lg mb-8">
+                            <ol class="list-decimal pl-5 text-gray-600 space-y-3">
+                                <li>
+                                    <span class="font-medium">Criação da Mensagem:</span> Um agente cria uma mensagem para outro agente ou squad.
+                                </li>
+                                <li>
+                                    <span class="font-medium">Envio:</span> A mensagem é enviada para o sistema de comunicação.
+                                </li>
+                                <li>
+                                    <span class="font-medium">Roteamento:</span> O sistema de comunicação identifica o destinatário e roteia a mensagem.
+                                </li>
+                                <li>
+                                    <span class="font-medium">Entrega:</span> A mensagem é entregue à fila de mensagens do destinatário.
+                                </li>
+                                <li>
+                                    <span class="font-medium">Processamento:</span> O agente destinatário processa a mensagem e, se necessário, envia uma resposta.
+                                </li>
+                                <li>
+                                    <span class="font-medium">Registro:</span> Todas as mensagens são registradas para análise e aprendizado futuro.
+                                </li>
+                            </ol>
+                        </div>
+
+                        <h3 class="subsection-title">Exemplo de Comunicação</h3>
+
+                        <div class="code-block mb-6">
+                            <pre>
 // Solicitação do Agente de Marketing para o Agente Financeiro
 {
   "sender": "agent_marketing_1",
@@ -555,37 +592,38 @@
   "timestamp": "2025-04-24T11:15:00Z"
 }
                         </pre>
-                    </div>
-                    
-                    <p class="text-gray-600">
-                        Este sistema de comunicação padronizado permite que os agentes colaborem de forma eficiente,
-                        compartilhando informações e coordenando suas atividades para atingir objetivos comuns.
-                        A estrutura flexível das mensagens permite que diferentes tipos de agentes se comuniquem
-                        sem problemas de compatibilidade.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </main>
+                        </div>
 
-    <footer class="bg-gray-800 text-white py-8 mt-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-4 md:mb-0">
-                    <h3 class="text-xl font-bold">Capellaris</h3>
-                    <p class="text-gray-400">O cérebro distribuído da sua organização.</p>
-                </div>
-                <div class="flex space-x-6">
-                    <a href="index.html" class="text-gray-300 hover:text-white">Início</a>
-                    <a href="arquitetura.html" class="text-gray-300 hover:text-white">Arquitetura</a>
-                    <a href="documentacao.html" class="text-gray-300 hover:text-white">Documentação</a>
-                    <a href="demo.html" class="text-gray-300 hover:text-white">Demo</a>
+                        <p class="text-gray-600">
+                            Este sistema de comunicação padronizado permite que os agentes colaborem de forma eficiente,
+                            compartilhando informações e coordenando suas atividades para atingir objetivos comuns.
+                            A estrutura flexível das mensagens permite que diferentes tipos de agentes se comuniquem
+                            sem problemas de compatibilidade.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
-                <p>&copy; 2025 Capellaris. Todos os direitos reservados.</p>
+        </main>
+
+        <footer class="bg-gray-800 text-white py-8 mt-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-4 md:mb-0">
+                        <h3 class="text-xl font-bold">Capellaris</h3>
+                        <p class="text-gray-400">O cérebro distribuído da sua organização.</p>
+                    </div>
+                    <div class="flex space-x-6">
+                        <a href="index.html" class="text-gray-300 hover:text-white">Início</a>
+                        <a href="arquitetura.html" class="text-gray-300 hover:text-white">Arquitetura</a>
+                        <a href="documentacao.html" class="text-gray-300 hover:text-white">Documentação</a>
+                        <a href="https://capellaris.dscamargo.com.br" class="text-gray-300 hover:text-white">Demo</a>
+                    </div>
+                </div>
+                <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+                    <p>&copy; 2025 Capellaris. Todos os direitos reservados.</p>
+                </div>
             </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
+
 </html>

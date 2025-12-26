@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,18 +22,21 @@
             padding-bottom: 0.5rem;
             border-bottom: 2px solid #4299e1;
         }
+
         .subsection-title {
             font-size: 1.5rem;
             font-weight: 600;
             color: #2d3748;
             margin-bottom: 1rem;
         }
+
         .card {
             background-color: white;
             border-radius: 0.5rem;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             padding: 1.5rem;
         }
+
         .code-block {
             background-color: #f7fafc;
             border-radius: 0.375rem;
@@ -42,6 +46,7 @@
             font-size: 0.875rem;
             color: #1a202c;
         }
+
         .btn-primary {
             background-color: #4299e1;
             color: white;
@@ -50,153 +55,165 @@
             font-weight: 500;
             transition: background-color 0.2s;
         }
+
         .btn-primary:hover {
             background-color: #3182ce;
         }
+
         .dark-mode {
             background-color: #1a202c;
             color: #e2e8f0;
         }
+
         .dark-mode .section-title {
             color: #f7fafc;
             border-bottom-color: #4299e1;
         }
+
         .dark-mode .subsection-title {
             color: #e2e8f0;
         }
+
         .dark-mode .card {
             background-color: #2d3748;
             color: #e2e8f0;
         }
+
         .dark-mode .code-block {
             background-color: #1a202c;
             color: #e2e8f0;
         }
     </style>
 </head>
+
 <body class="bg-gray-100">
-<body class="bg-gray-100">
-    <header class="bg-white shadow-md">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-            <nav class="flex items-center justify-between flex-wrap">
-                <div class="flex items-center pr-6">
-                    <a class="flex justify-center pr-3" href="../index.html">
-                        <img src="../assets/images/dsc_white.svg" alt="Daniel Camargo" class="rounded-circle me-2" width="40" height="40">
-                    </a>
-                    <a class="flex justify-center" href="index.html">
-                        <img src="../assets/images/capellaris_v3.svg" alt="Capellaris Logo" class="h-8 w-8 mr-2">
-                        <h1 class="text-2xl font-bold text-gray-900">Capellaris</h1>
-                    </a>
-                </div>
-                <div class="block lg:hidden ml-auto">
-                    <button id="menu-toggle" class="flex items-center px-3 py-2 border rounded">
-                        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <title>Menu</title>
-                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+
+    <body class="bg-gray-100">
+        <header class="bg-white shadow-md">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+                <nav class="flex items-center justify-between flex-wrap">
+                    <div class="flex items-center pr-6">
+                        <a class="flex justify-center pr-3" href="../index.html">
+                            <img src="../assets/images/dsc_white.svg" alt="Daniel Camargo" class="rounded-circle me-2" width="40" height="40">
+                        </a>
+                        <a class="flex justify-center" href="index.html">
+                            <img src="../assets/images/capellaris_v3.svg" alt="Capellaris Logo" class="h-8 w-8 mr-2">
+                            <h1 class="text-2xl font-bold text-gray-900">Capellaris</h1>
+                        </a>
+                    </div>
+                    <div class="block lg:hidden ml-auto">
+                        <button id="menu-toggle" class="flex items-center px-3 py-2 border rounded">
+                            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>Menu</title>
+                                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="mobile-menu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden">
+                        <div class="text-sm lg:flex lg:flex-grow justify-end">
+                            <a href="index.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Início</a>
+                            <a href="arquitetura.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Arquitetura</a>
+                            <a href="agentes.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Agentes</a>
+                            <a href="aprendizado.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Aprendizado</a>
+                            <a href="integracao.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Integração</a>
+                            <a href="documentacao.html"
+                                class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Documentação</a>
+                            <a href="https://capellaris.dscamargo.com.br"
+                                class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Demo</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+
+        <main class="py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Breadcrumb -->
+                <div class="mb-8">
+                    <a href="index.html" class="text-blue-600 hover:text-blue-800 flex items-center">
+                        <svg class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                         </svg>
-                    </button>
+                        Voltar para a página inicial
+                    </a>
                 </div>
-                <div id="mobile-menu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden">
-                    <div class="text-sm lg:flex lg:flex-grow justify-end">
-                        <a href="index.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Início</a>
-                        <a href="arquitetura.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Arquitetura</a>
-                        <a href="agentes.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Agentes</a>
-                        <a href="aprendizado.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Aprendizado</a>
-                        <a href="integracao.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Integração</a>
-                        <a href="documentacao.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Documentação</a>
-                        <a href="demo.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Demo</a>
-                    </div>
+
+                <!-- Header -->
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl font-bold text-gray-900 mb-4">
+                        Integração com Chat
+                    </h1>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Conheça como o Capellaris se integra com plataformas de chat
+                        como Slack e Microsoft Teams, permitindo interações naturais com os agentes.
+                    </p>
                 </div>
-            </nav>
-        </div>
-    </header>
 
+                <!-- Integration Overview -->
+                <div class="mb-16">
+                    <h2 class="section-title">Visão Geral da Integração</h2>
+                    <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                        <p class="text-gray-600 mb-6">
+                            A integração com plataformas de chat é um componente essencial do Capellaris,
+                            permitindo que os usuários interajam com os agentes através de interfaces familiares e já utilizadas no dia a dia
+                            da empresa. Esta abordagem elimina a necessidade de aprender novas interfaces e facilita a adoção do sistema.
+                        </p>
 
-    <main class="py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Breadcrumb -->
-            <div class="mb-8">
-                <a href="index.html" class="text-blue-600 hover:text-blue-800 flex items-center">
-                    <svg class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-                    </svg>
-                    Voltar para a página inicial
-                </a>
-            </div>
-
-            <!-- Header -->
-            <div class="text-center mb-12">
-                <h1 class="text-4xl font-bold text-gray-900 mb-4">
-                    Integração com Chat
-                </h1>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Conheça como o Capellaris se integra com plataformas de chat
-                    como Slack e Microsoft Teams, permitindo interações naturais com os agentes.
-                </p>
-            </div>
-
-            <!-- Integration Overview -->
-            <div class="mb-16">
-                <h2 class="section-title">Visão Geral da Integração</h2>
-                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
-                    <p class="text-gray-600 mb-6">
-                        A integração com plataformas de chat é um componente essencial do Capellaris,
-                        permitindo que os usuários interajam com os agentes através de interfaces familiares e já utilizadas no dia a dia
-                        da empresa. Esta abordagem elimina a necessidade de aprender novas interfaces e facilita a adoção do sistema.
-                    </p>
-                    
-                    <div class="bg-blue-50 p-6 rounded-lg mb-8">
-                        <h3 class="text-xl font-semibold text-blue-800 mb-4">Principais Benefícios</h3>
-                        <ul class="list-disc pl-5 text-gray-600 space-y-2">
-                            <li><span class="font-medium">Facilidade de Uso:</span> Interação com os agentes através de plataformas já utilizadas pelos usuários.</li>
-                            <li><span class="font-medium">Colaboração:</span> Possibilidade de incluir os agentes em conversas e canais existentes.</li>
-                            <li><span class="font-medium">Contextualização:</span> Os agentes têm acesso ao contexto das conversas para fornecer respostas mais relevantes.</li>
-                            <li><span class="font-medium">Notificações:</span> Utilização dos sistemas de notificação das plataformas para alertar sobre tarefas e atualizações.</li>
-                            <li><span class="font-medium">Histórico:</span> Aproveitamento do histórico de conversas para referência futura e aprendizado.</li>
-                        </ul>
-                    </div>
-                    
-                    <p class="text-gray-600 mb-6">
-                        O sistema atualmente suporta integração com Slack e Microsoft Teams, com planos para expandir
-                        para outras plataformas como Discord, Telegram e WhatsApp Business no futuro. A arquitetura
-                        modular permite adicionar novas integrações de forma simples e consistente.
-                    </p>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="bg-blue-50 p-4 rounded-lg">
-                            <h3 class="font-semibold text-blue-800 mb-2">Slack</h3>
-                            <p class="text-gray-600">
-                                Integração completa com o Slack, permitindo interações em canais públicos,
-                                privados e mensagens diretas, com suporte a rich messages e blocos interativos.
-                            </p>
+                        <div class="bg-blue-50 p-6 rounded-lg mb-8">
+                            <h3 class="text-xl font-semibold text-blue-800 mb-4">Principais Benefícios</h3>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                                <li><span class="font-medium">Facilidade de Uso:</span> Interação com os agentes através de plataformas já utilizadas pelos usuários.</li>
+                                <li><span class="font-medium">Colaboração:</span> Possibilidade de incluir os agentes em conversas e canais existentes.</li>
+                                <li><span class="font-medium">Contextualização:</span> Os agentes têm acesso ao contexto das conversas para fornecer respostas mais
+                                    relevantes.</li>
+                                <li><span class="font-medium">Notificações:</span> Utilização dos sistemas de notificação das plataformas para alertar sobre tarefas e
+                                    atualizações.</li>
+                                <li><span class="font-medium">Histórico:</span> Aproveitamento do histórico de conversas para referência futura e aprendizado.</li>
+                            </ul>
                         </div>
-                        
-                        <div class="bg-purple-50 p-4 rounded-lg">
-                            <h3 class="font-semibold text-purple-800 mb-2">Microsoft Teams</h3>
-                            <p class="text-gray-600">
-                                Integração com o Microsoft Teams, permitindo interações em canais e chats,
-                                com suporte a cards adaptativos e botões de ação.
-                            </p>
+
+                        <p class="text-gray-600 mb-6">
+                            O sistema atualmente suporta integração com Slack e Microsoft Teams, com planos para expandir
+                            para outras plataformas como Discord, Telegram e WhatsApp Business no futuro. A arquitetura
+                            modular permite adicionar novas integrações de forma simples e consistente.
+                        </p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-blue-800 mb-2">Slack</h3>
+                                <p class="text-gray-600">
+                                    Integração completa com o Slack, permitindo interações em canais públicos,
+                                    privados e mensagens diretas, com suporte a rich messages e blocos interativos.
+                                </p>
+                            </div>
+
+                            <div class="bg-purple-50 p-4 rounded-lg">
+                                <h3 class="font-semibold text-purple-800 mb-2">Microsoft Teams</h3>
+                                <p class="text-gray-600">
+                                    Integração com o Microsoft Teams, permitindo interações em canais e chats,
+                                    com suporte a cards adaptativos e botões de ação.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Integration Architecture -->
-            <div class="mb-16">
-                <h2 class="section-title">Arquitetura de Integração</h2>
-                
-                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
-                    <p class="text-gray-600 mb-6">
-                        A arquitetura de integração com chat foi projetada para ser modular, extensível e robusta,
-                        permitindo adicionar novas plataformas de chat com facilidade e garantindo uma experiência
-                        consistente independentemente da plataforma utilizada.
-                    </p>
-                    
-                    <div class="bg-blue-50 p-6 rounded-lg mb-8">
-                        <h3 class="text-xl font-semibold text-blue-800 mb-4">Diagrama de Arquitetura</h3>
-                        <div class="bg-white p-4 rounded-lg border border-blue-200">
-                            <pre class="text-sm text-gray-800">
+                <!-- Integration Architecture -->
+                <div class="mb-16">
+                    <h2 class="section-title">Arquitetura de Integração</h2>
+
+                    <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                        <p class="text-gray-600 mb-6">
+                            A arquitetura de integração com chat foi projetada para ser modular, extensível e robusta,
+                            permitindo adicionar novas plataformas de chat com facilidade e garantindo uma experiência
+                            consistente independentemente da plataforma utilizada.
+                        </p>
+
+                        <div class="bg-blue-50 p-6 rounded-lg mb-8">
+                            <h3 class="text-xl font-semibold text-blue-800 mb-4">Diagrama de Arquitetura</h3>
+                            <div class="bg-white p-4 rounded-lg border border-blue-200">
+                                <pre class="text-sm text-gray-800">
 +---------------------+     +---------------------+     +---------------------+
 |                     |     |                     |     |                     |
 |  Plataformas        |     |  Conectores         |     |  Sistema de         |
@@ -214,159 +231,160 @@
                             |                     |     |                     |
                             +---------------------+     +---------------------+
                             </pre>
-                        </div>
-                    </div>
-                    
-                    <h3 class="subsection-title">Componentes Principais</h3>
-                    
-                    <div class="space-y-6">
-                        <!-- Chat Integration -->
-                        <div class="card">
-                            <div class="flex items-center mb-4">
-                                <div class="bg-blue-100 p-3 rounded-full mr-4">
-                                    <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
-                                    </svg>
-                                </div>
-                                <h3 class="text-xl font-semibold">ChatIntegration</h3>
-                            </div>
-                            <p class="text-gray-600 mb-4">
-                                O componente central que gerencia a integração com diferentes plataformas de chat.
-                                Ele coordena a comunicação entre os conectores específicos de cada plataforma e o
-                                sistema de gerenciamento de agentes.
-                            </p>
-                            <div class="bg-gray-50 p-4 rounded-lg">
-                                <h4 class="font-medium text-gray-800 mb-2">Responsabilidades:</h4>
-                                <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                                    <li>Gerenciar os conectores para diferentes plataformas de chat</li>
-                                    <li>Rotear mensagens entre os usuários e os agentes apropriados</li>
-                                    <li>Coordenar o processo de confirmação humana</li>
-                                    <li>Gerenciar o contexto das conversas</li>
-                                    <li>Monitorar o status das integrações</li>
-                                </ul>
                             </div>
                         </div>
-                        
-                        <!-- Chat Connectors -->
-                        <div class="card">
-                            <div class="flex items-center mb-4">
-                                <div class="bg-green-100 p-3 rounded-full mr-4">
-                                    <svg class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                                    </svg>
+
+                        <h3 class="subsection-title">Componentes Principais</h3>
+
+                        <div class="space-y-6">
+                            <!-- Chat Integration -->
+                            <div class="card">
+                                <div class="flex items-center mb-4">
+                                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                        <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-xl font-semibold">ChatIntegration</h3>
                                 </div>
-                                <h3 class="text-xl font-semibold">Conectores de Chat</h3>
-                            </div>
-                            <p class="text-gray-600 mb-4">
-                                Os conectores são adaptadores específicos para cada plataforma de chat, responsáveis
-                                por traduzir as mensagens entre o formato interno do sistema e o formato específico
-                                de cada plataforma.
-                            </p>
-                            <div class="bg-gray-50 p-4 rounded-lg">
-                                <h4 class="font-medium text-gray-800 mb-2">Conectores Implementados:</h4>
-                                <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                                    <li><span class="font-medium">SlackConnector:</span> Integração com o Slack</li>
-                                    <li><span class="font-medium">TeamsConnector:</span> Integração com o Microsoft Teams</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <!-- Message Formatters -->
-                        <div class="card">
-                            <div class="flex items-center mb-4">
-                                <div class="bg-purple-100 p-3 rounded-full mr-4">
-                                    <svg class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                                    </svg>
+                                <p class="text-gray-600 mb-4">
+                                    O componente central que gerencia a integração com diferentes plataformas de chat.
+                                    Ele coordena a comunicação entre os conectores específicos de cada plataforma e o
+                                    sistema de gerenciamento de agentes.
+                                </p>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <h4 class="font-medium text-gray-800 mb-2">Responsabilidades:</h4>
+                                    <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                        <li>Gerenciar os conectores para diferentes plataformas de chat</li>
+                                        <li>Rotear mensagens entre os usuários e os agentes apropriados</li>
+                                        <li>Coordenar o processo de confirmação humana</li>
+                                        <li>Gerenciar o contexto das conversas</li>
+                                        <li>Monitorar o status das integrações</li>
+                                    </ul>
                                 </div>
-                                <h3 class="text-xl font-semibold">Formatadores de Mensagem</h3>
                             </div>
-                            <p class="text-gray-600 mb-4">
-                                Os formatadores de mensagem são responsáveis por converter as respostas dos agentes
-                                em formatos ricos e interativos específicos de cada plataforma, como blocos interativos
-                                no Slack ou cards adaptativos no Teams.
-                            </p>
-                            <div class="bg-gray-50 p-4 rounded-lg">
-                                <h4 class="font-medium text-gray-800 mb-2">Tipos de Formatação:</h4>
-                                <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                                    <li>Formatação de texto (negrito, itálico, listas, etc.)</li>
-                                    <li>Blocos interativos (botões, menus, etc.)</li>
-                                    <li>Cards e attachments</li>
-                                    <li>Gráficos e visualizações</li>
-                                    <li>Links e referências</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <!-- Human Confirmation Interface -->
-                        <div class="card">
-                            <div class="flex items-center mb-4">
-                                <div class="bg-red-100 p-3 rounded-full mr-4">
-                                    <svg class="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
+
+                            <!-- Chat Connectors -->
+                            <div class="card">
+                                <div class="flex items-center mb-4">
+                                    <div class="bg-green-100 p-3 rounded-full mr-4">
+                                        <svg class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-xl font-semibold">Conectores de Chat</h3>
                                 </div>
-                                <h3 class="text-xl font-semibold">Interface de Confirmação Humana</h3>
+                                <p class="text-gray-600 mb-4">
+                                    Os conectores são adaptadores específicos para cada plataforma de chat, responsáveis
+                                    por traduzir as mensagens entre o formato interno do sistema e o formato específico
+                                    de cada plataforma.
+                                </p>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <h4 class="font-medium text-gray-800 mb-2">Conectores Implementados:</h4>
+                                    <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                        <li><span class="font-medium">SlackConnector:</span> Integração com o Slack</li>
+                                        <li><span class="font-medium">TeamsConnector:</span> Integração com o Microsoft Teams</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <p class="text-gray-600 mb-4">
-                                A Interface de Confirmação Humana gerencia o processo de aprovação para execução de tarefas,
-                                garantindo que os agentes não realizem ações não autorizadas. Ela utiliza as plataformas de
-                                chat para enviar solicitações de aprovação e processar as respostas.
-                            </p>
-                            <div class="bg-gray-50 p-4 rounded-lg">
-                                <h4 class="font-medium text-gray-800 mb-2">Funcionalidades:</h4>
-                                <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                                    <li>Envio de solicitações de aprovação</li>
-                                    <li>Processamento de respostas (aprovar, rejeitar, solicitar mais informações)</li>
-                                    <li>Timeout e escalação de solicitações não respondidas</li>
-                                    <li>Registro de aprovações e rejeições</li>
-                                    <li>Níveis de aprovação baseados em complexidade e impacto da tarefa</li>
-                                </ul>
+
+                            <!-- Message Formatters -->
+                            <div class="card">
+                                <div class="flex items-center mb-4">
+                                    <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                        <svg class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-xl font-semibold">Formatadores de Mensagem</h3>
+                                </div>
+                                <p class="text-gray-600 mb-4">
+                                    Os formatadores de mensagem são responsáveis por converter as respostas dos agentes
+                                    em formatos ricos e interativos específicos de cada plataforma, como blocos interativos
+                                    no Slack ou cards adaptativos no Teams.
+                                </p>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <h4 class="font-medium text-gray-800 mb-2">Tipos de Formatação:</h4>
+                                    <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                        <li>Formatação de texto (negrito, itálico, listas, etc.)</li>
+                                        <li>Blocos interativos (botões, menus, etc.)</li>
+                                        <li>Cards e attachments</li>
+                                        <li>Gráficos e visualizações</li>
+                                        <li>Links e referências</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Human Confirmation Interface -->
+                            <div class="card">
+                                <div class="flex items-center mb-4">
+                                    <div class="bg-red-100 p-3 rounded-full mr-4">
+                                        <svg class="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-xl font-semibold">Interface de Confirmação Humana</h3>
+                                </div>
+                                <p class="text-gray-600 mb-4">
+                                    A Interface de Confirmação Humana gerencia o processo de aprovação para execução de tarefas,
+                                    garantindo que os agentes não realizem ações não autorizadas. Ela utiliza as plataformas de
+                                    chat para enviar solicitações de aprovação e processar as respostas.
+                                </p>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <h4 class="font-medium text-gray-800 mb-2">Funcionalidades:</h4>
+                                    <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                        <li>Envio de solicitações de aprovação</li>
+                                        <li>Processamento de respostas (aprovar, rejeitar, solicitar mais informações)</li>
+                                        <li>Timeout e escalação de solicitações não respondidas</li>
+                                        <li>Registro de aprovações e rejeições</li>
+                                        <li>Níveis de aprovação baseados em complexidade e impacto da tarefa</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Slack Integration -->
-            <div class="mb-16">
-                <h2 class="section-title">Integração com Slack</h2>
-                
-                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
-                    <p class="text-gray-600 mb-6">
-                        A integração com o Slack permite que os usuários interajam com os agentes de IA diretamente
-                        nos canais e mensagens diretas do Slack, aproveitando todos os recursos da plataforma como
-                        threads, reações, blocos interativos e notificações.
-                    </p>
-                    
-                    <div class="bg-blue-50 p-6 rounded-lg mb-8">
-                        <h3 class="text-xl font-semibold text-blue-800 mb-4">Funcionalidades</h3>
-                        <ul class="list-disc pl-5 text-gray-600 space-y-2">
-                            <li><span class="font-medium">Menções:</span> Os agentes podem ser mencionados em canais usando @agente_nome</li>
-                            <li><span class="font-medium">Mensagens Diretas:</span> Os usuários podem enviar mensagens diretas para os agentes</li>
-                            <li><span class="font-medium">Threads:</span> As conversas são organizadas em threads para manter o contexto</li>
-                            <li><span class="font-medium">Blocos Interativos:</span> Botões, menus e outros elementos interativos para facilitar a interação</li>
-                            <li><span class="font-medium">Reações:</span> Os usuários podem reagir às mensagens dos agentes para fornecer feedback rápido</li>
-                            <li><span class="font-medium">Notificações:</span> Os agentes podem enviar notificações para alertar sobre tarefas e atualizações</li>
-                        </ul>
-                    </div>
-                    
-                    <h3 class="subsection-title">Configuração</h3>
-                    
-                    <div class="bg-gray-50 p-4 rounded-lg mb-8">
-                        <h4 class="font-medium text-gray-800 mb-2">Requisitos:</h4>
-                        <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                            <li>Workspace do Slack</li>
-                            <li>Permissões de administrador para instalar aplicativos</li>
-                            <li>Criação de um aplicativo Slack na plataforma de desenvolvedores do Slack</li>
-                            <li>Configuração de webhooks e permissões apropriadas</li>
-                        </ul>
-                    </div>
-                    
-                    <h3 class="subsection-title">Exemplo de Código: Configuração do Slack</h3>
-                    
-                    <div class="code-block mb-8">
-                        <pre>
+                <!-- Slack Integration -->
+                <div class="mb-16">
+                    <h2 class="section-title">Integração com Slack</h2>
+
+                    <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                        <p class="text-gray-600 mb-6">
+                            A integração com o Slack permite que os usuários interajam com os agentes de IA diretamente
+                            nos canais e mensagens diretas do Slack, aproveitando todos os recursos da plataforma como
+                            threads, reações, blocos interativos e notificações.
+                        </p>
+
+                        <div class="bg-blue-50 p-6 rounded-lg mb-8">
+                            <h3 class="text-xl font-semibold text-blue-800 mb-4">Funcionalidades</h3>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                                <li><span class="font-medium">Menções:</span> Os agentes podem ser mencionados em canais usando @agente_nome</li>
+                                <li><span class="font-medium">Mensagens Diretas:</span> Os usuários podem enviar mensagens diretas para os agentes</li>
+                                <li><span class="font-medium">Threads:</span> As conversas são organizadas em threads para manter o contexto</li>
+                                <li><span class="font-medium">Blocos Interativos:</span> Botões, menus e outros elementos interativos para facilitar a interação</li>
+                                <li><span class="font-medium">Reações:</span> Os usuários podem reagir às mensagens dos agentes para fornecer feedback rápido</li>
+                                <li><span class="font-medium">Notificações:</span> Os agentes podem enviar notificações para alertar sobre tarefas e atualizações</li>
+                            </ul>
+                        </div>
+
+                        <h3 class="subsection-title">Configuração</h3>
+
+                        <div class="bg-gray-50 p-4 rounded-lg mb-8">
+                            <h4 class="font-medium text-gray-800 mb-2">Requisitos:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                <li>Workspace do Slack</li>
+                                <li>Permissões de administrador para instalar aplicativos</li>
+                                <li>Criação de um aplicativo Slack na plataforma de desenvolvedores do Slack</li>
+                                <li>Configuração de webhooks e permissões apropriadas</li>
+                            </ul>
+                        </div>
+
+                        <h3 class="subsection-title">Exemplo de Código: Configuração do Slack</h3>
+
+                        <div class="code-block mb-8">
+                            <pre>
 # Configuração do conector Slack
 slack_config = {
     "token": "xoxb-your-token",
@@ -396,100 +414,102 @@ chat_integration.add_connector("slack", slack_connector)
 confirmation_interface = HumanConfirmationInterface()
 confirmation_interface.register_platform("slack", slack_connector)
                         </pre>
-                    </div>
-                    
-                    <h3 class="subsection-title">Exemplo de Interação</h3>
-                    
-                    <div class="bg-gray-50 p-4 rounded-lg">
-                        <h4 class="font-medium text-gray-800 mb-2">Solicitação de Tarefa:</h4>
-                        <div class="bg-white p-3 rounded border border-gray-200 mb-4">
-                            <p class="text-gray-800 font-medium">Usuário (em #marketing):</p>
-                            <p class="text-gray-600">@agente_marketing analise os resultados da nossa campanha de email marketing do último trimestre e sugira melhorias para aumentar a taxa de conversão.</p>
                         </div>
-                        
-                        <h4 class="font-medium text-gray-800 mb-2">Solicitação de Aprovação:</h4>
-                        <div class="bg-white p-3 rounded border border-gray-200 mb-4">
-                            <p class="text-gray-800 font-medium">Agente de IA (em thread):</p>
-                            <div class="bg-blue-50 p-3 rounded border border-blue-200">
-                                <p class="text-gray-800 font-medium">Solicitação de Aprovação</p>
-                                <p class="text-gray-600 mb-2">O agente de marketing gostaria de executar a seguinte tarefa:</p>
-                                <p class="text-gray-600 italic mb-2">"Analisar os resultados da campanha de email marketing do último trimestre e sugerir melhorias para aumentar a taxa de conversão."</p>
-                                <p class="text-gray-600 mb-3">Esta tarefa envolverá acesso aos dados de marketing e análise de métricas de campanha.</p>
-                                <div class="flex space-x-2">
-                                    <button class="bg-green-500 text-white px-3 py-1 rounded text-sm">Aprovar</button>
-                                    <button class="bg-red-500 text-white px-3 py-1 rounded text-sm">Rejeitar</button>
-                                    <button class="bg-gray-500 text-white px-3 py-1 rounded text-sm">Solicitar mais informações</button>
+
+                        <h3 class="subsection-title">Exemplo de Interação</h3>
+
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-medium text-gray-800 mb-2">Solicitação de Tarefa:</h4>
+                            <div class="bg-white p-3 rounded border border-gray-200 mb-4">
+                                <p class="text-gray-800 font-medium">Usuário (em #marketing):</p>
+                                <p class="text-gray-600">@agente_marketing analise os resultados da nossa campanha de email marketing do último trimestre e sugira
+                                    melhorias para aumentar a taxa de conversão.</p>
+                            </div>
+
+                            <h4 class="font-medium text-gray-800 mb-2">Solicitação de Aprovação:</h4>
+                            <div class="bg-white p-3 rounded border border-gray-200 mb-4">
+                                <p class="text-gray-800 font-medium">Agente de IA (em thread):</p>
+                                <div class="bg-blue-50 p-3 rounded border border-blue-200">
+                                    <p class="text-gray-800 font-medium">Solicitação de Aprovação</p>
+                                    <p class="text-gray-600 mb-2">O agente de marketing gostaria de executar a seguinte tarefa:</p>
+                                    <p class="text-gray-600 italic mb-2">"Analisar os resultados da campanha de email marketing do último trimestre e sugerir melhorias
+                                        para aumentar a taxa de conversão."</p>
+                                    <p class="text-gray-600 mb-3">Esta tarefa envolverá acesso aos dados de marketing e análise de métricas de campanha.</p>
+                                    <div class="flex space-x-2">
+                                        <button class="bg-green-500 text-white px-3 py-1 rounded text-sm">Aprovar</button>
+                                        <button class="bg-red-500 text-white px-3 py-1 rounded text-sm">Rejeitar</button>
+                                        <button class="bg-gray-500 text-white px-3 py-1 rounded text-sm">Solicitar mais informações</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <h4 class="font-medium text-gray-800 mb-2">Resposta do Agente:</h4>
-                        <div class="bg-white p-3 rounded border border-gray-200">
-                            <p class="text-gray-800 font-medium">Agente de Marketing (em thread):</p>
-                            <p class="text-gray-600 mb-2">Aqui está a análise dos resultados da campanha de email marketing do último trimestre:</p>
-                            <div class="bg-gray-100 p-2 rounded mb-2">
-                                <p class="text-gray-800 font-medium">Métricas Principais:</p>
-                                <ul class="list-disc pl-5 text-gray-600">
-                                    <li>Taxa de abertura: 24.3% (↓ 2.1% em relação ao trimestre anterior)</li>
-                                    <li>Taxa de clique: 3.7% (↓ 0.5% em relação ao trimestre anterior)</li>
-                                    <li>Taxa de conversão: 1.2% (↓ 0.3% em relação ao trimestre anterior)</li>
-                                    <li>Taxa de descadastramento: 0.8% (↑ 0.2% em relação ao trimestre anterior)</li>
-                                </ul>
+
+                            <h4 class="font-medium text-gray-800 mb-2">Resposta do Agente:</h4>
+                            <div class="bg-white p-3 rounded border border-gray-200">
+                                <p class="text-gray-800 font-medium">Agente de Marketing (em thread):</p>
+                                <p class="text-gray-600 mb-2">Aqui está a análise dos resultados da campanha de email marketing do último trimestre:</p>
+                                <div class="bg-gray-100 p-2 rounded mb-2">
+                                    <p class="text-gray-800 font-medium">Métricas Principais:</p>
+                                    <ul class="list-disc pl-5 text-gray-600">
+                                        <li>Taxa de abertura: 24.3% (↓ 2.1% em relação ao trimestre anterior)</li>
+                                        <li>Taxa de clique: 3.7% (↓ 0.5% em relação ao trimestre anterior)</li>
+                                        <li>Taxa de conversão: 1.2% (↓ 0.3% em relação ao trimestre anterior)</li>
+                                        <li>Taxa de descadastramento: 0.8% (↑ 0.2% em relação ao trimestre anterior)</li>
+                                    </ul>
+                                </div>
+                                <p class="text-gray-600 mb-2">Recomendações para melhorar a taxa de conversão:</p>
+                                <ol class="list-decimal pl-5 text-gray-600 mb-2">
+                                    <li>Melhorar a segmentação de público com base no comportamento de compra</li>
+                                    <li>Otimizar os assuntos dos emails para aumentar a taxa de abertura</li>
+                                    <li>Redesenhar as CTAs para torná-las mais claras e atrativas</li>
+                                    <li>Implementar testes A/B para diferentes layouts e conteúdos</li>
+                                    <li>Ajustar o timing dos envios com base na análise de horários de maior engajamento</li>
+                                </ol>
+                                <p class="text-gray-600">Gostaria de elaborar alguma dessas recomendações em mais detalhes?</p>
                             </div>
-                            <p class="text-gray-600 mb-2">Recomendações para melhorar a taxa de conversão:</p>
-                            <ol class="list-decimal pl-5 text-gray-600 mb-2">
-                                <li>Melhorar a segmentação de público com base no comportamento de compra</li>
-                                <li>Otimizar os assuntos dos emails para aumentar a taxa de abertura</li>
-                                <li>Redesenhar as CTAs para torná-las mais claras e atrativas</li>
-                                <li>Implementar testes A/B para diferentes layouts e conteúdos</li>
-                                <li>Ajustar o timing dos envios com base na análise de horários de maior engajamento</li>
-                            </ol>
-                            <p class="text-gray-600">Gostaria de elaborar alguma dessas recomendações em mais detalhes?</p>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Microsoft Teams Integration -->
-            <div class="mb-16">
-                <h2 class="section-title">Integração com Microsoft Teams</h2>
-                
-                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
-                    <p class="text-gray-600 mb-6">
-                        A integração com o Microsoft Teams permite que os usuários interajam com os agentes de IA
-                        diretamente nos canais e chats do Teams, aproveitando recursos como cards adaptativos,
-                        botões de ação e notificações.
-                    </p>
-                    
-                    <div class="bg-purple-50 p-6 rounded-lg mb-8">
-                        <h3 class="text-xl font-semibold text-purple-800 mb-4">Funcionalidades</h3>
-                        <ul class="list-disc pl-5 text-gray-600 space-y-2">
-                            <li><span class="font-medium">Menções:</span> Os agentes podem ser mencionados em canais usando @agente_nome</li>
-                            <li><span class="font-medium">Chats Privados:</span> Os usuários podem iniciar chats privados com os agentes</li>
-                            <li><span class="font-medium">Cards Adaptativos:</span> Interfaces ricas e interativas para apresentação de informações</li>
-                            <li><span class="font-medium">Botões de Ação:</span> Elementos interativos para facilitar a interação</li>
-                            <li><span class="font-medium">Abas Personalizadas:</span> Interfaces dedicadas dentro do Teams para interações mais complexas</li>
-                            <li><span class="font-medium">Notificações:</span> Os agentes podem enviar notificações para alertar sobre tarefas e atualizações</li>
-                        </ul>
-                    </div>
-                    
-                    <h3 class="subsection-title">Configuração</h3>
-                    
-                    <div class="bg-gray-50 p-4 rounded-lg mb-8">
-                        <h4 class="font-medium text-gray-800 mb-2">Requisitos:</h4>
-                        <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                            <li>Tenant do Microsoft 365</li>
-                            <li>Permissões de administrador para registrar aplicativos</li>
-                            <li>Registro de um aplicativo no Azure Active Directory</li>
-                            <li>Configuração de bot no Bot Framework</li>
-                            <li>Configuração de permissões e escopos apropriados</li>
-                        </ul>
-                    </div>
-                    
-                    <h3 class="subsection-title">Exemplo de Código: Configuração do Teams</h3>
-                    
-                    <div class="code-block mb-8">
-                        <pre>
+                <!-- Microsoft Teams Integration -->
+                <div class="mb-16">
+                    <h2 class="section-title">Integração com Microsoft Teams</h2>
+
+                    <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                        <p class="text-gray-600 mb-6">
+                            A integração com o Microsoft Teams permite que os usuários interajam com os agentes de IA
+                            diretamente nos canais e chats do Teams, aproveitando recursos como cards adaptativos,
+                            botões de ação e notificações.
+                        </p>
+
+                        <div class="bg-purple-50 p-6 rounded-lg mb-8">
+                            <h3 class="text-xl font-semibold text-purple-800 mb-4">Funcionalidades</h3>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                                <li><span class="font-medium">Menções:</span> Os agentes podem ser mencionados em canais usando @agente_nome</li>
+                                <li><span class="font-medium">Chats Privados:</span> Os usuários podem iniciar chats privados com os agentes</li>
+                                <li><span class="font-medium">Cards Adaptativos:</span> Interfaces ricas e interativas para apresentação de informações</li>
+                                <li><span class="font-medium">Botões de Ação:</span> Elementos interativos para facilitar a interação</li>
+                                <li><span class="font-medium">Abas Personalizadas:</span> Interfaces dedicadas dentro do Teams para interações mais complexas</li>
+                                <li><span class="font-medium">Notificações:</span> Os agentes podem enviar notificações para alertar sobre tarefas e atualizações</li>
+                            </ul>
+                        </div>
+
+                        <h3 class="subsection-title">Configuração</h3>
+
+                        <div class="bg-gray-50 p-4 rounded-lg mb-8">
+                            <h4 class="font-medium text-gray-800 mb-2">Requisitos:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                <li>Tenant do Microsoft 365</li>
+                                <li>Permissões de administrador para registrar aplicativos</li>
+                                <li>Registro de um aplicativo no Azure Active Directory</li>
+                                <li>Configuração de bot no Bot Framework</li>
+                                <li>Configuração de permissões e escopos apropriados</li>
+                            </ul>
+                        </div>
+
+                        <h3 class="subsection-title">Exemplo de Código: Configuração do Teams</h3>
+
+                        <div class="code-block mb-8">
+                            <pre>
 # Configuração do conector Teams
 teams_config = {
     "app_id": "your-app-id",
@@ -520,12 +540,12 @@ chat_integration.add_connector("teams", teams_connector)
 confirmation_interface = HumanConfirmationInterface()
 confirmation_interface.register_platform("teams", teams_connector)
                         </pre>
-                    </div>
-                    
-                    <h3 class="subsection-title">Exemplo de Card Adaptativo</h3>
-                    
-                    <div class="code-block">
-                        <pre>
+                        </div>
+
+                        <h3 class="subsection-title">Exemplo de Card Adaptativo</h3>
+
+                        <div class="code-block">
+                            <pre>
 # Exemplo de card adaptativo para solicitação de aprovação
 approval_card = {
     "type": "AdaptiveCard",
@@ -592,86 +612,92 @@ teams_connector.send_adaptive_card(
     conversation_id="conversation_123456"
 )
                         </pre>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Human Confirmation Process -->
-            <div>
-                <h2 class="section-title">Processo de Confirmação Humana</h2>
-                
-                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
-                    <p class="text-gray-600 mb-6">
-                        O processo de confirmação humana é um componente essencial do Capellaris,
-                        garantindo que os agentes não realizem ações não autorizadas. Este processo utiliza as plataformas de
-                        chat para enviar solicitações de aprovação e processar as respostas dos operadores humanos.
-                    </p>
-                    
-                    <div class="bg-blue-50 p-6 rounded-lg mb-8">
-                        <h3 class="text-xl font-semibold text-blue-800 mb-4">Fluxo de Confirmação</h3>
-                        <ol class="list-decimal pl-5 text-gray-600 space-y-3">
-                            <li>
-                                <span class="font-medium">Solicitação de Tarefa:</span> Um usuário solicita que um agente execute uma tarefa através da plataforma de chat.
-                            </li>
-                            <li>
-                                <span class="font-medium">Análise da Tarefa:</span> O sistema analisa a tarefa para determinar seu nível de complexidade e impacto.
-                            </li>
-                            <li>
-                                <span class="font-medium">Identificação de Aprovadores:</span> Com base na análise, o sistema identifica os operadores humanos que podem aprovar a tarefa.
-                            </li>
-                            <li>
-                                <span class="font-medium">Envio de Solicitação:</span> Uma solicitação de aprovação é enviada para os aprovadores através da plataforma de chat.
-                            </li>
-                            <li>
-                                <span class="font-medium">Resposta do Aprovador:</span> O aprovador responde à solicitação, aprovando, rejeitando ou solicitando mais informações.
-                            </li>
-                            <li>
-                                <span class="font-medium">Processamento da Resposta:</span> O sistema processa a resposta e, se aprovada, permite que o agente execute a tarefa.
-                            </li>
-                            <li>
-                                <span class="font-medium">Notificação ao Usuário:</span> O usuário é notificado sobre a decisão e, se aprovada, sobre o progresso e conclusão da tarefa.
-                            </li>
-                        </ol>
-                    </div>
-                    
-                    <h3 class="subsection-title">Níveis de Aprovação</h3>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                        <div class="bg-green-50 p-4 rounded-lg">
-                            <h4 class="font-medium text-green-800 mb-2">Nível Baixo</h4>
-                            <p class="text-gray-600 mb-2">
-                                Tarefas simples com baixo impacto e sem acesso a dados sensíveis.
-                            </p>
-                            <p class="text-gray-600">
-                                <span class="font-medium">Exemplos:</span> Análises básicas, resumos de informações públicas, recomendações gerais.
-                            </p>
+                <!-- Human Confirmation Process -->
+                <div>
+                    <h2 class="section-title">Processo de Confirmação Humana</h2>
+
+                    <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                        <p class="text-gray-600 mb-6">
+                            O processo de confirmação humana é um componente essencial do Capellaris,
+                            garantindo que os agentes não realizem ações não autorizadas. Este processo utiliza as plataformas de
+                            chat para enviar solicitações de aprovação e processar as respostas dos operadores humanos.
+                        </p>
+
+                        <div class="bg-blue-50 p-6 rounded-lg mb-8">
+                            <h3 class="text-xl font-semibold text-blue-800 mb-4">Fluxo de Confirmação</h3>
+                            <ol class="list-decimal pl-5 text-gray-600 space-y-3">
+                                <li>
+                                    <span class="font-medium">Solicitação de Tarefa:</span> Um usuário solicita que um agente execute uma tarefa através da plataforma de
+                                    chat.
+                                </li>
+                                <li>
+                                    <span class="font-medium">Análise da Tarefa:</span> O sistema analisa a tarefa para determinar seu nível de complexidade e impacto.
+                                </li>
+                                <li>
+                                    <span class="font-medium">Identificação de Aprovadores:</span> Com base na análise, o sistema identifica os operadores humanos que
+                                    podem aprovar a tarefa.
+                                </li>
+                                <li>
+                                    <span class="font-medium">Envio de Solicitação:</span> Uma solicitação de aprovação é enviada para os aprovadores através da
+                                    plataforma de chat.
+                                </li>
+                                <li>
+                                    <span class="font-medium">Resposta do Aprovador:</span> O aprovador responde à solicitação, aprovando, rejeitando ou solicitando mais
+                                    informações.
+                                </li>
+                                <li>
+                                    <span class="font-medium">Processamento da Resposta:</span> O sistema processa a resposta e, se aprovada, permite que o agente execute
+                                    a tarefa.
+                                </li>
+                                <li>
+                                    <span class="font-medium">Notificação ao Usuário:</span> O usuário é notificado sobre a decisão e, se aprovada, sobre o progresso e
+                                    conclusão da tarefa.
+                                </li>
+                            </ol>
                         </div>
-                        
-                        <div class="bg-yellow-50 p-4 rounded-lg">
-                            <h4 class="font-medium text-yellow-800 mb-2">Nível Médio</h4>
-                            <p class="text-gray-600 mb-2">
-                                Tarefas com impacto moderado ou acesso a dados internos não sensíveis.
-                            </p>
-                            <p class="text-gray-600">
-                                <span class="font-medium">Exemplos:</span> Análises detalhadas, criação de relatórios, recomendações específicas.
-                            </p>
+
+                        <h3 class="subsection-title">Níveis de Aprovação</h3>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-green-800 mb-2">Nível Baixo</h4>
+                                <p class="text-gray-600 mb-2">
+                                    Tarefas simples com baixo impacto e sem acesso a dados sensíveis.
+                                </p>
+                                <p class="text-gray-600">
+                                    <span class="font-medium">Exemplos:</span> Análises básicas, resumos de informações públicas, recomendações gerais.
+                                </p>
+                            </div>
+
+                            <div class="bg-yellow-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-yellow-800 mb-2">Nível Médio</h4>
+                                <p class="text-gray-600 mb-2">
+                                    Tarefas com impacto moderado ou acesso a dados internos não sensíveis.
+                                </p>
+                                <p class="text-gray-600">
+                                    <span class="font-medium">Exemplos:</span> Análises detalhadas, criação de relatórios, recomendações específicas.
+                                </p>
+                            </div>
+
+                            <div class="bg-red-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-red-800 mb-2">Nível Alto</h4>
+                                <p class="text-gray-600 mb-2">
+                                    Tarefas com alto impacto ou acesso a dados sensíveis ou confidenciais.
+                                </p>
+                                <p class="text-gray-600">
+                                    <span class="font-medium">Exemplos:</span> Análises financeiras, acesso a dados de clientes, decisões estratégicas.
+                                </p>
+                            </div>
                         </div>
-                        
-                        <div class="bg-red-50 p-4 rounded-lg">
-                            <h4 class="font-medium text-red-800 mb-2">Nível Alto</h4>
-                            <p class="text-gray-600 mb-2">
-                                Tarefas com alto impacto ou acesso a dados sensíveis ou confidenciais.
-                            </p>
-                            <p class="text-gray-600">
-                                <span class="font-medium">Exemplos:</span> Análises financeiras, acesso a dados de clientes, decisões estratégicas.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <h3 class="subsection-title">Exemplo de Código: Solicitação de Aprovação</h3>
-                    
-                    <div class="code-block">
-                        <pre>
+
+                        <h3 class="subsection-title">Exemplo de Código: Solicitação de Aprovação</h3>
+
+                        <div class="code-block">
+                            <pre>
 def request_approval(self, task_id, task_description, agent_id, platform, channel, requester):
     """
     Solicita aprovação para execução de uma tarefa.
@@ -730,30 +756,31 @@ def request_approval(self, task_id, task_description, agent_id, platform, channe
     
     return approval_request["id"]
                         </pre>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
+        </main>
 
-    <footer class="bg-gray-800 text-white py-8 mt-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-4 md:mb-0">
-                    <h3 class="text-xl font-bold">Capellaris</h3>
-                    <p class="text-gray-400">O cérebro distribuído da sua organização.</p>
+        <footer class="bg-gray-800 text-white py-8 mt-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-4 md:mb-0">
+                        <h3 class="text-xl font-bold">Capellaris</h3>
+                        <p class="text-gray-400">O cérebro distribuído da sua organização.</p>
+                    </div>
+                    <div class="flex space-x-6">
+                        <a href="index.html" class="text-gray-300 hover:text-white">Início</a>
+                        <a href="arquitetura.html" class="text-gray-300 hover:text-white">Arquitetura</a>
+                        <a href="documentacao.html" class="text-gray-300 hover:text-white">Documentação</a>
+                        <a href="https://capellaris.dscamargo.com.br" class="text-gray-300 hover:text-white">Demo</a>
+                    </div>
                 </div>
-                <div class="flex space-x-6">
-                    <a href="index.html" class="text-gray-300 hover:text-white">Início</a>
-                    <a href="arquitetura.html" class="text-gray-300 hover:text-white">Arquitetura</a>
-                    <a href="documentacao.html" class="text-gray-300 hover:text-white">Documentação</a>
-                    <a href="demo.html" class="text-gray-300 hover:text-white">Demo</a>
+                <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+                    <p>&copy; 2025 Capellaris. Todos os direitos reservados.</p>
                 </div>
             </div>
-            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
-                <p>&copy; 2025 Capellaris. Todos os direitos reservados.</p>
-            </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
+
 </html>

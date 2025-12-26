@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,18 +22,21 @@
             padding-bottom: 0.5rem;
             border-bottom: 2px solid #4299e1;
         }
+
         .subsection-title {
             font-size: 1.5rem;
             font-weight: 600;
             color: #2d3748;
             margin-bottom: 1rem;
         }
+
         .card {
             background-color: white;
             border-radius: 0.5rem;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             padding: 1.5rem;
         }
+
         .code-block {
             background-color: #f7fafc;
             border-radius: 0.375rem;
@@ -42,6 +46,7 @@
             font-size: 0.875rem;
             color: #1a202c;
         }
+
         .btn-primary {
             background-color: #4299e1;
             color: white;
@@ -50,148 +55,158 @@
             font-weight: 500;
             transition: background-color 0.2s;
         }
+
         .btn-primary:hover {
             background-color: #3182ce;
         }
+
         .dark-mode {
             background-color: #1a202c;
             color: #e2e8f0;
         }
+
         .dark-mode .section-title {
             color: #f7fafc;
             border-bottom-color: #4299e1;
         }
+
         .dark-mode .subsection-title {
             color: #e2e8f0;
         }
+
         .dark-mode .card {
             background-color: #2d3748;
             color: #e2e8f0;
         }
+
         .dark-mode .code-block {
             background-color: #1a202c;
             color: #e2e8f0;
         }
     </style>
 </head>
+
 <body class="bg-gray-100">
-<body class="bg-gray-100">
-    <header class="bg-white shadow-md">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-            <nav class="flex items-center justify-between flex-wrap">
-                <div class="flex items-center pr-6">
-                    <a class="flex justify-center pr-3" href="../index.html">
-                        <img src="../assets/images/dsc_white.svg" alt="Daniel Camargo" class="rounded-circle me-2" width="40" height="40">
-                    </a>
-                    <a class="flex justify-center" href="index.html">
-                        <img src="../assets/images/capellaris_v3.svg" alt="Capellaris Logo" class="h-8 w-8 mr-2">
-                        <h1 class="text-2xl font-bold text-gray-900">Capellaris</h1>
-                    </a>
-                </div>
-                <div class="block lg:hidden ml-auto">
-                    <button id="menu-toggle" class="flex items-center px-3 py-2 border rounded">
-                        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <title>Menu</title>
-                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+
+    <body class="bg-gray-100">
+        <header class="bg-white shadow-md">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+                <nav class="flex items-center justify-between flex-wrap">
+                    <div class="flex items-center pr-6">
+                        <a class="flex justify-center pr-3" href="../index.html">
+                            <img src="../assets/images/dsc_white.svg" alt="Daniel Camargo" class="rounded-circle me-2" width="40" height="40">
+                        </a>
+                        <a class="flex justify-center" href="index.html">
+                            <img src="../assets/images/capellaris_v3.svg" alt="Capellaris Logo" class="h-8 w-8 mr-2">
+                            <h1 class="text-2xl font-bold text-gray-900">Capellaris</h1>
+                        </a>
+                    </div>
+                    <div class="block lg:hidden ml-auto">
+                        <button id="menu-toggle" class="flex items-center px-3 py-2 border rounded">
+                            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>Menu</title>
+                                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="mobile-menu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden">
+                        <div class="text-sm lg:flex lg:flex-grow justify-end">
+                            <a href="index.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Início</a>
+                            <a href="arquitetura.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Arquitetura</a>
+                            <a href="agentes.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Agentes</a>
+                            <a href="aprendizado.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Aprendizado</a>
+                            <a href="integracao.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Integração</a>
+                            <a href="documentacao.html"
+                                class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Documentação</a>
+                            <a href="https://capellaris.dscamargo.com.br"
+                                class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Demo</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+
+        <main class="py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Breadcrumb -->
+                <div class="mb-8">
+                    <a href="index.html" class="text-blue-600 hover:text-blue-800 flex items-center">
+                        <svg class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                         </svg>
-                    </button>
+                        Voltar para a página inicial
+                    </a>
                 </div>
-                <div id="mobile-menu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden">
-                    <div class="text-sm lg:flex lg:flex-grow justify-end">
-                        <a href="index.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Início</a>
-                        <a href="arquitetura.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Arquitetura</a>
-                        <a href="agentes.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Agentes</a>
-                        <a href="aprendizado.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Aprendizado</a>
-                        <a href="integracao.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Integração</a>
-                        <a href="documentacao.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Documentação</a>
-                        <a href="demo.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Demo</a>
+
+                <!-- Header -->
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl font-bold text-gray-900 mb-4">
+                        Documentação Técnica
+                    </h1>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Guia completo para instalação, configuração e uso do Capellaris,
+                        incluindo exemplos de código e referências de API.
+                    </p>
+                </div>
+
+                <!-- Documentation Navigation -->
+                <div class="mb-12">
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <h2 class="text-xl font-semibold text-gray-800 mb-4">Navegação Rápida</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <a href="#instalacao" class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+                                <h3 class="font-medium text-blue-800 mb-1">Instalação</h3>
+                                <p class="text-gray-600 text-sm">Requisitos e passos para instalação</p>
+                            </a>
+                            <a href="#configuracao" class="bg-green-50 hover:bg-green-100 p-4 rounded-lg transition-colors">
+                                <h3 class="font-medium text-green-800 mb-1">Configuração</h3>
+                                <p class="text-gray-600 text-sm">Opções e parâmetros de configuração</p>
+                            </a>
+                            <a href="#api" class="bg-purple-50 hover:bg-purple-100 p-4 rounded-lg transition-colors">
+                                <h3 class="font-medium text-purple-800 mb-1">Referência de API</h3>
+                                <p class="text-gray-600 text-sm">Documentação completa da API</p>
+                            </a>
+                            <a href="#agentes" class="bg-yellow-50 hover:bg-yellow-100 p-4 rounded-lg transition-colors">
+                                <h3 class="font-medium text-yellow-800 mb-1">Criação de Agentes</h3>
+                                <p class="text-gray-600 text-sm">Como criar e personalizar agentes</p>
+                            </a>
+                            <a href="#squads" class="bg-red-50 hover:bg-red-100 p-4 rounded-lg transition-colors">
+                                <h3 class="font-medium text-red-800 mb-1">Gerenciamento de Squads</h3>
+                                <p class="text-gray-600 text-sm">Formação e coordenação de equipes</p>
+                            </a>
+                            <a href="#integracao" class="bg-indigo-50 hover:bg-indigo-100 p-4 rounded-lg transition-colors">
+                                <h3 class="font-medium text-indigo-800 mb-1">Integração com Chat</h3>
+                                <p class="text-gray-600 text-sm">Configuração de Slack e Teams</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </nav>
-        </div>
-    </header>
 
+                <!-- Installation Section -->
+                <div id="instalacao" class="mb-16">
+                    <h2 class="section-title">Instalação</h2>
 
-    <main class="py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Breadcrumb -->
-            <div class="mb-8">
-                <a href="index.html" class="text-blue-600 hover:text-blue-800 flex items-center">
-                    <svg class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-                    </svg>
-                    Voltar para a página inicial
-                </a>
-            </div>
+                    <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                        <h3 class="subsection-title">Requisitos do Sistema</h3>
 
-            <!-- Header -->
-            <div class="text-center mb-12">
-                <h1 class="text-4xl font-bold text-gray-900 mb-4">
-                    Documentação Técnica
-                </h1>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Guia completo para instalação, configuração e uso do Capellaris,
-                    incluindo exemplos de código e referências de API.
-                </p>
-            </div>
+                        <div class="bg-gray-50 p-4 rounded-lg mb-8">
+                            <h4 class="font-medium text-gray-800 mb-2">Requisitos Mínimos:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                <li>Python 3.10 ou superior</li>
+                                <li>PostgreSQL 13 ou superior</li>
+                                <li>MongoDB 5.0 ou superior</li>
+                                <li>Redis 6.0 ou superior</li>
+                                <li>8GB de RAM</li>
+                                <li>50GB de espaço em disco</li>
+                                <li>Conexão com internet</li>
+                            </ul>
+                        </div>
 
-            <!-- Documentation Navigation -->
-            <div class="mb-12">
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h2 class="text-xl font-semibold text-gray-800 mb-4">Navegação Rápida</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        <a href="#instalacao" class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
-                            <h3 class="font-medium text-blue-800 mb-1">Instalação</h3>
-                            <p class="text-gray-600 text-sm">Requisitos e passos para instalação</p>
-                        </a>
-                        <a href="#configuracao" class="bg-green-50 hover:bg-green-100 p-4 rounded-lg transition-colors">
-                            <h3 class="font-medium text-green-800 mb-1">Configuração</h3>
-                            <p class="text-gray-600 text-sm">Opções e parâmetros de configuração</p>
-                        </a>
-                        <a href="#api" class="bg-purple-50 hover:bg-purple-100 p-4 rounded-lg transition-colors">
-                            <h3 class="font-medium text-purple-800 mb-1">Referência de API</h3>
-                            <p class="text-gray-600 text-sm">Documentação completa da API</p>
-                        </a>
-                        <a href="#agentes" class="bg-yellow-50 hover:bg-yellow-100 p-4 rounded-lg transition-colors">
-                            <h3 class="font-medium text-yellow-800 mb-1">Criação de Agentes</h3>
-                            <p class="text-gray-600 text-sm">Como criar e personalizar agentes</p>
-                        </a>
-                        <a href="#squads" class="bg-red-50 hover:bg-red-100 p-4 rounded-lg transition-colors">
-                            <h3 class="font-medium text-red-800 mb-1">Gerenciamento de Squads</h3>
-                            <p class="text-gray-600 text-sm">Formação e coordenação de equipes</p>
-                        </a>
-                        <a href="#integracao" class="bg-indigo-50 hover:bg-indigo-100 p-4 rounded-lg transition-colors">
-                            <h3 class="font-medium text-indigo-800 mb-1">Integração com Chat</h3>
-                            <p class="text-gray-600 text-sm">Configuração de Slack e Teams</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
+                        <h3 class="subsection-title">Instalação via pip</h3>
 
-            <!-- Installation Section -->
-            <div id="instalacao" class="mb-16">
-                <h2 class="section-title">Instalação</h2>
-                
-                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
-                    <h3 class="subsection-title">Requisitos do Sistema</h3>
-                    
-                    <div class="bg-gray-50 p-4 rounded-lg mb-8">
-                        <h4 class="font-medium text-gray-800 mb-2">Requisitos Mínimos:</h4>
-                        <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                            <li>Python 3.10 ou superior</li>
-                            <li>PostgreSQL 13 ou superior</li>
-                            <li>MongoDB 5.0 ou superior</li>
-                            <li>Redis 6.0 ou superior</li>
-                            <li>8GB de RAM</li>
-                            <li>50GB de espaço em disco</li>
-                            <li>Conexão com internet</li>
-                        </ul>
-                    </div>
-                    
-                    <h3 class="subsection-title">Instalação via pip</h3>
-                    
-                    <div class="code-block mb-8">
-                        <pre>
+                        <div class="code-block mb-8">
+                            <pre>
 # Criar ambiente virtual
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
@@ -204,12 +219,12 @@ pip install gerenciador-agentes-ia
 # Verificar instalação
 gerenciador-agentes-ia --version
                         </pre>
-                    </div>
-                    
-                    <h3 class="subsection-title">Instalação a partir do código-fonte</h3>
-                    
-                    <div class="code-block mb-8">
-                        <pre>
+                        </div>
+
+                        <h3 class="subsection-title">Instalação a partir do código-fonte</h3>
+
+                        <div class="code-block mb-8">
+                            <pre>
 # Clonar o repositório
 git clone https://github.com/empresa/gerenciador-agentes-ia.git
 cd gerenciador-agentes-ia
@@ -226,12 +241,12 @@ pip install -e .
 # Verificar instalação
 gerenciador-agentes-ia --version
                         </pre>
-                    </div>
-                    
-                    <h3 class="subsection-title">Instalação com Docker</h3>
-                    
-                    <div class="code-block">
-                        <pre>
+                        </div>
+
+                        <h3 class="subsection-title">Instalação com Docker</h3>
+
+                        <div class="code-block">
+                            <pre>
 # Baixar a imagem
 docker pull empresa/gerenciador-agentes-ia:latest
 
@@ -246,25 +261,25 @@ docker run -d \
 # Verificar logs
 docker logs gerenciador-agentes
                         </pre>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Configuration Section -->
-            <div id="configuracao" class="mb-16">
-                <h2 class="section-title">Configuração</h2>
-                
-                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
-                    <p class="text-gray-600 mb-6">
-                        O Capellaris pode ser configurado através de um arquivo de configuração
-                        em formato YAML ou através de variáveis de ambiente. Abaixo estão as principais opções de configuração
-                        disponíveis.
-                    </p>
-                    
-                    <h3 class="subsection-title">Arquivo de Configuração</h3>
-                    
-                    <div class="code-block mb-8">
-                        <pre>
+                <!-- Configuration Section -->
+                <div id="configuracao" class="mb-16">
+                    <h2 class="section-title">Configuração</h2>
+
+                    <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                        <p class="text-gray-600 mb-6">
+                            O Capellaris pode ser configurado através de um arquivo de configuração
+                            em formato YAML ou através de variáveis de ambiente. Abaixo estão as principais opções de configuração
+                            disponíveis.
+                        </p>
+
+                        <h3 class="subsection-title">Arquivo de Configuração</h3>
+
+                        <div class="code-block mb-8">
+                            <pre>
 # config.yaml
 sistema:
   nome: "Capellaris"
@@ -328,28 +343,28 @@ aprendizado:
   otimizar_prompts: true
   intervalo_analise: 3600  # 1 hora
                         </pre>
-                    </div>
-                    
-                    <h3 class="subsection-title">Variáveis de Ambiente</h3>
-                    
-                    <div class="bg-gray-50 p-4 rounded-lg mb-8">
-                        <p class="text-gray-600 mb-2">
-                            Todas as configurações também podem ser definidas através de variáveis de ambiente,
-                            seguindo o padrão <code>GERENCIADOR_SECAO_CHAVE</code>.
-                        </p>
-                        <h4 class="font-medium text-gray-800 mb-2">Exemplos:</h4>
-                        <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                            <li><code>GERENCIADOR_SISTEMA_NOME</code> - Nome do sistema</li>
-                            <li><code>GERENCIADOR_BANCO_DADOS_POSTGRES_HOST</code> - Host do PostgreSQL</li>
-                            <li><code>GERENCIADOR_API_PORTA</code> - Porta da API</li>
-                            <li><code>GERENCIADOR_INTEGRACAO_SLACK_TOKEN</code> - Token do Slack</li>
-                        </ul>
-                    </div>
-                    
-                    <h3 class="subsection-title">Inicialização do Sistema</h3>
-                    
-                    <div class="code-block">
-                        <pre>
+                        </div>
+
+                        <h3 class="subsection-title">Variáveis de Ambiente</h3>
+
+                        <div class="bg-gray-50 p-4 rounded-lg mb-8">
+                            <p class="text-gray-600 mb-2">
+                                Todas as configurações também podem ser definidas através de variáveis de ambiente,
+                                seguindo o padrão <code>GERENCIADOR_SECAO_CHAVE</code>.
+                            </p>
+                            <h4 class="font-medium text-gray-800 mb-2">Exemplos:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                <li><code>GERENCIADOR_SISTEMA_NOME</code> - Nome do sistema</li>
+                                <li><code>GERENCIADOR_BANCO_DADOS_POSTGRES_HOST</code> - Host do PostgreSQL</li>
+                                <li><code>GERENCIADOR_API_PORTA</code> - Porta da API</li>
+                                <li><code>GERENCIADOR_INTEGRACAO_SLACK_TOKEN</code> - Token do Slack</li>
+                            </ul>
+                        </div>
+
+                        <h3 class="subsection-title">Inicialização do Sistema</h3>
+
+                        <div class="code-block">
+                            <pre>
 # Iniciar com arquivo de configuração
 gerenciador-agentes-ia start --config /caminho/para/config.yaml
 
@@ -364,35 +379,35 @@ gerenciador-agentes-ia start --dev
 # Iniciar com configurações específicas
 gerenciador-agentes-ia start --host 0.0.0.0 --porta 8080 --workers 8
                         </pre>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- API Reference Section -->
-            <div id="api" class="mb-16">
-                <h2 class="section-title">Referência de API</h2>
-                
-                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
-                    <p class="text-gray-600 mb-6">
-                        O Capellaris expõe uma API RESTful completa para interação
-                        programática com o sistema. Abaixo estão os principais endpoints disponíveis.
-                    </p>
-                    
-                    <h3 class="subsection-title">Autenticação</h3>
-                    
-                    <div class="bg-gray-50 p-4 rounded-lg mb-8">
-                        <p class="text-gray-600 mb-2">
-                            A API utiliza autenticação JWT (JSON Web Token). Para obter um token, faça uma requisição POST
-                            para o endpoint <code>/api/auth/token</code> com as credenciais de usuário.
+                <!-- API Reference Section -->
+                <div id="api" class="mb-16">
+                    <h2 class="section-title">Referência de API</h2>
+
+                    <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                        <p class="text-gray-600 mb-6">
+                            O Capellaris expõe uma API RESTful completa para interação
+                            programática com o sistema. Abaixo estão os principais endpoints disponíveis.
                         </p>
-                        <p class="text-gray-600">
-                            Todas as requisições subsequentes devem incluir o token no cabeçalho <code>Authorization</code>
-                            no formato <code>Bearer {token}</code>.
-                        </p>
-                    </div>
-                    
-                    <div class="code-block mb-8">
-                        <pre>
+
+                        <h3 class="subsection-title">Autenticação</h3>
+
+                        <div class="bg-gray-50 p-4 rounded-lg mb-8">
+                            <p class="text-gray-600 mb-2">
+                                A API utiliza autenticação JWT (JSON Web Token). Para obter um token, faça uma requisição POST
+                                para o endpoint <code>/api/auth/token</code> com as credenciais de usuário.
+                            </p>
+                            <p class="text-gray-600">
+                                Todas as requisições subsequentes devem incluir o token no cabeçalho <code>Authorization</code>
+                                no formato <code>Bearer {token}</code>.
+                            </p>
+                        </div>
+
+                        <div class="code-block mb-8">
+                            <pre>
 # Obter token de autenticação
 POST /api/auth/token
 Content-Type: application/json
@@ -409,92 +424,92 @@ Content-Type: application/json
   "expires_in": 86400
 }
                         </pre>
-                    </div>
-                    
-                    <h3 class="subsection-title">Endpoints de Agentes</h3>
-                    
-                    <div class="space-y-4 mb-8">
-                        <div class="bg-blue-50 p-4 rounded-lg">
-                            <h4 class="font-medium text-blue-800 mb-2">Listar Agentes</h4>
-                            <p class="text-gray-600 mb-2"><code>GET /api/agents</code></p>
-                            <p class="text-gray-600">Retorna a lista de todos os agentes disponíveis no sistema.</p>
                         </div>
-                        
-                        <div class="bg-blue-50 p-4 rounded-lg">
-                            <h4 class="font-medium text-blue-800 mb-2">Obter Agente</h4>
-                            <p class="text-gray-600 mb-2"><code>GET /api/agents/{agent_id}</code></p>
-                            <p class="text-gray-600">Retorna os detalhes de um agente específico.</p>
+
+                        <h3 class="subsection-title">Endpoints de Agentes</h3>
+
+                        <div class="space-y-4 mb-8">
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-blue-800 mb-2">Listar Agentes</h4>
+                                <p class="text-gray-600 mb-2"><code>GET /api/agents</code></p>
+                                <p class="text-gray-600">Retorna a lista de todos os agentes disponíveis no sistema.</p>
+                            </div>
+
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-blue-800 mb-2">Obter Agente</h4>
+                                <p class="text-gray-600 mb-2"><code>GET /api/agents/{agent_id}</code></p>
+                                <p class="text-gray-600">Retorna os detalhes de um agente específico.</p>
+                            </div>
+
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-blue-800 mb-2">Criar Agente</h4>
+                                <p class="text-gray-600 mb-2"><code>POST /api/agents</code></p>
+                                <p class="text-gray-600">Cria um novo agente com as configurações especificadas.</p>
+                            </div>
+
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-blue-800 mb-2">Atualizar Agente</h4>
+                                <p class="text-gray-600 mb-2"><code>PUT /api/agents/{agent_id}</code></p>
+                                <p class="text-gray-600">Atualiza as configurações de um agente existente.</p>
+                            </div>
+
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-blue-800 mb-2">Excluir Agente</h4>
+                                <p class="text-gray-600 mb-2"><code>DELETE /api/agents/{agent_id}</code></p>
+                                <p class="text-gray-600">Remove um agente do sistema.</p>
+                            </div>
+
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-blue-800 mb-2">Enviar Mensagem para Agente</h4>
+                                <p class="text-gray-600 mb-2"><code>POST /api/agents/{agent_id}/message</code></p>
+                                <p class="text-gray-600">Envia uma mensagem para um agente e recebe a resposta.</p>
+                            </div>
                         </div>
-                        
-                        <div class="bg-blue-50 p-4 rounded-lg">
-                            <h4 class="font-medium text-blue-800 mb-2">Criar Agente</h4>
-                            <p class="text-gray-600 mb-2"><code>POST /api/agents</code></p>
-                            <p class="text-gray-600">Cria um novo agente com as configurações especificadas.</p>
+
+                        <h3 class="subsection-title">Endpoints de Squads</h3>
+
+                        <div class="space-y-4 mb-8">
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-green-800 mb-2">Listar Squads</h4>
+                                <p class="text-gray-600 mb-2"><code>GET /api/squads</code></p>
+                                <p class="text-gray-600">Retorna a lista de todos os squads disponíveis no sistema.</p>
+                            </div>
+
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-green-800 mb-2">Obter Squad</h4>
+                                <p class="text-gray-600 mb-2"><code>GET /api/squads/{squad_id}</code></p>
+                                <p class="text-gray-600">Retorna os detalhes de um squad específico.</p>
+                            </div>
+
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-green-800 mb-2">Criar Squad</h4>
+                                <p class="text-gray-600 mb-2"><code>POST /api/squads</code></p>
+                                <p class="text-gray-600">Cria um novo squad com os agentes especificados.</p>
+                            </div>
+
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-green-800 mb-2">Atualizar Squad</h4>
+                                <p class="text-gray-600 mb-2"><code>PUT /api/squads/{squad_id}</code></p>
+                                <p class="text-gray-600">Atualiza a composição e configurações de um squad existente.</p>
+                            </div>
+
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-green-800 mb-2">Excluir Squad</h4>
+                                <p class="text-gray-600 mb-2"><code>DELETE /api/squads/{squad_id}</code></p>
+                                <p class="text-gray-600">Remove um squad do sistema.</p>
+                            </div>
+
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-green-800 mb-2">Enviar Tarefa para Squad</h4>
+                                <p class="text-gray-600 mb-2"><code>POST /api/squads/{squad_id}/task</code></p>
+                                <p class="text-gray-600">Envia uma tarefa para um squad e recebe o resultado.</p>
+                            </div>
                         </div>
-                        
-                        <div class="bg-blue-50 p-4 rounded-lg">
-                            <h4 class="font-medium text-blue-800 mb-2">Atualizar Agente</h4>
-                            <p class="text-gray-600 mb-2"><code>PUT /api/agents/{agent_id}</code></p>
-                            <p class="text-gray-600">Atualiza as configurações de um agente existente.</p>
-                        </div>
-                        
-                        <div class="bg-blue-50 p-4 rounded-lg">
-                            <h4 class="font-medium text-blue-800 mb-2">Excluir Agente</h4>
-                            <p class="text-gray-600 mb-2"><code>DELETE /api/agents/{agent_id}</code></p>
-                            <p class="text-gray-600">Remove um agente do sistema.</p>
-                        </div>
-                        
-                        <div class="bg-blue-50 p-4 rounded-lg">
-                            <h4 class="font-medium text-blue-800 mb-2">Enviar Mensagem para Agente</h4>
-                            <p class="text-gray-600 mb-2"><code>POST /api/agents/{agent_id}/message</code></p>
-                            <p class="text-gray-600">Envia uma mensagem para um agente e recebe a resposta.</p>
-                        </div>
-                    </div>
-                    
-                    <h3 class="subsection-title">Endpoints de Squads</h3>
-                    
-                    <div class="space-y-4 mb-8">
-                        <div class="bg-green-50 p-4 rounded-lg">
-                            <h4 class="font-medium text-green-800 mb-2">Listar Squads</h4>
-                            <p class="text-gray-600 mb-2"><code>GET /api/squads</code></p>
-                            <p class="text-gray-600">Retorna a lista de todos os squads disponíveis no sistema.</p>
-                        </div>
-                        
-                        <div class="bg-green-50 p-4 rounded-lg">
-                            <h4 class="font-medium text-green-800 mb-2">Obter Squad</h4>
-                            <p class="text-gray-600 mb-2"><code>GET /api/squads/{squad_id}</code></p>
-                            <p class="text-gray-600">Retorna os detalhes de um squad específico.</p>
-                        </div>
-                        
-                        <div class="bg-green-50 p-4 rounded-lg">
-                            <h4 class="font-medium text-green-800 mb-2">Criar Squad</h4>
-                            <p class="text-gray-600 mb-2"><code>POST /api/squads</code></p>
-                            <p class="text-gray-600">Cria um novo squad com os agentes especificados.</p>
-                        </div>
-                        
-                        <div class="bg-green-50 p-4 rounded-lg">
-                            <h4 class="font-medium text-green-800 mb-2">Atualizar Squad</h4>
-                            <p class="text-gray-600 mb-2"><code>PUT /api/squads/{squad_id}</code></p>
-                            <p class="text-gray-600">Atualiza a composição e configurações de um squad existente.</p>
-                        </div>
-                        
-                        <div class="bg-green-50 p-4 rounded-lg">
-                            <h4 class="font-medium text-green-800 mb-2">Excluir Squad</h4>
-                            <p class="text-gray-600 mb-2"><code>DELETE /api/squads/{squad_id}</code></p>
-                            <p class="text-gray-600">Remove um squad do sistema.</p>
-                        </div>
-                        
-                        <div class="bg-green-50 p-4 rounded-lg">
-                            <h4 class="font-medium text-green-800 mb-2">Enviar Tarefa para Squad</h4>
-                            <p class="text-gray-600 mb-2"><code>POST /api/squads/{squad_id}/task</code></p>
-                            <p class="text-gray-600">Envia uma tarefa para um squad e recebe o resultado.</p>
-                        </div>
-                    </div>
-                    
-                    <h3 class="subsection-title">Exemplo de Uso da API</h3>
-                    
-                    <div class="code-block">
-                        <pre>
+
+                        <h3 class="subsection-title">Exemplo de Uso da API</h3>
+
+                        <div class="code-block">
+                            <pre>
 import requests
 import json
 
@@ -584,41 +599,41 @@ if __name__ == "__main__":
     )
     print(f"Resposta da tarefa: {json.dumps(task_response, indent=2)}")
                         </pre>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Creating Agents Section -->
-            <div id="agentes" class="mb-16">
-                <h2 class="section-title">Criação de Agentes</h2>
-                
-                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
-                    <p class="text-gray-600 mb-6">
-                        O Capellaris permite criar agentes personalizados para diferentes
-                        áreas de especialidade. Abaixo estão as etapas e exemplos para criar e configurar agentes.
-                    </p>
-                    
-                    <h3 class="subsection-title">Estrutura de um Agente</h3>
-                    
-                    <div class="bg-gray-50 p-4 rounded-lg mb-8">
-                        <p class="text-gray-600 mb-2">
-                            Um agente é composto pelos seguintes elementos:
+                <!-- Creating Agents Section -->
+                <div id="agentes" class="mb-16">
+                    <h2 class="section-title">Criação de Agentes</h2>
+
+                    <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                        <p class="text-gray-600 mb-6">
+                            O Capellaris permite criar agentes personalizados para diferentes
+                            áreas de especialidade. Abaixo estão as etapas e exemplos para criar e configurar agentes.
                         </p>
-                        <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                            <li><span class="font-medium">ID:</span> Identificador único do agente</li>
-                            <li><span class="font-medium">Nome:</span> Nome amigável do agente</li>
-                            <li><span class="font-medium">Descrição:</span> Descrição das capacidades e propósito do agente</li>
-                            <li><span class="font-medium">Especialidade:</span> Área de especialidade do agente (marketing, financeiro, etc.)</li>
-                            <li><span class="font-medium">Prompt Base:</span> Instruções base que definem o comportamento do agente</li>
-                            <li><span class="font-medium">Ferramentas:</span> Ferramentas e recursos que o agente pode utilizar</li>
-                            <li><span class="font-medium">Configurações:</span> Parâmetros específicos do agente</li>
-                        </ul>
-                    </div>
-                    
-                    <h3 class="subsection-title">Criação via API</h3>
-                    
-                    <div class="code-block mb-8">
-                        <pre>
+
+                        <h3 class="subsection-title">Estrutura de um Agente</h3>
+
+                        <div class="bg-gray-50 p-4 rounded-lg mb-8">
+                            <p class="text-gray-600 mb-2">
+                                Um agente é composto pelos seguintes elementos:
+                            </p>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                <li><span class="font-medium">ID:</span> Identificador único do agente</li>
+                                <li><span class="font-medium">Nome:</span> Nome amigável do agente</li>
+                                <li><span class="font-medium">Descrição:</span> Descrição das capacidades e propósito do agente</li>
+                                <li><span class="font-medium">Especialidade:</span> Área de especialidade do agente (marketing, financeiro, etc.)</li>
+                                <li><span class="font-medium">Prompt Base:</span> Instruções base que definem o comportamento do agente</li>
+                                <li><span class="font-medium">Ferramentas:</span> Ferramentas e recursos que o agente pode utilizar</li>
+                                <li><span class="font-medium">Configurações:</span> Parâmetros específicos do agente</li>
+                            </ul>
+                        </div>
+
+                        <h3 class="subsection-title">Criação via API</h3>
+
+                        <div class="code-block mb-8">
+                            <pre>
 # Exemplo de criação de um agente de marketing via API
 POST /api/agents
 Content-Type: application/json
@@ -644,12 +659,12 @@ Authorization: Bearer {token}
   }
 }
                         </pre>
-                    </div>
-                    
-                    <h3 class="subsection-title">Criação via Código</h3>
-                    
-                    <div class="code-block mb-8">
-                        <pre>
+                        </div>
+
+                        <h3 class="subsection-title">Criação via Código</h3>
+
+                        <div class="code-block mb-8">
+                            <pre>
 from gerenciador_agentes_ia.core import AgentManager
 from gerenciador_agentes_ia.agents import Agent
 
@@ -697,27 +712,27 @@ agent_manager.register_agent(dev_agent)
 registered_agent = agent_manager.get_agent("agent_development_custom")
 print(f"Agente registrado: {registered_agent.name}")
                         </pre>
-                    </div>
-                    
-                    <h3 class="subsection-title">Personalização de Prompts</h3>
-                    
-                    <div class="bg-gray-50 p-4 rounded-lg mb-8">
-                        <p class="text-gray-600 mb-2">
-                            A personalização eficaz do prompt base é crucial para o desempenho do agente. Um bom prompt deve:
-                        </p>
-                        <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                            <li>Definir claramente o papel e especialidade do agente</li>
-                            <li>Estabelecer o tom e estilo de comunicação</li>
-                            <li>Especificar o formato e estrutura das respostas</li>
-                            <li>Incluir diretrizes para tratamento de casos específicos</li>
-                            <li>Definir limitações e comportamentos a evitar</li>
-                        </ul>
-                    </div>
-                    
-                    <h3 class="subsection-title">Exemplo de Prompt para Agente Financeiro</h3>
-                    
-                    <div class="code-block">
-                        <pre>
+                        </div>
+
+                        <h3 class="subsection-title">Personalização de Prompts</h3>
+
+                        <div class="bg-gray-50 p-4 rounded-lg mb-8">
+                            <p class="text-gray-600 mb-2">
+                                A personalização eficaz do prompt base é crucial para o desempenho do agente. Um bom prompt deve:
+                            </p>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                <li>Definir claramente o papel e especialidade do agente</li>
+                                <li>Estabelecer o tom e estilo de comunicação</li>
+                                <li>Especificar o formato e estrutura das respostas</li>
+                                <li>Incluir diretrizes para tratamento de casos específicos</li>
+                                <li>Definir limitações e comportamentos a evitar</li>
+                            </ul>
+                        </div>
+
+                        <h3 class="subsection-title">Exemplo de Prompt para Agente Financeiro</h3>
+
+                        <div class="code-block">
+                            <pre>
 """
 Você é um especialista financeiro com vasta experiência em análise financeira, planejamento orçamentário,
 previsões financeiras e análise de investimentos. Seu objetivo é fornecer análises precisas, recomendações
@@ -765,41 +780,41 @@ Formato de resposta preferido:
 5. Considerações adicionais ou limitações da análise
 """
                         </pre>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Squad Management Section -->
-            <div id="squads" class="mb-16">
-                <h2 class="section-title">Gerenciamento de Squads</h2>
-                
-                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
-                    <p class="text-gray-600 mb-6">
-                        Os squads são equipes temporárias de agentes que colaboram para resolver tarefas complexas
-                        que exigem múltiplas especialidades. Esta seção explica como criar, configurar e gerenciar squads.
-                    </p>
-                    
-                    <h3 class="subsection-title">Estrutura de um Squad</h3>
-                    
-                    <div class="bg-gray-50 p-4 rounded-lg mb-8">
-                        <p class="text-gray-600 mb-2">
-                            Um squad é composto pelos seguintes elementos:
+                <!-- Squad Management Section -->
+                <div id="squads" class="mb-16">
+                    <h2 class="section-title">Gerenciamento de Squads</h2>
+
+                    <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                        <p class="text-gray-600 mb-6">
+                            Os squads são equipes temporárias de agentes que colaboram para resolver tarefas complexas
+                            que exigem múltiplas especialidades. Esta seção explica como criar, configurar e gerenciar squads.
                         </p>
-                        <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                            <li><span class="font-medium">ID:</span> Identificador único do squad</li>
-                            <li><span class="font-medium">Nome:</span> Nome amigável do squad</li>
-                            <li><span class="font-medium">Descrição:</span> Descrição do propósito e capacidades do squad</li>
-                            <li><span class="font-medium">Agentes:</span> Lista de agentes que compõem o squad</li>
-                            <li><span class="font-medium">Líder:</span> Agente designado como líder do squad</li>
-                            <li><span class="font-medium">Fluxo de Trabalho:</span> Definição de como os agentes colaboram</li>
-                            <li><span class="font-medium">Configurações:</span> Parâmetros específicos do squad</li>
-                        </ul>
-                    </div>
-                    
-                    <h3 class="subsection-title">Criação via API</h3>
-                    
-                    <div class="code-block mb-8">
-                        <pre>
+
+                        <h3 class="subsection-title">Estrutura de um Squad</h3>
+
+                        <div class="bg-gray-50 p-4 rounded-lg mb-8">
+                            <p class="text-gray-600 mb-2">
+                                Um squad é composto pelos seguintes elementos:
+                            </p>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                <li><span class="font-medium">ID:</span> Identificador único do squad</li>
+                                <li><span class="font-medium">Nome:</span> Nome amigável do squad</li>
+                                <li><span class="font-medium">Descrição:</span> Descrição do propósito e capacidades do squad</li>
+                                <li><span class="font-medium">Agentes:</span> Lista de agentes que compõem o squad</li>
+                                <li><span class="font-medium">Líder:</span> Agente designado como líder do squad</li>
+                                <li><span class="font-medium">Fluxo de Trabalho:</span> Definição de como os agentes colaboram</li>
+                                <li><span class="font-medium">Configurações:</span> Parâmetros específicos do squad</li>
+                            </ul>
+                        </div>
+
+                        <h3 class="subsection-title">Criação via API</h3>
+
+                        <div class="code-block mb-8">
+                            <pre>
 # Exemplo de criação de um squad de lançamento de produto via API
 POST /api/squads
 Content-Type: application/json
@@ -865,12 +880,12 @@ Authorization: Bearer {token}
   }
 }
                         </pre>
-                    </div>
-                    
-                    <h3 class="subsection-title">Criação via Código</h3>
-                    
-                    <div class="code-block mb-8">
-                        <pre>
+                        </div>
+
+                        <h3 class="subsection-title">Criação via Código</h3>
+
+                        <div class="code-block mb-8">
+                            <pre>
 from gerenciador_agentes_ia.core import SquadManager
 from gerenciador_agentes_ia.agents import AgentManager
 from gerenciador_agentes_ia.squads import Squad, WorkflowStep, WorkflowType
@@ -932,56 +947,56 @@ squad_manager.register_squad(project_squad)
 registered_squad = squad_manager.get_squad("squad_software_project")
 print(f"Squad registrado: {registered_squad.name}")
                         </pre>
-                    </div>
-                    
-                    <h3 class="subsection-title">Tipos de Fluxo de Trabalho</h3>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                        <div class="bg-blue-50 p-4 rounded-lg">
-                            <h4 class="font-medium text-blue-800 mb-2">Sequencial</h4>
-                            <p class="text-gray-600 mb-2">
-                                Os agentes trabalham em sequência, cada um executando sua tarefa após a conclusão da anterior.
-                            </p>
-                            <p class="text-gray-600">
-                                <span class="font-medium">Ideal para:</span> Processos lineares onde cada etapa depende da anterior.
-                            </p>
                         </div>
-                        
-                        <div class="bg-green-50 p-4 rounded-lg">
-                            <h4 class="font-medium text-green-800 mb-2">Paralelo</h4>
-                            <p class="text-gray-600 mb-2">
-                                Os agentes trabalham simultaneamente em tarefas independentes.
-                            </p>
-                            <p class="text-gray-600">
-                                <span class="font-medium">Ideal para:</span> Tarefas que podem ser executadas independentemente.
-                            </p>
+
+                        <h3 class="subsection-title">Tipos de Fluxo de Trabalho</h3>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-blue-800 mb-2">Sequencial</h4>
+                                <p class="text-gray-600 mb-2">
+                                    Os agentes trabalham em sequência, cada um executando sua tarefa após a conclusão da anterior.
+                                </p>
+                                <p class="text-gray-600">
+                                    <span class="font-medium">Ideal para:</span> Processos lineares onde cada etapa depende da anterior.
+                                </p>
+                            </div>
+
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-green-800 mb-2">Paralelo</h4>
+                                <p class="text-gray-600 mb-2">
+                                    Os agentes trabalham simultaneamente em tarefas independentes.
+                                </p>
+                                <p class="text-gray-600">
+                                    <span class="font-medium">Ideal para:</span> Tarefas que podem ser executadas independentemente.
+                                </p>
+                            </div>
+
+                            <div class="bg-purple-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-purple-800 mb-2">Colaborativo</h4>
+                                <p class="text-gray-600 mb-2">
+                                    Os agentes trabalham juntos, compartilhando informações e contribuindo para um resultado comum.
+                                </p>
+                                <p class="text-gray-600">
+                                    <span class="font-medium">Ideal para:</span> Problemas complexos que requerem múltiplas perspectivas.
+                                </p>
+                            </div>
+
+                            <div class="bg-yellow-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-yellow-800 mb-2">Hierárquico</h4>
+                                <p class="text-gray-600 mb-2">
+                                    Um agente líder coordena o trabalho de agentes subordinados, delegando tarefas e consolidando resultados.
+                                </p>
+                                <p class="text-gray-600">
+                                    <span class="font-medium">Ideal para:</span> Tarefas que requerem coordenação central e especialização.
+                                </p>
+                            </div>
                         </div>
-                        
-                        <div class="bg-purple-50 p-4 rounded-lg">
-                            <h4 class="font-medium text-purple-800 mb-2">Colaborativo</h4>
-                            <p class="text-gray-600 mb-2">
-                                Os agentes trabalham juntos, compartilhando informações e contribuindo para um resultado comum.
-                            </p>
-                            <p class="text-gray-600">
-                                <span class="font-medium">Ideal para:</span> Problemas complexos que requerem múltiplas perspectivas.
-                            </p>
-                        </div>
-                        
-                        <div class="bg-yellow-50 p-4 rounded-lg">
-                            <h4 class="font-medium text-yellow-800 mb-2">Hierárquico</h4>
-                            <p class="text-gray-600 mb-2">
-                                Um agente líder coordena o trabalho de agentes subordinados, delegando tarefas e consolidando resultados.
-                            </p>
-                            <p class="text-gray-600">
-                                <span class="font-medium">Ideal para:</span> Tarefas que requerem coordenação central e especialização.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <h3 class="subsection-title">Exemplo de Uso de Squad</h3>
-                    
-                    <div class="code-block">
-                        <pre>
+
+                        <h3 class="subsection-title">Exemplo de Uso de Squad</h3>
+
+                        <div class="code-block">
+                            <pre>
 from gerenciador_agentes_ia.core import SquadManager
 
 # Inicializar o gerenciador de squads
@@ -1020,42 +1035,42 @@ if task_status["status"] == "completed":
         print(f"Resultado do agente {agent_result['agent_id']}:")
         print(agent_result["content"])
                         </pre>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Chat Integration Section -->
-            <div id="integracao" class="mb-16">
-                <h2 class="section-title">Integração com Chat</h2>
-                
-                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
-                    <p class="text-gray-600 mb-6">
-                        A integração com plataformas de chat permite que os usuários interajam com os agentes através
-                        de interfaces familiares como Slack e Microsoft Teams. Esta seção explica como configurar e
-                        personalizar essas integrações.
-                    </p>
-                    
-                    <h3 class="subsection-title">Configuração do Slack</h3>
-                    
-                    <div class="bg-gray-50 p-4 rounded-lg mb-8">
-                        <h4 class="font-medium text-gray-800 mb-2">Pré-requisitos:</h4>
-                        <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                            <li>Conta de administrador no workspace do Slack</li>
-                            <li>Acesso à plataforma de desenvolvedores do Slack</li>
-                        </ul>
-                        
-                        <h4 class="font-medium text-gray-800 mt-4 mb-2">Passos:</h4>
-                        <ol class="list-decimal pl-5 text-gray-600 space-y-1">
-                            <li>Criar um novo aplicativo na plataforma de desenvolvedores do Slack</li>
-                            <li>Configurar permissões e escopos (chat:write, channels:read, etc.)</li>
-                            <li>Obter o token de API e signing secret</li>
-                            <li>Configurar endpoints de eventos e interatividade</li>
-                            <li>Instalar o aplicativo no workspace</li>
-                        </ol>
-                    </div>
-                    
-                    <div class="code-block mb-8">
-                        <pre>
+                <!-- Chat Integration Section -->
+                <div id="integracao" class="mb-16">
+                    <h2 class="section-title">Integração com Chat</h2>
+
+                    <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                        <p class="text-gray-600 mb-6">
+                            A integração com plataformas de chat permite que os usuários interajam com os agentes através
+                            de interfaces familiares como Slack e Microsoft Teams. Esta seção explica como configurar e
+                            personalizar essas integrações.
+                        </p>
+
+                        <h3 class="subsection-title">Configuração do Slack</h3>
+
+                        <div class="bg-gray-50 p-4 rounded-lg mb-8">
+                            <h4 class="font-medium text-gray-800 mb-2">Pré-requisitos:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                <li>Conta de administrador no workspace do Slack</li>
+                                <li>Acesso à plataforma de desenvolvedores do Slack</li>
+                            </ul>
+
+                            <h4 class="font-medium text-gray-800 mt-4 mb-2">Passos:</h4>
+                            <ol class="list-decimal pl-5 text-gray-600 space-y-1">
+                                <li>Criar um novo aplicativo na plataforma de desenvolvedores do Slack</li>
+                                <li>Configurar permissões e escopos (chat:write, channels:read, etc.)</li>
+                                <li>Obter o token de API e signing secret</li>
+                                <li>Configurar endpoints de eventos e interatividade</li>
+                                <li>Instalar o aplicativo no workspace</li>
+                            </ol>
+                        </div>
+
+                        <div class="code-block mb-8">
+                            <pre>
 # Configuração do Slack no arquivo config.yaml
 integracao:
   slack:
@@ -1078,32 +1093,32 @@ integracao:
       - nome: "/ajuda"
         descricao: "Exibir ajuda sobre os agentes disponíveis"
                         </pre>
-                    </div>
-                    
-                    <h3 class="subsection-title">Configuração do Microsoft Teams</h3>
-                    
-                    <div class="bg-gray-50 p-4 rounded-lg mb-8">
-                        <h4 class="font-medium text-gray-800 mb-2">Pré-requisitos:</h4>
-                        <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                            <li>Conta de administrador no Microsoft 365</li>
-                            <li>Acesso ao Azure Active Directory</li>
-                            <li>Acesso ao Bot Framework</li>
-                        </ul>
-                        
-                        <h4 class="font-medium text-gray-800 mt-4 mb-2">Passos:</h4>
-                        <ol class="list-decimal pl-5 text-gray-600 space-y-1">
-                            <li>Registrar um aplicativo no Azure Active Directory</li>
-                            <li>Criar um bot no Bot Framework</li>
-                            <li>Configurar permissões e escopos</li>
-                            <li>Obter o app ID e app password</li>
-                            <li>Configurar endpoints de mensagens</li>
-                            <li>Criar o pacote de aplicativo do Teams</li>
-                            <li>Instalar o aplicativo no Teams</li>
-                        </ol>
-                    </div>
-                    
-                    <div class="code-block mb-8">
-                        <pre>
+                        </div>
+
+                        <h3 class="subsection-title">Configuração do Microsoft Teams</h3>
+
+                        <div class="bg-gray-50 p-4 rounded-lg mb-8">
+                            <h4 class="font-medium text-gray-800 mb-2">Pré-requisitos:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
+                                <li>Conta de administrador no Microsoft 365</li>
+                                <li>Acesso ao Azure Active Directory</li>
+                                <li>Acesso ao Bot Framework</li>
+                            </ul>
+
+                            <h4 class="font-medium text-gray-800 mt-4 mb-2">Passos:</h4>
+                            <ol class="list-decimal pl-5 text-gray-600 space-y-1">
+                                <li>Registrar um aplicativo no Azure Active Directory</li>
+                                <li>Criar um bot no Bot Framework</li>
+                                <li>Configurar permissões e escopos</li>
+                                <li>Obter o app ID e app password</li>
+                                <li>Configurar endpoints de mensagens</li>
+                                <li>Criar o pacote de aplicativo do Teams</li>
+                                <li>Instalar o aplicativo no Teams</li>
+                            </ol>
+                        </div>
+
+                        <div class="code-block mb-8">
+                            <pre>
 # Configuração do Teams no arquivo config.yaml
 integracao:
   teams:
@@ -1127,12 +1142,12 @@ integracao:
       - nome: "ajuda"
         descricao: "Exibir ajuda sobre os agentes disponíveis"
                         </pre>
-                    </div>
-                    
-                    <h3 class="subsection-title">Personalização de Mensagens</h3>
-                    
-                    <div class="code-block">
-                        <pre>
+                        </div>
+
+                        <h3 class="subsection-title">Personalização de Mensagens</h3>
+
+                        <div class="code-block">
+                            <pre>
 from gerenciador_agentes_ia.communication import MessageFormatter
 from gerenciador_agentes_ia.chat_integration import SlackConnector
 
@@ -1302,30 +1317,31 @@ class CustomSlackFormatter(MessageFormatter):
 slack_connector = SlackConnector(config["integracao"]["slack"])
 slack_connector.set_message_formatter(CustomSlackFormatter())
                         </pre>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
+        </main>
 
-    <footer class="bg-gray-800 text-white py-8 mt-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-4 md:mb-0">
-                    <h3 class="text-xl font-bold">Capellaris</h3>
-                    <p class="text-gray-400">O cérebro distribuído da sua organização.</p>
+        <footer class="bg-gray-800 text-white py-8 mt-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-4 md:mb-0">
+                        <h3 class="text-xl font-bold">Capellaris</h3>
+                        <p class="text-gray-400">O cérebro distribuído da sua organização.</p>
+                    </div>
+                    <div class="flex space-x-6">
+                        <a href="index.html" class="text-gray-300 hover:text-white">Início</a>
+                        <a href="arquitetura.html" class="text-gray-300 hover:text-white">Arquitetura</a>
+                        <a href="documentacao.html" class="text-gray-300 hover:text-white">Documentação</a>
+                        <a href="https://capellaris.dscamargo.com.br" class="text-gray-300 hover:text-white">Demo</a>
+                    </div>
                 </div>
-                <div class="flex space-x-6">
-                    <a href="index.html" class="text-gray-300 hover:text-white">Início</a>
-                    <a href="arquitetura.html" class="text-gray-300 hover:text-white">Arquitetura</a>
-                    <a href="documentacao.html" class="text-gray-300 hover:text-white">Documentação</a>
-                    <a href="demo.html" class="text-gray-300 hover:text-white">Demo</a>
+                <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+                    <p>&copy; 2025 Capellaris. Todos os direitos reservados.</p>
                 </div>
             </div>
-            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
-                <p>&copy; 2025 Capellaris. Todos os direitos reservados.</p>
-            </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
+
 </html>
