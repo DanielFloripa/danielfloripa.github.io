@@ -8,7 +8,7 @@
     <meta name="author" content="Daniel Scheidemantel Camargo" />
     <meta name="description" content="GreenHop - Open source energy consumption and environmental monitoring for data center infrastructure" />
     <meta name="keywords" content="GreenHop,Data Center,PUE,Energy Monitoring,Daniel Camargo,Environmental Monitoring" />
-    
+
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/ico/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/ico/favicon-32x32.png">
@@ -18,18 +18,36 @@
     <meta name="msapplication-TileColor" content="#00a300">
     <meta name="theme-color" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/ico/ms-icon-144x144.png">
-    
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/style.css">
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WXLHS7J8');</script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXLHS7J8" height="0" width="0" style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <!-- Header -->
     <div id="header" class="fixed-top shadow-sm">
         <div class="container">
@@ -68,7 +86,8 @@
                         <div class="d-flex ms-3 social-icons">
                             <a href="http://github.com/danielfloripa" class="me-2 text-light"><i class="fab fa-github"></i></a>
                             <a href="https://www.linkedin.com/in/daniel13" class="me-2 text-light"><i class="fab fa-linkedin"></i></a>
-                            <a href="http://api.whatsapp.com/send?phone=5547999675469&text=From%20site%20dscamargo.com.br" class="text-light"><i class="fab fa-whatsapp"></i></a>
+                            <a href="http://api.whatsapp.com/send?phone=5547999675469&text=From%20site%20dscamargo.com.br" class="text-light"><i
+                                    class="fab fa-whatsapp"></i></a>
                         </div>
                     </div>
                 </div>
@@ -104,10 +123,13 @@
             <div class="row">
                 <div class="col-lg-8">
                     <h2 class="mb-4">Project Overview</h2>
-                    <p class="lead">GreenHop is an open-source platform designed for continuous monitoring of energy consumption and environmental metrics in data centers, with a focus on small and medium-sized installations.</p>
-                    
-                    <p>The project arose from the need to make energy efficiency monitoring more accessible to smaller data centers, which often lack the resources to implement expensive commercial monitoring solutions. By adopting the Power Usage Effectiveness (PUE) metric defined by The Green Grid, GreenHop helps organizations track and improve their data center efficiency over time.</p>
-                    
+                    <p class="lead">GreenHop is an open-source platform designed for continuous monitoring of energy consumption and environmental metrics in data
+                        centers, with a focus on small and medium-sized installations.</p>
+
+                    <p>The project arose from the need to make energy efficiency monitoring more accessible to smaller data centers, which often lack the resources to
+                        implement expensive commercial monitoring solutions. By adopting the Power Usage Effectiveness (PUE) metric defined by The Green Grid, GreenHop
+                        helps organizations track and improve their data center efficiency over time.</p>
+
                     <div class="my-5">
                         <h3>Key Features</h3>
                         <ul class="list-group list-group-flush">
@@ -155,10 +177,10 @@
                             </li>
                         </ul>
                     </div>
-                    
+
                     <h3 class="mb-4">Technical Implementation</h3>
                     <p>GreenHop combines low-cost hardware components with an open-source software stack:</p>
-                    
+
                     <div class="row mb-4">
                         <div class="col-md-6">
                             <h5><i class="fas fa-microchip me-2 text-primary"></i>Hardware</h5>
@@ -183,11 +205,11 @@
                             </ul>
                         </div>
                     </div>
-                    
+
                     <div class="mb-5">
                         <h3>Research Impact</h3>
                         <p>The GreenHop project has been featured in several academic publications and conferences:</p>
-                        
+
                         <div class="card mb-3">
                             <div class="card-body">
                                 <h5 class="card-title">GreenHop: Open source PUE continuous monitoring for small and medium data centers</h5>
@@ -197,7 +219,7 @@
                                 </a>
                             </div>
                         </div>
-                        
+
                         <div class="card mb-3">
                             <div class="card-body">
                                 <h5 class="card-title">GreenHop: Environmental and power monitoring small size data centers</h5>
@@ -207,7 +229,7 @@
                                 </a>
                             </div>
                         </div>
-                        
+
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">GreenHop: Open source environmental monitoring for small and medium data centers</h5>
@@ -251,7 +273,7 @@
                             </ul>
                         </div>
                     </div>
-                    
+
                     <div class="card shadow-sm mb-4">
                         <div class="card-header bg-light">
                             <h5 class="mb-0">Technologies Used</h5>
@@ -272,7 +294,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="card shadow-sm">
                         <div class="card-header bg-light">
                             <h5 class="mb-0">Related Projects</h5>
@@ -331,7 +353,7 @@
                 <h2 class="display-5 fw-bold">Get in touch</h2>
                 <p class="lead">Want to learn more about the GreenHop project?</p>
             </header>
-            
+
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <form id="contactForm" class="needs-validation">
@@ -385,7 +407,8 @@
                     <div class="d-flex">
                         <a href="https://github.com/danielfloripa" class="me-3 text-secondary"><i class="fab fa-github fa-2x"></i></a>
                         <a href="https://www.linkedin.com/in/daniel13" class="me-3 text-secondary"><i class="fab fa-linkedin fa-2x"></i></a>
-                        <a href="http://api.whatsapp.com/send?phone=5547999675469&text=From%20site%20dscamargo.com.br" class="me-3 text-secondary"><i class="fab fa-whatsapp fa-2x"></i></a>
+                        <a href="http://api.whatsapp.com/send?phone=5547999675469&text=From%20site%20dscamargo.com.br" class="me-3 text-secondary"><i
+                                class="fab fa-whatsapp fa-2x"></i></a>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
@@ -420,7 +443,7 @@
             </div>
         </div>
     </footer>
-    
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/script.js"></script>
