@@ -101,8 +101,9 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="capellaris/index.html">
+                                <a class="nav-link nav-capellaris-highlight" href="capellaris/index.html">
                                     <i class="fas fa-rocket me-1"></i> Capellaris
+                                    <span class="nav-badge-new">NEW</span>
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -156,11 +157,79 @@
                 data-type='[ "Hello, there!", "I will help you on:", "- Software Development", "- Cloud issues", "- Automations", "- DevSecOps", "- Integrations", "- And more!", "&#x2665; &#x2665; &#x2665;" ]'>
                 <span class="wrap"></span>
             </h1>
-            <div class="mt-5">
-                <a href="#portfolio" class="btn btn-outline-light btn-lg">
-                    Start your journey here
+            <div class="mt-5 hero-buttons">
+                <a href="#capellaris-featured" class="btn btn-capellaris btn-lg me-3 mb-2">
+                    <i class="fas fa-rocket me-2"></i>Discover Capellaris
+                </a>
+                <a href="#portfolio" class="btn btn-outline-light btn-lg mb-2">
+                    View Portfolio
                     <i class="fas fa-arrow-down ms-2"></i>
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Project: Capellaris -->
+    <section id="capellaris-featured" class="capellaris-section">
+        <div class="capellaris-bg-pattern"></div>
+        <div class="container position-relative">
+            <div class="row align-items-center">
+                <div class="col-lg-5 text-center mb-4 mb-lg-0">
+                    <div class="capellaris-logo-wrapper gsap-fade-up">
+                        <img src="assets/images/capellaris.svg" alt="Capellaris" class="capellaris-logo" />
+                        <div class="capellaris-glow"></div>
+                    </div>
+                </div>
+                <div class="col-lg-7 gsap-fade-up">
+                    <div class="capellaris-badge mb-3">
+                        <i class="fas fa-star me-1"></i> Featured Project
+                    </div>
+                    <h2 class="capellaris-title display-4 fw-bold mb-3">Capellaris</h2>
+                    <p class="capellaris-subtitle h5 mb-4">AI Agent Management Platform</p>
+                    <p class="capellaris-description lead mb-4">
+                        A comprehensive solution for managing AI agents specialized in different business areas. 
+                        Enable seamless communication between agents, dynamic squad formation, and continuous learning 
+                        to transform your organization's AI capabilities.
+                    </p>
+                    
+                    <div class="capellaris-features mb-4">
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <div class="feature-item">
+                                    <i class="fas fa-brain"></i>
+                                    <span>Specialized AI Agents</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="feature-item">
+                                    <i class="fas fa-network-wired"></i>
+                                    <span>Agent Communication</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="feature-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Squad Formation</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="feature-item">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>Continuous Learning</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="capellaris-cta">
+                        <a href="capellaris/index.html" class="btn btn-capellaris-primary btn-lg me-2 mb-2">
+                            <i class="fas fa-external-link-alt me-2"></i>Explore Capellaris
+                        </a>
+                        <a href="capellaris/documentacao.html" class="btn btn-capellaris-outline btn-lg mb-2">
+                            <i class="fas fa-book me-2"></i>Documentation
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -169,28 +238,13 @@
     <section id="portfolio" class="py-5">
         <div class="container">
             <header class="text-center mb-5 gsap-fade-up">
-                <h2 class="display-5 fw-bold">Portfolio</h2>
+                <h2 class="display-5 fw-bold">More Projects</h2>
                 <p class="lead fst-italic mt-3">"Scientia potentia est" (Knowledge is power!)</p>
             </header>
 
             <!-- Swiper Carousel - More fluid than Bootstrap -->
             <div class="swiper portfolio-swiper gsap-fade-up">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="portfolio-card">
-                            <div class="row align-items-center">
-                                <div class="col-md-4 text-center">
-                                    <img class="img-fluid portfolio-img" src="assets/images/capellaris.svg" alt="Capellaris" />
-                                </div>
-                                <div class="col-md-8">
-                                    <h2 class="fw-bold">Capellaris</h2>
-                                    <p class="lead">Solution for managing AI agents specialized in different business areas, enabling communication between agents, squad
-                                        formation and continuous learning.</p>
-                                    <a href="capellaris/index.html" class="btn btn-primary">View project</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="swiper-slide">
                         <div class="portfolio-card">
                             <div class="row align-items-center">
@@ -487,7 +541,7 @@
                         <p class="mb-0">&copy; 2025 DSCamargo. All rights reserved.</p>
                     </div>
                     <div class="col-md-6 text-center text-md-end">
-                        <p class="mb-0">Designed with <i class="fas fa-heart text-danger"></i> and Bootstrap</p>
+                        <p class="mb-0">Designed with <i class="fas fa-heart text-danger"></i></p>
                     </div>
                 </div>
             </div>
