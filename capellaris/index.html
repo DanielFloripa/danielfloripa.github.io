@@ -13,6 +13,9 @@
     <link rel="manifest" href="assets/site.webmanifest" />
     <script src="assets/js/menu-toggle.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- GSAP + ScrollTrigger for smooth animations -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <style>
         .section-title {
             font-size: 1.875rem;
@@ -144,7 +147,7 @@
     <main class="py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Hero Section -->
-            <div class="text-center mb-16">
+            <div class="text-center mb-16 gsap-fade-up">
                 <h1 class="text-4xl font-bold text-gray-900 mb-4">Capellaris: Gestão de agentes de IA</h1>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
                     Uma solução completa para gerenciar agentes de IA especializados em diferentes áreas empresariais,
@@ -160,9 +163,9 @@
 
             <!-- Features Section -->
             <div class="mb-16">
-                <h2 class="section-title text-center mb-8">Principais Características</h2>
+                <h2 class="section-title text-center mb-8 gsap-fade-up">Principais Características</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="card">
+                    <div class="card gsap-fade-up">
                         <div class="flex items-center mb-4">
                             <svg class="h-8 w-8 text-blue-600 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -175,7 +178,7 @@
                             financeiro, desenvolvimento, RH, vendas e operações.
                         </p>
                     </div>
-                    <div class="card">
+                    <div class="card gsap-fade-up">
                         <div class="flex items-center mb-4">
                             <svg class="h-8 w-8 text-green-600 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -188,7 +191,7 @@
                             compartilhem informações e colaborem em tarefas.
                         </p>
                     </div>
-                    <div class="card">
+                    <div class="card gsap-fade-up">
                         <div class="flex items-center mb-4">
                             <svg class="h-8 w-8 text-purple-600 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -201,7 +204,7 @@
                             exigem múltiplas especialidades.
                         </p>
                     </div>
-                    <div class="card">
+                    <div class="card gsap-fade-up">
                         <div class="flex items-center mb-4">
                             <svg class="h-8 w-8 text-red-600 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -214,7 +217,7 @@
                             melhorem continuamente com base em interações anteriores.
                         </p>
                     </div>
-                    <div class="card">
+                    <div class="card gsap-fade-up">
                         <div class="flex items-center mb-4">
                             <svg class="h-8 w-8 text-yellow-600 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -227,7 +230,7 @@
                             natural com os agentes através de plataformas familiares.
                         </p>
                     </div>
-                    <div class="card">
+                    <div class="card gsap-fade-up">
                         <div class="flex items-center mb-4">
                             <svg class="h-8 w-8 text-indigo-600 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -244,8 +247,8 @@
 
             <!-- How It Works Section -->
             <div class="mb-16">
-                <h2 class="section-title text-center mb-8">Como Funciona</h2>
-                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                <h2 class="section-title text-center mb-8 gsap-fade-up">Como Funciona</h2>
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8 gsap-fade-up">
                     <div class="space-y-8">
                         <div class="flex flex-col md:flex-row items-start">
                             <div class="flex-shrink-0 bg-blue-100 rounded-full p-3 mr-6 mb-4 md:mb-0">
@@ -316,7 +319,7 @@
             </div>
 
             <!-- CTA Section -->
-            <div class="bg-blue-600 rounded-lg shadow-lg p-8 text-white text-center">
+            <div class="bg-blue-600 rounded-lg shadow-lg p-8 text-white text-center gsap-fade-up">
                 <h2 class="text-3xl font-bold mb-4">Pronto para começar?</h2>
                 <p class="text-xl mb-6">
                     Explore a documentação completa e veja como o Capellaris
@@ -353,6 +356,39 @@
             </div>
         </div>
     </footer>
+
+    <!-- GSAP Initialization Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // GSAP ScrollTrigger Animations
+            if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+                gsap.registerPlugin(ScrollTrigger);
+                
+                // Animate all elements with gsap-fade-up class
+                gsap.utils.toArray('.gsap-fade-up').forEach((element, index) => {
+                    gsap.fromTo(element, 
+                        {
+                            opacity: 0,
+                            y: 50
+                        },
+                        {
+                            opacity: 1,
+                            y: 0,
+                            duration: 0.8,
+                            ease: 'power2.out',
+                            scrollTrigger: {
+                                trigger: element,
+                                start: 'top 85%',
+                                toggleActions: 'play none none none'
+                            }
+                        }
+                    );
+                });
+                
+                console.log('GSAP ScrollTrigger initialized on Capellaris');
+            }
+        });
+    </script>
 </body>
 
 </html>
