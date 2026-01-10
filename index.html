@@ -2,15 +2,6 @@
 <html lang="pt-BR" class="loading">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BT8SS9D027"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-BT8SS9D027');
-    </script>
-
     <title>Daniel Scheidemantel Camargo</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,6 +32,12 @@
     <!-- External Libraries -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- GSAP + ScrollTrigger for smooth animations -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <!-- Swiper for smooth carousels -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -171,100 +168,105 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="py-5">
         <div class="container">
-            <header class="text-center mb-5">
+            <header class="text-center mb-5 gsap-fade-up">
                 <h2 class="display-5 fw-bold">Portfolio</h2>
                 <p class="lead fst-italic mt-3">"Scientia potentia est" (Knowledge is power!)</p>
             </header>
 
-            <!-- Bootstrap Carousel -->
-            <div id="portfolioCarousel" class="carousel slide shadow" data-bs-ride="carousel">
-                <div class="carousel-inner rounded">
-                    <div class="carousel-item active">
-                        <div class="row p-4 align-items-center bg-light">
-                            <div class="col-md-4 text-center">
-                                <img class="img-fluid" src="assets/images/capellaris.svg" alt="Capellaris" />
-                            </div>
-                            <div class="col-md-8">
-                                <h2 class="fw-bold">Capellaris</h2>
-                                <p class="lead">Solution for managing AI agents specialized in different business areas, enabling communication between agents, squad
-                                    formation and continuous learning.</p>
-                                <a href="capellaris/index.html" class="btn btn-primary">View project</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row p-4 align-items-center bg-light">
-                            <div class="col-md-4 text-center">
-                                <img class="img-fluid" src="assets/images/greenhop.png" alt="GreenHop" />
-                            </div>
-                            <div class="col-md-8">
-                                <h2 class="fw-bold">GreenHop</h2>
-                                <p class="lead">Open source energy consumption and environmental monitoring for data center infrastructure</p>
-                                <a href="greenhop.html" class="btn btn-primary">View project</a>
+            <!-- Swiper Carousel - More fluid than Bootstrap -->
+            <div class="swiper portfolio-swiper gsap-fade-up">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="portfolio-card">
+                            <div class="row align-items-center">
+                                <div class="col-md-4 text-center">
+                                    <img class="img-fluid portfolio-img" src="assets/images/capellaris.svg" alt="Capellaris" />
+                                </div>
+                                <div class="col-md-8">
+                                    <h2 class="fw-bold">Capellaris</h2>
+                                    <p class="lead">Solution for managing AI agents specialized in different business areas, enabling communication between agents, squad
+                                        formation and continuous learning.</p>
+                                    <a href="capellaris/index.html" class="btn btn-primary">View project</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="row p-4 align-items-center bg-light">
-                            <div class="col-md-4 text-center">
-                                <img class="img-fluid" src="assets/images/chave.png" alt="Master" />
-                            </div>
-                            <div class="col-md-8">
-                                <h2 class="fw-bold">CHAVE Project</h2>
-                                <p class="lead">Consolidation and High Availability on Virtualized Environments (CHAVE) allows reduce energy consumption while keep the
-                                    services availability.</p>
-                                <a href="chave.html" class="btn btn-primary">View project</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row p-4 align-items-center bg-light">
-                            <div class="col-md-4 text-center">
-                                <img class="img-fluid" src="assets/images/openstack.png" alt="Openstack" />
-                            </div>
-                            <div class="col-md-8">
-                                <h2 class="fw-bold">LabP2D Openstack</h2>
-                                <p class="lead">Auto-deploy, measure hosts resources from OpenStack Cloud in LabP2D.</p>
-                                <a href="https://github.com/DanielFloripa/Labp2d" target="_blank" class="btn btn-primary">View project</a>
+                    <div class="swiper-slide">
+                        <div class="portfolio-card">
+                            <div class="row align-items-center">
+                                <div class="col-md-4 text-center">
+                                    <img class="img-fluid portfolio-img" src="assets/images/greenhop.png" alt="GreenHop" />
+                                </div>
+                                <div class="col-md-8">
+                                    <h2 class="fw-bold">GreenHop</h2>
+                                    <p class="lead">Open source energy consumption and environmental monitoring for data center infrastructure</p>
+                                    <a href="greenhop.html" class="btn btn-primary">View project</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="row p-4 align-items-center bg-light">
-                            <div class="col-md-4 text-center">
-                                <img class="img-fluid" src="assets/images/plus.svg" alt="More..." />
+                    <div class="swiper-slide">
+                        <div class="portfolio-card">
+                            <div class="row align-items-center">
+                                <div class="col-md-4 text-center">
+                                    <img class="img-fluid portfolio-img" src="assets/images/chave.png" alt="Master" />
+                                </div>
+                                <div class="col-md-8">
+                                    <h2 class="fw-bold">CHAVE Project</h2>
+                                    <p class="lead">Consolidation and High Availability on Virtualized Environments (CHAVE) allows reduce energy consumption while keep the
+                                        services availability.</p>
+                                    <a href="chave.html" class="btn btn-primary">View project</a>
+                                </div>
                             </div>
-                            <div class="col-md-8">
-                                <h2 class="fw-bold">Other Projects?</h2>
-                                <p class="lead">Check out my GitHub for more projects and contributions!</p>
-                                <a href="https://github.com/danielfloripa" target="_blank" class="btn btn-primary">GitHub Profile</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="portfolio-card">
+                            <div class="row align-items-center">
+                                <div class="col-md-4 text-center">
+                                    <img class="img-fluid portfolio-img" src="assets/images/openstack.png" alt="Openstack" />
+                                </div>
+                                <div class="col-md-8">
+                                    <h2 class="fw-bold">LabP2D Openstack</h2>
+                                    <p class="lead">Auto-deploy, measure hosts resources from OpenStack Cloud in LabP2D.</p>
+                                    <a href="https://github.com/DanielFloripa/Labp2d" target="_blank" class="btn btn-primary">View project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="portfolio-card">
+                            <div class="row align-items-center">
+                                <div class="col-md-4 text-center">
+                                    <img class="img-fluid portfolio-img" src="assets/images/plus.svg" alt="More..." />
+                                </div>
+                                <div class="col-md-8">
+                                    <h2 class="fw-bold">Other Projects?</h2>
+                                    <p class="lead">Check out my GitHub for more projects and contributions!</p>
+                                    <a href="https://github.com/danielfloripa" target="_blank" class="btn btn-primary">GitHub Profile</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Carousel Controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <!-- Swiper Navigation -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
 
-    <section id="papers">
+    <section id="papers" class="py-5">
         <div class="container">
-            <header>
-                <h2>Conference papers</h2>
+            <header class="gsap-fade-up">
+                <h2 class="display-5 fw-bold">Conference papers</h2>
                 <h4>View more in <a href="https://scholar.google.com.br/citations?hl=pt-BR&authuser=1&user=mwcTdEEAAAAJ" target="_blank">Google Scholar</a> and <a
                         href="bibtex-references/index.html">bibTex
                         references.</a><br></h4>
             </header>
 
-            <div class="accordion" id="papersAccordion">
+            <div class="accordion gsap-fade-up" id="papersAccordion">
                 <!-- Conference Papers -->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingConference">
@@ -402,12 +404,12 @@
     <!-- Contact Section -->
     <section id="contact" class="py-5 bg-light">
         <div class="container">
-            <header class="text-center mb-5">
+            <header class="text-center mb-5 gsap-fade-up">
                 <h2 class="display-5 fw-bold">Get in touch</h2>
                 <p class="lead">Have a question or want to work together?</p>
             </header>
 
-            <div class="row justify-content-center">
+            <div class="row justify-content-center gsap-fade-up">
                 <div class="col-lg-8">
                     <form id="contactForm" class="needs-validation" action="https://formspree.io/f/manozyow" method="POST">
                         <div class="row g-3">
