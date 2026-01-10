@@ -12,6 +12,96 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     console.log('Document ready!');
     
+    // ============================================
+    // GSAP ScrollTrigger Animations
+    // ============================================
+    if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+        gsap.registerPlugin(ScrollTrigger);
+        
+        // Animate all elements with gsap-fade-up class
+        gsap.utils.toArray('.gsap-fade-up').forEach((element, index) => {
+            gsap.fromTo(element, 
+                {
+                    opacity: 0,
+                    y: 50
+                },
+                {
+                    opacity: 1,
+                    y: 0,
+                    duration: 0.8,
+                    ease: 'power2.out',
+                    scrollTrigger: {
+                        trigger: element,
+                        start: 'top 85%',
+                        toggleActions: 'play none none none'
+                    }
+                }
+            );
+        });
+        
+        console.log('GSAP ScrollTrigger initialized');
+    } else {
+        console.warn('GSAP or ScrollTrigger not loaded');
+    }
+    
+    // ============================================
+    // Swiper Carousel Initialization
+    // ============================================
+    if (typeof Swiper !== 'undefined') {
+        const portfolioSwiper = new Swiper('.portfolio-swiper', {
+            // Core settings
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            grabCursor: true,
+            
+            // Auto-play
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            },
+            
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            
+            // Pagination dots
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true,
+            },
+            
+            // Keyboard control
+            keyboard: {
+                enabled: true,
+            },
+            
+            // Effects
+            effect: 'slide',
+            speed: 600,
+            
+            // Responsive breakpoints
+            breakpoints: {
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                },
+            },
+        });
+        
+        console.log('Swiper initialized');
+    } else {
+        console.warn('Swiper not loaded');
+    }
+    
     // Initialize particles.js
     if (document.getElementById('particles-js')) {
         particlesJS.load('particles-js', 'assets/particles.json', function() {

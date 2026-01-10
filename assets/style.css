@@ -185,6 +185,103 @@ h1, h2, h3, h4, h5, h6 {
     padding: 15px;
 }
 
+/* Swiper Portfolio Carousel */
+.portfolio-swiper {
+    padding: 20px 0 60px;
+    overflow: hidden;
+}
+
+.portfolio-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 300px;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-img {
+    max-height: 200px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover .portfolio-img {
+    transform: scale(1.05);
+}
+
+/* Swiper Navigation */
+.swiper-button-prev,
+.swiper-button-next {
+    color: #4B79A1;
+    background: rgba(255, 255, 255, 0.9);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background: #4B79A1;
+    color: #fff;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Swiper Pagination */
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: #4B79A1;
+    opacity: 0.3;
+    transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* GSAP Animation Initial State (for elements without JS) */
+.gsap-fade-up {
+    opacity: 1; /* Fallback if GSAP doesn't load */
+}
+
+@media (max-width: 767.98px) {
+    .portfolio-card {
+        padding: 25px;
+    }
+    
+    .portfolio-img {
+        max-height: 150px;
+        margin-bottom: 20px;
+    }
+    
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        font-size: 14px;
+    }
+}
+
 /* Papers Section */
 .accordion-button:not(.collapsed) {
     background-color: rgba(75, 121, 161, 0.1);
