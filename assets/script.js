@@ -18,6 +18,50 @@ document.addEventListener('DOMContentLoaded', function() {
     if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
         gsap.registerPlugin(ScrollTrigger);
         
+        // Animate floating modals - each modal fades out as next one comes in
+        const modals = gsap.utils.toArray('.floating-modal');
+        
+        modals.forEach((modal, index) => {
+            const card = modal.querySelector('.modal-glass-card');
+            
+            // Entry animation
+            gsap.fromTo(card, 
+                {
+                    opacity: 0,
+                    y: 100,
+                    scale: 0.95
+                },
+                {
+                    opacity: 1,
+                    y: 0,
+                    scale: 1,
+                    duration: 0.8,
+                    ease: 'power2.out',
+                    scrollTrigger: {
+                        trigger: modal,
+                        start: 'top 80%',
+                        toggleActions: 'play none none reverse'
+                    }
+                }
+            );
+            
+            // Exit animation - fade and scale back as user scrolls past
+            if (index < modals.length - 1) {
+                gsap.to(card, {
+                    opacity: 0.3,
+                    scale: 0.92,
+                    y: -30,
+                    ease: 'power2.in',
+                    scrollTrigger: {
+                        trigger: modal,
+                        start: 'bottom 40%',
+                        end: 'bottom 10%',
+                        scrub: 1
+                    }
+                });
+            }
+        });
+        
         // Animate all elements with gsap-fade-up class
         gsap.utils.toArray('.gsap-fade-up').forEach((element, index) => {
             gsap.fromTo(element, 
@@ -183,14 +227,31 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Header scroll effect
+    // Header scroll effect & Cosmic fade overlay
     const header = document.getElementById('header');
-    if (header) {
+    const scrollFadeOverlay = document.getElementById('scroll-fade-overlay');
+    
+    if (header || scrollFadeOverlay) {
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 100) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
+            const scrollY = window.scrollY;
+            const viewportHeight = window.innerHeight;
+            
+            // Header effect
+            if (header) {
+                if (scrollY > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            }
+            
+            // Cosmic fade overlay - lightens as user scrolls
+            if (scrollFadeOverlay) {
+                // Start fading after 50vh, complete by 200vh
+                const fadeStart = viewportHeight * 0.5;
+                const fadeEnd = viewportHeight * 2;
+                const fadeProgress = Math.min(1, Math.max(0, (scrollY - fadeStart) / (fadeEnd - fadeStart)));
+                scrollFadeOverlay.style.opacity = fadeProgress * 0.8; // Max 80% opacity
             }
         });
     }

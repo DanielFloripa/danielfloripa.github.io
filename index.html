@@ -85,6 +85,13 @@
         }
     </script>
 
+    <!-- Fixed Background Layer - Cosmic Universe -->
+    <div id="universe-bg">
+        <div id="universe-gradient"></div>
+        <div id="particles-js"></div>
+        <div id="scroll-fade-overlay"></div>
+    </div>
+
     <!-- Header -->
     <div id="header" class="fixed-top shadow-sm">
         <div class="container">
@@ -153,9 +160,8 @@
         </div>
     </div>
 
-    <!-- Particles Hero Section -->
+    <!-- Hero Section -->
     <section id="top" class="hero d-flex align-items-center text-light">
-        <div id="particles-js" class="particles-container"></div>
         <div class="container position-relative z-index-1 text-center">
             <h1 class="display-4 fw-bold mb-4 typewrite typewrite-mono" data-period="2000"
                 data-type='[ "> Building solutions that scale_", "> From strategy to deployment_", "> AI-Powered Automation_", "> Results-driven development_", "> Let&#39;s build something great?" ]'>
@@ -173,10 +179,14 @@
         </div>
     </section>
 
-    <!-- Featured Project: Capellaris -->
-    <section id="capellaris-featured" class="capellaris-section">
-        <div class="capellaris-bg-pattern"></div>
-        <div class="container position-relative">
+    <!-- Floating Modals Container -->
+    <div class="floating-modals-wrapper">
+        
+        <!-- Featured Project: Capellaris -->
+        <section id="capellaris-featured" class="floating-modal capellaris-modal">
+            <div class="modal-glass-card">
+                <div class="capellaris-bg-pattern"></div>
+                <div class="container position-relative">
             <div class="row align-items-center">
                 <div class="col-lg-5 text-center mb-4 mb-lg-0">
                     <div class="capellaris-logo-wrapper gsap-fade-up">
@@ -237,12 +247,13 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+            </div>
+        </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="py-5">
-        <div class="container">
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="floating-modal portfolio-modal">
+            <div class="modal-glass-card">
+                <div class="container">
             <header class="text-center mb-5 gsap-fade-up">
                 <h2 class="display-5 fw-bold">More Projects</h2>
                 <p class="lead fst-italic mt-3">"Scientia potentia est" (Knowledge is power!)</p>
@@ -314,11 +325,13 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-pagination"></div>
             </div>
-        </div>
-    </section>
+            </div>
+        </section>
 
-    <section id="papers" class="py-5">
-        <div class="container">
+        <!-- Papers Section -->
+        <section id="papers" class="floating-modal papers-modal">
+            <div class="modal-glass-card">
+                <div class="container">
             <header class="gsap-fade-up">
                 <h2 class="display-5 fw-bold">Conference papers</h2>
                 <h4>View more in <a href="https://scholar.google.com.br/citations?hl=pt-BR&authuser=1&user=mwcTdEEAAAAJ" target="_blank">Google Scholar</a> and <a
@@ -457,13 +470,13 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+            </div>
+        </section>
 
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
-        <div class="container">
+        <!-- Contact Section -->
+        <section id="contact" class="floating-modal contact-modal">
+            <div class="modal-glass-card">
+                <div class="container">
             <header class="text-center mb-5 gsap-fade-up">
                 <h2 class="display-5 fw-bold">Get in touch</h2>
                 <p class="lead">Have a question or want to work together?</p>
@@ -504,8 +517,10 @@
                     </form>
                 </div>
             </div>
-        </div>
-    </section>
+            </div>
+        </section>
+
+    </div><!-- End floating-modals-wrapper -->
 
     <!-- Footer -->
     <footer class="pt-5">
