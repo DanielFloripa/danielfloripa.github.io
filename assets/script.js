@@ -18,48 +18,46 @@ document.addEventListener('DOMContentLoaded', function() {
     if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
         gsap.registerPlugin(ScrollTrigger);
         
-        // Animate floating modals - each modal fades out as next one comes in
+        // Animate floating modals with proper bidirectional scrolling
         const modals = gsap.utils.toArray('.floating-modal');
         
         modals.forEach((modal, index) => {
             const card = modal.querySelector('.modal-glass-card');
+            if (!card) return;
             
-            // Entry animation
-            gsap.fromTo(card, 
-                {
-                    opacity: 0,
-                    y: 100,
-                    scale: 0.95
+            // Set initial state
+            gsap.set(card, { opacity: 0, y: 60 });
+            
+            // Entry animation - plays when entering viewport, reverses when leaving
+            ScrollTrigger.create({
+                trigger: modal,
+                start: 'top 85%',
+                end: 'top 20%',
+                onEnter: () => {
+                    gsap.to(card, {
+                        opacity: 1,
+                        y: 0,
+                        duration: 0.6,
+                        ease: 'power2.out'
+                    });
                 },
-                {
-                    opacity: 1,
-                    y: 0,
-                    scale: 1,
-                    duration: 0.8,
-                    ease: 'power2.out',
-                    scrollTrigger: {
-                        trigger: modal,
-                        start: 'top 80%',
-                        toggleActions: 'play none none reverse'
-                    }
+                onLeaveBack: () => {
+                    gsap.to(card, {
+                        opacity: 0,
+                        y: 60,
+                        duration: 0.4,
+                        ease: 'power2.in'
+                    });
+                },
+                onEnterBack: () => {
+                    gsap.to(card, {
+                        opacity: 1,
+                        y: 0,
+                        duration: 0.6,
+                        ease: 'power2.out'
+                    });
                 }
-            );
-            
-            // Exit animation - fade and scale back as user scrolls past
-            if (index < modals.length - 1) {
-                gsap.to(card, {
-                    opacity: 0.3,
-                    scale: 0.92,
-                    y: -30,
-                    ease: 'power2.in',
-                    scrollTrigger: {
-                        trigger: modal,
-                        start: 'bottom 40%',
-                        end: 'bottom 10%',
-                        scrub: 1
-                    }
-                });
-            }
+            });
         });
         
         // Animate all elements with gsap-fade-up class
