@@ -98,7 +98,92 @@ html {
 
 body {
   font-family: var(--font-family-primary) !important;
-  background-color: var(--gray-100);
+  background-color: var(--gray-100) !important;
+  min-height: 100vh;
+}
+
+main.py-12 {
+  padding-top: 0 !important;
+}
+
+/* ============================================
+   HERO SECTION - Dark background with transition
+   ============================================ */
+main > .max-w-7xl > .text-center.mb-12,
+main > .max-w-7xl > .text-center.mb-16 {
+  position: relative;
+  padding: 0 var(--space-4);
+  padding-top: 0;
+  margin: 0 calc(-50vw + 50%) 0;
+  padding-bottom: 120px;
+  margin-bottom: 3rem;
+  /* Dark gradient background */
+  background: linear-gradient(
+    180deg,
+    #283E51 0%,
+    #182544 15%,
+    #2d3a6a 40%,
+    #39348f 60%,
+    #6366f1 80%,
+    #a5b4fc 92%,
+    var(--gray-100) 100%
+  );
+}
+
+main > .max-w-7xl > .text-center.mb-12::before,
+main > .max-w-7xl > .text-center.mb-16::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(139, 92, 246, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 80% 60%, rgba(6, 182, 212, 0.2) 0%, transparent 50%);
+  pointer-events: none;
+  animation: float-bg 20s ease-in-out infinite;
+}
+
+@keyframes float-bg {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-10px) scale(1.01); }
+}
+
+/* Hero text colors */
+main > .max-w-7xl > .text-center.mb-12 h1,
+main > .max-w-7xl > .text-center.mb-16 h1,
+main > .max-w-7xl > .text-center.mb-12 .text-4xl,
+main > .max-w-7xl > .text-center.mb-16 .text-4xl {
+  color: var(--white) !important;
+  position: relative;
+  z-index: 1;
+}
+
+main > .max-w-7xl > .text-center.mb-12 p,
+main > .max-w-7xl > .text-center.mb-16 p {
+  color: var(--gray-200) !important;
+  position: relative;
+  z-index: 1;
+}
+
+main > .max-w-7xl > .text-center.mb-12 .capellaris-hero-logo,
+main > .max-w-7xl > .text-center.mb-16 .capellaris-hero-logo {
+  position: relative;
+  z-index: 1;
+}
+
+main > .max-w-7xl > .text-center.mb-12 .flex,
+main > .max-w-7xl > .text-center.mb-16 .flex {
+  position: relative;
+  z-index: 1;
+}
+
+/* Add spacing before H2 sections */
+main > .max-w-7xl > .mb-16:not(.text-center),
+main > .max-w-7xl > .mb-12:not(.text-center) {
+  margin-top: 4rem;
+}
+
+main > .max-w-7xl > div:nth-child(2) {
+  padding-top: 2rem;
 }
 
 /* ============================================
@@ -126,7 +211,7 @@ header h1 {
 }
 
 /* ============================================
-   SECTION STYLES (Override Tailwind)
+   SECTION STYLES
    ============================================ */
 .section-title {
   font-family: var(--font-family-primary) !important;
@@ -151,7 +236,7 @@ header h1 {
    ============================================ */
 .card {
   background-color: var(--white);
-  border-radius: var(--radius-xl) !important; /* Containers use --radius-xl */
+  border-radius: var(--radius-xl) !important;
   box-shadow: var(--shadow-md) !important;
   padding: var(--space-6);
   transition: all var(--duration-normal) var(--ease-out);
@@ -278,6 +363,41 @@ footer nav a:hover {
   color: var(--primary-800) !important;
   font-family: var(--font-family-primary);
   font-weight: 700;
+}
+
+/* ============================================
+   CAPELLARIS HERO LOGO
+   ============================================ */
+.capellaris-hero-logo {
+  position: relative;
+  display: inline-block;
+}
+
+.capellaris-hero-logo object,
+.capellaris-hero-logo img {
+  filter: 
+    drop-shadow(0 0 8px rgba(255, 255, 255, 0.6))
+    drop-shadow(0 0 20px rgba(6, 182, 212, 0.8))
+    drop-shadow(0 0 40px rgba(139, 92, 246, 0.6))
+    drop-shadow(0 0 60px rgba(6, 182, 212, 0.4));
+  animation: glow-pulse-logo 3s ease-in-out infinite;
+}
+
+@keyframes glow-pulse-logo {
+  0%, 100% {
+    filter: 
+      drop-shadow(0 0 8px rgba(255, 255, 255, 0.4))
+      drop-shadow(0 0 20px rgba(6, 182, 212, 0.6))
+      drop-shadow(0 0 40px rgba(139, 92, 246, 0.4))
+      drop-shadow(0 0 60px rgba(6, 182, 212, 0.3));
+  }
+  50% {
+    filter: 
+      drop-shadow(0 0 12px rgba(255, 255, 255, 0.8))
+      drop-shadow(0 0 30px rgba(6, 182, 212, 1))
+      drop-shadow(0 0 50px rgba(139, 92, 246, 0.8))
+      drop-shadow(0 0 80px rgba(6, 182, 212, 0.5));
+  }
 }
 
 /* ============================================
