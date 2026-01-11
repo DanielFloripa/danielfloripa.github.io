@@ -27,15 +27,19 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/ico/ms-icon-144x144.png">
 
+    <!-- External Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    
+    <!-- GSAP + ScrollTrigger for smooth animations -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- GSAP + ScrollTrigger for smooth animations -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 
     <!-- Design System Variables -->
     <link rel="stylesheet" href="design-system/variables.css">
@@ -62,13 +66,20 @@
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
+    <!-- Fixed Background Layer - Cosmic Universe -->
+    <div id="universe-bg">
+        <div id="universe-gradient"></div>
+        <div id="particles-js"></div>
+        <div id="scroll-fade-overlay"></div>
+    </div>
+
     <!-- Header -->
     <div id="header" class="fixed-top shadow-sm">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
                     <a class="navbar-brand d-flex align-items-center" href="index.html">
-                        <img src="assets/images/dsc_white.svg" alt="Daniel Camargo" class="rounded-circle me-2" width="40" height="40">
+                        <img src="assets/images/dsc_white.svg" alt="DSC" class="rounded-circle me-2" width="40" height="40">
                         <span>DSCamargo</span>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -81,19 +92,26 @@
                                     <i class="fas fa-home me-1"></i> Home
                                 </a>
                             </li>
+
+                            <!-- CV Navigation -->
                             <li class="nav-item">
-                                <a class="nav-link" href="capellaris/index.html">
-                                    <i class="fas fa-rocket me-1"></i> Capellaris
+                                <a class="nav-link" href="#profile">
+                                    <i class="fas fa-user me-1"></i> Profile
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="curriculum.html">
-                                    <i class="fas fa-comment-alt me-1"></i> Curriculum
+                                <a class="nav-link" href="#experience">
+                                    <i class="fas fa-briefcase me-1"></i> Experience
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://blog.dscamargo.com.br">
-                                    <i class="fas fa-edit me-1"></i> Blog
+                                <a class="nav-link" href="#skills">
+                                    <i class="fas fa-code me-1"></i> Skills
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#education">
+                                    <i class="fas fa-graduation-cap me-1"></i> Education
                                 </a>
                             </li>
                         </ul>
@@ -109,275 +127,278 @@
         </div>
     </div>
 
-    <!-- Curriculum Section -->
-    <section class="curriculum-section py-5 mt-5">
-        <div class="container">
-            <header class="text-center mb-5 gsap-fade-up">
-                <h1 class="display-4 fw-bold">Curriculum</h1>
-                <div class="d-flex justify-content-center gap-2 mt-4">
-                    <a href="files/cv_daniel_camargo.pdf" class="btn btn-outline-primary" target="_blank">
-                        <i class="fas fa-file-pdf me-2"></i>PDF View
-                    </a>
-                </div>
-            </header>
+    <!-- Floating Modals Container -->
+    <div class="floating-modals-wrapper">
 
-            <!-- Personal Info -->
-            <div class="card mb-4 shadow-sm gsap-fade-up">
-                <div class="card-body">
-                    <h2 class="card-title border-bottom pb-2"><i class="fas fa-user me-2 text-primary"></i>Daniel Scheidemantel Camargo</h2>
-                    <div class="row">
-                        <div class="col-md-3 text-center" style="align-content: center;">
-                            <img src="assets/images/me.jpg" class="img-fluid rounded-circle shadow" alt="Daniel Camargo" style="width: 128px;">
+        <!-- Personal Info Modal -->
+        <section id="profile" class="floating-modal cv-modal mt-5">
+            <div class="container position-relative z-index-1 text-center mt-5 ">
+                <h1 class="display-3 fw-bold mb-4 color-white">Curriculum Vitae</h1>
+                <p class="display-2 lead fw-bold mb-4 typewrite typewrite-mono" data-period="2000"
+                    data-type='[ "> Software Engineer_", "> Full Stack Developer_", "> AI-Powered Developement", "> Results-driven development_" ]'>
+                    <span class="wrap"></span>
+                </p>
+            </div>
+            <div class="modal-glass-card">
+                <div class="container">
+                    <h2 class="cv-section-title"><i class="fas fa-user me-2"></i>Daniel Scheidemantel Camargo</h2>
+                    <div class="row align-items-center">
+                        <div class="col-md-3 text-center mb-4 mb-md-0">
+                            <img src="assets/images/me.jpg" class="img-fluid rounded-circle cv-profile-img" alt="Daniel Camargo">
                         </div>
                         <div class="col-md-9">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><strong>Email:</strong> daniel at colmeia udesc br</li>
-                                <li class="list-group-item"><strong>Phone:</strong> +55 (47) 9 9967-5469</li>
-                                <li class="list-group-item"><strong>Location:</strong> Florianópolis, SC - Brazil</li>
-                                <li class="list-group-item"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/daniel13"
-                                        target="_blank">linkedin.com/in/daniel13</a></li>
-                                <li class="list-group-item"><strong>GitHub:</strong> <a href="https://github.com/danielfloripa"
-                                        target="_blank">github.com/danielfloripa</a></li>
+                            <div class="cv-info-grid">
+                                <div class="cv-info-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>daniel at colmeia udesc br</span>
+                                </div>
+                                <div class="cv-info-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>+55 (47) 9 9967-5469</span>
+                                </div>
+                                <div class="cv-info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Florianópolis, SC - Brazil</span>
+                                </div>
+                                <div class="cv-info-item">
+                                    <i class="fab fa-linkedin"></i>
+                                    <a href="https://www.linkedin.com/in/daniel13" target="_blank">linkedin.com/in/daniel13</a>
+                                </div>
+                                <div class="cv-info-item">
+                                    <i class="fab fa-github"></i>
+                                    <a href="https://github.com/danielfloripa" target="_blank">github.com/danielfloripa</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary Modal -->
+        <section id="summary" class="floating-modal cv-modal">
+            <div class="modal-glass-card">
+                <div class="container">
+                    <h2 class="cv-section-title"><i class="fas fa-file-alt me-2"></i>Professional Summary</h2>
+                    <p class="cv-text lead">Results-driven Software Engineer with 8+ years of experience in Software Development, Cloud Computing, DevOps, and System
+                        Integration. Passionate about creating efficient solutions that enhance user experience while maintaining high standards of quality and security.
+                        Strong background in project management and team leadership with a track record of successful product deliveries.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Modal -->
+        <section id="experience" class="floating-modal cv-modal cv-modal-large">
+            <div class="modal-glass-card">
+                <div class="container">
+                    <h2 class="cv-section-title"><i class="fas fa-briefcase me-2"></i>Professional Experience</h2>
+
+                    <div class="cv-timeline">
+                        <div class="cv-timeline-item">
+                            <div class="cv-job-header">
+                                <h4>Senior Software Engineer</h4>
+                                <span class="cv-badge-current">Current</span>
+                            </div>
+                            <h5 class="cv-company"><a href="https://www.mercadolivre.com.br" target="_blank">Mercado Livre</a></h5>
+                            <p class="cv-date">August 2025 - Present</p>
+                            <ul class="cv-list">
+                                <li>Systems for logistics in Python, Go and React.</li>
+                                <li>ETL pipelines, Data pipelines, analysis and science.</li>
+                                <li>Microservices and APIs in GCP Cloud Functions / Cloud Run / Docker.</li>
+                                <li>DevOps and cloud architecture management with Fury (GCP/AWS).</li>
+                            </ul>
+                        </div>
+
+                        <div class="cv-timeline-item">
+                            <div class="cv-job-header">
+                                <h4>Founder</h4>
+                                <span class="cv-badge-current">Current</span>
+                            </div>
+                            <h5 class="cv-company"><a href="capellaris/index.html" target="_blank">Capellaris AI</a></h5>
+                            <p class="cv-date">March 2025 - Present</p>
+                            <ul class="cv-list">
+                                <li>Development of AI-powered solutions for business intelligence and automation</li>
+                                <li>Lean Startup methodology and Agile development</li>
+                                <li>Designing system architecture for scalable AI agent management</li>
+                                <li>Implementing continuous deployment pipelines and development workflows</li>
+                                <li>Creating integrations with existing enterprise systems</li>
+                            </ul>
+                        </div>
+
+                        <div class="cv-timeline-item">
+                            <div class="cv-job-header">
+                                <h4>Senior Full Stack Developer</h4>
+                            </div>
+                            <h5 class="cv-company"><a href="https://www.buscaonibus.com.br" target="_blank">BuscaÔnibus</a></h5>
+                            <p class="cv-date">April 2021 - August 2025</p>
+                            <ul class="cv-list">
+                                <li>Full stack development Python (Django/Flask/FastAPI), React Native (mobile) and Node JS.</li>
+                                <li>Microservices and APIs in GCP Cloud Functions / Cloud Run / Docker.</li>
+                                <li>DevOps and cloud architecture management with GCP.</li>
+                                <li>Reduced infrastructure costs by 40% through optimization and serverless adoption</li>
+                            </ul>
+                        </div>
+
+                        <div class="cv-timeline-item">
+                            <div class="cv-job-header">
+                                <h4>Software Engineer (Integrations)</h4>
+                            </div>
+                            <h5 class="cv-company"><a href="https://www.portobelloshop.com.br" target="_blank">Portobello Shop</a></h5>
+                            <p class="cv-date">December 2019 - April 2021</p>
+                            <ul class="cv-list">
+                                <li>Development of simulators (Django, Postgres on Heroku)</li>
+                                <li>Python-based microservices (AWS, Azure, Kubernetes)</li>
+                                <li>Salesforce administrator and developer</li>
+                            </ul>
+                        </div>
+
+                        <div class="cv-timeline-item">
+                            <div class="cv-job-header">
+                                <h4>Full Stack Developer</h4>
+                            </div>
+                            <h5 class="cv-company"><a href="https://stormtecnologia.com.br" target="_blank">Stormtech</a></h5>
+                            <p class="cv-date">October 2018 - November 2019</p>
+                            <ul class="cv-list">
+                                <li>Development of banking RPA bots and web scrapers (Selenium, Scrapy)</li>
+                                <li>API development (Flask), AWS serverless architecture</li>
+                            </ul>
+                        </div>
+
+                        <div class="cv-timeline-item">
+                            <div class="cv-job-header">
+                                <h4>Research & Development</h4>
+                            </div>
+                            <h5 class="cv-company"><a href="http://www.cct.udesc.br" target="_blank">UDESC</a>: Colmeia & LabP2D</h5>
+                            <p class="cv-date">March 2012 - March 2018</p>
+                            <ul class="cv-list">
+                                <li>Developed energy monitoring solutions for data centers (GreenHop project)</li>
+                                <li>Created algorithms for virtual machine consolidation (CHAVE project)</li>
+                                <li>Published research papers in international conferences</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Summary -->
-            <div class="card mb-4 shadow-sm gsap-fade-up">
-                <div class="card-body">
-                    <h2 class="card-title border-bottom pb-2"><i class="fas fa-file-alt me-2 text-primary"></i>Professional Summary</h2>
-                    <p class="card-text">Results-driven Software Engineer with 8+ years of experience in Software Development, Cloud Computing, DevOps, and System
-                        Integration. Passionate about creating efficient solutions that enhance user experience while maintaining high standards of quality and security.
-                        Strong background in project management and team leadership with a track record of successful product deliveries.</p>
-                </div>
-            </div>
-
-            <!-- Experience -->
-            <div class="card mb-4 shadow-sm gsap-fade-up">
-                <div class="card-body">
-                    <h2 class="card-title border-bottom pb-2"><i class="fas fa-briefcase me-2 text-primary"></i>Professional Experience</h2>
-
-                    <div class="position-item mb-4 border-bottom">
-                        <div class="d-flex align-items-center mb-2">
-                            <h4 class="mb-0">Senior Software Engineer</h4>
-                            <span class="badge bg-primary ms-2">Current</span>
-                        </div>
-                        <h5><a href="https://www.mercadolivre.com.br" target="_blank">Mercado Livre</a></h5>
-                        <p class="text-muted">August 2025 - Present</p>
-                        <ul>
-                            <li>Development of systems for logistics in Python and Go. ETL pipelines, analysis and Data Science.</li>
-                        </ul>
-                    </div>
-
-                    <div class="position-item mb-4 border-bottom">
-                        <div class="d-flex align-items-center mb-2">
-                            <h4 class="mb-0">Founder</h4>
-                            <span class="badge bg-primary ms-2">Current</span>
-                        </div>
-                        <h5><a href="capellaris/index.html" target="_blank">Capellaris AI</a></h5>
-                        <p class="text-muted">March 2025 - Present</p>
-                        <ul>
-                            <li>Leading development of AI-powered solutions for business intelligence and automation</li>
-                            <li>Designing system architecture for scalable AI agent management</li>
-                            <li>Implementing continuous deployment pipelines and development workflows</li>
-                            <li>Creating integrations with existing enterprise systems</li>
-                        </ul>
-                    </div>
-
-                    <div class="position-item mb-4 border-bottom">
-                        <div class="d-flex align-items-center mb-2">
-                            <h4 class="mb-0">Senior Full Stack Developer</h4>
-                        </div>
-                        <h5> <a href="https://www.buscaonibus.com.br" target="_blank">BuscaÔnibus</a></h5>
-                        <p class="text-muted">April 2021 - August 2025</p>
-                        <ul>
-                            <li> Full stack development Python (Django/Flask/FastAPI), React Native (mobile) and Node JS.</li>
-                            <li> Microservices and APIs in GCP Cloud Functions / Cloud Run / Docker.</li>
-                            <li> DevOps and cloud architecture management with GCP.</li>
-                            <li> Database administration (relational and non-relational).</li>
-                            <li> Product innovation: data-selling API, support bot integrated with ChatGPT.</li>
-                            <li>Reduced infrastructure costs by 40% through optimization and serverless adoption</li>
-                        </ul>
-                    </div>
-
-                    <div class="position-item mb-4 border-bottom">
-                        <div class="d-flex align-items-center mb-2">
-                            <h4 class="mb-0">Software Engineer Developer (Integrations and Automation)</h4>
-                        </div>
-                        <h5> <a href="https://www.portobelloshop.com.br" target="_blank">Portobello Shop</a></h5>
-                        <p class="text-muted">December 2019 - April 2021</p>
-                        <ul>
-                            <li> Development of simulators (Django, Postgres on Heroku).</li>
-                            <li> Python-based microservices (AWS, Azure, Kubernetes).</li>
-                            <li> Salesforce administrator and developer.</li>
-                            <li> Data pipelines and automation using ETL (Pandas), Google Sheets integration.</li>
-                            <li> Tools: Bitbucket, Jira, Monday.</li>
-                        </ul>
-                    </div>
-
-                    <div class="position-item mb-4 border-bottom">
-                        <div class="d-flex align-items-center mb-2">
-                            <h4 class="mb-0">Full Stack Developer</h4>
-                        </div>
-                        <h5><a href="https://stormtecnologia.com.br" target="_blank">Stormtech</a></h5>
-                        <p class="text-muted">October 2018 - November 2019</p>
-                        <ul>
-                            <li> Development of banking RPA bots and web scrapers (Selenium, Scrapy).</li>
-                            <li> API development (Flask), AWS serverless architecture, cost optimization.</li>
-                            <li> Infrastructure using EC2, RDS, S3, Lambda, QuickSight, etc.</li>
-                            <li> Frontend and backend systems in HTML, JS, PHP.</li>
-                        </ul>
-                    </div>
-
-                    <div class="position-item mb-4 border-bottom">
-                        <div class="d-flex align-items-center mb-2">
-                            <h4 class="mb-0">Full Stack Developer</h4>
-                        </div>
-                        <h5><a href="http://www.reciclacomigo.com.br" target="_blank">Comigo</a></h5>
-                        <p class="text-muted">September 2016 - February 2018</p>
-                        <ul>
-                            <li>Cloud architect and embedded systems developer</li>
-                            <li>Postgres database management.</li>
-                            <li>Embedded system with Arduino and Raspberry Pi</li>
-                            <li>Computer Vision system with OpenCV</li>
-                            <li>Website development (front-end and back-end);</li>
-                        </ul>
-                    </div>
-
-                    <div class="position-item mb-4">
-                        <div class="d-flex align-items-center mb-2">
-                            <h4 class="mb-0">Research & Development</h4>
-                        </div>
-                        <h5><a href="http://www.cct.udesc.br" target="_blank">UDESC</a>: Colmeia & LabP2D</h5>
-                        <p class="text-muted">March 2012 - March 2018</p>
-                        <ul>
-                            <li>Developed energy monitoring solutions for data centers (GreenHop project)</li>
-                            <li>Created algorithms for virtual machine consolidation (CHAVE project)</li>
-                            <li>Published research papers in international conferences</li>
-                            <li>Mentored junior developers and graduate students</li>
-                            <li>Perform research on specific topics of the ‘Distributed Systems’ discipline</li>
-                            <li>Teacher assistant in the classroom, to apply assessments and classes in his absence</li>
-                            <li>Member of Distributed Parallel Processing Laboratory (LabP2D/UDESC)</li>
-                            <li>Deploy and management an Openstack Cloud based infrastructure for LabP2D</li>
-                            <li>Research and teacher assistant scholarship (Master degree)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Education -->
-            <div class="card mb-4 shadow-sm gsap-fade-up">
-                <div class="card-body">
-                    <h2 class="card-title border-bottom pb-2"><i class="fas fa-graduation-cap me-2 text-primary"></i>Education</h2>
-
-                    <div class="education-item mb-3  border-bottom">
-                        <h4>Master's Degree in Computer Science</h4>
-                        <h6>Santa Catarina State University (UDESC)</h6>
-                        <p class="text-muted">2016 - 2018</p>
-                        <p>Focus: Cloud Computing, Virtualization and Energy Efficiency</p>
-                    </div>
-
-                    <div class="education-item mb-3">
-                        <h4>Bachelor's Degree in Computer Science</h4>
-                        <h6>Santa Catarina State University (UDESC)</h6>
-                        <p class="text-muted">2011 - 2016</p>
-                        <p>Focus: Software Engineering and System Development</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Skills -->
-            <div class="card mb-4 shadow-sm gsap-fade-up">
-                <div class="card-body">
-                    <h2 class="card-title border-bottom pb-2"><i class="fas fa-code me-2 text-primary"></i>Skills</h2>
+        <!-- Skills Modal -->
+        <section id="skills" class="floating-modal cv-modal">
+            <div class="modal-glass-card">
+                <div class="container">
+                    <h2 class="cv-section-title"><i class="fas fa-code me-2"></i>Skills</h2>
 
                     <div class="row">
-                        <div class="col-md-4 mb-3">
-                            <h5>Programming Languages</h5>
-                            <span class="badge bg-secondary me-1 mb-1">JavaScript</span>
-                            <span class="badge bg-secondary me-1 mb-1">Python</span>
-                            <span class="badge bg-secondary me-1 mb-1">C/C++</span>
-                            <span class="badge bg-secondary me-1 mb-1">Shell Script</span>
+                        <div class="col-md-4 mb-4">
+                            <h5 class="cv-skill-title">Programming Languages</h5>
+                            <div class="cv-skill-badges">
+                                <span class="cv-badge">JavaScript</span>
+                                <span class="cv-badge">Python</span>
+                                <span class="cv-badge">C/C++</span>
+                                <span class="cv-badge">Shell Script</span>
+                            </div>
                         </div>
-                        <div class="col-md-4 mb-3">
-                            <h5>Frontend Technologies</h5>
-                            <span class="badge bg-secondary me-1 mb-1">React Native</span>
-                            <span class="badge bg-secondary me-1 mb-1">HTML5</span>
-                            <span class="badge bg-secondary me-1 mb-1">CSS3</span>
-                            <span class="badge bg-secondary me-1 mb-1">SASS</span>
+                        <div class="col-md-4 mb-4">
+                            <h5 class="cv-skill-title">Frontend Technologies</h5>
+                            <div class="cv-skill-badges">
+                                <span class="cv-badge">React Native</span>
+                                <span class="cv-badge">HTML5</span>
+                                <span class="cv-badge">CSS3</span>
+                                <span class="cv-badge">SASS</span>
+                            </div>
                         </div>
-                        <div class="col-md-4 mb-3">
-                            <h5>Backend Technologies</h5>
-                            <span class="badge bg-secondary me-1 mb-1">Django</span>
-                            <span class="badge bg-secondary me-1 mb-1">Flask/FastAPI</span>
-                            <span class="badge bg-secondary me-1 mb-1">Node.js</span>
+                        <div class="col-md-4 mb-4">
+                            <h5 class="cv-skill-title">Backend Technologies</h5>
+                            <div class="cv-skill-badges">
+                                <span class="cv-badge">Django</span>
+                                <span class="cv-badge">Flask/FastAPI</span>
+                                <span class="cv-badge">Node.js</span>
+                            </div>
                         </div>
-                        <div class="col-md-4 mb-3">
-                            <h5>Cloud & DevOps</h5>
-                            <span class="badge bg-secondary me-1 mb-1">GCP</span>
-                            <span class="badge bg-secondary me-1 mb-1">AWS</span>
-                            <span class="badge bg-secondary me-1 mb-1">Azure</span>
-                            <span class="badge bg-secondary me-1 mb-1">Docker</span>
+                        <div class="col-md-4 mb-4">
+                            <h5 class="cv-skill-title">Cloud & DevOps</h5>
+                            <div class="cv-skill-badges">
+                                <span class="cv-badge cv-badge-highlight">GCP</span>
+                                <span class="cv-badge cv-badge-highlight">AWS</span>
+                                <span class="cv-badge cv-badge-highlight">Azure</span>
+                                <span class="cv-badge">Docker</span>
+                            </div>
                         </div>
-                        <div class="col-md-4 mb-3">
-                            <h5>Databases</h5>
-                            <span class="badge bg-secondary me-1 mb-1">PostgreSQL</span>
-                            <span class="badge bg-secondary me-1 mb-1">MySQL</span>
-                            <span class="badge bg-secondary me-1 mb-1">Redis</span>
-                            <span class="badge bg-secondary me-1 mb-1">AWS DynamoDB</span>
-                            <span class="badge bg-secondary me-1 mb-1">GCP DataStore</span>
+                        <div class="col-md-4 mb-4">
+                            <h5 class="cv-skill-title">Databases</h5>
+                            <div class="cv-skill-badges">
+                                <span class="cv-badge">PostgreSQL</span>
+                                <span class="cv-badge">MySQL</span>
+                                <span class="cv-badge">Redis</span>
+                                <span class="cv-badge">DynamoDB</span>
+                            </div>
                         </div>
-                        <div class="col-md-4 mb-3">
-                            <h5>Other Skills</h5>
-                            <span class="badge bg-secondary me-1 mb-1">AI Integration</span>
-                            <span class="badge bg-secondary me-1 mb-1">System Design</span>
-                            <span class="badge bg-secondary me-1 mb-1">Agile Methodologies</span>
-                            <span class="badge bg-secondary me-1 mb-1">Technical Leadership</span>
-                            <span class="badge bg-secondary me-1 mb-1">Security Practices</span>
+                        <div class="col-md-4 mb-4">
+                            <h5 class="cv-skill-title">Other Skills</h5>
+                            <div class="cv-skill-badges">
+                                <span class="cv-badge cv-badge-highlight">AI Integration</span>
+                                <span class="cv-badge">System Design</span>
+                                <span class="cv-badge">Agile</span>
+                                <span class="cv-badge">Leadership</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Languages -->
-            <div class="card mb-4 shadow-sm gsap-fade-up">
-                <div class="card-body">
-                    <h2 class="card-title border-bottom pb-2"><i class="fas fa-language me-2 text-primary"></i>Languages</h2>
+        <!-- Languages & Certifications Modal -->
+        <section id="certifications" class="floating-modal cv-modal">
+            <div class="modal-glass-card">
+                <div class="container">
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="mb-3">
-                                <h5>Portuguese</h5>
-                                <div class="progress">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                                        Native</div>
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <h2 class="cv-section-title"><i class="fas fa-language me-2"></i>Languages</h2>
+                            <div class="cv-language-grid">
+                                <div class="cv-language-item">
+                                    <span class="cv-lang-name">Portuguese</span>
+                                    <div class="cv-progress-bar">
+                                        <div class="cv-progress-fill" style="width: 100%"></div>
+                                    </div>
+                                    <span class="cv-lang-level">Native</span>
+                                </div>
+                                <div class="cv-language-item">
+                                    <span class="cv-lang-name">English</span>
+                                    <div class="cv-progress-bar">
+                                        <div class="cv-progress-fill" style="width: 70%"></div>
+                                    </div>
+                                    <span class="cv-lang-level">Proficient</span>
+                                </div>
+                                <div class="cv-language-item">
+                                    <span class="cv-lang-name">French</span>
+                                    <div class="cv-progress-bar">
+                                        <div class="cv-progress-fill cv-progress-basic" style="width: 40%"></div>
+                                    </div>
+                                    <span class="cv-lang-level">Basic</span>
+                                </div>
+                                <div class="cv-language-item">
+                                    <span class="cv-lang-name">Spanish</span>
+                                    <div class="cv-progress-bar">
+                                        <div class="cv-progress-fill cv-progress-basic" style="width: 30%"></div>
+                                    </div>
+                                    <span class="cv-lang-level">Basic</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="mb-3">
-                                <h5>English</h5>
-                                <div class="progress">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                                        Proficient</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="mb-3">
-                                <h5>Spanish</h5>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">Basic
+                        <div class="col-lg-6">
+                            <h2 class="cv-section-title"><i class="fas fa-certificate me-2"></i>Certifications</h2>
+                            <div class="cv-cert-grid">
+                                <div class="cv-cert-item">
+                                    <i class="fas fa-award cv-cert-icon"></i>
+                                    <div>
+                                        <h5>AWS Solutions Architect</h5>
+                                        <p>Amazon Web Services, 2016</p>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="mb-3">
-                                <h5>French</h5>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">Basic
+                                <div class="cv-cert-item">
+                                    <i class="fas fa-award cv-cert-icon"></i>
+                                    <div>
+                                        <h5>Salesforce Administrator</h5>
+                                        <p>Salesforce, 2021</p>
                                     </div>
                                 </div>
                             </div>
@@ -385,67 +406,165 @@
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Certifications -->
-            <div class="card mb-4 shadow-sm gsap-fade-up">
-                <div class="card-body">
-                    <h2 class="card-title border-bottom pb-2"><i class="fas fa-certificate me-2 text-primary"></i>Certifications</h2>
+        <!-- Education Modal -->
+        <section id="education" class="floating-modal cv-modal">
+            <div class="modal-glass-card">
+                <div class="container">
+                    <h2 class="cv-section-title"><i class="fas fa-graduation-cap me-2"></i>Education</h2>
+                    <div class="cv-education-grid">
+                        <div class="cv-education-item">
+                            <h4>Master's Degree in Applied Computing</h4>
+                            <h6>Santa Catarina State University (UDESC)</h6>
+                            <p class="cv-date">2016 - 2018</p>
+                            <p class="cv-text">Focus: Cloud Computing, Virtualization and Energy Efficiency</p>
+                        </div>
 
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-award text-warning me-3 fa-2x"></i>
-                                <div>
-                                    <h5 class="mb-1">AWS Solutions Architect</h5>
-                                    <p class="text-muted mb-0">Amazon Web Services, 2016</p>
+                        <div class="cv-education-item">
+                            <h4>Bachelor's Degree in Computer Science</h4>
+                            <h6>Santa Catarina State University (UDESC)</h6>
+                            <p class="cv-date">2011 - 2016</p>
+                            <p class="cv-text">Focus: Software Engineering and System Development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Publications Modal -->
+        <section id="papers" class="floating-modal cv-modal cv-modal-large">
+            <div class="modal-glass-card">
+                <div class="container">
+                    <h2 class="cv-section-title"><i class="fas fa-book me-2"></i>All Publications</h2>
+                    <p class="cv-text mb-4">
+                        View more in 
+                        <a href="https://scholar.google.com.br/citations?hl=pt-BR&authuser=1&user=mwcTdEEAAAAJ" target="_blank">Google Scholar</a> and 
+                        <a href="bibtex-references/index.html">BibTeX references</a>
+                    </p>
+
+                    <div class="accordion" id="papersAccordion">
+                        <!-- Conference Papers -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingConference">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseConference" aria-expanded="true"
+                                    aria-controls="collapseConference">
+                                    <i class="fas fa-graduation-cap me-2"></i>Conference Papers
+                                </button>
+                            </h2>
+                            <div id="collapseConference" class="accordion-collapse collapse show" aria-labelledby="headingConference" data-bs-parent="#papersAccordion">
+                                <div class="accordion-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <a href="files/publications/2015_Camargo_ERAD-RS.pdf" class="fas fa-download"></a>
+                                            Automação climática em sala de servidores utilizando hardware livre - ERAD-RS (2015)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="files/publications/2015_Camargo_ERAD-RJ.pdf" class="fas fa-download"></a>
+                                            Monitoramento Ambiental Open Source para Data Center - ERAD-RJ (2015)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="files/publications/2015_Camargo_SIC.pdf" class="fas fa-download"></a>
+                                            Sensoriamento em sala de servidores baseado em software e hardware livres - SIC UDESC (2015)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="files/publications/2015_Camargo_Latinoware.pdf" class="fas fa-download"></a>
+                                            Automação climática em sala de servidores utilizando hardware livre - Latinoware (2015)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="files/publications/2015_Camargo_COTB.pdf" class="fas fa-download"></a>
+                                            Sensoriamento climático em sala de servidores utilizando soluções de software e hardware livre - COTB (2015)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="files/publications/2016_Camargo_CLEI.pdf" class="fas fa-download"></a>
+                                            GreenHop: Open source PUE continuous monitoring for small and medium data centers - IEEE-CLEI (2016)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="files/publications/2016_Camargo_ERAD-RS.pdf" class="fas fa-download"></a>
+                                            Automação climática em sala de servidores utilizando hardware livre - ERAD-RS (2016)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="files/publications/2016_Camargo_CRICTE.pdf" class="fas fa-download"></a>
+                                            GreenHop: Environmental and power monitoring small size data centers - CRICTE (2016)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="files/publications/2016_Camargo_SCCC.pdf" class="fas fa-download"></a>
+                                            GreenHop: Open source environmental monitoring for small and medium data centers - IEEE-SCCC (2016)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="files/publications/2016_Camargo_SIC.pdf" class="fas fa-download"></a>
+                                            Sensoriamento em sala de servidores baseado em software e hardware livres - SIC UDESC (2016)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="files/publications/2016_TCC_dissertation.pdf" class="fas fa-download"></a>
+                                            Sensoriamento e automação climática em sala de servidores utilizando software e hardware livre - UDESC dissertation (2016)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="files/publications/2017_Camargo_ERAD-RS.pdf" class="fas fa-download"></a>
+                                            Uma Proposta de Orquestração de Nuvem Computacional Baseada em Consolidação, Elasticidade e Disponibilidade - ERAD-RS (2017)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="files/publications/2017_Camargo_RITA.pdf" class="fas fa-download"></a>
+                                            MeHarCEn: A Method of Harmonizing Energy Consumption in Data Centers - RITA (2017)
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 mb-3">
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-award text-warning me-3 fa-2x"></i>
-                                <div>
-                                    <h5 class="mb-1">Salesforce Administrator</h5>
-                                    <p class="text-muted mb-0">Salesforce, 2021</p>
+
+                        <!-- Research Papers -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingResearch">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseResearch" aria-expanded="false"
+                                    aria-controls="collapseResearch">
+                                    <i class="fas fa-flask me-2"></i>Research Papers
+                                </button>
+                            </h2>
+                            <div id="collapseResearch" class="accordion-collapse collapse" aria-labelledby="headingResearch" data-bs-parent="#papersAccordion">
+                                <div class="accordion-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <a href="files/works/2016_GS.pdf" class="fas fa-download"></a>
+                                            Análise envoltória de dados para eficiência energética e termal em processadores de alto desempenho - GS (2016)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="files/works/2016_OGRC.pdf" class="fas fa-download"></a>
+                                            Internet of Things: Survey About Management Solutions - OGRC (2016)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="files/works/2016_PAA.pdf" class="fas fa-download"></a>
+                                            Problema Bin Packing com Abordagem Heurística First Fit Decreasing - PAA (2016)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="files/works/2016_SDA.pdf" class="fas fa-download"></a>
+                                            Análise da consolidação de máquinas virtuais nos equipamentos de rede - SDA (2016)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="files/works/2017_MEP.pdf" class="fas fa-download"></a>
+                                            Consolidação de máquinas virtuais com alta disponibilidade: uma revisão bibliográfica sistemática - MEP (2017)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="files/works/2017_REC.pdf" class="fas fa-download"></a>
+                                            Uma ferramenta para análise do impacto da migração de máquinas virtuais - REC (2017)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="files/works/2017-DEP.pdf" class="fas fa-download"></a>
+                                            CHAVE: Consolidation with High Availability on Virtualized Environments - DEP (2017)
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="files/works/2017_DEP_Presentation.pdf" class="fas fa-download"></a>
+                                            Presentation "CHAVE: Consolidation with High Availability on Virtualized Environments" - DEP Presentation (2017)
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Publications -->
-            <div class="card shadow-sm gsap-fade-up">
-                <div class="card-body">
-                    <h2 class="card-title border-bottom pb-2"><i class="fas fa-book me-2 text-primary"></i>Selected Publications</h2>
-
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <h5>GreenHop: Open source PUE continuous monitoring for small and medium data centers</h5>
-                            <p class="mb-1">IEEE-CLEI 2016 - XLII Latin American Computing Conference</p>
-                            <a href="files/publications/2016_Camargo_CLEI.pdf" class="btn btn-sm btn-outline-primary mt-2">
-                                <i class="fas fa-download me-1"></i>Download PDF
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <h5>MeHarCEn: A Method of Harmonizing Energy Consumption in Data Centers</h5>
-                            <p class="mb-1">RITA - Revista de Informática Teórica e Aplicada, 2017</p>
-                            <a href="files/publications/2017_Camargo_RITA.pdf" class="btn btn-sm btn-outline-primary mt-2">
-                                <i class="fas fa-download me-1"></i>Download PDF
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <h5>CHAVE: Consolidation with High Availability on Virtualized Environments</h5>
-                            <p class="mb-1">Master's Dissertation, UDESC, 2018</p>
-                            <a href="files/works/2017-DEP.pdf" class="btn btn-sm btn-outline-primary mt-2">
-                                <i class="fas fa-download me-1"></i>Download PDF
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div><!-- End floating-modals-wrapper -->
 
     <!-- Footer -->
     <footer class="pt-5">

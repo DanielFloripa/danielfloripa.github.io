@@ -137,6 +137,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: var(--space-4);
 }
 
+h1.color-white {
+  color: var(--gray-300 );
+}
+
 p {
   margin-bottom: var(--space-4);
   line-height: 1.7;
@@ -1035,6 +1039,329 @@ footer .fab {
 footer .fab:hover {
   color: var(--primary-400) !important;
   transform: scale(1.15);
+}
+
+/* ============================================
+   CURRICULUM PAGE - CV Modals
+   ============================================ */
+.cv-modal .modal-glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.cv-modal-large .modal-glass-card {
+  padding: var(--space-12) var(--space-8);
+}
+
+.cv-section-title {
+  color: var(--white);
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: var(--space-8);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.cv-section-title i {
+  color: var(--cyan-400);
+}
+
+.cv-text {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.8;
+}
+
+/* Profile Section */
+.cv-profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cv-info-grid {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.cv-info-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-md);
+  color: rgba(255, 255, 255, 0.9);
+  transition: background var(--duration-fast) var(--ease-out);
+}
+
+.cv-info-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.cv-info-item i {
+  color: var(--cyan-400);
+  width: 20px;
+  text-align: center;
+}
+
+.cv-info-item a {
+  color: var(--cyan-400);
+}
+
+.cv-info-item a:hover {
+  color: var(--cyan-300);
+}
+
+/* Timeline / Experience */
+.cv-timeline {
+  position: relative;
+}
+
+.cv-timeline-item {
+  position: relative;
+  padding-left: var(--space-8);
+  padding-bottom: var(--space-8);
+  border-left: 2px solid rgba(6, 182, 212, 0.3);
+}
+
+.cv-timeline-item:last-child {
+  padding-bottom: 0;
+  border-left-color: transparent;
+}
+
+.cv-timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  background: var(--cyan-500);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(6, 182, 212, 0.5);
+}
+
+.cv-job-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-2);
+}
+
+.cv-job-header h4 {
+  color: var(--white);
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.cv-badge-current {
+  background: var(--gradient-innovation);
+  color: var(--white);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cv-company {
+  color: var(--cyan-400);
+  font-size: 1rem;
+  margin-bottom: var(--space-2);
+}
+
+.cv-company a {
+  color: var(--cyan-400);
+}
+
+.cv-company a:hover {
+  color: var(--cyan-300);
+}
+
+.cv-date {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  margin-bottom: var(--space-3);
+}
+
+.cv-list {
+  color: rgba(255, 255, 255, 0.85);
+  padding-left: var(--space-5);
+  margin: 0;
+}
+
+.cv-list li {
+  margin-bottom: var(--space-2);
+}
+
+/* Education */
+.cv-education-grid {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.cv-education-item h4 {
+  color: var(--white);
+  margin-bottom: var(--space-2);
+}
+
+.cv-education-item h6 {
+  color: var(--cyan-400);
+  font-weight: 500;
+  margin-bottom: var(--space-2);
+}
+
+/* Skills */
+.cv-skill-title {
+  color: var(--white);
+  font-size: 1rem;
+  margin-bottom: var(--space-3);
+}
+
+.cv-skill-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.cv-badge {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.cv-badge:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.cv-badge-highlight {
+  background: rgba(6, 182, 212, 0.2);
+  border-color: rgba(6, 182, 212, 0.3);
+  color: var(--cyan-300);
+}
+
+.cv-badge-highlight:hover {
+  background: rgba(6, 182, 212, 0.3);
+  border-color: rgba(6, 182, 212, 0.5);
+}
+
+/* Languages */
+.cv-language-grid {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.cv-language-item {
+  display: grid;
+  grid-template-columns: 100px 1fr 80px;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.cv-lang-name {
+  color: var(--white);
+  font-weight: 500;
+}
+
+.cv-progress-bar {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.cv-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--cyan-500), var(--violet-500));
+  border-radius: var(--radius-full);
+  transition: width 0.5s ease-out;
+}
+
+.cv-progress-basic {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.cv-lang-level {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+  text-align: right;
+}
+
+/* Certifications */
+.cv-cert-grid {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.cv-cert-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-lg);
+  transition: background var(--duration-fast) var(--ease-out);
+}
+
+.cv-cert-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.cv-cert-icon {
+  font-size: 2rem;
+  color: #fbbf24; /* amber/gold */
+}
+
+.cv-cert-item h5 {
+  color: var(--white);
+  margin: 0 0 var(--space-1) 0;
+  font-size: 1rem;
+}
+
+.cv-cert-item p {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Publications */
+.cv-publications {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.cv-pub-item {
+  padding: var(--space-5);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.cv-pub-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.cv-pub-item h5 {
+  color: var(--white);
+  margin-bottom: var(--space-2);
+  font-size: 1.1rem;
+}
+
+.cv-pub-item p {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: var(--space-3);
 }
 
 /* ============================================
