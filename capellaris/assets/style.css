@@ -147,11 +147,11 @@ header h1 {
 }
 
 /* ============================================
-   CARDS
+   CARDS - Containers use --radius-xl
    ============================================ */
 .card {
   background-color: var(--white);
-  border-radius: var(--radius-lg) !important;
+  border-radius: var(--radius-xl) !important; /* Containers use --radius-xl */
   box-shadow: var(--shadow-md) !important;
   padding: var(--space-6);
   transition: all var(--duration-normal) var(--ease-out);
@@ -163,13 +163,13 @@ header h1 {
 }
 
 /* ============================================
-   BUTTONS
+   BUTTONS - All buttons use --radius-full
    ============================================ */
 .btn-primary {
   background: var(--primary-600) !important;
   color: var(--white);
   padding: var(--space-2) var(--space-4);
-  border-radius: var(--radius-md) !important;
+  border-radius: var(--radius-full) !important; /* SEMPRE redondo */
   font-family: var(--font-family-primary);
   font-weight: 500;
   transition: all var(--duration-normal) var(--ease-out);

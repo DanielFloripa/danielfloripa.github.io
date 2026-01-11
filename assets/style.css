@@ -174,12 +174,12 @@ code, pre {
 }
 
 /* ============================================
-   BUTTONS
+   BUTTONS - All buttons use --radius-full
    ============================================ */
 .btn {
   font-family: var(--font-family-primary);
   font-weight: 500;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-full); /* SEMPRE redondo */
   transition: all var(--duration-normal) var(--ease-out);
 }
 
@@ -187,6 +187,7 @@ code, pre {
   background-color: var(--primary-600);
   border-color: var(--primary-600);
   color: var(--white);
+  border-radius: var(--radius-full); /* SEMPRE redondo */
 }
 
 .btn-primary:hover {
@@ -209,10 +210,24 @@ code, pre {
 .btn-outline-light {
   border-width: 2px;
   font-weight: 600;
+  border-radius: var(--radius-full); /* SEMPRE redondo */
 }
 
 .btn-outline-light:hover {
   transform: translateY(-2px);
+}
+
+.btn-outline-primary {
+  border-radius: var(--radius-full); /* SEMPRE redondo */
+  border-width: 2px;
+}
+
+.btn-outline-primary:hover {
+  transform: translateY(-2px);
+}
+
+.btn-outline-dark {
+  border-radius: var(--radius-full); /* SEMPRE redondo */
 }
 
 /* Innovation Button (Gradient) */
@@ -314,7 +329,13 @@ code, pre {
 .hero {
   position: relative;
   height: 100vh;
-  background: var(--gradient-primary);
+  background: linear-gradient(
+    180deg,
+    var(--primary-600) 0%,
+    var(--primary-700) 30%,
+    var(--primary-800) 70%,
+    #283E51 100%           /* Matches Capellaris start */
+  );
   overflow: hidden;
 }
 
@@ -371,8 +392,16 @@ code, pre {
    ============================================ */
 .capellaris-section {
   position: relative;
-  padding: var(--space-20) 0;
-  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+  padding: var(--space-20) 0 calc(var(--space-20) + 60px);
+  background: linear-gradient(
+    180deg,
+    #283E51 0%,           /* From hero gradient */
+    #182544 10%,          /* Main dark area */
+    #39348f 40%,          /* Purple tint */
+    #405686 70%,          /* Back to dark */
+    #354a6f 90%,          /* Transition start */
+    #274280 100%          /* End - matches portfolio start */
+  );
   overflow: hidden;
 }
 
@@ -553,6 +582,48 @@ code, pre {
 }
 
 /* ============================================
+   SECTION TRANSITIONS - Smooth gradient flow
+   ============================================ */
+.section-transition {
+  position: relative;
+}
+
+/* Portfolio Section - Light gray with transitions */
+#portfolio {
+  background: linear-gradient(
+    180deg,
+    #274280 0%,           /* From Capellaris dark */
+    #3a5278 5%,           /* Transition zone */
+    var(--gray-100) 8%,  /* Fade to light gray */
+    var(--gray-100) 85%,  /* Main content area */
+    var(--gray-200) 95%,  /* Transition to papers */
+    var(--gray-50) 100%
+  );
+}
+
+/* Papers Section - Alternating light */
+#papers {
+  background: linear-gradient(
+    180deg,
+    var(--gray-50) 0%,
+    var(--white) 10%,
+    var(--white) 90%,
+    var(--gray-100) 100%
+  );
+}
+
+/* Contact Section - Smooth transition from papers */
+#contact {
+  background: linear-gradient(
+    180deg,
+    var(--gray-100) 0%,
+    var(--gray-50) 10%,
+    var(--gray-50) 85%,
+    var(--gray-200) 100%
+  ) !important;
+}
+
+/* ============================================
    PORTFOLIO SECTION
    ============================================ */
 .portfolio-swiper {
@@ -700,9 +771,15 @@ code, pre {
    FOOTER
    ============================================ */
 footer {
-  background-color: var(--gray-800);
+  background: linear-gradient(
+    180deg,
+    var(--gray-200) 0%,
+    var(--gray-700) 8%,
+    var(--gray-800) 15%,
+    var(--gray-800) 100%
+  );
   color: rgba(255, 255, 255, 0.7);
-  padding: var(--space-12) 0 var(--space-8);
+  padding: calc(var(--space-12) + 40px) 0 var(--space-8);
 }
 
 footer h5 {
