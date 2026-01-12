@@ -11,81 +11,18 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Capellaris" />
     <link rel="manifest" href="assets/site.webmanifest" />
-    <script src="assets/js/menu-toggle.js"></script>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <!-- Design System Styles -->
     <link rel="stylesheet" href="assets/style.css">
-    <style>
-        .section-title {
-            font-size: 1.875rem;
-            font-weight: 700;
-            color: #1a202c;
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid #4299e1;
-        }
-
-        .subsection-title {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #2d3748;
-            margin-bottom: 1rem;
-        }
-
-        .card {
-            background-color: white;
-            border-radius: 0.5rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 1.5rem;
-        }
-
-        .code-block {
-            background-color: #f7fafc;
-            border-radius: 0.375rem;
-            padding: 1rem;
-            overflow-x: auto;
-            font-family: monospace;
-            font-size: 0.875rem;
-            color: #1a202c;
-        }
-
-        .btn-primary {
-            background-color: #4299e1;
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 0.375rem;
-            font-weight: 500;
-            transition: background-color 0.2s;
-        }
-
-        .btn-primary:hover {
-            background-color: #3182ce;
-        }
-
-        .dark-mode {
-            background-color: #1a202c;
-            color: #e2e8f0;
-        }
-
-        .dark-mode .section-title {
-            color: #f7fafc;
-            border-bottom-color: #4299e1;
-        }
-
-        .dark-mode .subsection-title {
-            color: #e2e8f0;
-        }
-
-        .dark-mode .card {
-            background-color: #2d3748;
-            color: #e2e8f0;
-        }
-
-        .dark-mode .code-block {
-            background-color: #1a202c;
-            color: #e2e8f0;
-        }
-    </style>
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
@@ -96,69 +33,66 @@
                 j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-WXLHS7J8');</script>
-    <!-- End Google Tag Manager -->
 </head>
 
-<body class="bg-gray-100">
+<body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXLHS7J8" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-    <body class="bg-gray-100">
-        <header class="bg-white shadow-md">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-                <nav class="flex items-center justify-between flex-wrap">
-                    <div class="flex items-center pr-6">
-                        <a class="flex justify-center pr-3" href="../index.html">
-                            <img src="../assets/images/dsc_white.svg" alt="Daniel Camargo" class="rounded-circle me-2" width="40" height="40">
-                        </a>
-                        <a class="flex justify-center" href="index.html">
-                            <img src="../assets/images/capellaris_v3.svg" alt="Capellaris Logo" class="h-8 w-8 mr-2">
-                            <h1 class="text-2xl font-bold text-gray-900">Capellaris</h1>
-                        </a>
-                    </div>
-                    <div class="block lg:hidden ml-auto">
-                        <button id="menu-toggle" class="flex items-center px-3 py-2 border rounded">
-                            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <title>Menu</title>
-                                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div id="mobile-menu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden">
-                        <div class="text-sm lg:flex lg:flex-grow justify-end">
-                            <a href="index.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Início</a>
-                            <a href="arquitetura.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Arquitetura</a>
-                            <a href="agentes.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Agentes</a>
-                            <a href="aprendizado.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Aprendizado</a>
-                            <a href="integracao.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Integração</a>
-                            <a href="documentacao.html"
-                                class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Documentação</a>
-                            <a href="https://capellaris.dscamargo.com.br"
-                                class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 text-gray-600 hover:text-gray-900">Demo</a>
+    <!-- Header - Home Style -->
+    <div id="header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                        <img src="../assets/images/dsc_white.svg" alt="Daniel Camargo" class="rounded-circle me-2" width="40" height="40">
+                    </a>
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <img src="../assets/images/capellaris_v3.svg" alt="Capellaris" width="32" height="32" class="me-2">
+                        <span>Capellaris</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i> Início</a></li>
+                            <li class="nav-item"><a class="nav-link" href="arquitetura.html"><i class="fas fa-sitemap me-1"></i> Arquitetura</a></li>
+                            <li class="nav-item"><a class="nav-link" href="agentes.html"><i class="fas fa-robot me-1"></i> Agentes</a></li>
+                            <li class="nav-item"><a class="nav-link" href="aprendizado.html"><i class="fas fa-brain me-1"></i> Aprendizado</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="integracao.html"><i class="fas fa-plug me-1"></i> Integração</a></li>
+                            <li class="nav-item"><a class="nav-link" href="documentacao.html"><i class="fas fa-book me-1"></i> Docs</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://capellaris.dscamargo.com.br" target="_blank"><i class="fas fa-external-link-alt me-1"></i> Demo</a></li>
+                        </ul>
+                        <div class="d-flex ms-3 social-icons">
+                            <a href="http://github.com/danielfloripa" class="me-2 text-light"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/daniel13" class="me-2 text-light"><i class="fab fa-linkedin"></i></a>
                         </div>
                     </div>
-                </nav>
-            </div>
-        </header>
-
-
-        <main class="py-12">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <!-- Header -->
-                <div class="text-center mb-12">
-                    <div class="flex justify-center mb-6">
-                        <div class="capellaris-hero-logo">
-                            <object type="image/svg+xml" data="../assets/images/capellaris-animated.svg" class="w-24 h-24 md:w-32 md:h-32" aria-label="Capellaris Logo">
-                                <img src="../assets/images/capellaris.svg" alt="Capellaris" class="w-24 h-24 md:w-32 md:h-32" />
-                            </object>
-                        </div>
-                    </div>
-                    <h1 class="text-4xl font-bold text-gray-900 mb-4">
-                        Integração com Chat
-                    </h1>
-                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Conheça como o Capellaris se integra com plataformas de chat
-                        como Slack e Microsoft Teams, permitindo interações naturais com os agentes.
-                    </p>
                 </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section hero-internal">
+        <div class="hero-bg"><div class="hero-gradient"></div></div>
+        <div class="hero-content gsap-fade-up">
+            <div class="capellaris-hero-logo mb-3">
+                <object type="image/svg+xml" data="../assets/images/capellaris-animated.svg" class="w-24 h-24 mx-auto" aria-label="Capellaris Logo">
+                    <img src="../assets/images/capellaris.svg" alt="Capellaris" class="w-24 h-24" />
+                </object>
+            </div>
+            <h1 class="text-3xl md:text-4xl font-bold mb-3">Integração com Chat</h1>
+            <p class="text-lg max-w-2xl mx-auto opacity-90">
+                Conheça como o Capellaris se integra com plataformas de chat
+                como Slack e Microsoft Teams, permitindo interações naturais com os agentes.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
                 <!-- Integration Overview -->
                 <div class="mb-16">
@@ -791,6 +725,28 @@ def request_approval(self, task_id, task_description, agent_id, platform, channe
                 </div>
             </div>
         </footer>
-    </body>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const header = document.getElementById('header');
+            if (header) {
+                window.addEventListener('scroll', () => {
+                    header.classList.toggle('scrolled', window.scrollY > 50);
+                });
+            }
+            if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+                gsap.registerPlugin(ScrollTrigger);
+                gsap.utils.toArray('.gsap-fade-up').forEach((el) => {
+                    gsap.fromTo(el, { opacity: 0, y: 50 }, {
+                        opacity: 1, y: 0, duration: 0.8, ease: 'power2.out',
+                        scrollTrigger: { trigger: el, start: 'top 85%', toggleActions: 'play none none none' }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 
 </html>

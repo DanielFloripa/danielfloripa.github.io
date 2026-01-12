@@ -3,9 +3,25 @@
  * Capellaris - Design System Styles
  * Based on DSCamargo Design System v1.0
  * ============================================
+ * 
+ * CONTRAST GUIDELINES (WCAG 2.1 AA):
+ * - Normal text: minimum 4.5:1 ratio
+ * - Large text (18pt+ or 14pt bold): minimum 3:1 ratio
+ * 
+ * SAFE COMBINATIONS:
+ * - Dark backgrounds (--primary-800, --gray-800, --gray-900): use --white or --gray-100
+ * - Light backgrounds (--white, --gray-100, --gray-200): use --gray-800 or --gray-900
+ * - Gradient backgrounds: ensure text color works with darkest part
+ * 
+ * AVOID:
+ * - White text on light backgrounds
+ * - Dark text on dark backgrounds
+ * - Low opacity text on any background
+ * ============================================
  */
 
-/* Typography - Helvetica Neue System Stack (no external import needed) */
+/* Import shared design system variables */
+@import url('../../design-system/variables.css');
 
 :root {
   /* Colors - Primary Blue */
@@ -98,91 +114,321 @@ html {
 
 body {
   font-family: var(--font-family-primary) !important;
-  background-color: var(--gray-100) !important;
+  background-color: var(--white) !important;
   min-height: 100vh;
 }
 
-main.py-12 {
+main {
   padding-top: 0 !important;
 }
 
 /* ============================================
-   HERO SECTION - Dark background with transition
+   CONTRAST SAFETY RULES
+   Ensures text is always readable
    ============================================ */
-main > .max-w-7xl > .text-center.mb-12,
-main > .max-w-7xl > .text-center.mb-16 {
+
+/* Dark backgrounds -> Light text */
+[class*="bg-gray-800"],
+[class*="bg-gray-900"],
+[class*="bg-blue-600"],
+[class*="bg-blue-700"],
+[class*="bg-blue-800"],
+[class*="bg-primary"],
+.dark-bg {
+  color: var(--white);
+}
+
+[class*="bg-gray-800"] h1,
+[class*="bg-gray-800"] h2,
+[class*="bg-gray-800"] h3,
+[class*="bg-gray-800"] h4,
+[class*="bg-gray-800"] p,
+[class*="bg-gray-900"] h1,
+[class*="bg-gray-900"] h2,
+[class*="bg-gray-900"] h3,
+[class*="bg-gray-900"] h4,
+[class*="bg-gray-900"] p {
+  color: var(--white) !important;
+}
+
+/* Light backgrounds -> Dark text */
+[class*="bg-white"],
+[class*="bg-gray-100"],
+[class*="bg-gray-50"],
+.light-bg {
+  color: var(--gray-900);
+}
+
+[class*="bg-white"] h1,
+[class*="bg-white"] h2,
+[class*="bg-white"] h3,
+[class*="bg-gray-100"] h1,
+[class*="bg-gray-100"] h2,
+[class*="bg-gray-100"] h3 {
+  color: var(--gray-900) !important;
+}
+
+/* Button contrast rules - use specific selectors to avoid conflicts */
+.main-content .btn-primary,
+.content-section .btn-primary,
+.cta-section .btn-primary {
+  color: var(--white) !important;
+}
+
+.main-content .btn-secondary,
+.content-section .btn-secondary {
+  color: var(--gray-800) !important;
+  background: var(--white) !important;
+}
+
+/* ============================================
+   HEADER - Home Style (Fixed, Dark)
+   ============================================ */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: linear-gradient(180deg, rgba(40, 62, 81, 0.95) 0%, rgba(40, 62, 81, 0.85) 100%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+#header.scrolled {
+  background: rgba(40, 62, 81, 0.98);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+#header .navbar {
+  padding: 0.75rem 0;
+}
+
+#header .navbar-brand {
+  color: var(--white);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#header .navbar-brand img {
+  border-radius: 50%;
+}
+
+/* Capellaris logo in header - make it white */
+#header .navbar-brand img[alt="Capellaris"] {
+  filter: brightness(0) invert(1);
+  border-radius: 0;
+}
+
+#header .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color 0.2s ease;
+}
+
+#header .nav-link:hover {
+  color: var(--cyan-400);
+}
+
+#header .nav-link.active {
+  color: var(--cyan-400);
+}
+
+#header .social-icons a {
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.2s ease;
+}
+
+#header .social-icons a:hover {
+  color: var(--cyan-400);
+}
+
+/* Mobile menu toggle */
+#header .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.3);
+  padding: 0.25rem 0.5rem;
+}
+
+#header .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.85%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ============================================
+   HERO SECTION - Particles with gradient to white
+   ============================================ */
+.hero-section {
   position: relative;
-  padding: 0 var(--space-4);
-  padding-top: 0;
-  margin: 0 calc(-50vw + 50%) 0;
-  padding-bottom: 120px;
-  margin-bottom: 3rem;
-  /* Dark gradient background */
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px; /* Account for fixed header */
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.hero-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: linear-gradient(
     180deg,
-    #283E51 0%,
-    #182544 15%,
-    #2d3a6a 40%,
-    #39348f 60%,
-    #6366f1 80%,
-    #a5b4fc 92%,
-    var(--gray-100) 100%
+    #0a0f1a 0%,
+    #2a4575 40%,
+    #2a4575 60%,
+    #556c94 80%,
+    var(--white) 100%
+  );
+  z-index: 1;
+}
+
+.hero-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%; /* Only show particles in dark area */
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-content h1 {
+  color: var(--white) !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+  color: rgba(255, 255, 255, 0.9) !important;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content .btn-primary {
+  background: var(--gradient-innovation) !important;
+  border: none;
+  box-shadow: 0 4px 20px rgba(139, 92, 246, 0.4);
+  color: var(--white) !important; /* Ensure contrast on gradient */
+}
+
+.hero-content .btn-secondary {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 1);
+  color: var(--gray-800);
+  font-weight: 600;
+}
+
+.hero-content .btn-secondary:hover {
+  background: var(--white);
+  color: var(--gray-900);
+}
+
+/* Internal pages - smaller hero */
+.hero-internal {
+  min-height: 50vh;
+}
+
+.hero-internal .hero-gradient {
+  background: linear-gradient(
+    180deg,
+    #0a0f1a 0%,
+    #2a4575 40%,
+    #2a4575 60%,
+    #556c94 80%,
+    var(--white) 100%
   );
 }
 
-main > .max-w-7xl > .text-center.mb-12::before,
-main > .max-w-7xl > .text-center.mb-16::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: 
-    radial-gradient(circle at 20% 30%, rgba(139, 92, 246, 0.2) 0%, transparent 50%),
-    radial-gradient(circle at 80% 60%, rgba(6, 182, 212, 0.2) 0%, transparent 50%);
-  pointer-events: none;
-  animation: float-bg 20s ease-in-out infinite;
+.hero-internal .capellaris-hero-logo object,
+.hero-internal .capellaris-hero-logo img {
+  width: 96px !important;
+  height: 96px !important;
 }
 
-@keyframes float-bg {
-  0%, 100% { transform: translateY(0) scale(1); }
-  50% { transform: translateY(-10px) scale(1.01); }
-}
-
-/* Hero text colors */
-main > .max-w-7xl > .text-center.mb-12 h1,
-main > .max-w-7xl > .text-center.mb-16 h1,
-main > .max-w-7xl > .text-center.mb-12 .text-4xl,
-main > .max-w-7xl > .text-center.mb-16 .text-4xl {
-  color: var(--white) !important;
+/* Main content area */
+.main-content {
+  background: var(--white);
   position: relative;
   z-index: 1;
 }
 
-main > .max-w-7xl > .text-center.mb-12 p,
-main > .max-w-7xl > .text-center.mb-16 p {
-  color: var(--gray-200) !important;
+/* Section title for internal pages */
+.section-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary-500);
+}
+
+.subsection-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--gray-700);
+  margin-bottom: 1rem;
+}
+
+/* Card styles for internal pages */
+.card {
+  background-color: var(--white);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  border: 1px solid var(--gray-200);
+}
+
+/* Code block */
+.code-block {
+  background-color: var(--gray-50);
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+  overflow-x: auto;
+  font-family: var(--font-family-mono);
+  font-size: 0.875rem;
+  color: var(--gray-900);
+}
+
+/* ============================================
+   MAIN CONTENT AREA
+   ============================================ */
+.main-content {
+  background: var(--white);
   position: relative;
   z-index: 1;
 }
 
-main > .max-w-7xl > .text-center.mb-12 .capellaris-hero-logo,
-main > .max-w-7xl > .text-center.mb-16 .capellaris-hero-logo {
-  position: relative;
-  z-index: 1;
+.main-content .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
-main > .max-w-7xl > .text-center.mb-12 .flex,
-main > .max-w-7xl > .text-center.mb-16 .flex {
-  position: relative;
-  z-index: 1;
+/* Section spacing */
+.content-section {
+  padding: 4rem 0;
 }
 
-/* Add spacing before H2 sections */
-main > .max-w-7xl > .mb-16:not(.text-center),
-main > .max-w-7xl > .mb-12:not(.text-center) {
-  margin-top: 4rem;
-}
-
-main > .max-w-7xl > div:nth-child(2) {
+.content-section:first-child {
   padding-top: 2rem;
 }
 
@@ -198,17 +444,7 @@ p, span, a, li {
   font-family: var(--font-family-primary);
 }
 
-/* ============================================
-   HEADER
-   ============================================ */
-header {
-  background: var(--white) !important;
-  box-shadow: var(--shadow-md) !important;
-}
-
-header h1 {
-  color: var(--gray-900) !important;
-}
+/* Old header styles removed - using #header instead */
 
 /* ============================================
    SECTION STYLES
@@ -340,8 +576,39 @@ footer nav a:hover {
 /* ============================================
    CTA SECTION
    ============================================ */
-.bg-blue-600 {
+.bg-blue-600,
+.cta-section {
   background: var(--gradient-primary) !important;
+}
+
+/* Ensure text contrast in CTA sections */
+.bg-blue-600 h2,
+.bg-blue-600 h3,
+.bg-blue-600 p,
+.bg-blue-600 span,
+.cta-section h2,
+.cta-section h3,
+.cta-section p,
+.cta-section span {
+  color: var(--white) !important;
+}
+
+.bg-blue-600 a:not(.btn-primary):not(.btn-secondary),
+.cta-section a:not(.btn-primary):not(.btn-secondary) {
+  color: var(--white) !important;
+}
+
+/* CTA buttons with proper contrast */
+.bg-blue-600 .bg-white,
+.cta-section .btn-light {
+  background: var(--white) !important;
+  color: var(--primary-700) !important;
+}
+
+.bg-blue-600 .bg-blue-800,
+.cta-section .btn-dark {
+  background: var(--primary-800) !important;
+  color: var(--white) !important;
 }
 
 /* ============================================
