@@ -536,6 +536,7 @@ code, pre {
     radial-gradient(circle at 80% 20%, rgba(6, 182, 212, 0.15) 0%, transparent 50%),
     radial-gradient(circle at 40% 40%, rgba(236, 72, 153, 0.1) 0%, transparent 40%);
   animation: float-bg 20s ease-in-out infinite;
+  pointer-events: none; /* Prevent blocking clicks on buttons */
 }
 
 @keyframes float-bg {
@@ -603,6 +604,7 @@ code, pre {
   border-radius: 50%;
   animation: pulse-glow 4s ease-in-out infinite;
   z-index: 1;
+  pointer-events: none; /* Prevent blocking clicks */
 }
 
 @keyframes pulse-glow {

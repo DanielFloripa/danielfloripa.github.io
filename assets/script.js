@@ -13,6 +13,74 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Document ready!');
     
     // ============================================
+    // LAZY LOADING - Load heavy assets after page render
+    // ============================================
+    
+    // Lazy load particles.js library
+    function loadParticlesJS() {
+        if (document.getElementById('particles-js') && typeof particlesJS === 'undefined') {
+            const script = document.createElement('script');
+            script.src = 'https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js';
+            script.onload = function() {
+                console.log('particles.js loaded');
+                particlesJS.load('particles-js', 'assets/particles.json', function() {
+                    console.log('particles.js config loaded');
+                });
+            };
+            document.head.appendChild(script);
+        } else if (typeof particlesJS !== 'undefined') {
+            // Already loaded (e.g., from cache)
+            particlesJS.load('particles-js', 'assets/particles.json');
+        }
+    }
+    
+    // Lazy load SVG objects using Intersection Observer
+    function lazyLoadSVGs() {
+        const lazySvgs = document.querySelectorAll('object.lazy-svg[data-src]');
+        
+        if ('IntersectionObserver' in window) {
+            const svgObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const obj = entry.target;
+                        const src = obj.getAttribute('data-src');
+                        if (src) {
+                            obj.setAttribute('data', src);
+                            obj.removeAttribute('data-src');
+                            obj.classList.remove('lazy-svg');
+                            console.log('Lazy loaded SVG:', src);
+                        }
+                        observer.unobserve(obj);
+                    }
+                });
+            }, {
+                rootMargin: '200px 0px', // Start loading 200px before visible
+                threshold: 0.01
+            });
+            
+            lazySvgs.forEach(svg => svgObserver.observe(svg));
+        } else {
+            // Fallback for older browsers
+            lazySvgs.forEach(obj => {
+                const src = obj.getAttribute('data-src');
+                if (src) {
+                    obj.setAttribute('data', src);
+                    obj.removeAttribute('data-src');
+                }
+            });
+        }
+    }
+    
+    // Initialize lazy loading after a short delay to prioritize critical content
+    requestAnimationFrame(() => {
+        // Load particles.js after first paint
+        setTimeout(loadParticlesJS, 100);
+        
+        // Setup SVG lazy loading immediately
+        lazyLoadSVGs();
+    });
+    
+    // ============================================
     // GSAP ScrollTrigger Animations
     // ============================================
     if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
@@ -25,27 +93,29 @@ document.addEventListener('DOMContentLoaded', function() {
             const card = modal.querySelector('.modal-glass-card');
             if (!card) return;
             
-            // Set initial state
-            gsap.set(card, { opacity: 0, y: 60 });
+            // Set initial state - use transform only, keep visible for anchor links
+            gsap.set(card, { opacity: 0.3, y: 40, scale: 0.98 });
             
             // Entry animation - plays when entering viewport, reverses when leaving
             ScrollTrigger.create({
                 trigger: modal,
-                start: 'top 85%',
+                start: 'top 90%',
                 end: 'top 20%',
                 onEnter: () => {
                     gsap.to(card, {
                         opacity: 1,
                         y: 0,
-                        duration: 0.6,
+                        scale: 1,
+                        duration: 0.7,
                         ease: 'power2.out'
                     });
                 },
                 onLeaveBack: () => {
                     gsap.to(card, {
-                        opacity: 0,
-                        y: 60,
-                        duration: 0.4,
+                        opacity: 0.3,
+                        y: 40,
+                        scale: 0.98,
+                        duration: 0.5,
                         ease: 'power2.in'
                     });
                 },
@@ -53,7 +123,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     gsap.to(card, {
                         opacity: 1,
                         y: 0,
-                        duration: 0.6,
+                        scale: 1,
+                        duration: 0.7,
                         ease: 'power2.out'
                     });
                 }
@@ -144,12 +215,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.warn('Swiper not loaded');
     }
     
-    // Initialize particles.js
-    if (document.getElementById('particles-js')) {
-        particlesJS.load('particles-js', 'assets/particles.json', function() {
-            console.log('Particles.js loaded');
-        });
-    }
+    // particles.js is now lazy loaded at the top of this file
     
     // Typewriter effect
     class TxtType {
@@ -217,8 +283,12 @@ document.addEventListener('DOMContentLoaded', function() {
             
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
+                // Use getBoundingClientRect for accurate position regardless of nesting
+                const headerHeight = document.getElementById('header')?.offsetHeight || 80;
+                const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY; // Extra 20px padding
+                
                 window.scrollTo({
-                    top: targetElement.offsetTop - 80,
+                    top: elementPosition - headerHeight + 20,
                     behavior: 'smooth'
                 });
             }
