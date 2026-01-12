@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
             script.src = 'https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js';
             script.onload = function() {
                 console.log('particles.js loaded');
-                particlesJS.load('particles-js', 'assets/particles.json', function() {
+        particlesJS.load('particles-js', 'assets/particles.json', function() {
                     console.log('particles.js config loaded');
                 });
             };
@@ -71,10 +71,60 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
+    // ============================================
+    // PROGRESS BAR ANIMATION - Languages section
+    // ============================================
+    function animateProgressBars() {
+        const languageGrid = document.querySelector('.cv-language-grid');
+        if (!languageGrid) return;
+        
+        const progressBars = languageGrid.querySelectorAll('.cv-progress-fill');
+        if (progressBars.length === 0) return;
+        
+        // Store target widths and reset bars to 0
+        progressBars.forEach(bar => {
+            const targetWidth = bar.style.getPropertyValue('--target-width');
+            bar.dataset.targetWidth = targetWidth;
+            bar.style.width = '0';
+        });
+        
+        if ('IntersectionObserver' in window) {
+            const progressObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Animate all bars in the grid when grid becomes visible
+                        progressBars.forEach((bar, index) => {
+                            const targetWidth = bar.dataset.targetWidth || '0%';
+                            // Small delay to ensure transition works
+                            setTimeout(() => {
+                                bar.style.width = targetWidth;
+                            }, 50 + (index * 150)); // Stagger animation
+                        });
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.2,
+                rootMargin: '0px 0px -50px 0px'
+            });
+            
+            progressObserver.observe(languageGrid);
+            console.log('Progress bar animation initialized for', progressBars.length, 'bars');
+        } else {
+            // Fallback for browsers without IntersectionObserver
+            progressBars.forEach(bar => {
+                bar.style.width = bar.dataset.targetWidth || '0%';
+            });
+        }
+    }
+    
     // Initialize lazy loading after a short delay to prioritize critical content
     requestAnimationFrame(() => {
         // Load particles.js after first paint
         setTimeout(loadParticlesJS, 100);
+        
+        // Initialize progress bar animations
+        animateProgressBars();
         
         // Setup SVG lazy loading immediately
         lazyLoadSVGs();
@@ -307,9 +357,9 @@ document.addEventListener('DOMContentLoaded', function() {
             // Header effect
             if (header) {
                 if (scrollY > 100) {
-                    header.classList.add('scrolled');
-                } else {
-                    header.classList.remove('scrolled');
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
                 }
             }
             
