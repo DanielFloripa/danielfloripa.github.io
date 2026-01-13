@@ -23,6 +23,8 @@
     <!-- GSAP -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <!-- Mermaid -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
@@ -38,7 +40,7 @@
 <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXLHS7J8" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-    <!-- Header - Home Style -->
+    <!-- Header -->
     <div id="header" class="fixed-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark">
@@ -47,7 +49,7 @@
                         <img src="../assets/images/dsc_white.svg" alt="Daniel Camargo" class="rounded-circle me-2" width="40" height="40">
                     </a>
                     <a class="navbar-brand d-flex align-items-center" href="index.html">
-                        <img src="../assets/images/capellaris_v3.svg" alt="Capellaris" width="32" height="32" class="me-2">
+                        <img src="../assets/images/capellaris_v3.svg" alt="Capellaris" width="32" height="32" class="me-2 header-capellaris-logo">
                         <span>Capellaris</span>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -84,7 +86,7 @@
             </div>
             <h1 class="text-3xl md:text-4xl font-bold mb-3">Sistema de Aprendizado</h1>
             <p class="text-lg max-w-2xl mx-auto opacity-90">
-                Conheça como o Capellaris aprende e melhora continuamente
+                Descubra como o Capellaris aprende e melhora continuamente 
                 com base no histórico de interações e feedback recebido.
             </p>
         </div>
@@ -94,549 +96,385 @@
     <main class="main-content">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
-                <!-- Learning System Overview -->
-                <div class="mb-16">
-                    <h2 class="section-title">Visão Geral do Sistema de Aprendizado</h2>
-                    <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
-                        <p class="text-gray-600 mb-6">
-                            O Sistema de Aprendizado é um componente fundamental do Capellaris,
-                            permitindo que os agentes melhorem continuamente com base em suas interações anteriores. Este sistema
-                            armazena, analisa e utiliza o histórico de prompts e respostas para otimizar o desempenho dos agentes
-                            ao longo do tempo.
-                        </p>
+            <!-- Overview -->
+            <section class="mb-16 gsap-fade-up">
+                <h2 class="section-title">Visão Geral do Sistema de Aprendizado</h2>
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                    <p class="text-gray-600 mb-6">
+                        O Sistema de Aprendizado é o componente que permite aos agentes evoluírem 
+                        continuamente. Ele armazena, analisa e utiliza o histórico de interações 
+                        para otimizar o desempenho dos agentes ao longo do tempo.
+                    </p>
 
-                        <div class="bg-blue-50 p-6 rounded-lg mb-8">
-                            <h3 class="text-xl font-semibold text-blue-800 mb-4">Principais Objetivos</h3>
-                            <ul class="list-disc pl-5 text-gray-600 space-y-2">
-                                <li><span class="font-medium">Melhoria Contínua:</span> Permitir que os agentes melhorem suas respostas com base em experiências
-                                    anteriores.</li>
-                                <li><span class="font-medium">Personalização:</span> Adaptar o comportamento dos agentes às necessidades específicas de cada organização.
-                                </li>
-                                <li><span class="font-medium">Otimização de Prompts:</span> Refinar automaticamente os prompts para obter melhores resultados dos modelos
-                                    de linguagem.</li>
-                                <li><span class="font-medium">Identificação de Padrões:</span> Descobrir padrões e tendências nas interações para melhorar o desempenho
-                                    geral.</li>
-                                <li><span class="font-medium">Retenção de Conhecimento:</span> Armazenar e reutilizar conhecimento adquirido em interações anteriores.
-                                </li>
-                            </ul>
+                    <!-- Learning Cycle Diagram -->
+                    <div class="bg-blue-50 p-6 rounded-lg mb-8">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-4">Ciclo de Aprendizado Contínuo</h3>
+                        <div class="mermaid-container bg-white p-4 rounded-lg border border-blue-200">
+                            <pre class="mermaid">
+graph LR
+    A[📥 Coleta de<br/>Interações] --> B[💾 Armazenamento<br/>Estruturado]
+    B --> C[🔍 Análise de<br/>Padrões]
+    C --> D[⚡ Otimização de<br/>Prompts]
+    D --> E[🚀 Aplicação do<br/>Conhecimento]
+    E --> F[📊 Feedback e<br/>Avaliação]
+    F --> A
+    
+    style A fill:#e3f2fd
+    style C fill:#fff3e0
+    style E fill:#e8f5e9
+                            </pre>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-blue-50 p-4 rounded-lg text-center">
+                            <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i class="fas fa-database text-blue-600 text-2xl"></i>
+                            </div>
+                            <h3 class="font-semibold text-blue-800 mb-2">Armazenamento</h3>
+                            <p class="text-gray-600 text-sm">
+                                Registro estruturado de todas as interações, prompts, respostas e feedback.
+                            </p>
                         </div>
 
-                        <p class="text-gray-600 mb-6">
-                            O Sistema de Aprendizado implementa um ciclo de feedback contínuo que permite que os agentes
-                            se adaptem e evoluam ao longo do tempo, tornando-se cada vez mais eficientes e precisos em
-                            suas respostas e recomendações.
-                        </p>
+                        <div class="bg-green-50 p-4 rounded-lg text-center">
+                            <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i class="fas fa-chart-bar text-green-600 text-2xl"></i>
+                            </div>
+                            <h3 class="font-semibold text-green-800 mb-2">Análise</h3>
+                            <p class="text-gray-600 text-sm">
+                                Processamento do histórico para identificar padrões e oportunidades.
+                            </p>
+                        </div>
 
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                            <div class="bg-blue-50 p-4 rounded-lg">
-                                <h3 class="font-semibold text-blue-800 mb-2">Armazenamento</h3>
-                                <p class="text-gray-600">
-                                    Registro estruturado de todas as interações, incluindo prompts, respostas e feedback.
+                        <div class="bg-purple-50 p-4 rounded-lg text-center">
+                            <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <i class="fas fa-magic text-purple-600 text-2xl"></i>
+                            </div>
+                            <h3 class="font-semibold text-purple-800 mb-2">Aplicação</h3>
+                            <p class="text-gray-600 text-sm">
+                                Utilização do conhecimento para otimizar prompts e melhorar respostas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Components -->
+            <section class="mb-16 gsap-fade-up">
+                <h2 class="section-title">Componentes do Sistema</h2>
+
+                <div class="space-y-6">
+                    <!-- Knowledge Base -->
+                    <div class="card">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-server text-blue-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">Base de Conhecimento</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            A memória do sistema. Armazena todas as interações entre agentes e usuários, 
+                            incluindo prompts, respostas, feedback e metadados associados.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="bg-gray-50 p-3 rounded-lg">
+                                <div class="flex items-center mb-2">
+                                    <i class="fas fa-layer-group text-blue-500 mr-2"></i>
+                                    <span class="font-medium text-gray-700">Armazenamento Estruturado</span>
+                                </div>
+                                <p class="text-gray-600 text-sm">Dados organizados por agente, domínio e tipo de tarefa</p>
+                            </div>
+                            <div class="bg-gray-50 p-3 rounded-lg">
+                                <div class="flex items-center mb-2">
+                                    <i class="fas fa-search text-green-500 mr-2"></i>
+                                    <span class="font-medium text-gray-700">Indexação Eficiente</span>
+                                </div>
+                                <p class="text-gray-600 text-sm">Busca rápida por interações relevantes</p>
+                            </div>
+                            <div class="bg-gray-50 p-3 rounded-lg">
+                                <div class="flex items-center mb-2">
+                                    <i class="fas fa-history text-purple-500 mr-2"></i>
+                                    <span class="font-medium text-gray-700">Versionamento</span>
+                                </div>
+                                <p class="text-gray-600 text-sm">Rastreamento de mudanças e evolução de prompts</p>
+                            </div>
+                            <div class="bg-gray-50 p-3 rounded-lg">
+                                <div class="flex items-center mb-2">
+                                    <i class="fas fa-shield-alt text-red-500 mr-2"></i>
+                                    <span class="font-medium text-gray-700">Privacidade</span>
+                                </div>
+                                <p class="text-gray-600 text-sm">Proteção de dados sensíveis e conformidade</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pattern Analyzer -->
+                    <div class="card">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-microscope text-green-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">Analisador de Padrões</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Examina o histórico de interações para identificar padrões, tendências 
+                            e correlações que podem melhorar o desempenho dos agentes.
+                        </p>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <div class="mermaid-container">
+                                <pre class="mermaid">
+graph LR
+    A[📝 Histórico] --> B[🔎 Identificação<br/>de Padrões]
+    B --> C[📊 Análise de<br/>Eficácia]
+    C --> D[🏷️ Extração de<br/>Tópicos]
+    D --> E[😊 Análise de<br/>Sentimento]
+    E --> F[⚠️ Detecção de<br/>Anomalias]
+    F --> G[📈 Insights]
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Prompt Optimizer -->
+                    <div class="card">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-bolt text-purple-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">Otimizador de Prompts</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Utiliza os insights do Analisador de Padrões para melhorar a qualidade 
+                            dos prompts, gerando respostas mais precisas e relevantes.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                            <div class="flex items-center bg-purple-50 p-3 rounded-lg">
+                                <i class="fas fa-edit text-purple-600 mr-2"></i>
+                                <span class="text-gray-700 text-sm">Reformulação de Prompts</span>
+                            </div>
+                            <div class="flex items-center bg-purple-50 p-3 rounded-lg">
+                                <i class="fas fa-plus-circle text-purple-600 mr-2"></i>
+                                <span class="text-gray-700 text-sm">Adição de Contexto</span>
+                            </div>
+                            <div class="flex items-center bg-purple-50 p-3 rounded-lg">
+                                <i class="fas fa-align-left text-purple-600 mr-2"></i>
+                                <span class="text-gray-700 text-sm">Especificação de Formato</span>
+                            </div>
+                            <div class="flex items-center bg-purple-50 p-3 rounded-lg">
+                                <i class="fas fa-sliders-h text-purple-600 mr-2"></i>
+                                <span class="text-gray-700 text-sm">Ajuste de Parâmetros</span>
+                            </div>
+                            <div class="flex items-center bg-purple-50 p-3 rounded-lg">
+                                <i class="fas fa-vials text-purple-600 mr-2"></i>
+                                <span class="text-gray-700 text-sm">Testes A/B</span>
+                            </div>
+                            <div class="flex items-center bg-purple-50 p-3 rounded-lg">
+                                <i class="fas fa-check-double text-purple-600 mr-2"></i>
+                                <span class="text-gray-700 text-sm">Validação Contínua</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Learning Process -->
+            <section class="mb-16 gsap-fade-up">
+                <h2 class="section-title">Processo de Aprendizado</h2>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                    <p class="text-gray-600 mb-6">
+                        O processo de aprendizado segue um ciclo contínuo que permite a melhoria 
+                        constante do desempenho dos agentes através de várias etapas interconectadas.
+                    </p>
+
+                    <!-- Step by Step -->
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">1</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Coleta de Dados</h4>
+                                <p class="text-gray-600 text-sm">Todas as interações são registradas, incluindo prompts, respostas, feedback e contexto.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">2</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Armazenamento Estruturado</h4>
+                                <p class="text-gray-600 text-sm">Os dados são organizados na Base de Conhecimento com indexação adequada.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">3</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Análise de Padrões</h4>
+                                <p class="text-gray-600 text-sm">O sistema examina o histórico para identificar tendências e oportunidades.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">4</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Otimização de Prompts</h4>
+                                <p class="text-gray-600 text-sm">Com base nos insights, os prompts são refinados automaticamente.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">5</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Aplicação do Conhecimento</h4>
+                                <p class="text-gray-600 text-sm">O conhecimento adquirido é aplicado em novas interações.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">6</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Feedback e Avaliação</h4>
+                                <p class="text-gray-600 text-sm">As novas interações são avaliadas, alimentando o ciclo novamente.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Example -->
+                    <div class="bg-yellow-50 p-6 rounded-lg border border-yellow-200">
+                        <h3 class="text-lg font-semibold text-yellow-800 mb-4 flex items-center">
+                            <i class="fas fa-lightbulb mr-2"></i>
+                            Exemplo: Otimização de Análise de Marketing
+                        </h3>
+                        <div class="mermaid-container bg-white p-4 rounded-lg">
+                            <pre class="mermaid">
+flowchart TB
+    A["👤 Usuário solicita:<br/>'Analise nossa campanha de email'"] --> B["🤖 Agente fornece<br/>análise básica"]
+    B --> C["❌ Usuário: 'Faltou<br/>info de segmentação'"]
+    C --> D["💾 Sistema armazena<br/>interação + feedback"]
+    D --> E["🔍 Análise identifica:<br/>campanhas precisam<br/>incluir segmentação"]
+    E --> F["⚡ Prompt otimizado:<br/>'Analise incluindo<br/>métricas e segmentação'"]
+    F --> G["✅ Novas solicitações<br/>similares recebem<br/>análises completas"]
+    
+    style A fill:#fff3e0
+    style G fill:#e8f5e9
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Metrics -->
+            <section class="gsap-fade-up">
+                <h2 class="section-title">Métricas de Aprendizado</h2>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800 mb-4 flex items-center">
+                                <i class="fas fa-tachometer-alt text-blue-600 mr-2"></i>
+                                Métricas de Desempenho
+                            </h3>
+                            <div class="space-y-3">
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                    <span class="text-gray-700">Taxa de Satisfação</span>
+                                    <span class="text-green-600 font-semibold">📊 Feedback positivo</span>
+                                </div>
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                    <span class="text-gray-700">Taxa de Rejeição</span>
+                                    <span class="text-red-600 font-semibold">📉 Respostas rejeitadas</span>
+                                </div>
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                    <span class="text-gray-700">Tempo de Resposta</span>
+                                    <span class="text-blue-600 font-semibold">⏱️ Latência média</span>
+                                </div>
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                    <span class="text-gray-700">Precisão</span>
+                                    <span class="text-purple-600 font-semibold">🎯 Acurácia</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800 mb-4 flex items-center">
+                                <i class="fas fa-graduation-cap text-green-600 mr-2"></i>
+                                Métricas de Evolução
+                            </h3>
+                            <div class="space-y-3">
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                    <span class="text-gray-700">Taxa de Melhoria</span>
+                                    <span class="text-green-600 font-semibold">📈 Progresso</span>
+                                </div>
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                    <span class="text-gray-700">Eficácia de Otimização</span>
+                                    <span class="text-blue-600 font-semibold">⚡ Impacto</span>
+                                </div>
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                    <span class="text-gray-700">Cobertura de Domínio</span>
+                                    <span class="text-purple-600 font-semibold">🌐 Amplitude</span>
+                                </div>
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                                    <span class="text-gray-700">Adaptabilidade</span>
+                                    <span class="text-yellow-600 font-semibold">🔄 Flexibilidade</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 bg-blue-50 p-4 rounded-lg border border-blue-200">
+                        <div class="flex items-start">
+                            <i class="fas fa-info-circle text-blue-600 text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-blue-800 mb-1">Transparência e Controle</h4>
+                                <p class="text-gray-600 text-sm">
+                                    Todas as otimizações são testadas e validadas antes de serem implementadas. 
+                                    O sistema mantém um registro completo de todas as mudanças, garantindo 
+                                    transparência e permitindo reversão quando necessário.
                                 </p>
                             </div>
-
-                            <div class="bg-green-50 p-4 rounded-lg">
-                                <h3 class="font-semibold text-green-800 mb-2">Análise</h3>
-                                <p class="text-gray-600">
-                                    Processamento e análise do histórico para identificar padrões e oportunidades de melhoria.
-                                </p>
-                            </div>
-
-                            <div class="bg-purple-50 p-4 rounded-lg">
-                                <h3 class="font-semibold text-purple-800 mb-2">Aplicação</h3>
-                                <p class="text-gray-600">
-                                    Utilização do conhecimento adquirido para otimizar prompts e melhorar respostas futuras.
-                                </p>
-                            </div>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <!-- Components -->
-                <div class="mb-16">
-                    <h2 class="section-title">Componentes do Sistema de Aprendizado</h2>
+        </div>
+    </main>
 
-                    <div class="space-y-8">
-                        <!-- Knowledge Base -->
-                        <div class="card">
-                            <div class="flex items-center mb-4">
-                                <div class="bg-blue-100 p-3 rounded-full mr-4">
-                                    <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                                    </svg>
-                                </div>
-                                <h3 class="text-xl font-semibold">Base de Conhecimento</h3>
-                            </div>
-                            <p class="text-gray-600 mb-4">
-                                A Base de Conhecimento é responsável por armazenar todas as interações entre os agentes e os usuários,
-                                incluindo prompts, respostas, feedback e metadados associados. Ela serve como a memória do sistema,
-                                permitindo que os agentes aprendam com experiências passadas.
-                            </p>
-                            <div class="bg-gray-50 p-4 rounded-lg">
-                                <h4 class="font-medium text-gray-800 mb-2">Principais Características:</h4>
-                                <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                                    <li><span class="font-medium">Armazenamento Estruturado:</span> Dados organizados por agente, domínio, tipo de tarefa, etc.</li>
-                                    <li><span class="font-medium">Indexação Eficiente:</span> Busca rápida por interações relevantes</li>
-                                    <li><span class="font-medium">Versionamento:</span> Rastreamento de mudanças e evolução de prompts</li>
-                                    <li><span class="font-medium">Metadados Ricos:</span> Contexto, tags, classificações e outros dados auxiliares</li>
-                                    <li><span class="font-medium">Privacidade e Segurança:</span> Proteção de dados sensíveis e conformidade com regulamentações</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Pattern Analyzer -->
-                        <div class="card">
-                            <div class="flex items-center mb-4">
-                                <div class="bg-green-100 p-3 rounded-full mr-4">
-                                    <svg class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                                    </svg>
-                                </div>
-                                <h3 class="text-xl font-semibold">Analisador de Padrões</h3>
-                            </div>
-                            <p class="text-gray-600 mb-4">
-                                O Analisador de Padrões examina o histórico de interações para identificar padrões, tendências
-                                e correlações que podem ser utilizados para melhorar o desempenho dos agentes. Ele utiliza técnicas
-                                de processamento de linguagem natural e aprendizado de máquina para extrair insights valiosos.
-                            </p>
-                            <div class="bg-gray-50 p-4 rounded-lg">
-                                <h4 class="font-medium text-gray-800 mb-2">Principais Funcionalidades:</h4>
-                                <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                                    <li><span class="font-medium">Identificação de Padrões:</span> Descoberta de padrões recorrentes em prompts e respostas</li>
-                                    <li><span class="font-medium">Análise de Eficácia:</span> Avaliação da eficácia de diferentes abordagens e formulações</li>
-                                    <li><span class="font-medium">Extração de Tópicos:</span> Identificação de temas e tópicos comuns nas interações</li>
-                                    <li><span class="font-medium">Análise de Sentimento:</span> Avaliação da satisfação do usuário com as respostas</li>
-                                    <li><span class="font-medium">Detecção de Anomalias:</span> Identificação de casos atípicos que podem requerer atenção especial</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Prompt Optimizer -->
-                        <div class="card">
-                            <div class="flex items-center mb-4">
-                                <div class="bg-purple-100 p-3 rounded-full mr-4">
-                                    <svg class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                                    </svg>
-                                </div>
-                                <h3 class="text-xl font-semibold">Otimizador de Prompts</h3>
-                            </div>
-                            <p class="text-gray-600 mb-4">
-                                O Otimizador de Prompts utiliza os insights gerados pelo Analisador de Padrões para melhorar
-                                a qualidade dos prompts enviados aos modelos de linguagem. Ele refina automaticamente os prompts
-                                para obter respostas mais precisas, relevantes e úteis.
-                            </p>
-                            <div class="bg-gray-50 p-4 rounded-lg">
-                                <h4 class="font-medium text-gray-800 mb-2">Principais Técnicas:</h4>
-                                <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                                    <li><span class="font-medium">Reformulação de Prompts:</span> Ajuste da estrutura e linguagem dos prompts</li>
-                                    <li><span class="font-medium">Adição de Contexto:</span> Inclusão de informações relevantes para melhorar a compreensão</li>
-                                    <li><span class="font-medium">Especificação de Formato:</span> Definição clara do formato de resposta desejado</li>
-                                    <li><span class="font-medium">Ajuste de Parâmetros:</span> Otimização de parâmetros como temperatura e max_tokens</li>
-                                    <li><span class="font-medium">Testes A/B:</span> Comparação sistemática de diferentes formulações de prompts</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Learning System -->
-                        <div class="card">
-                            <div class="flex items-center mb-4">
-                                <div class="bg-red-100 p-3 rounded-full mr-4">
-                                    <svg class="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                                    </svg>
-                                </div>
-                                <h3 class="text-xl font-semibold">Sistema de Aprendizado</h3>
-                            </div>
-                            <p class="text-gray-600 mb-4">
-                                O Sistema de Aprendizado é o componente central que coordena a interação entre a Base de Conhecimento,
-                                o Analisador de Padrões e o Otimizador de Prompts. Ele gerencia o ciclo completo de aprendizado,
-                                desde o armazenamento de interações até a aplicação do conhecimento adquirido.
-                            </p>
-                            <div class="bg-gray-50 p-4 rounded-lg">
-                                <h4 class="font-medium text-gray-800 mb-2">Principais Responsabilidades:</h4>
-                                <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                                    <li><span class="font-medium">Coordenação:</span> Orquestração dos diferentes componentes do sistema de aprendizado</li>
-                                    <li><span class="font-medium">Ciclo de Feedback:</span> Implementação do ciclo de armazenamento, análise e aplicação</li>
-                                    <li><span class="font-medium">Priorização:</span> Determinação de quais interações são mais relevantes para análise</li>
-                                    <li><span class="font-medium">Adaptação:</span> Ajuste do comportamento dos agentes com base no aprendizado</li>
-                                    <li><span class="font-medium">Monitoramento:</span> Acompanhamento do desempenho e eficácia do sistema de aprendizado</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold">Capellaris</h3>
+                    <p class="text-gray-400">O cérebro distribuído da sua organização.</p>
                 </div>
-
-                <!-- Learning Process -->
-                <div class="mb-16">
-                    <h2 class="section-title">Processo de Aprendizado</h2>
-
-                    <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
-                        <p class="text-gray-600 mb-6">
-                            O processo de aprendizado no Capellaris segue um ciclo contínuo
-                            que permite a melhoria constante do desempenho dos agentes. Este ciclo é composto por várias
-                            etapas interconectadas que trabalham juntas para criar um sistema que evolui com o tempo.
-                        </p>
-
-                        <div class="bg-blue-50 p-6 rounded-lg mb-8">
-                            <h3 class="text-xl font-semibold text-blue-800 mb-4">Ciclo de Aprendizado</h3>
-                            <ol class="list-decimal pl-5 text-gray-600 space-y-3">
-                                <li>
-                                    <span class="font-medium">Coleta de Dados:</span> Todas as interações entre agentes e usuários são registradas, incluindo prompts,
-                                    respostas, feedback e metadados contextuais.
-                                </li>
-                                <li>
-                                    <span class="font-medium">Armazenamento Estruturado:</span> As interações são armazenadas na Base de Conhecimento de forma
-                                    estruturada, com indexação adequada para facilitar a recuperação.
-                                </li>
-                                <li>
-                                    <span class="font-medium">Análise de Padrões:</span> O Analisador de Padrões examina o histórico de interações para identificar
-                                    tendências, correlações e oportunidades de melhoria.
-                                </li>
-                                <li>
-                                    <span class="font-medium">Otimização de Prompts:</span> Com base nos insights gerados, o Otimizador de Prompts refina a forma como as
-                                    solicitações são formuladas para os modelos de linguagem.
-                                </li>
-                                <li>
-                                    <span class="font-medium">Aplicação do Conhecimento:</span> O conhecimento adquirido é aplicado em novas interações, melhorando a
-                                    qualidade das respostas dos agentes.
-                                </li>
-                                <li>
-                                    <span class="font-medium">Feedback e Avaliação:</span> As novas interações são avaliadas, gerando feedback que alimenta o ciclo
-                                    novamente, criando um processo de melhoria contínua.
-                                </li>
-                            </ol>
-                        </div>
-
-                        <h3 class="subsection-title">Exemplo de Aprendizado em Ação</h3>
-
-                        <div class="bg-gray-50 p-4 rounded-lg mb-8">
-                            <h4 class="font-medium text-gray-800 mb-2">Cenário: Otimização de Análise de Campanha de Marketing</h4>
-                            <ol class="list-decimal pl-5 text-gray-600 space-y-2">
-                                <li>
-                                    <span class="font-medium">Interação Inicial:</span> Um usuário solicita ao agente de marketing uma análise de campanha com o prompt
-                                    "Analise nossa última campanha de email".
-                                </li>
-                                <li>
-                                    <span class="font-medium">Resposta Inicial:</span> O agente fornece uma análise básica, mas o usuário indica que faltaram informações
-                                    importantes sobre segmentação.
-                                </li>
-                                <li>
-                                    <span class="font-medium">Armazenamento:</span> A interação é armazenada na Base de Conhecimento, incluindo o prompt, a resposta e o
-                                    feedback do usuário.
-                                </li>
-                                <li>
-                                    <span class="font-medium">Análise:</span> O Analisador de Padrões identifica que prompts relacionados a análises de campanha
-                                    frequentemente precisam incluir aspectos de segmentação.
-                                </li>
-                                <li>
-                                    <span class="font-medium">Otimização:</span> O Otimizador de Prompts cria uma versão melhorada do prompt: "Analise nossa última
-                                    campanha de email, incluindo métricas gerais, segmentação de público, taxas de conversão e recomendações para melhorias".
-                                </li>
-                                <li>
-                                    <span class="font-medium">Nova Interação:</span> Quando um usuário faz uma solicitação similar no futuro, o sistema utiliza o prompt
-                                    otimizado, resultando em uma análise mais completa e útil.
-                                </li>
-                                <li>
-                                    <span class="font-medium">Feedback Positivo:</span> O usuário fornece feedback positivo sobre a resposta mais completa, reforçando a
-                                    eficácia da otimização.
-                                </li>
-                            </ol>
-                        </div>
-
-                        <h3 class="subsection-title">Métricas de Aprendizado</h3>
-
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                            <div class="bg-gray-50 p-4 rounded-lg">
-                                <h4 class="font-medium text-gray-800 mb-2">Métricas de Desempenho</h4>
-                                <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                                    <li><span class="font-medium">Taxa de Satisfação:</span> Percentual de interações com feedback positivo</li>
-                                    <li><span class="font-medium">Taxa de Rejeição:</span> Percentual de respostas rejeitadas ou que exigiram reformulação</li>
-                                    <li><span class="font-medium">Tempo de Resposta:</span> Tempo médio para gerar respostas satisfatórias</li>
-                                    <li><span class="font-medium">Precisão:</span> Acurácia das informações fornecidas pelos agentes</li>
-                                    <li><span class="font-medium">Completude:</span> Quão completas são as respostas em relação às solicitações</li>
-                                </ul>
-                            </div>
-
-                            <div class="bg-gray-50 p-4 rounded-lg">
-                                <h4 class="font-medium text-gray-800 mb-2">Métricas de Aprendizado</h4>
-                                <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                                    <li><span class="font-medium">Taxa de Melhoria:</span> Aumento no desempenho ao longo do tempo</li>
-                                    <li><span class="font-medium">Eficácia de Otimização:</span> Impacto das otimizações de prompt na qualidade das respostas</li>
-                                    <li><span class="font-medium">Cobertura de Domínio:</span> Amplitude de tópicos e tarefas que o sistema pode lidar efetivamente</li>
-                                    <li><span class="font-medium">Adaptabilidade:</span> Capacidade de se ajustar a novos tipos de solicitações</li>
-                                    <li><span class="font-medium">Retenção de Conhecimento:</span> Capacidade de aplicar aprendizados anteriores em novas situações</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="bg-yellow-50 p-4 rounded-lg">
-                            <h4 class="font-medium text-yellow-800 mb-2">Importante:</h4>
-                            <p class="text-gray-600">
-                                O Sistema de Aprendizado é projetado para equilibrar a melhoria contínua com a estabilidade e previsibilidade.
-                                Todas as otimizações são testadas e validadas antes de serem implementadas em produção, e o sistema mantém
-                                um registro completo de todas as mudanças para garantir transparência e rastreabilidade.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Implementation -->
-                <div>
-                    <h2 class="section-title">Implementação Técnica</h2>
-
-                    <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
-                        <p class="text-gray-600 mb-6">
-                            A implementação técnica do Sistema de Aprendizado utiliza tecnologias modernas e abordagens
-                            robustas para garantir desempenho, escalabilidade e confiabilidade. Abaixo estão os principais
-                            aspectos técnicos da implementação.
-                        </p>
-
-                        <h3 class="subsection-title">Armazenamento de Dados</h3>
-
-                        <div class="bg-gray-50 p-4 rounded-lg mb-8">
-                            <ul class="list-disc pl-5 text-gray-600 space-y-2">
-                                <li><span class="font-medium">Banco de Dados Principal:</span> PostgreSQL para armazenamento relacional de metadados, relacionamentos e
-                                    índices</li>
-                                <li><span class="font-medium">Armazenamento de Documentos:</span> MongoDB para armazenamento flexível de prompts, respostas e conteúdo não
-                                    estruturado</li>
-                                <li><span class="font-medium">Cache:</span> Redis para armazenamento em memória de dados frequentemente acessados</li>
-                                <li><span class="font-medium">Armazenamento de Longo Prazo:</span> Sistema de arquivos distribuído para histórico completo e backups</li>
-                                <li><span class="font-medium">Esquema de Dados:</span> Modelo híbrido que combina estrutura rígida para metadados e flexibilidade para
-                                    conteúdo</li>
-                            </ul>
-                        </div>
-
-                        <h3 class="subsection-title">Processamento e Análise</h3>
-
-                        <div class="bg-gray-50 p-4 rounded-lg mb-8">
-                            <ul class="list-disc pl-5 text-gray-600 space-y-2">
-                                <li><span class="font-medium">Processamento de Linguagem Natural:</span> Utilização de bibliotecas como spaCy e NLTK para análise de texto
-                                </li>
-                                <li><span class="font-medium">Aprendizado de Máquina:</span> Modelos de classificação e clustering para identificação de padrões</li>
-                                <li><span class="font-medium">Processamento em Lote:</span> Análises periódicas em lote para identificação de tendências de longo prazo
-                                </li>
-                                <li><span class="font-medium">Processamento em Tempo Real:</span> Análises imediatas para otimizações rápidas em casos prioritários</li>
-                                <li><span class="font-medium">Vetorização de Texto:</span> Representações vetoriais para comparação semântica de prompts e respostas</li>
-                            </ul>
-                        </div>
-
-                        <h3 class="subsection-title">Exemplo de Código: Armazenamento de Interação</h3>
-
-                        <div class="code-block mb-8">
-                            <pre>
-def store_interaction(self, agent_id, prompt, response, domain=None, feedback=None, tags=None):
-    """
-    Armazena uma interação entre um agente e um usuário na base de conhecimento.
-    
-    Args:
-        agent_id (str): Identificador único do agente
-        prompt (str): Prompt enviado ao agente
-        response (str): Resposta gerada pelo agente
-        domain (str, optional): Domínio ou área de conhecimento da interação
-        feedback (str, optional): Feedback do usuário (1-5 ou texto)
-        tags (list, optional): Lista de tags para categorização
-        
-    Returns:
-        str: ID da interação armazenada
-    """
-    try:
-        # Validar parâmetros obrigatórios
-        if not agent_id or not prompt or not response:
-            raise ValueError("Agent ID, prompt e response são campos obrigatórios")
-            
-        # Preparar metadados
-        metadata = {
-            "timestamp": datetime.now().isoformat(),
-            "agent_id": agent_id,
-            "domain": domain or "general",
-            "tags": tags or [],
-            "feedback_score": None,
-            "feedback_text": None
-        }
-        
-        # Processar feedback (numérico ou textual)
-        if feedback:
-            try:
-                # Tentar converter para número (escala 1-5)
-                score = float(feedback)
-                if 1 <= score <= 5:
-                    metadata["feedback_score"] = score
-                else:
-                    metadata["feedback_text"] = feedback
-            except ValueError:
-                # Se não for número, armazenar como texto
-                metadata["feedback_text"] = feedback
-        
-        # Criar documento de interação
-        interaction = {
-            "prompt": prompt,
-            "response": response,
-            "metadata": metadata
-        }
-        
-        # Armazenar no banco de dados
-        interaction_id = self.knowledge_base.insert_interaction(interaction)
-        
-        # Analisar a interação para identificar padrões
-        self._analyze_interaction(interaction_id, interaction)
-        
-        # Registrar log de sucesso
-        logger.info(f"Interaction stored successfully: {interaction_id}")
-        
-        return interaction_id
-        
-    except Exception as e:
-        # Registrar erro e propagar exceção
-        logger.error(f"Error storing interaction: {str(e)}")
-        raise
-        
-def _analyze_interaction(self, interaction_id, interaction):
-    """
-    Analisa uma interação para identificar padrões e insights.
-    
-    Args:
-        interaction_id (str): ID da interação
-        interaction (dict): Dados da interação
-    """
-    # Extrair texto do prompt e resposta
-    prompt_text = interaction["prompt"]
-    response_text = interaction["response"]
-    domain = interaction["metadata"]["domain"]
-    
-    # Análise básica de texto
-    prompt_tokens = self.nlp_processor.tokenize(prompt_text)
-    prompt_entities = self.nlp_processor.extract_entities(prompt_text)
-    prompt_keywords = self.nlp_processor.extract_keywords(prompt_text)
-    
-    # Armazenar resultados da análise
-    analysis_results = {
-        "token_count": len(prompt_tokens),
-        "entities": prompt_entities,
-        "keywords": prompt_keywords,
-        "complexity_score": self.nlp_processor.calculate_complexity(prompt_text),
-        "domain_relevance": self.domain_analyzer.calculate_relevance(prompt_text, domain)
-    }
-    
-    # Atualizar a interação com os resultados da análise
-    self.knowledge_base.update_interaction_analysis(interaction_id, analysis_results)
-    
-    # Agendar análise mais profunda em lote
-    self.analysis_queue.add_task(interaction_id)
-    
-def get_domain_interactions(self, domain, limit=100, min_feedback_score=None):
-    """
-    Recupera interações de um domínio específico, opcionalmente filtradas por pontuação de feedback.
-    
-    Args:
-        domain (str): Domínio ou área de conhecimento
-        limit (int, optional): Número máximo de interações a retornar
-        min_feedback_score (float, optional): Pontuação mínima de feedback (1-5)
-        
-    Returns:
-        list: Lista de interações que atendem aos critérios
-    """
-    query = {"metadata.domain": domain}
-    
-    if min_feedback_score is not None:
-        query["metadata.feedback_score"] = {"$gte": min_feedback_score}
-    
-    interactions = self.knowledge_base.find_interactions(query, limit=limit)
-    
-    return interactions
-                        </pre>
-                        </div>
-
-                        <h3 class="subsection-title">Exemplo de Código: Otimização de Prompt</h3>
-
-                        <div class="code-block">
-                            <pre>
-def optimize_prompt(self, original_prompt, agent_id, domain=None, context=None):
-    """
-    Otimiza um prompt com base no histórico de interações e padrões identificados.
-    
-    Args:
-        original_prompt (str): Prompt original a ser otimizado
-        agent_id (str): Identificador do agente que processará o prompt
-        domain (str, optional): Domínio ou área de conhecimento
-        context (dict, optional): Contexto adicional para a otimização
-        
-    Returns:
-        str: Prompt otimizado
-    """
-    # Definir domínio padrão se não fornecido
-    domain = domain or self._infer_domain(original_prompt)
-    
-    # Buscar prompts similares com bom feedback
-    similar_prompts = self.knowledge_base.find_similar_prompts(
-        original_prompt, 
-        agent_id=agent_id,
-        domain=domain,
-        min_feedback_score=4.0,
-        limit=5
-    )
-    
-    # Se não houver prompts similares, retornar o original com melhorias básicas
-    if not similar_prompts:
-        return self._apply_basic_improvements(original_prompt, agent_id, domain)
-    
-    # Extrair padrões comuns em prompts bem-sucedidos
-    patterns = self.pattern_analyzer.extract_patterns(similar_prompts)
-    
-    # Aplicar padrões ao prompt original
-    enhanced_prompt = self._apply_patterns(original_prompt, patterns)
-    
-    # Adicionar contexto específico se fornecido
-    if context:
-        enhanced_prompt = self._add_context(enhanced_prompt, context)
-    
-    # Adicionar instruções específicas do agente
-    agent_config = self.agent_manager.get_agent_config(agent_id)
-    if agent_config and "prompt_instructions" in agent_config:
-        enhanced_prompt = self._add_instructions(enhanced_prompt, agent_config["prompt_instructions"])
-    
-    # Verificar se o prompt otimizado é significativamente diferente do original
-    if self._calculate_similarity(original_prompt, enhanced_prompt) > 0.9:
-        # Se muito similar, aplicar otimizações mais agressivas
-        enhanced_prompt = self._apply_advanced_improvements(original_prompt, agent_id, domain)
-    
-    # Registrar a otimização para análise futura
-    self._log_optimization(original_prompt, enhanced_prompt, agent_id, domain)
-    
-    return enhanced_prompt
-                        </pre>
-                        </div>
-                    </div>
-                </div>
+                <nav class="flex space-x-4">
+                    <a href="index.html" class="text-gray-400 hover:text-white">Início</a>
+                    <a href="arquitetura.html" class="text-gray-400 hover:text-white">Arquitetura</a>
+                    <a href="documentacao.html" class="text-gray-400 hover:text-white">Documentação</a>
+                    <a href="https://capellaris.dscamargo.com.br" class="text-gray-400 hover:text-white">Demo</a>
+                </nav>
             </div>
-        </main>
-
-        <footer class="bg-gray-800 text-white py-8 mt-12">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex flex-col md:flex-row justify-between items-center">
-                    <div class="mb-4 md:mb-0">
-                        <h3 class="text-xl font-bold">Capellaris</h3>
-                        <p class="text-gray-400">O cérebro distribuído da sua organização.</p>
-                    </div>
-                    <div class="flex space-x-6">
-                        <a href="index.html" class="text-gray-300 hover:text-white">Início</a>
-                        <a href="arquitetura.html" class="text-gray-300 hover:text-white">Arquitetura</a>
-                        <a href="documentacao.html" class="text-gray-300 hover:text-white">Documentação</a>
-                        <a href="https://capellaris.dscamargo.com.br" class="text-gray-300 hover:text-white">Demo</a>
-                    </div>
-                </div>
-                <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
-                    <p>&copy; 2025 Capellaris. Todos os direitos reservados.</p>
-                </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+                <p>&copy; 2025 Capellaris. Todos os direitos reservados.</p>
             </div>
-        </footer>
+        </div>
+    </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
     <script>
+        mermaid.initialize({ 
+            startOnLoad: true, 
+            theme: 'base',
+            themeVariables: {
+                primaryColor: '#dbeafe',
+                primaryTextColor: '#1e293b',
+                primaryBorderColor: '#93c5fd',
+                lineColor: '#9ca3af',
+                secondaryColor: '#fce7f3',
+                tertiaryColor: '#f0fdf4',
+                fontFamily: 'inherit',
+                nodeTextColor: '#1e293b',
+                edgeLabelBackground: '#fef3c7'
+            }
+        });
+
         document.addEventListener('DOMContentLoaded', function() {
             const header = document.getElementById('header');
             if (header) {
@@ -644,6 +482,7 @@ def optimize_prompt(self, original_prompt, agent_id, domain=None, context=None):
                     header.classList.toggle('scrolled', window.scrollY > 50);
                 });
             }
+            
             if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
                 gsap.registerPlugin(ScrollTrigger);
                 gsap.utils.toArray('.gsap-fade-up').forEach((el) => {

@@ -23,6 +23,25 @@
     <!-- GSAP -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <!-- Mermaid -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'base',
+            themeVariables: {
+                primaryColor: '#dbeafe',
+                primaryTextColor: '#1e293b',
+                primaryBorderColor: '#93c5fd',
+                lineColor: '#9ca3af',
+                secondaryColor: '#fce7f3',
+                tertiaryColor: '#f0fdf4',
+                fontFamily: 'inherit',
+                nodeTextColor: '#1e293b',
+                edgeLabelBackground: '#fef3c7'
+            }
+        });
+    </script>
 
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
@@ -33,6 +52,60 @@
                 j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-WXLHS7J8');</script>
+
+    <style>
+        .mermaid {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .mermaid svg {
+            max-width: 100%;
+            height: auto;
+        }
+        .feature-card {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 1px solid #e2e8f0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+        }
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        .workflow-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-left: 4px solid #3b82f6;
+        }
+        .icon-box {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #3b82f6, #6366f1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+    </style>
 </head>
 
 <body>
@@ -47,7 +120,7 @@
                         <img src="../assets/images/dsc_white.svg" alt="Daniel Camargo" class="rounded-circle me-2" width="40" height="40">
                     </a>
                     <a class="navbar-brand d-flex align-items-center" href="index.html">
-                        <img src="../assets/images/capellaris_v3.svg" alt="Capellaris" width="32" height="32" class="me-2">
+                        <img src="../assets/images/capellaris_v3.svg" alt="Capellaris" width="32" height="32" class="me-2 header-capellaris-logo">
                         <span>Capellaris</span>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -82,10 +155,10 @@
                     <img src="../assets/images/capellaris.svg" alt="Capellaris" class="w-24 h-24" />
                 </object>
             </div>
-            <h1 class="text-3xl md:text-4xl font-bold mb-3">Documentação Técnica</h1>
+            <h1 class="text-3xl md:text-4xl font-bold mb-3">Guia do Capellaris</h1>
             <p class="text-lg max-w-2xl mx-auto opacity-90">
-                Guia completo para instalação, configuração e uso do Capellaris,
-                incluindo exemplos de código e referências de API.
+                Tudo o que você precisa saber para começar a usar o Capellaris
+                e transformar a produtividade da sua equipe.
             </p>
         </div>
     </section>
@@ -94,1198 +167,579 @@
     <main class="main-content">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
-                <!-- Documentation Navigation -->
-                <div class="mb-12">
-                    <div class="bg-white rounded-lg shadow-lg p-6">
-                        <h2 class="text-xl font-semibold text-gray-800 mb-4">Navegação Rápida</h2>
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                            <a href="#instalacao" class="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
-                                <h3 class="font-medium text-blue-800 mb-1">Instalação</h3>
-                                <p class="text-gray-600 text-sm">Requisitos e passos para instalação</p>
-                            </a>
-                            <a href="#configuracao" class="bg-green-50 hover:bg-green-100 p-4 rounded-lg transition-colors">
-                                <h3 class="font-medium text-green-800 mb-1">Configuração</h3>
-                                <p class="text-gray-600 text-sm">Opções e parâmetros de configuração</p>
-                            </a>
-                            <a href="#api" class="bg-purple-50 hover:bg-purple-100 p-4 rounded-lg transition-colors">
-                                <h3 class="font-medium text-purple-800 mb-1">Referência de API</h3>
-                                <p class="text-gray-600 text-sm">Documentação completa da API</p>
-                            </a>
-                            <a href="#agentes" class="bg-yellow-50 hover:bg-yellow-100 p-4 rounded-lg transition-colors">
-                                <h3 class="font-medium text-yellow-800 mb-1">Criação de Agentes</h3>
-                                <p class="text-gray-600 text-sm">Como criar e personalizar agentes</p>
-                            </a>
-                            <a href="#squads" class="bg-red-50 hover:bg-red-100 p-4 rounded-lg transition-colors">
-                                <h3 class="font-medium text-red-800 mb-1">Gerenciamento de Squads</h3>
-                                <p class="text-gray-600 text-sm">Formação e coordenação de equipes</p>
-                            </a>
-                            <a href="#integracao" class="bg-indigo-50 hover:bg-indigo-100 p-4 rounded-lg transition-colors">
-                                <h3 class="font-medium text-indigo-800 mb-1">Integração com Chat</h3>
-                                <p class="text-gray-600 text-sm">Configuração de Slack e Teams</p>
-                            </a>
-                        </div>
+            <!-- Quick Navigation -->
+            <div class="mb-12">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-4">
+                        <i class="fas fa-compass me-2 text-blue-600"></i>Navegação Rápida
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <a href="#como-funciona" class="feature-card text-decoration-none">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-play-circle text-2xl text-blue-600 me-3"></i>
+                                <h3 class="font-medium text-gray-800 mb-0">Como Funciona</h3>
+                            </div>
+                            <p class="text-gray-600 text-sm mb-0">Entenda o funcionamento básico</p>
+                        </a>
+                        <a href="#agentes" class="feature-card text-decoration-none">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-robot text-2xl text-green-600 me-3"></i>
+                                <h3 class="font-medium text-gray-800 mb-0">Agentes</h3>
+                            </div>
+                            <p class="text-gray-600 text-sm mb-0">Conheça os tipos de agentes</p>
+                        </a>
+                        <a href="#squads" class="feature-card text-decoration-none">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-users text-2xl text-purple-600 me-3"></i>
+                                <h3 class="font-medium text-gray-800 mb-0">Squads</h3>
+                            </div>
+                            <p class="text-gray-600 text-sm mb-0">Equipes de agentes colaborativas</p>
+                        </a>
+                        <a href="#fluxos" class="feature-card text-decoration-none">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-project-diagram text-2xl text-orange-600 me-3"></i>
+                                <h3 class="font-medium text-gray-800 mb-0">Fluxos de Trabalho</h3>
+                            </div>
+                            <p class="text-gray-600 text-sm mb-0">Como os agentes colaboram</p>
+                        </a>
+                        <a href="#integracao" class="feature-card text-decoration-none">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-plug text-2xl text-cyan-600 me-3"></i>
+                                <h3 class="font-medium text-gray-800 mb-0">Integrações</h3>
+                            </div>
+                            <p class="text-gray-600 text-sm mb-0">Slack, Teams e outras ferramentas</p>
+                        </a>
+                        <a href="#casos-uso" class="feature-card text-decoration-none">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-lightbulb text-2xl text-yellow-600 me-3"></i>
+                                <h3 class="font-medium text-gray-800 mb-0">Casos de Uso</h3>
+                            </div>
+                            <p class="text-gray-600 text-sm mb-0">Exemplos práticos de aplicação</p>
+                        </a>
                     </div>
                 </div>
+            </div>
 
-                <!-- Installation Section -->
-                <div id="instalacao" class="mb-16">
-                    <h2 class="section-title">Instalação</h2>
+            <!-- How It Works Section -->
+            <div id="como-funciona" class="mb-16">
+                <h2 class="section-title">
+                    <i class="fas fa-cogs me-2"></i>Como Funciona
+                </h2>
 
-                    <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
-                        <h3 class="subsection-title">Requisitos do Sistema</h3>
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                    <p class="text-gray-600 mb-6 text-lg">
+                        O Capellaris funciona como um <strong>cérebro distribuído</strong> para sua organização, 
+                        onde agentes de IA especializados trabalham juntos para resolver tarefas complexas.
+                    </p>
 
-                        <div class="bg-gray-50 p-4 rounded-lg mb-8">
-                            <h4 class="font-medium text-gray-800 mb-2">Requisitos Mínimos:</h4>
-                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                                <li>Python 3.10 ou superior</li>
-                                <li>PostgreSQL 13 ou superior</li>
-                                <li>MongoDB 5.0 ou superior</li>
-                                <li>Redis 6.0 ou superior</li>
-                                <li>8GB de RAM</li>
-                                <li>50GB de espaço em disco</li>
-                                <li>Conexão com internet</li>
-                            </ul>
-                        </div>
-
-                        <h3 class="subsection-title">Instalação via pip</h3>
-
-                        <div class="code-block mb-8">
-                            <pre>
-# Criar ambiente virtual
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# ou
-venv\Scripts\activate  # Windows
-
-# Instalar o pacote
-pip install gerenciador-agentes-ia
-
-# Verificar instalação
-gerenciador-agentes-ia --version
-                        </pre>
-                        </div>
-
-                        <h3 class="subsection-title">Instalação a partir do código-fonte</h3>
-
-                        <div class="code-block mb-8">
-                            <pre>
-# Clonar o repositório
-git clone https://github.com/empresa/gerenciador-agentes-ia.git
-cd gerenciador-agentes-ia
-
-# Criar ambiente virtual
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# ou
-venv\Scripts\activate  # Windows
-
-# Instalar dependências
-pip install -e .
-
-# Verificar instalação
-gerenciador-agentes-ia --version
-                        </pre>
-                        </div>
-
-                        <h3 class="subsection-title">Instalação com Docker</h3>
-
-                        <div class="code-block">
-                            <pre>
-# Baixar a imagem
-docker pull empresa/gerenciador-agentes-ia:latest
-
-# Executar o contêiner
-docker run -d \
-  --name gerenciador-agentes \
-  -p 8000:8000 \
-  -v /caminho/para/config:/app/config \
-  -v /caminho/para/data:/app/data \
-  empresa/gerenciador-agentes-ia:latest
-
-# Verificar logs
-docker logs gerenciador-agentes
-                        </pre>
-                        </div>
+                    <!-- Visual Flow -->
+                    <div class="mermaid">
+flowchart LR
+    A[👤 Usuário] -->|Envia solicitação| B[🧠 Capellaris]
+    B -->|Identifica necessidade| C{Roteamento}
+    C -->|Tarefa simples| D[🤖 Agente Individual]
+    C -->|Tarefa complexa| E[👥 Squad de Agentes]
+    D -->|Resposta| F[📋 Resultado]
+    E -->|Colaboração| F
+    F -->|Entrega| A
                     </div>
-                </div>
 
-                <!-- Configuration Section -->
-                <div id="configuracao" class="mb-16">
-                    <h2 class="section-title">Configuração</h2>
-
-                    <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
-                        <p class="text-gray-600 mb-6">
-                            O Capellaris pode ser configurado através de um arquivo de configuração
-                            em formato YAML ou através de variáveis de ambiente. Abaixo estão as principais opções de configuração
-                            disponíveis.
-                        </p>
-
-                        <h3 class="subsection-title">Arquivo de Configuração</h3>
-
-                        <div class="code-block mb-8">
-                            <pre>
-# config.yaml
-sistema:
-  nome: "Capellaris"
-  versao: "1.0.0"
-  modo_debug: false
-  log_level: "info"
-  
-banco_dados:
-  postgres:
-    host: "localhost"
-    porta: 5432
-    usuario: "postgres"
-    senha: "senha_segura"
-    banco: "gerenciador_agentes"
-  
-  mongodb:
-    uri: "mongodb://localhost:27017"
-    banco: "gerenciador_agentes"
-  
-  redis:
-    host: "localhost"
-    porta: 6379
-    senha: null
-    db: 0
-  
-api:
-  host: "0.0.0.0"
-  porta: 8000
-  workers: 4
-  timeout: 60
-  cors_origins: ["*"]
-  
-seguranca:
-  chave_secreta: "sua_chave_secreta_aqui"
-  algoritmo_jwt: "HS256"
-  expiracao_token: 86400  # 24 horas
-  
-integracao:
-  slack:
-    token: "xoxb-seu-token-aqui"
-    signing_secret: "seu-signing-secret-aqui"
-    canais_permitidos: ["general", "marketing", "desenvolvimento"]
-  
-  teams:
-    app_id: "seu-app-id-aqui"
-    app_password: "seu-app-password-aqui"
-    tenant_id: "seu-tenant-id-aqui"
-  
-agentes:
-  modelos:
-    default: "gpt-4"
-    fallback: "gpt-3.5-turbo"
-  
-  timeout_resposta: 30
-  max_tokens: 2000
-  temperatura: 0.7
-  
-aprendizado:
-  armazenar_interacoes: true
-  analisar_padroes: true
-  otimizar_prompts: true
-  intervalo_analise: 3600  # 1 hora
-                        </pre>
-                        </div>
-
-                        <h3 class="subsection-title">Variáveis de Ambiente</h3>
-
-                        <div class="bg-gray-50 p-4 rounded-lg mb-8">
-                            <p class="text-gray-600 mb-2">
-                                Todas as configurações também podem ser definidas através de variáveis de ambiente,
-                                seguindo o padrão <code>GERENCIADOR_SECAO_CHAVE</code>.
-                            </p>
-                            <h4 class="font-medium text-gray-800 mb-2">Exemplos:</h4>
-                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                                <li><code>GERENCIADOR_SISTEMA_NOME</code> - Nome do sistema</li>
-                                <li><code>GERENCIADOR_BANCO_DADOS_POSTGRES_HOST</code> - Host do PostgreSQL</li>
-                                <li><code>GERENCIADOR_API_PORTA</code> - Porta da API</li>
-                                <li><code>GERENCIADOR_INTEGRACAO_SLACK_TOKEN</code> - Token do Slack</li>
-                            </ul>
-                        </div>
-
-                        <h3 class="subsection-title">Inicialização do Sistema</h3>
-
-                        <div class="code-block">
-                            <pre>
-# Iniciar com arquivo de configuração
-gerenciador-agentes-ia start --config /caminho/para/config.yaml
-
-# Iniciar com variáveis de ambiente
-export GERENCIADOR_SISTEMA_NOME="Meu Sistema de Agentes"
-export GERENCIADOR_API_PORTA=9000
-gerenciador-agentes-ia start
-
-# Iniciar em modo de desenvolvimento
-gerenciador-agentes-ia start --dev
-
-# Iniciar com configurações específicas
-gerenciador-agentes-ia start --host 0.0.0.0 --porta 8080 --workers 8
-                        </pre>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- API Reference Section -->
-                <div id="api" class="mb-16">
-                    <h2 class="section-title">Referência de API</h2>
-
-                    <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
-                        <p class="text-gray-600 mb-6">
-                            O Capellaris expõe uma API RESTful completa para interação
-                            programática com o sistema. Abaixo estão os principais endpoints disponíveis.
-                        </p>
-
-                        <h3 class="subsection-title">Autenticação</h3>
-
-                        <div class="bg-gray-50 p-4 rounded-lg mb-8">
-                            <p class="text-gray-600 mb-2">
-                                A API utiliza autenticação JWT (JSON Web Token). Para obter um token, faça uma requisição POST
-                                para o endpoint <code>/api/auth/token</code> com as credenciais de usuário.
-                            </p>
-                            <p class="text-gray-600">
-                                Todas as requisições subsequentes devem incluir o token no cabeçalho <code>Authorization</code>
-                                no formato <code>Bearer {token}</code>.
-                            </p>
-                        </div>
-
-                        <div class="code-block mb-8">
-                            <pre>
-# Obter token de autenticação
-POST /api/auth/token
-Content-Type: application/json
-
-{
-  "username": "admin",
-  "password": "senha_segura"
-}
-
-# Resposta
-{
-  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
-  "token_type": "bearer",
-  "expires_in": 86400
-}
-                        </pre>
-                        </div>
-
-                        <h3 class="subsection-title">Endpoints de Agentes</h3>
-
-                        <div class="space-y-4 mb-8">
-                            <div class="bg-blue-50 p-4 rounded-lg">
-                                <h4 class="font-medium text-blue-800 mb-2">Listar Agentes</h4>
-                                <p class="text-gray-600 mb-2"><code>GET /api/agents</code></p>
-                                <p class="text-gray-600">Retorna a lista de todos os agentes disponíveis no sistema.</p>
-                            </div>
-
-                            <div class="bg-blue-50 p-4 rounded-lg">
-                                <h4 class="font-medium text-blue-800 mb-2">Obter Agente</h4>
-                                <p class="text-gray-600 mb-2"><code>GET /api/agents/{agent_id}</code></p>
-                                <p class="text-gray-600">Retorna os detalhes de um agente específico.</p>
-                            </div>
-
-                            <div class="bg-blue-50 p-4 rounded-lg">
-                                <h4 class="font-medium text-blue-800 mb-2">Criar Agente</h4>
-                                <p class="text-gray-600 mb-2"><code>POST /api/agents</code></p>
-                                <p class="text-gray-600">Cria um novo agente com as configurações especificadas.</p>
-                            </div>
-
-                            <div class="bg-blue-50 p-4 rounded-lg">
-                                <h4 class="font-medium text-blue-800 mb-2">Atualizar Agente</h4>
-                                <p class="text-gray-600 mb-2"><code>PUT /api/agents/{agent_id}</code></p>
-                                <p class="text-gray-600">Atualiza as configurações de um agente existente.</p>
-                            </div>
-
-                            <div class="bg-blue-50 p-4 rounded-lg">
-                                <h4 class="font-medium text-blue-800 mb-2">Excluir Agente</h4>
-                                <p class="text-gray-600 mb-2"><code>DELETE /api/agents/{agent_id}</code></p>
-                                <p class="text-gray-600">Remove um agente do sistema.</p>
-                            </div>
-
-                            <div class="bg-blue-50 p-4 rounded-lg">
-                                <h4 class="font-medium text-blue-800 mb-2">Enviar Mensagem para Agente</h4>
-                                <p class="text-gray-600 mb-2"><code>POST /api/agents/{agent_id}/message</code></p>
-                                <p class="text-gray-600">Envia uma mensagem para um agente e recebe a resposta.</p>
+                    <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-4">O processo em 4 passos</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4 workflow-card">
+                            <div class="step-number">1</div>
+                            <div>
+                                <h4 class="font-medium text-gray-800 mb-1">Você faz uma solicitação</h4>
+                                <p class="text-gray-600 mb-0">Através do Slack, Teams ou diretamente na interface web, você descreve o que precisa em linguagem natural.</p>
                             </div>
                         </div>
-
-                        <h3 class="subsection-title">Endpoints de Squads</h3>
-
-                        <div class="space-y-4 mb-8">
-                            <div class="bg-green-50 p-4 rounded-lg">
-                                <h4 class="font-medium text-green-800 mb-2">Listar Squads</h4>
-                                <p class="text-gray-600 mb-2"><code>GET /api/squads</code></p>
-                                <p class="text-gray-600">Retorna a lista de todos os squads disponíveis no sistema.</p>
-                            </div>
-
-                            <div class="bg-green-50 p-4 rounded-lg">
-                                <h4 class="font-medium text-green-800 mb-2">Obter Squad</h4>
-                                <p class="text-gray-600 mb-2"><code>GET /api/squads/{squad_id}</code></p>
-                                <p class="text-gray-600">Retorna os detalhes de um squad específico.</p>
-                            </div>
-
-                            <div class="bg-green-50 p-4 rounded-lg">
-                                <h4 class="font-medium text-green-800 mb-2">Criar Squad</h4>
-                                <p class="text-gray-600 mb-2"><code>POST /api/squads</code></p>
-                                <p class="text-gray-600">Cria um novo squad com os agentes especificados.</p>
-                            </div>
-
-                            <div class="bg-green-50 p-4 rounded-lg">
-                                <h4 class="font-medium text-green-800 mb-2">Atualizar Squad</h4>
-                                <p class="text-gray-600 mb-2"><code>PUT /api/squads/{squad_id}</code></p>
-                                <p class="text-gray-600">Atualiza a composição e configurações de um squad existente.</p>
-                            </div>
-
-                            <div class="bg-green-50 p-4 rounded-lg">
-                                <h4 class="font-medium text-green-800 mb-2">Excluir Squad</h4>
-                                <p class="text-gray-600 mb-2"><code>DELETE /api/squads/{squad_id}</code></p>
-                                <p class="text-gray-600">Remove um squad do sistema.</p>
-                            </div>
-
-                            <div class="bg-green-50 p-4 rounded-lg">
-                                <h4 class="font-medium text-green-800 mb-2">Enviar Tarefa para Squad</h4>
-                                <p class="text-gray-600 mb-2"><code>POST /api/squads/{squad_id}/task</code></p>
-                                <p class="text-gray-600">Envia uma tarefa para um squad e recebe o resultado.</p>
+                        
+                        <div class="flex items-start gap-4 workflow-card">
+                            <div class="step-number">2</div>
+                            <div>
+                                <h4 class="font-medium text-gray-800 mb-1">O sistema analisa e direciona</h4>
+                                <p class="text-gray-600 mb-0">O Capellaris entende sua necessidade e seleciona automaticamente o agente ou squad mais adequado.</p>
                             </div>
                         </div>
-
-                        <h3 class="subsection-title">Exemplo de Uso da API</h3>
-
-                        <div class="code-block">
-                            <pre>
-import requests
-import json
-
-# Configuração base
-API_URL = "http://localhost:8000/api"
-USERNAME = "admin"
-PASSWORD = "senha_segura"
-
-# Obter token de autenticação
-def get_token():
-    response = requests.post(
-        f"{API_URL}/auth/token",
-        json={"username": USERNAME, "password": PASSWORD}
-    )
-    data = response.json()
-    return data["access_token"]
-
-# Configurar cabeçalhos com token
-token = get_token()
-headers = {
-    "Authorization": f"Bearer {token}",
-    "Content-Type": "application/json"
-}
-
-# Listar agentes disponíveis
-def list_agents():
-    response = requests.get(f"{API_URL}/agents", headers=headers)
-    return response.json()
-
-# Enviar mensagem para um agente
-def send_message_to_agent(agent_id, message):
-    response = requests.post(
-        f"{API_URL}/agents/{agent_id}/message",
-        headers=headers,
-        json={"message": message}
-    )
-    return response.json()
-
-# Criar um novo squad
-def create_squad(name, description, agent_ids):
-    response = requests.post(
-        f"{API_URL}/squads",
-        headers=headers,
-        json={
-            "name": name,
-            "description": description,
-            "agent_ids": agent_ids
-        }
-    )
-    return response.json()
-
-# Enviar tarefa para um squad
-def send_task_to_squad(squad_id, task):
-    response = requests.post(
-        f"{API_URL}/squads/{squad_id}/task",
-        headers=headers,
-        json={"task": task}
-    )
-    return response.json()
-
-# Exemplo de uso
-if __name__ == "__main__":
-    # Listar agentes
-    agents = list_agents()
-    print(f"Agentes disponíveis: {json.dumps(agents, indent=2)}")
-    
-    # Enviar mensagem para o agente de marketing
-    marketing_agent_id = "agent_marketing_1"
-    response = send_message_to_agent(
-        marketing_agent_id,
-        "Analise os resultados da nossa campanha de email marketing do último trimestre."
-    )
-    print(f"Resposta do agente: {json.dumps(response, indent=2)}")
-    
-    # Criar um squad para análise de mercado
-    squad = create_squad(
-        name="Squad de Análise de Mercado",
-        description="Squad para análise completa de mercado e concorrência",
-        agent_ids=["agent_marketing_1", "agent_financial_1", "agent_sales_1"]
-    )
-    print(f"Squad criado: {json.dumps(squad, indent=2)}")
-    
-    # Enviar tarefa para o squad
-    task_response = send_task_to_squad(
-        squad["id"],
-        "Realize uma análise completa do mercado de software de gestão empresarial, incluindo análise de concorrentes, tendências e oportunidades."
-    )
-    print(f"Resposta da tarefa: {json.dumps(task_response, indent=2)}")
-                        </pre>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Creating Agents Section -->
-                <div id="agentes" class="mb-16">
-                    <h2 class="section-title">Criação de Agentes</h2>
-
-                    <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
-                        <p class="text-gray-600 mb-6">
-                            O Capellaris permite criar agentes personalizados para diferentes
-                            áreas de especialidade. Abaixo estão as etapas e exemplos para criar e configurar agentes.
-                        </p>
-
-                        <h3 class="subsection-title">Estrutura de um Agente</h3>
-
-                        <div class="bg-gray-50 p-4 rounded-lg mb-8">
-                            <p class="text-gray-600 mb-2">
-                                Um agente é composto pelos seguintes elementos:
-                            </p>
-                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                                <li><span class="font-medium">ID:</span> Identificador único do agente</li>
-                                <li><span class="font-medium">Nome:</span> Nome amigável do agente</li>
-                                <li><span class="font-medium">Descrição:</span> Descrição das capacidades e propósito do agente</li>
-                                <li><span class="font-medium">Especialidade:</span> Área de especialidade do agente (marketing, financeiro, etc.)</li>
-                                <li><span class="font-medium">Prompt Base:</span> Instruções base que definem o comportamento do agente</li>
-                                <li><span class="font-medium">Ferramentas:</span> Ferramentas e recursos que o agente pode utilizar</li>
-                                <li><span class="font-medium">Configurações:</span> Parâmetros específicos do agente</li>
-                            </ul>
-                        </div>
-
-                        <h3 class="subsection-title">Criação via API</h3>
-
-                        <div class="code-block mb-8">
-                            <pre>
-# Exemplo de criação de um agente de marketing via API
-POST /api/agents
-Content-Type: application/json
-Authorization: Bearer {token}
-
-{
-  "id": "agent_marketing_custom",
-  "name": "Agente de Marketing Personalizado",
-  "description": "Especialista em análise de campanhas de marketing digital e estratégias de conteúdo",
-  "specialty": "marketing",
-  "base_prompt": "Você é um especialista em marketing digital com foco em análise de campanhas e estratégias de conteúdo. Você deve fornecer análises detalhadas, baseadas em dados, e recomendações práticas que possam ser implementadas. Sempre considere o público-alvo, os objetivos da campanha e as métricas relevantes em suas análises.",
-  "tools": [
-    "analytics_access",
-    "content_analysis",
-    "competitor_research",
-    "trend_analysis"
-  ],
-  "config": {
-    "model": "gpt-4",
-    "temperature": 0.5,
-    "max_tokens": 2000,
-    "response_format": "structured"
-  }
-}
-                        </pre>
-                        </div>
-
-                        <h3 class="subsection-title">Criação via Código</h3>
-
-                        <div class="code-block mb-8">
-                            <pre>
-from gerenciador_agentes_ia.core import AgentManager
-from gerenciador_agentes_ia.agents import Agent
-
-# Inicializar o gerenciador de agentes
-agent_manager = AgentManager()
-
-# Criar um agente de desenvolvimento
-dev_agent = Agent(
-    id="agent_development_custom",
-    name="Agente de Desenvolvimento Personalizado",
-    description="Especialista em revisão de código, arquitetura de software e boas práticas de desenvolvimento",
-    specialty="development",
-    base_prompt="""
-    Você é um especialista em desenvolvimento de software com ampla experiência em múltiplas linguagens de programação,
-    arquitetura de software e boas práticas de desenvolvimento. Seu objetivo é ajudar a melhorar a qualidade do código,
-    identificar problemas potenciais e sugerir melhorias.
-    
-    Ao revisar código, você deve considerar:
-    1. Legibilidade e manutenibilidade
-    2. Eficiência e desempenho
-    3. Segurança e tratamento de erros
-    4. Padrões de design e arquitetura
-    5. Testes e cobertura
-    
-    Forneça sempre exemplos concretos e explicações claras para suas sugestões.
-    """,
-    tools=[
-        "code_review",
-        "static_analysis",
-        "architecture_review",
-        "test_coverage_analysis"
-    ],
-    config={
-        "model": "gpt-4",
-        "temperature": 0.3,
-        "max_tokens": 2500,
-        "supported_languages": ["python", "javascript", "java", "csharp", "go"]
-    }
-)
-
-# Registrar o agente no sistema
-agent_manager.register_agent(dev_agent)
-
-# Verificar se o agente foi registrado corretamente
-registered_agent = agent_manager.get_agent("agent_development_custom")
-print(f"Agente registrado: {registered_agent.name}")
-                        </pre>
-                        </div>
-
-                        <h3 class="subsection-title">Personalização de Prompts</h3>
-
-                        <div class="bg-gray-50 p-4 rounded-lg mb-8">
-                            <p class="text-gray-600 mb-2">
-                                A personalização eficaz do prompt base é crucial para o desempenho do agente. Um bom prompt deve:
-                            </p>
-                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                                <li>Definir claramente o papel e especialidade do agente</li>
-                                <li>Estabelecer o tom e estilo de comunicação</li>
-                                <li>Especificar o formato e estrutura das respostas</li>
-                                <li>Incluir diretrizes para tratamento de casos específicos</li>
-                                <li>Definir limitações e comportamentos a evitar</li>
-                            </ul>
-                        </div>
-
-                        <h3 class="subsection-title">Exemplo de Prompt para Agente Financeiro</h3>
-
-                        <div class="code-block">
-                            <pre>
-"""
-Você é um especialista financeiro com vasta experiência em análise financeira, planejamento orçamentário,
-previsões financeiras e análise de investimentos. Seu objetivo é fornecer análises precisas, recomendações
-baseadas em dados e orientações claras sobre questões financeiras.
-
-Ao responder a consultas, você deve:
-
-1. ANÁLISE:
-   - Analisar os dados financeiros fornecidos de forma objetiva e imparcial
-   - Identificar tendências, padrões e anomalias relevantes
-   - Considerar o contexto específico da empresa ou situação
-
-2. RECOMENDAÇÕES:
-   - Fornecer recomendações práticas e acionáveis
-   - Basear suas recomendações em princípios financeiros sólidos e melhores práticas
-   - Apresentar múltiplas opções quando apropriado, com prós e contras
-
-3. COMUNICAÇÃO:
-   - Usar linguagem clara e precisa, evitando jargão desnecessário
-   - Explicar conceitos financeiros complexos de forma acessível
-   - Estruturar suas respostas de forma lógica e organizada
-
-4. LIMITAÇÕES:
-   - Reconhecer quando informações adicionais são necessárias para uma análise completa
-   - Não fazer previsões específicas sobre mercados ou investimentos sem ressalvas apropriadas
-   - Evitar conselhos que possam ser interpretados como consultoria financeira regulamentada
-
-Ao analisar demonstrações financeiras, você deve considerar:
-- Balanço patrimonial: liquidez, alavancagem, estrutura de capital
-- Demonstração de resultados: margens, crescimento, eficiência operacional
-- Fluxo de caixa: geração de caixa operacional, investimentos, financiamentos
-- Indicadores-chave: ROI, ROE, EBITDA, índices de liquidez, ciclo operacional
-
-Ao fazer projeções financeiras, você deve:
-- Basear-se em premissas claras e justificáveis
-- Considerar múltiplos cenários (otimista, realista, pessimista)
-- Incluir análises de sensibilidade para variáveis críticas
-- Apresentar os resultados com intervalos de confiança apropriados
-
-Formato de resposta preferido:
-1. Resumo executivo (2-3 frases)
-2. Análise detalhada (estruturada por tópicos relevantes)
-3. Recomendações específicas
-4. Próximos passos sugeridos
-5. Considerações adicionais ou limitações da análise
-"""
-                        </pre>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Squad Management Section -->
-                <div id="squads" class="mb-16">
-                    <h2 class="section-title">Gerenciamento de Squads</h2>
-
-                    <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
-                        <p class="text-gray-600 mb-6">
-                            Os squads são equipes temporárias de agentes que colaboram para resolver tarefas complexas
-                            que exigem múltiplas especialidades. Esta seção explica como criar, configurar e gerenciar squads.
-                        </p>
-
-                        <h3 class="subsection-title">Estrutura de um Squad</h3>
-
-                        <div class="bg-gray-50 p-4 rounded-lg mb-8">
-                            <p class="text-gray-600 mb-2">
-                                Um squad é composto pelos seguintes elementos:
-                            </p>
-                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                                <li><span class="font-medium">ID:</span> Identificador único do squad</li>
-                                <li><span class="font-medium">Nome:</span> Nome amigável do squad</li>
-                                <li><span class="font-medium">Descrição:</span> Descrição do propósito e capacidades do squad</li>
-                                <li><span class="font-medium">Agentes:</span> Lista de agentes que compõem o squad</li>
-                                <li><span class="font-medium">Líder:</span> Agente designado como líder do squad</li>
-                                <li><span class="font-medium">Fluxo de Trabalho:</span> Definição de como os agentes colaboram</li>
-                                <li><span class="font-medium">Configurações:</span> Parâmetros específicos do squad</li>
-                            </ul>
-                        </div>
-
-                        <h3 class="subsection-title">Criação via API</h3>
-
-                        <div class="code-block mb-8">
-                            <pre>
-# Exemplo de criação de um squad de lançamento de produto via API
-POST /api/squads
-Content-Type: application/json
-Authorization: Bearer {token}
-
-{
-  "id": "squad_product_launch",
-  "name": "Squad de Lançamento de Produto",
-  "description": "Equipe especializada em planejar e executar lançamentos de produtos",
-  "agents": [
-    {
-      "id": "agent_marketing_1",
-      "role": "marketing_specialist"
-    },
-    {
-      "id": "agent_financial_1",
-      "role": "financial_analyst"
-    },
-    {
-      "id": "agent_sales_1",
-      "role": "sales_strategist"
-    },
-    {
-      "id": "agent_operations_1",
-      "role": "operations_coordinator"
-    }
-  ],
-  "leader_id": "agent_marketing_1",
-  "workflow": {
-    "type": "sequential",
-    "steps": [
-      {
-        "agent_id": "agent_marketing_1",
-        "task": "market_analysis",
-        "description": "Analisar o mercado e definir estratégia de posicionamento"
-      },
-      {
-        "agent_id": "agent_financial_1",
-        "task": "financial_planning",
-        "description": "Desenvolver orçamento e previsões financeiras"
-      },
-      {
-        "agent_id": "agent_sales_1",
-        "task": "sales_strategy",
-        "description": "Definir estratégia de vendas e canais de distribuição"
-      },
-      {
-        "agent_id": "agent_operations_1",
-        "task": "logistics_planning",
-        "description": "Planejar logística e operações de lançamento"
-      },
-      {
-        "agent_id": "agent_marketing_1",
-        "task": "consolidation",
-        "description": "Consolidar os resultados e finalizar o plano de lançamento"
-      }
-    ]
-  },
-  "config": {
-    "max_execution_time": 3600,
-    "intermediate_results": true,
-    "approval_required": true
-  }
-}
-                        </pre>
-                        </div>
-
-                        <h3 class="subsection-title">Criação via Código</h3>
-
-                        <div class="code-block mb-8">
-                            <pre>
-from gerenciador_agentes_ia.core import SquadManager
-from gerenciador_agentes_ia.agents import AgentManager
-from gerenciador_agentes_ia.squads import Squad, WorkflowStep, WorkflowType
-
-# Inicializar os gerenciadores
-agent_manager = AgentManager()
-squad_manager = SquadManager(agent_manager)
-
-# Definir os passos do fluxo de trabalho
-workflow_steps = [
-    WorkflowStep(
-        agent_id="agent_development_1",
-        task="architecture_design",
-        description="Projetar a arquitetura do sistema"
-    ),
-    WorkflowStep(
-        agent_id="agent_financial_1",
-        task="cost_estimation",
-        description="Estimar custos de desenvolvimento e infraestrutura"
-    ),
-    WorkflowStep(
-        agent_id="agent_operations_1",
-        task="resource_planning",
-        description="Planejar recursos e cronograma"
-    ),
-    WorkflowStep(
-        agent_id="agent_development_1",
-        task="consolidation",
-        description="Consolidar os resultados e finalizar o plano de projeto"
-    )
-]
-
-# Criar um squad de projeto de software
-project_squad = Squad(
-    id="squad_software_project",
-    name="Squad de Projeto de Software",
-    description="Equipe especializada em planejamento e execução de projetos de software",
-    agents=[
-        {"id": "agent_development_1", "role": "architect"},
-        {"id": "agent_financial_1", "role": "cost_analyst"},
-        {"id": "agent_operations_1", "role": "project_manager"}
-    ],
-    leader_id="agent_development_1",
-    workflow={
-        "type": WorkflowType.SEQUENTIAL,
-        "steps": workflow_steps
-    },
-    config={
-        "max_execution_time": 7200,
-        "intermediate_results": True,
-        "approval_required": True
-    }
-)
-
-# Registrar o squad no sistema
-squad_manager.register_squad(project_squad)
-
-# Verificar se o squad foi registrado corretamente
-registered_squad = squad_manager.get_squad("squad_software_project")
-print(f"Squad registrado: {registered_squad.name}")
-                        </pre>
-                        </div>
-
-                        <h3 class="subsection-title">Tipos de Fluxo de Trabalho</h3>
-
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                            <div class="bg-blue-50 p-4 rounded-lg">
-                                <h4 class="font-medium text-blue-800 mb-2">Sequencial</h4>
-                                <p class="text-gray-600 mb-2">
-                                    Os agentes trabalham em sequência, cada um executando sua tarefa após a conclusão da anterior.
-                                </p>
-                                <p class="text-gray-600">
-                                    <span class="font-medium">Ideal para:</span> Processos lineares onde cada etapa depende da anterior.
-                                </p>
-                            </div>
-
-                            <div class="bg-green-50 p-4 rounded-lg">
-                                <h4 class="font-medium text-green-800 mb-2">Paralelo</h4>
-                                <p class="text-gray-600 mb-2">
-                                    Os agentes trabalham simultaneamente em tarefas independentes.
-                                </p>
-                                <p class="text-gray-600">
-                                    <span class="font-medium">Ideal para:</span> Tarefas que podem ser executadas independentemente.
-                                </p>
-                            </div>
-
-                            <div class="bg-purple-50 p-4 rounded-lg">
-                                <h4 class="font-medium text-purple-800 mb-2">Colaborativo</h4>
-                                <p class="text-gray-600 mb-2">
-                                    Os agentes trabalham juntos, compartilhando informações e contribuindo para um resultado comum.
-                                </p>
-                                <p class="text-gray-600">
-                                    <span class="font-medium">Ideal para:</span> Problemas complexos que requerem múltiplas perspectivas.
-                                </p>
-                            </div>
-
-                            <div class="bg-yellow-50 p-4 rounded-lg">
-                                <h4 class="font-medium text-yellow-800 mb-2">Hierárquico</h4>
-                                <p class="text-gray-600 mb-2">
-                                    Um agente líder coordena o trabalho de agentes subordinados, delegando tarefas e consolidando resultados.
-                                </p>
-                                <p class="text-gray-600">
-                                    <span class="font-medium">Ideal para:</span> Tarefas que requerem coordenação central e especialização.
-                                </p>
+                        
+                        <div class="flex items-start gap-4 workflow-card">
+                            <div class="step-number">3</div>
+                            <div>
+                                <h4 class="font-medium text-gray-800 mb-1">Agentes trabalham na tarefa</h4>
+                                <p class="text-gray-600 mb-0">Os agentes especializados processam sua solicitação, colaborando quando necessário.</p>
                             </div>
                         </div>
-
-                        <h3 class="subsection-title">Exemplo de Uso de Squad</h3>
-
-                        <div class="code-block">
-                            <pre>
-from gerenciador_agentes_ia.core import SquadManager
-
-# Inicializar o gerenciador de squads
-squad_manager = SquadManager()
-
-# Obter um squad existente
-market_analysis_squad = squad_manager.get_squad("squad_market_analysis")
-
-# Enviar uma tarefa para o squad
-task_result = squad_manager.execute_task(
-    squad_id="squad_market_analysis",
-    task="Realize uma análise completa do mercado de software de gestão empresarial, incluindo análise de concorrentes, tendências e oportunidades.",
-    context={
-        "target_market": "Pequenas e médias empresas",
-        "geographic_focus": "Brasil",
-        "industry_sectors": ["Varejo", "Serviços", "Manufatura"],
-        "time_horizon": "12 meses"
-    },
-    requester="user@company.com"
-)
-
-# Verificar o status da tarefa
-task_id = task_result["task_id"]
-task_status = squad_manager.get_task_status(task_id)
-
-print(f"Status da tarefa: {task_status['status']}")
-print(f"Progresso: {task_status['progress']}%")
-
-# Se a tarefa estiver concluída, obter o resultado
-if task_status["status"] == "completed":
-    task_result = squad_manager.get_task_result(task_id)
-    print(f"Resultado da tarefa: {task_result['summary']}")
-    
-    # Acessar resultados detalhados por agente
-    for agent_result in task_result["agent_results"]:
-        print(f"Resultado do agente {agent_result['agent_id']}:")
-        print(agent_result["content"])
-                        </pre>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chat Integration Section -->
-                <div id="integracao" class="mb-16">
-                    <h2 class="section-title">Integração com Chat</h2>
-
-                    <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
-                        <p class="text-gray-600 mb-6">
-                            A integração com plataformas de chat permite que os usuários interajam com os agentes através
-                            de interfaces familiares como Slack e Microsoft Teams. Esta seção explica como configurar e
-                            personalizar essas integrações.
-                        </p>
-
-                        <h3 class="subsection-title">Configuração do Slack</h3>
-
-                        <div class="bg-gray-50 p-4 rounded-lg mb-8">
-                            <h4 class="font-medium text-gray-800 mb-2">Pré-requisitos:</h4>
-                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                                <li>Conta de administrador no workspace do Slack</li>
-                                <li>Acesso à plataforma de desenvolvedores do Slack</li>
-                            </ul>
-
-                            <h4 class="font-medium text-gray-800 mt-4 mb-2">Passos:</h4>
-                            <ol class="list-decimal pl-5 text-gray-600 space-y-1">
-                                <li>Criar um novo aplicativo na plataforma de desenvolvedores do Slack</li>
-                                <li>Configurar permissões e escopos (chat:write, channels:read, etc.)</li>
-                                <li>Obter o token de API e signing secret</li>
-                                <li>Configurar endpoints de eventos e interatividade</li>
-                                <li>Instalar o aplicativo no workspace</li>
-                            </ol>
-                        </div>
-
-                        <div class="code-block mb-8">
-                            <pre>
-# Configuração do Slack no arquivo config.yaml
-integracao:
-  slack:
-    token: "xoxb-seu-token-aqui"
-    signing_secret: "seu-signing-secret-aqui"
-    canais_permitidos: ["general", "marketing", "desenvolvimento", "financeiro"]
-    notificacoes:
-      conclusao_tarefa: true
-      solicitacao_aprovacao: true
-      erros: true
-    formatacao:
-      usar_blocos: true
-      usar_attachments: true
-      max_comprimento_texto: 3000
-    comandos:
-      - nome: "/agente"
-        descricao: "Interagir com um agente específico"
-      - nome: "/squad"ß
-        descricao: "Interagir com um squad específico"
-      - nome: "/ajuda"
-        descricao: "Exibir ajuda sobre os agentes disponíveis"
-                        </pre>
-                        </div>
-
-                        <h3 class="subsection-title">Configuração do Microsoft Teams</h3>
-
-                        <div class="bg-gray-50 p-4 rounded-lg mb-8">
-                            <h4 class="font-medium text-gray-800 mb-2">Pré-requisitos:</h4>
-                            <ul class="list-disc pl-5 text-gray-600 space-y-1">
-                                <li>Conta de administrador no Microsoft 365</li>
-                                <li>Acesso ao Azure Active Directory</li>
-                                <li>Acesso ao Bot Framework</li>
-                            </ul>
-
-                            <h4 class="font-medium text-gray-800 mt-4 mb-2">Passos:</h4>
-                            <ol class="list-decimal pl-5 text-gray-600 space-y-1">
-                                <li>Registrar um aplicativo no Azure Active Directory</li>
-                                <li>Criar um bot no Bot Framework</li>
-                                <li>Configurar permissões e escopos</li>
-                                <li>Obter o app ID e app password</li>
-                                <li>Configurar endpoints de mensagens</li>
-                                <li>Criar o pacote de aplicativo do Teams</li>
-                                <li>Instalar o aplicativo no Teams</li>
-                            </ol>
-                        </div>
-
-                        <div class="code-block mb-8">
-                            <pre>
-# Configuração do Teams no arquivo config.yaml
-integracao:
-  teams:
-    app_id: "seu-app-id-aqui"
-    app_password: "seu-app-password-aqui"
-    tenant_id: "seu-tenant-id-aqui"
-    teams_permitidos: ["Marketing", "Desenvolvimento", "Financeiro"]
-    notificacoes:
-      conclusao_tarefa: true
-      solicitacao_aprovacao: true
-      erros: true
-    formatacao:
-      usar_cards_adaptativos: true
-      usar_hero_cards: true
-      max_comprimento_texto: 2000
-    comandos:
-      - nome: "agente"
-        descricao: "Interagir com um agente específico"
-      - nome: "squad"
-        descricao: "Interagir com um squad específico"
-      - nome: "ajuda"
-        descricao: "Exibir ajuda sobre os agentes disponíveis"
-                        </pre>
-                        </div>
-
-                        <h3 class="subsection-title">Personalização de Mensagens</h3>
-
-                        <div class="code-block">
-                            <pre>
-from gerenciador_agentes_ia.communication import MessageFormatter
-from gerenciador_agentes_ia.chat_integration import SlackConnector
-
-# Criar um formatador de mensagens personalizado para o Slack
-class CustomSlackFormatter(MessageFormatter):
-    def format_agent_response(self, agent_id, response, context=None):
-        """
-        Formata a resposta de um agente para o Slack.
-        
-        Args:
-            agent_id (str): ID do agente
-            response (str): Resposta do agente
-            context (dict, optional): Contexto adicional
-            
-        Returns:
-            dict: Mensagem formatada para o Slack
-        """
-        # Obter informações do agente
-        agent_info = self.agent_manager.get_agent(agent_id)
-        
-        # Criar blocos para a mensagem
-        blocks = [
-            {
-                "type": "header",
-                "text": {
-                    "type": "plain_text",
-                    "text": f"Resposta de {agent_info.name}",
-                    "emoji": True
-                }
-            },
-            {
-                "type": "section",
-                "text": {
-                    "type": "mrkdwn",
-                    "text": response
-                }
-            },
-            {
-                "type": "context",
-                "elements": [
-                    {
-                        "type": "mrkdwn",
-                        "text": f"*Especialidade:* {agent_info.specialty} | *Confiança:* Alta"
-                    }
-                ]
-            },
-            {
-                "type": "actions",
-                "elements": [
-                    {
-                        "type": "button",
-                        "text": {
-                            "type": "plain_text",
-                            "text": "👍 Útil",
-                            "emoji": True
-                        },
-                        "value": f"feedback_positive_{agent_id}"
-                    },
-                    {
-                        "type": "button",
-                        "text": {
-                            "type": "plain_text",
-                            "text": "👎 Não útil",
-                            "emoji": True
-                        },
-                        "value": f"feedback_negative_{agent_id}"
-                    },
-                    {
-                        "type": "button",
-                        "text": {
-                            "type": "plain_text",
-                            "text": "🔄 Reformular",
-                            "emoji": True
-                        },
-                        "value": f"reformulate_{agent_id}"
-                    }
-                ]
-            }
-        ]
-        
-        return {
-            "blocks": blocks,
-            "text": f"Resposta de {agent_info.name}: {response[:100]}..."
-        }
-    
-    def format_approval_request(self, request_id, task_description, agent_id):
-        """
-        Formata uma solicitação de aprovação para o Slack.
-        
-        Args:
-            request_id (str): ID da solicitação
-            task_description (str): Descrição da tarefa
-            agent_id (str): ID do agente
-            
-        Returns:
-            dict: Mensagem formatada para o Slack
-        """
-        # Obter informações do agente
-        agent_info = self.agent_manager.get_agent(agent_id)
-        
-        # Criar blocos para a mensagem
-        blocks = [
-            {
-                "type": "header",
-                "text": {
-                    "type": "plain_text",
-                    "text": "Solicitação de Aprovação",
-                    "emoji": True
-                }
-            },
-            {
-                "type": "section",
-                "text": {
-                    "type": "mrkdwn",
-                    "text": f"O agente *{agent_info.name}* gostaria de executar a seguinte tarefa:"
-                }
-            },
-            {
-                "type": "section",
-                "text": {
-                    "type": "mrkdwn",
-                    "text": f"```{task_description}```"
-                }
-            },
-            {
-                "type": "actions",
-                "elements": [
-                    {
-                        "type": "button",
-                        "text": {
-                            "type": "plain_text",
-                            "text": "✅ Aprovar",
-                            "emoji": True
-                        },
-                        "style": "primary",
-                        "value": f"approve_{request_id}"
-                    },
-                    {
-                        "type": "button",
-                        "text": {
-                            "type": "plain_text",
-                            "text": "❌ Rejeitar",
-                            "emoji": True
-                        },
-                        "style": "danger",
-                        "value": f"reject_{request_id}"
-                    },
-                    {
-                        "type": "button",
-                        "text": {
-                            "type": "plain_text",
-                            "text": "❓ Mais informações",
-                            "emoji": True
-                        },
-                        "value": f"more_info_{request_id}"
-                    }
-                ]
-            }
-        ]
-        
-        return {
-            "blocks": blocks,
-            "text": f"Solicitação de aprovação para tarefa: {task_description[:100]}..."
-        }
-
-# Registrar o formatador personalizado
-slack_connector = SlackConnector(config["integracao"]["slack"])
-slack_connector.set_message_formatter(CustomSlackFormatter())
-                        </pre>
+                        
+                        <div class="flex items-start gap-4 workflow-card">
+                            <div class="step-number">4</div>
+                            <div>
+                                <h4 class="font-medium text-gray-800 mb-1">Você recebe o resultado</h4>
+                                <p class="text-gray-600 mb-0">A resposta é entregue formatada e pronta para uso, no canal que você escolheu.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
 
-        <footer class="bg-gray-800 text-white py-8 mt-12">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex flex-col md:flex-row justify-between items-center">
-                    <div class="mb-4 md:mb-0">
-                        <h3 class="text-xl font-bold">Capellaris</h3>
-                        <p class="text-gray-400">O cérebro distribuído da sua organização.</p>
+            <!-- Agents Section -->
+            <div id="agentes" class="mb-16">
+                <h2 class="section-title">
+                    <i class="fas fa-robot me-2"></i>Tipos de Agentes
+                </h2>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                    <p class="text-gray-600 mb-6 text-lg">
+                        Cada agente é um especialista em sua área, treinado para executar tarefas específicas com alta qualidade.
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                        <div class="feature-card">
+                            <div class="icon-box mb-3" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8);">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Marketing</h4>
+                            <p class="text-gray-600 text-sm mb-0">
+                                Análise de campanhas, criação de conteúdo, estratégias de engajamento e relatórios de performance.
+                            </p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="icon-box mb-3" style="background: linear-gradient(135deg, #10b981, #059669);">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Financeiro</h4>
+                            <p class="text-gray-600 text-sm mb-0">
+                                Análise de demonstrações, projeções financeiras, controle orçamentário e indicadores-chave.
+                            </p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="icon-box mb-3" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Vendas</h4>
+                            <p class="text-gray-600 text-sm mb-0">
+                                Pipeline de vendas, previsões, estratégias de prospecção e análise de oportunidades.
+                            </p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="icon-box mb-3" style="background: linear-gradient(135deg, #f59e0b, #d97706);">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Operações</h4>
+                            <p class="text-gray-600 text-sm mb-0">
+                                Gestão de processos, otimização de recursos, logística e planejamento operacional.
+                            </p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="icon-box mb-3" style="background: linear-gradient(135deg, #ec4899, #db2777);">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-800 mb-2">RH</h4>
+                            <p class="text-gray-600 text-sm mb-0">
+                                Recrutamento, desenvolvimento, políticas de pessoal e análise de clima organizacional.
+                            </p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="icon-box mb-3" style="background: linear-gradient(135deg, #06b6d4, #0891b2);">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-800 mb-2">Desenvolvimento</h4>
+                            <p class="text-gray-600 text-sm mb-0">
+                                Revisão de código, arquitetura de sistemas, documentação técnica e boas práticas.
+                            </p>
+                        </div>
                     </div>
-                    <div class="flex space-x-6">
-                        <a href="index.html" class="text-gray-300 hover:text-white">Início</a>
-                        <a href="arquitetura.html" class="text-gray-300 hover:text-white">Arquitetura</a>
-                        <a href="documentacao.html" class="text-gray-300 hover:text-white">Documentação</a>
-                        <a href="https://capellaris.dscamargo.com.br" class="text-gray-300 hover:text-white">Demo</a>
+
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Como um agente processa sua solicitação</h3>
+                    
+                    <div class="mermaid">
+flowchart TB
+    A[📩 Recebe Solicitação] --> B[🔍 Analisa Contexto]
+    B --> C[🧠 Processa com IA]
+    C --> D[📚 Consulta Base de Conhecimento]
+    D --> E[✍️ Formula Resposta]
+    E --> F[✅ Valida Qualidade]
+    F --> G[📤 Entrega Resultado]
+    
+    style A fill:#e0f2fe
+    style G fill:#dcfce7
                     </div>
-                </div>
-                <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
-                    <p>&copy; 2025 Capellaris. Todos os direitos reservados.</p>
                 </div>
             </div>
-        </footer>
+
+            <!-- Squads Section -->
+            <div id="squads" class="mb-16">
+                <h2 class="section-title">
+                    <i class="fas fa-users-cog me-2"></i>Squads de Agentes
+                </h2>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                    <p class="text-gray-600 mb-6 text-lg">
+                        Squads são <strong>equipes temporárias</strong> de agentes que se unem para resolver tarefas complexas 
+                        que exigem múltiplas especialidades.
+                    </p>
+
+                    <div class="bg-blue-50 p-6 rounded-lg mb-8">
+                        <h4 class="font-semibold text-blue-800 mb-3">
+                            <i class="fas fa-lightbulb me-2"></i>Quando um Squad é formado?
+                        </h4>
+                        <ul class="text-gray-700 space-y-2 mb-0">
+                            <li><i class="fas fa-check text-green-600 me-2"></i>Quando a tarefa envolve múltiplas áreas de conhecimento</li>
+                            <li><i class="fas fa-check text-green-600 me-2"></i>Quando é necessária uma análise completa de um projeto</li>
+                            <li><i class="fas fa-check text-green-600 me-2"></i>Quando diferentes perspectivas precisam ser consideradas</li>
+                            <li><i class="fas fa-check text-green-600 me-2"></i>Quando você solicita explicitamente uma equipe multidisciplinar</li>
+                        </ul>
+                    </div>
+
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Exemplo: Squad de Lançamento de Produto</h3>
+                    
+                    <div class="mermaid">
+flowchart TB
+    subgraph Squad["👥 Squad de Lançamento"]
+        direction TB
+        L[🎯 Líder: Marketing]
+        M[📊 Marketing] 
+        F[💰 Financeiro]
+        V[🤝 Vendas]
+        O[⚙️ Operações]
+    end
+    
+    T[📋 Tarefa: Planejar Lançamento] --> L
+    L --> M
+    L --> F
+    L --> V
+    L --> O
+    M --> R[📑 Relatório Consolidado]
+    F --> R
+    V --> R
+    O --> R
+    R --> E[✅ Entrega Final]
+    
+    style L fill:#fef3c7
+    style E fill:#dcfce7
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-medium text-gray-800 mb-3">
+                                <i class="fas fa-user-tie text-blue-600 me-2"></i>O Líder do Squad
+                            </h4>
+                            <ul class="text-gray-600 space-y-2 mb-0 text-sm">
+                                <li>Coordena o trabalho dos outros agentes</li>
+                                <li>Distribui as tarefas de forma adequada</li>
+                                <li>Consolida os resultados em uma resposta unificada</li>
+                                <li>Garante a qualidade da entrega final</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-medium text-gray-800 mb-3">
+                                <i class="fas fa-users text-green-600 me-2"></i>Os Membros do Squad
+                            </h4>
+                            <ul class="text-gray-600 space-y-2 mb-0 text-sm">
+                                <li>Executam suas tarefas especializadas</li>
+                                <li>Compartilham informações relevantes</li>
+                                <li>Contribuem com sua expertise única</li>
+                                <li>Colaboram para o resultado comum</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Workflow Types Section -->
+            <div id="fluxos" class="mb-16">
+                <h2 class="section-title">
+                    <i class="fas fa-project-diagram me-2"></i>Fluxos de Trabalho
+                </h2>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                    <p class="text-gray-600 mb-6 text-lg">
+                        O Capellaris oferece diferentes formas de organizar o trabalho dos agentes, 
+                        adaptando-se à natureza de cada tarefa.
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- Sequential -->
+                        <div class="bg-blue-50 p-6 rounded-lg">
+                            <h4 class="font-semibold text-blue-800 mb-3">
+                                <i class="fas fa-arrow-right me-2"></i>Sequencial
+                            </h4>
+                            <p class="text-gray-600 mb-4">
+                                Os agentes trabalham em sequência, cada um executando sua tarefa após a conclusão da anterior.
+                            </p>
+                            <div class="mermaid">
+flowchart LR
+    A[Agente 1] --> B[Agente 2] --> C[Agente 3] --> D[Resultado]
+    style D fill:#dcfce7
+                            </div>
+                            <p class="text-sm text-gray-500 mt-3 mb-0">
+                                <strong>Ideal para:</strong> Processos onde cada etapa depende da anterior.
+                            </p>
+                        </div>
+
+                        <!-- Parallel -->
+                        <div class="bg-green-50 p-6 rounded-lg">
+                            <h4 class="font-semibold text-green-800 mb-3">
+                                <i class="fas fa-arrows-alt-h me-2"></i>Paralelo
+                            </h4>
+                            <p class="text-gray-600 mb-4">
+                                Os agentes trabalham simultaneamente em tarefas independentes, economizando tempo.
+                            </p>
+                            <div class="mermaid">
+flowchart TB
+    A[Tarefa] --> B[Agente 1]
+    A --> C[Agente 2]
+    A --> D[Agente 3]
+    B --> E[Resultado]
+    C --> E
+    D --> E
+    style E fill:#dcfce7
+                            </div>
+                            <p class="text-sm text-gray-500 mt-3 mb-0">
+                                <strong>Ideal para:</strong> Análises independentes que precisam ser consolidadas.
+                            </p>
+                        </div>
+
+                        <!-- Collaborative -->
+                        <div class="bg-purple-50 p-6 rounded-lg">
+                            <h4 class="font-semibold text-purple-800 mb-3">
+                                <i class="fas fa-comments me-2"></i>Colaborativo
+                            </h4>
+                            <p class="text-gray-600 mb-4">
+                                Os agentes trabalham juntos, compartilhando informações em tempo real.
+                            </p>
+                            <div class="mermaid">
+flowchart TB
+    A[Agente 1] <--> B[Agente 2]
+    B <--> C[Agente 3]
+    A <--> C
+    A --> D[Resultado]
+    B --> D
+    C --> D
+    style D fill:#dcfce7
+                            </div>
+                            <p class="text-sm text-gray-500 mt-3 mb-0">
+                                <strong>Ideal para:</strong> Problemas complexos que requerem múltiplas perspectivas.
+                            </p>
+                        </div>
+
+                        <!-- Hierarchical -->
+                        <div class="bg-yellow-50 p-6 rounded-lg">
+                            <h4 class="font-semibold text-yellow-800 mb-3">
+                                <i class="fas fa-sitemap me-2"></i>Hierárquico
+                            </h4>
+                            <p class="text-gray-600 mb-4">
+                                Um agente líder coordena o trabalho, delegando e consolidando resultados.
+                            </p>
+                            <div class="mermaid">
+flowchart TB
+    A[🎯 Líder] --> B[Agente 1]
+    A --> C[Agente 2]
+    A --> D[Agente 3]
+    B --> A
+    C --> A
+    D --> A
+    A --> E[Resultado]
+    style E fill:#dcfce7
+                            </div>
+                            <p class="text-sm text-gray-500 mt-3 mb-0">
+                                <strong>Ideal para:</strong> Tarefas que requerem coordenação central.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Integration Section -->
+            <div id="integracao" class="mb-16">
+                <h2 class="section-title">
+                    <i class="fas fa-plug me-2"></i>Integrações
+                </h2>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                    <p class="text-gray-600 mb-6 text-lg">
+                        Use o Capellaris diretamente nas ferramentas que sua equipe já utiliza no dia a dia.
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- Slack -->
+                        <div class="border rounded-lg p-6">
+                            <div class="flex items-center mb-4">
+                                <i class="fab fa-slack text-4xl text-purple-600 me-4"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-0">Slack</h4>
+                                    <span class="text-sm text-green-600"><i class="fas fa-check-circle me-1"></i>Disponível</span>
+                                </div>
+                            </div>
+                            <ul class="text-gray-600 space-y-2 mb-4">
+                                <li><i class="fas fa-comment me-2 text-gray-400"></i>Converse com agentes em canais ou mensagens diretas</li>
+                                <li><i class="fas fa-at me-2 text-gray-400"></i>Mencione @capellaris para iniciar uma interação</li>
+                                <li><i class="fas fa-bell me-2 text-gray-400"></i>Receba notificações de tarefas concluídas</li>
+                                <li><i class="fas fa-thumbs-up me-2 text-gray-400"></i>Aprove solicitações diretamente no chat</li>
+                            </ul>
+                        </div>
+
+                        <!-- Teams -->
+                        <div class="border rounded-lg p-6">
+                            <div class="flex items-center mb-4">
+                                <i class="fab fa-microsoft text-4xl text-blue-600 me-4"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-0">Microsoft Teams</h4>
+                                    <span class="text-sm text-green-600"><i class="fas fa-check-circle me-1"></i>Disponível</span>
+                                </div>
+                            </div>
+                            <ul class="text-gray-600 space-y-2 mb-4">
+                                <li><i class="fas fa-comment me-2 text-gray-400"></i>Interaja com agentes em qualquer canal ou chat</li>
+                                <li><i class="fas fa-id-card me-2 text-gray-400"></i>Cards adaptativos com informações detalhadas</li>
+                                <li><i class="fas fa-bell me-2 text-gray-400"></i>Notificações integradas ao fluxo de trabalho</li>
+                                <li><i class="fas fa-lock me-2 text-gray-400"></i>Integração segura com Azure AD</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-4">Fluxo de Interação via Chat</h3>
+                    
+                    <div class="mermaid">
+sequenceDiagram
+    actor U as Usuário
+    participant S as Slack/Teams
+    participant C as Capellaris
+    participant A as Agente(s)
+    
+    U->>S: Envia mensagem
+    S->>C: Encaminha solicitação
+    C->>A: Direciona para agente
+    A->>A: Processa tarefa
+    A->>C: Retorna resultado
+    C->>S: Formata resposta
+    S->>U: Exibe resultado
+                    </div>
+                </div>
+            </div>
+
+            <!-- Use Cases Section -->
+            <div id="casos-uso" class="mb-16">
+                <h2 class="section-title">
+                    <i class="fas fa-lightbulb me-2"></i>Casos de Uso
+                </h2>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                    <p class="text-gray-600 mb-6 text-lg">
+                        Veja como outras organizações estão usando o Capellaris para aumentar a produtividade.
+                    </p>
+
+                    <div class="space-y-6">
+                        <!-- Use Case 1 -->
+                        <div class="border-l-4 border-blue-500 pl-6 py-4">
+                            <h4 class="font-semibold text-gray-800 mb-2">
+                                <i class="fas fa-rocket text-blue-500 me-2"></i>Lançamento de Produto
+                            </h4>
+                            <p class="text-gray-600 mb-3">
+                                "Preciso de um plano completo para lançar nosso novo produto em 3 meses"
+                            </p>
+                            <div class="bg-gray-50 p-3 rounded">
+                                <p class="text-sm text-gray-500 mb-0">
+                                    <strong>Squad acionado:</strong> Marketing + Financeiro + Vendas + Operações<br>
+                                    <strong>Resultado:</strong> Plano integrado com cronograma, orçamento, estratégia de vendas e logística
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Use Case 2 -->
+                        <div class="border-l-4 border-green-500 pl-6 py-4">
+                            <h4 class="font-semibold text-gray-800 mb-2">
+                                <i class="fas fa-chart-pie text-green-500 me-2"></i>Análise de Resultados
+                            </h4>
+                            <p class="text-gray-600 mb-3">
+                                "Analise os resultados do último trimestre e identifique oportunidades de melhoria"
+                            </p>
+                            <div class="bg-gray-50 p-3 rounded">
+                                <p class="text-sm text-gray-500 mb-0">
+                                    <strong>Agente acionado:</strong> Financeiro<br>
+                                    <strong>Resultado:</strong> Relatório com análise de indicadores, tendências e recomendações acionáveis
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Use Case 3 -->
+                        <div class="border-l-4 border-purple-500 pl-6 py-4">
+                            <h4 class="font-semibold text-gray-800 mb-2">
+                                <i class="fas fa-bullhorn text-purple-500 me-2"></i>Campanha de Marketing
+                            </h4>
+                            <p class="text-gray-600 mb-3">
+                                "Crie uma estratégia de conteúdo para aumentar o engajamento nas redes sociais"
+                            </p>
+                            <div class="bg-gray-50 p-3 rounded">
+                                <p class="text-sm text-gray-500 mb-0">
+                                    <strong>Agente acionado:</strong> Marketing<br>
+                                    <strong>Resultado:</strong> Calendário editorial, sugestões de posts e métricas de acompanhamento
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Use Case 4 -->
+                        <div class="border-l-4 border-orange-500 pl-6 py-4">
+                            <h4 class="font-semibold text-gray-800 mb-2">
+                                <i class="fas fa-search-dollar text-orange-500 me-2"></i>Análise de Mercado
+                            </h4>
+                            <p class="text-gray-600 mb-3">
+                                "Faça uma análise completa do mercado de software de gestão no Brasil"
+                            </p>
+                            <div class="bg-gray-50 p-3 rounded">
+                                <p class="text-sm text-gray-500 mb-0">
+                                    <strong>Squad acionado:</strong> Marketing + Vendas + Financeiro<br>
+                                    <strong>Resultado:</strong> Relatório com tamanho de mercado, concorrentes, tendências e oportunidades
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Getting Started CTA -->
+            <div class="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-lg p-8 text-center text-white">
+                <h2 class="text-2xl font-bold mb-3">Pronto para começar?</h2>
+                <p class="text-lg opacity-90 mb-6 max-w-2xl mx-auto">
+                    Experimente o Capellaris gratuitamente e descubra como agentes de IA podem 
+                    transformar a produtividade da sua equipe.
+                </p>
+                <div class="flex justify-center gap-4 flex-wrap">
+                    <a href="https://capellaris.dscamargo.com.br" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+                        <i class="fas fa-play me-2"></i>Experimentar Demo
+                    </a>
+                    <a href="index.html" class="border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+                        <i class="fas fa-info-circle me-2"></i>Saiba Mais
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold">Capellaris</h3>
+                    <p class="text-gray-400">O cérebro distribuído da sua organização.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="index.html" class="text-gray-300 hover:text-white">Início</a>
+                    <a href="arquitetura.html" class="text-gray-300 hover:text-white">Arquitetura</a>
+                    <a href="documentacao.html" class="text-gray-300 hover:text-white">Documentação</a>
+                    <a href="https://capellaris.dscamargo.com.br" class="text-gray-300 hover:text-white">Demo</a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+                <p>&copy; 2025 Capellaris. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
