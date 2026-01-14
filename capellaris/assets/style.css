@@ -286,6 +286,15 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
+  /* Fallback for browsers that don't support CSS variables in gradients */
+  background: linear-gradient(
+    180deg,
+    #0a0f1a 0%,
+    #2a4575 40%,
+    #2a4575 60%,
+    #556c94 80%,
+    #ffffff 100%
+  );
   background: linear-gradient(
     180deg,
     #0a0f1a 0%,
@@ -348,6 +357,15 @@ main {
 }
 
 .hero-internal .hero-gradient {
+  /* Fallback for browsers that don't support CSS variables in gradients */
+  background: linear-gradient(
+    180deg,
+    #0a0f1a 0%,
+    #2a4575 40%,
+    #2a4575 60%,
+    #556c94 80%,
+    #ffffff 100%
+  );
   background: linear-gradient(
     180deg,
     #0a0f1a 0%,

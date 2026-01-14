@@ -126,6 +126,12 @@ body {
   padding: 0;
 }
 
+/* Homepage with cosmic background needs transparent body 
+   to allow the fixed #universe-bg (z-index: -1) to show through */
+body.homepage-cosmic-bg {
+  background-color: transparent;
+}
+
 /* ============================================
    TYPOGRAPHY
    ============================================ */
