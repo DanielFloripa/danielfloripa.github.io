@@ -11,7 +11,12 @@
       "value": ["#ffffff", "#00B0FF", "#64FFDA", "#E0E7FF"]
     },
     "shape": {
-      "type": ["circle", "star"],
+      "type": ["circle", "star", "image"],
+      "image": {
+        "src": "https://www.dscamargo.com.br/assets/images/capellaris-star.svg",
+        "width": 100,
+        "height": 100
+      },
       "stroke": {
         "width": 0,
         "color": "#000000"
@@ -31,12 +36,12 @@
       }
     },
     "size": {
-      "value": 4,
+      "value": 6,
       "random": true,
       "anim": {
         "enable": true,
         "speed": 2,
-        "size_min": 0.5,
+        "size_min": 3,
         "sync": false
       }
     },
@@ -63,7 +68,7 @@
     }
   },
   "interactivity": {
-    "detect_on": "canvas",
+    "detect_on": "window",
     "events": {
       "onhover": {
         "enable": true,
@@ -84,7 +89,7 @@
       },
       "bubble": {
         "distance": 200,
-        "size": 8,
+        "size": 4,
         "duration": 2,
         "opacity": 0.8,
         "speed": 3
