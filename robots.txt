@@ -1,3 +1,5 @@
 User-Agent: *
 Crawl-Delay: 1
 Disallow: /files/publications/*
+
+Sitemap: https://www.dscamargo.com.br/sitemap.xml
